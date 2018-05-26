@@ -1,0 +1,86 @@
+/*
+ Theme Name: Iconic One-Child
+ Theme URI: http://themonic.com/iconic-one/
+ Description: Iconic One Child Theme
+ Author: pramod baviskar
+ Author URI: http://gmtechnicals.com
+ Template: iconic-one
+ Version:      1.0.0
+*/
+
+h2 {font-size: 24px;}
+.themonic-logo img {max-height: 124px;}
+
+/*Memberships-Page*/
+.country_select {text-align: left;margin-bottom: 35px;}
+.country_select .description {margin-bottom: 15px;}
+.country_select h2 {margin-bottom:15px!important;font-size:24px!important;}
+
+/*Membership-Archive*/
+.membership_archive .woocommerce-breadcrumb,
+.membership_archive .woocommerce-result-count,
+.membership_archive .woocommerce-ordering {display: none;}
+.membership_archive .page-title {text-transform: capitalize;}
+.membership_archive .page-title:before {content:"Available subscriptions for ";}
+
+/*My-Account*/
+#primary.account article {width: 73%;display: inline-block;}
+.woocommerce-MyAccount-content {float: right;width: 95%;}
+.woocommerce-MyAccount-navigation {float: left;width: 20%!important;margin-right:2%;}
+.ihc-user-page-top-ap-wrapper {padding-top:0!important;}
+.site-content article {border-bottom: none;}
+.woocommerce-account .woocommerce-MyAccount-content {float: none;width: 100%;}
+.ihc-level-name-wrapp div {display: none;}
+.woocommerce-edit-account .call_sign p {width:100%;}
+.woocommerce-edit-account .call_sign p input {width:90%;height: 31px;box-sizing: border-box;}
+.form-row-thirds {width:22%;display: inline-block;}
+.checkbox_title {margin-bottom: 0!important;font-weight: 600;}
+.stream_description_title {display: block;}
+#save_changes {display: none;}
+.save_changes {color: #515151;background-color: #ebe9eb;width:118px;height: 32px;display: inline-block;text-align: center;line-height: 32px;border-radius: 4px;font-weight: 600;}
+.save_changes:hover {text-decoration: none;color: #515151;background-color: #c6c6c6;}
+.ihc-user-page-top-ap-wrapper .ihc-account-page-top-mess,
+.ihc-user-page-top-ap-wrapper .ihc-top-levels {padding-left:0px;}
+.ihc-user-page-top-ap-wrapper {padding:20px 0;}
+
+/*Login-Page*/
+#main .ihc-login-template-10 .impu-form-line-fr input[type=text],
+#main .ihc-login-template-10 .impu-form-line-fr input[type=password] {height:39px!important;}
+.page-id-5 article {text-align: center;}
+
+/*Simple-Product*/
+.simple_product_join {background-color: #a46497!important;color: #fff!important;-webkit-font-smoothing: antialiased;font-size: 100%;margin: 0;line-height: 1;cursor: pointer;position: relative;text-decoration: none;overflow: visible;padding: .618em 1em;font-weight: 700;border-radius: 3px;left: auto;color: #515151;background-color: #ebe9eb;
+border: 0;white-space: nowrap;display: inline-block;background-image: none;box-shadow: none;-webkit-box-shadow: none;text-shadow: none;}
+.simple_product_join:hover {text-decoration: none;background-color: #935386!important;}
+
+/*Checkout*/
+.woocommerce form .form-row label {float:left;}
+.woocommerce-checkout .chat_name {display: none;}
+.woocommerce-checkout .stream_output_url {display: none;}
+.woocommerce-checkout .stream_title {display: none;}
+.woocommerce-checkout .checked_default {display: none;}
+.woocommerce-checkout #stream_rtmp_input_url_field {display: none;}
+.select2.disabled {pointer-events:none;}
+.select2.disabled .select2-selection--single {background-color:#f1f1f1;}
+.woocommerce-checkout #stream_title {text-transform: lowercase;}
+.streaming_wrapper .woocommerce-form-row {height: 80px;}
+.streaming_wrapper .woocommerce-form-row {height: 80px;}
+.chat_nick_name_valid {line-height: 15px;display: block;}
+
+/*CQ-TV-PAGE*/
+.stamper_download_button_submit {max-width: 100%;}
+.issue_number {text-align: center;}
+
+/*Footer*/
+footer .logout {display: block;font-weight: bold;margin-left: 0!important;}
+
+@media screen and (min-width: 768px) {
+	.site-content {width: 95%;}
+	.site-content.sidebar {width: 63.2%;}
+}
+
+body.term-memberships ul.products,
+body.term-memberships .term-description,
+body.term-memberships .woocommerce-result-count,
+body.term-memberships form.woocommerce-ordering,
+.mc4wp-checkbox.mc4wp-checkbox-woocommerce {display:none;}

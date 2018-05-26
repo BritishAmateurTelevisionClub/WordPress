@@ -1,0 +1,207 @@
+@import '../../../libraries/wp-conditions/assets/css/wp-conditions';
+
+/* Hide visibility from admin */
+.post-type-advanced_fee .misc-pub-visibility#visibility {
+	display: none;
+}
+
+/* Meta box styling */
+.waf-option {
+
+	label {
+		display: inline-block;
+		width: 150px;
+	}
+	input {
+		line-height: 19px;
+		width: 190px;
+	}
+}
+
+.waf-meta-box-settings {
+
+	.waf-description {
+		float: none;
+		line-height: 19px;
+	}
+
+	/** Advanced cost styling */
+	.waf-tabbed-settings {
+		overflow: hidden;
+		border: 1px solid #eee;
+
+		.inside {
+			padding: 0;
+			margin: 0 !important;
+			display: block;
+			position: relative;
+		}
+		.tabs {
+			width: 20%;
+			min-width: 100px;
+			float: left;
+			box-sizing: border-box;
+			background: #fafafa;
+			border-right: 1px solid #eee;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				background-color: #FAFAFA;
+				height: 9999vw;
+				width: 100%;
+				border-right: 1px solid #EEE;
+				bottom: -9999vw;
+				float: left;
+				left: 0;
+				display: block;
+			}
+
+			ul {
+				margin: 0;
+
+				li {
+					border-bottom: 1px solid #eee;
+					margin: 0;
+
+					&.active {
+						background: #eee;
+
+						a {
+							color: #666665;
+						}
+					}
+					&:hover {
+						background: #eee;
+					}
+					a {
+						padding: 10px;
+						display: block;
+						text-decoration: none;
+
+						&:focus,
+						&:active {
+							outline: none;
+							box-shadow: none;
+						}
+					}
+				}
+			}
+		}
+		.panels {
+			width: 80%;
+			float: left;
+			box-sizing: border-box;
+			padding: 10px 20px;
+			background: #fff;
+
+			.repeater-header { font-weight: bold; }
+			.repeater-row {
+				padding: 5px 0;
+
+				.repeater-remove-row { cursor: pointer; }
+			}
+			.add-repeat-row { margin-top: 5px; }
+
+			input[type="text"], input[type="password"], input[type="checkbox"], select, textarea {
+				max-width: 100%;
+				width: 100%;
+				height: 28px;
+				line-height: 28px;
+			}
+			.select2-container .select2-selection--single,
+			.select2-container .select2-selection--single .select2-selection__rendered,
+			.select2-container .select2-selection--single .select2-selection__arrow {
+				height: 28px;
+				line-height: 28px;
+			}
+			img.help_tip {
+				margin: 0;
+				vertical-align: sub;
+			}
+
+		}
+		// Mini GRID
+		.row {
+			clear: both;
+
+			&:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.col {
+			    margin-left: 1%;
+// 				padding: 0 1.5%;
+				float: left;
+
+				&:first-child { margin-left: 0; padding-left: 0; }
+			}
+			&.columns-1 .col { width: 100%; }
+			&.columns-2 .col { width: 49%; }
+			&.columns-3 .col { width: 32%; }
+			&.columns-4 .col { width: calc( 24% - 7px ); }
+			&.columns-5 .col { width: 19%; }
+			&.columns-6 .col { width: 15%; }
+			.col-inline {
+				margin-left: 1%;
+				display: inline-block;
+			}
+
+		    &.span-1 { width: 15%; }
+		    &.span-2 { width: 32%; }
+		    &.span-3 { width: 49%; }
+		    &.span-4 { width: 66%; }
+		    &.span-5 { width: 83%; }
+		    &.span-6 { width: 100%; }
+		}
+	}
+
+}
+
+
+
+/**************************************************************
+ * Select2
+ *************************************************************/
+.waf-meta-box-settings {
+
+	.select2-container {
+		margin: 1px;
+
+		&.select2-container-active .select2-choice {
+			border: 1px solid #666;
+		}
+		&.select2-drop-above .select2-choice {
+			border-radius: 0 0 4px 4px;
+			border: 1px solid #666;
+			border-top-color: rgba(0, 0, 0, 0);
+		}
+		.select2-choice {
+			border-color: #ddd;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			height: 26px;
+			-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+			box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+		}
+	}
+	.select2-dropdown-open .select2-choice {
+		border-bottom-color: rgba(0, 0, 0, 0);
+		-webkit-box-shadow: 0 1px 0 #fff inset;
+		box-shadow: 0 1px 0 #fff inset;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border: 1px solid #666;
+		outline: 0;
+	}
+
+}
+.select2-container .select2-search__field {
+	min-width: 75px !important;
+}

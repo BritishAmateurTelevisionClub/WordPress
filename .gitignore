@@ -1,0 +1,11 @@
+*.swp
+*~
+.ftp*
+.DS_Store
+.htaccess
+error_log
+debug.log
+wp-config.php
+wp-admin/cache/
+wp-content/uploads/
+wp-content/plugins/wp-pdf-stamper/stamped-files/

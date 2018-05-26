@@ -1,0 +1,19 @@
+/*Users-Page*/
+#your-profile .form-table:first-of-type,
+#your-profile h2:first-of-type {display: none;}
+.user-nickname-wrap,
+.user-display-name-wrap {display: none;}
+.checkbox_title {margin-bottom: 0!important;font-weight: 600;}
+/*
+.wp-admin.users-php .tablenav.top,
+.wp-admin.users-php table.users #cb,
+.wp-admin.users-php table.users th.check-column,
+.wp-admin.users-php table.users tfoot td.check-column,
+.wp-admin.users-php .bulkactions,
+.wp-admin.users-php .alignleft.actions {display: none;}*/
+
+.wp-admin.users-php table.users td,
+.wp-admin.users-php table.users th {padding: 8px 4px;}
+#pdf_invoice_num,
+.pdf_invoice_num {width:0px;}
+#pdf_invoice_num {opacity:0;line-height: 0px;}

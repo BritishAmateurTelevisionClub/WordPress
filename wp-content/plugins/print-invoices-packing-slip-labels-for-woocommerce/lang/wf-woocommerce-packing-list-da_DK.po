@@ -1,0 +1,1512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Print Invoice, Packing Slip, Delivery Note & Label "
+"Plugin for WooCommerce\n"
+"POT-Creation-Date: 2017-06-08 12:19+0530\n"
+"PO-Revision-Date: 2017-06-08 12:19+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: wf-woocommerce-packing-list.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/settings/delivery_note_settings.php:154
+#, fuzzy
+msgid "Delivery Note Settings : "
+msgstr ""
+"WooCommerce - Print fakturaen, følgesedlen, følgeseddel & Etiketindstillinger"
+
+#: includes/settings/delivery_note_settings.php:158
+#, fuzzy
+msgid "Enable/Disable Delivery Note"
+msgstr "Vedhæfte følgeseddel med E-mail"
+
+#: includes/settings/delivery_note_settings.php:169
+#: includes/settings/invoice_settings.php:207
+#: includes/settings/packing_list_settings.php:169
+msgid "Standard Templates"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:238
+#: includes/settings/invoice_settings.php:276
+#: includes/settings/packing_list_settings.php:238
+#, fuzzy
+msgid "Custom Templates"
+msgstr "Tilpasset sidefod"
+
+#: includes/settings/delivery_note_settings.php:373
+#: includes/settings/diapatch_label_settings.php:15
+#: includes/settings/packing_list_settings.php:395
+#: includes/settings/shipping_label_settings.php:49
+msgid "Additional Fields"
+msgstr "Yderligere felter"
+
+#: includes/settings/delivery_note_settings.php:411
+#: includes/settings/invoice_settings.php:602
+#: includes/settings/packing_list_settings.php:433
+msgid "Add Existing Order Meta Field"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:413
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Delivery Note."
+msgstr "Vælg de ekstra oplysninger, du vil have i følgeseddel."
+
+#: includes/settings/delivery_note_settings.php:418
+#: includes/settings/invoice_settings.php:609
+#: includes/settings/packing_list_settings.php:440
+#, fuzzy
+msgid "Product Meta Fields"
+msgstr "Yderligere felter"
+
+#: includes/settings/delivery_note_settings.php:440
+#: includes/settings/invoice_settings.php:631
+#: includes/settings/packing_list_settings.php:462
+#, fuzzy
+msgid "Add Product Meta"
+msgstr "Produkt"
+
+#: includes/settings/delivery_note_settings.php:443
+msgid ""
+"Select the additional information you want to display on Delivery Note "
+"(Product Table)."
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:448
+#: includes/settings/generic_settings.php:142
+#: includes/settings/invoice_settings.php:639
+#: includes/settings/packing_list_settings.php:470
+msgid "Custom Footer"
+msgstr "Tilpasset sidefod"
+
+#: includes/settings/delivery_note_settings.php:452
+#: includes/settings/generic_settings.php:146
+#: includes/settings/invoice_settings.php:643
+#: includes/settings/packing_list_settings.php:474
+#, fuzzy
+msgid "Your custom footer for the print."
+msgstr "Tilpasset sidefod"
+
+#: includes/settings/diapatch_label_settings.php:2
+msgid "Dispatch Label Settings :"
+msgstr "Indstillinger for afsendelse etiket:"
+
+#: includes/settings/diapatch_label_settings.php:6
+#, fuzzy
+msgid "Enable/Disable Dispatch Label"
+msgstr "Indstillinger for afsendelse etiket:"
+
+#: includes/settings/diapatch_label_settings.php:29
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Dispatch Label."
+msgstr "Vælg de yderligere oplysninger, du vil have i forsendelsen etiket."
+
+#: includes/settings/email_settings.php:2
+msgid "Email Settings : "
+msgstr "Email indstillinger"
+
+#: includes/settings/email_settings.php:6
+#, fuzzy
+msgid "Sent Invoice Email"
+msgstr "Vedhæft faktura med e-mail"
+
+#: includes/settings/email_settings.php:24
+#, fuzzy
+msgid "Sent Packing Slip Email"
+msgstr "Fastgør Packing Slip med e-mail"
+
+#: includes/settings/email_settings.php:43
+#, fuzzy
+msgid "Sent Delivery Note Email"
+msgstr "Vedhæfte følgeseddel med E-mail"
+
+#: includes/settings/generic_settings.php:2
+msgid "Generic Settings :"
+msgstr "Generelle Indstillinger"
+
+#: includes/settings/generic_settings.php:92
+msgid "Company Name"
+msgstr "firmanavn"
+
+#: includes/settings/generic_settings.php:96
+#, fuzzy
+msgid "Your company name for the print."
+msgstr "Lad stå tomt for ikke at udskrive et firmanavn ."
+
+#: includes/settings/generic_settings.php:99
+#: includes/settings/generic_settings.php:109
+#: includes/settings/generic_settings.php:123
+#: includes/settings/generic_settings.php:150
+#: includes/settings/invoice_settings.php:514
+msgid "Note:"
+msgstr "Note:"
+
+#: includes/settings/generic_settings.php:100
+#, fuzzy
+msgid "Leave blank to not print a company name."
+msgstr "Lad stå tomt for ikke at udskrive et firmanavn ."
+
+#: includes/settings/generic_settings.php:105
+#: includes/settings/invoice_settings.php:510
+msgid "Custom Logo"
+msgstr "Tilpasset logo"
+
+#: includes/settings/generic_settings.php:107
+#: includes/settings/invoice_settings.php:512
+msgid "Upload Image"
+msgstr "Upload billede"
+
+#: includes/settings/generic_settings.php:110
+#, fuzzy
+msgid "Leave blank to not use a custom logo."
+msgstr "Lad stå tomt for ikke at bruge et tilpasset logo."
+
+#: includes/settings/generic_settings.php:115
+msgid "Returns Policy, Conditions, etc."
+msgstr "Returpolitik , Betingelser , etc."
+
+#: includes/settings/generic_settings.php:119
+msgid "Here you can add some policies, conditions etc."
+msgstr ""
+
+#: includes/settings/generic_settings.php:124
+#, fuzzy
+msgid "Leave blank to not print anything."
+msgstr "Lad stå tomt for ikke at udskrive en sidefod ."
+
+#: includes/settings/generic_settings.php:130
+msgid "Brand Color"
+msgstr "Brand farve"
+
+#: includes/settings/generic_settings.php:136
+msgid "Choose the color you want to use for table header in documents"
+msgstr "Vælg den farve, du vil bruge til tabeloverskriften i dokumenter"
+
+#: includes/settings/generic_settings.php:151
+msgid "Leave blank to not to print a footer."
+msgstr "Lad stå tomt for ikke at udskrive en sidefod ."
+
+#: includes/settings/generic_settings.php:160
+msgid "Shipping From Address : "
+msgstr "Forsendelse Fra Adresse :"
+
+#: includes/settings/generic_settings.php:164
+msgid "Sender Name"
+msgstr "Afsender navn"
+
+#: includes/settings/generic_settings.php:168
+#, fuzzy
+msgid "Sender name (Required for from address)."
+msgstr "Sender By ( Påkrævet for fra adresse ) ."
+
+#: includes/settings/generic_settings.php:174
+msgid "Sender Address Line1"
+msgstr "Sender Adresse Line 1"
+
+#: includes/settings/generic_settings.php:179
+#, fuzzy
+msgid "Sender Address Line1 (Required for from address)."
+msgstr "Sender By ( Påkrævet for fra adresse ) ."
+
+#: includes/settings/generic_settings.php:185
+msgid "Sender Address Line2"
+msgstr "Sender Adresse Linje2"
+
+#: includes/settings/generic_settings.php:190
+#, fuzzy
+msgid "Sender Address Line2 (Optional). "
+msgstr "Sender Adresse Linje2"
+
+#: includes/settings/generic_settings.php:195
+msgid "Sender City"
+msgstr "Sender By"
+
+#: includes/settings/generic_settings.php:200
+msgid "Sender City(Required for from address)."
+msgstr "Sender By ( Påkrævet for fra adresse ) ."
+
+#: includes/settings/generic_settings.php:205
+msgid "Sender Country"
+msgstr "Sender Land"
+
+#: includes/settings/generic_settings.php:210
+msgid "Sender Country (Required for from address)."
+msgstr "Sender Land ( Påkrævet for fra adresse ) ."
+
+#: includes/settings/generic_settings.php:215
+msgid "Sender Postal Code"
+msgstr "Afsender Postnummer"
+
+#: includes/settings/generic_settings.php:220
+msgid "Sender Postal Code (Required for from address)."
+msgstr "Afsender Postnummer ( Påkrævet for fra adresse ) ."
+
+#: includes/settings/generic_settings.php:230
+#: includes/settings/invoice_settings.php:527
+#, fuzzy
+msgid "Advanced Options"
+msgstr "Trykke muligheder"
+
+#: includes/settings/generic_settings.php:234
+msgid "Preview Before Printing"
+msgstr "Eksempel Før udskrivning"
+
+#: includes/settings/generic_settings.php:238
+#: includes/settings/generic_settings.php:244
+#: includes/settings/generic_settings.php:351
+msgid "Enabled"
+msgstr "Aktiveret"
+
+#: includes/settings/generic_settings.php:240
+#: includes/settings/generic_settings.php:246
+msgid "Disabled"
+msgstr "Deaktiver"
+
+#: includes/settings/generic_settings.php:251
+msgid "Include DataMatrix Information"
+msgstr "Medtag DataMatrix Information"
+
+#: includes/settings/generic_settings.php:258
+msgid "Check to add datamatrix information in shipping labels and invoice"
+msgstr ""
+"Husk at tilføje datamatrix information i forsendelsesetiketter og faktura"
+
+#: includes/settings/generic_settings.php:263
+msgid "Enable Variation Data"
+msgstr "Aktiver variation data"
+
+#: includes/settings/generic_settings.php:270
+msgid ""
+"Check to add variation information to Invoice, Packing Slip and Delivery Note"
+msgstr ""
+"Check at tilføje variation oplysninger til fakturaen, følgesedlen og "
+"følgeseddel"
+
+#: includes/settings/generic_settings.php:275
+msgid "Add SKU"
+msgstr "Tilføje SKU"
+
+#: includes/settings/generic_settings.php:282
+msgid "Check to add SKU to Invoice, Packing Slip and Delivery Note"
+msgstr "Check at tilføje SKU til fakturaen, følgesedlen og følgeseddel"
+
+#: includes/settings/generic_settings.php:289
+msgid "Packaging Type"
+msgstr "Emballage type"
+
+#: includes/settings/generic_settings.php:310
+msgid "Packaging Process"
+msgstr "emballeringsprocessen"
+
+#: includes/settings/generic_settings.php:330
+msgid "Maximum Package Weight"
+msgstr "Maksimal pakkevægt"
+
+#: includes/settings/generic_settings.php:334
+msgid "Set the maximum weight for the package."
+msgstr "Indstil den maksimale vægt for pakken ."
+
+#: includes/settings/generic_settings.php:341
+msgid "Box Sizes"
+msgstr "Box Størrelser"
+
+#: includes/settings/generic_settings.php:346
+msgid "Length"
+msgstr "Længde"
+
+#: includes/settings/generic_settings.php:347
+#: wf-template/wf_template_customize_for_delivery_note.php:924
+#: wf-template/wf_template_customize_for_invoice.php:959
+#: wf-template/wf_template_customize_for_packing_slip.php:924
+msgid "Width"
+msgstr "Bredde"
+
+#: includes/settings/generic_settings.php:348
+#: wf-template/wf_template_customize_for_delivery_note.php:929
+#: wf-template/wf_template_customize_for_invoice.php:964
+#: wf-template/wf_template_customize_for_packing_slip.php:929
+msgid "Height"
+msgstr "Højde"
+
+#: includes/settings/generic_settings.php:349
+msgid "Box Weight"
+msgstr "Box Vægt"
+
+#: includes/settings/generic_settings.php:350
+msgid "Max Weight"
+msgstr "Max Vægt"
+
+#: includes/settings/generic_settings.php:357
+msgid "Add Box"
+msgstr "Tilføj Box"
+
+#: includes/settings/generic_settings.php:358
+msgid "Remove selected box(es)"
+msgstr "Fjern valgte kasse (r)"
+
+#: includes/settings/generic_settings.php:361
+msgid ""
+"Items will be packed into these boxes depending based on item dimensions and "
+"volume. Dimensions will be passed to FedEx and used for packing. Items not "
+"fitting into boxes will be packed individually."
+msgstr ""
+"Elementer vil blive pakket ind i disse kasser afhængig baseret på "
+"varedimensioner og volumen. Dimensioner vil blive videregivet til FedEx og "
+"anvendes til emballage . Poster uden montering i kasser vil blive pakket "
+"enkeltvis ."
+
+#: includes/settings/generic_settings.php:389
+msgid "Font Name"
+msgstr "Angiv skrifttype navn"
+
+#: includes/settings/generic_settings.php:403
+msgid "Big5 font supports Chinese Language. For more information check the "
+msgstr ""
+"Big5 skrifttype understøtter kinesisk sprog. For mere information tjek den"
+
+#: includes/settings/generic_settings.php:405
+#: wf-woocommerce-packing-list.php:580
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: includes/settings/generic_settings.php:410
+#, fuzzy
+msgid "Tracking Number Meta"
+msgstr "Tracking nummer :"
+
+#: includes/settings/generic_settings.php:417
+#, fuzzy
+msgid "Display State Name"
+msgstr "Lad stå tomt for ikke at udskrive et firmanavn ."
+
+#: includes/settings/generic_settings.php:424
+#, fuzzy
+msgid "Remove Total Weight"
+msgstr "Totalvægt"
+
+#: includes/settings/generic_settings.php:430
+msgid "Remove Total weight column from packing Slip and Delivery Note"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:193
+msgid "Invoice Settings : "
+msgstr "Faktura Indstillinger:"
+
+#: includes/settings/invoice_settings.php:197
+#, fuzzy
+msgid "Enable/Disable Invoice"
+msgstr "Kvittering"
+
+#: includes/settings/invoice_settings.php:411
+#, fuzzy
+msgid "Order Status to Generate Invoice"
+msgstr "Generer faktura for"
+
+#: includes/settings/invoice_settings.php:423
+msgid "Use Order Number as Invoice Number"
+msgstr "Brug ordrenummer som Fakturanummer"
+
+#: includes/settings/invoice_settings.php:432
+msgid "Invoice Start Number"
+msgstr "Faktura Startnummer"
+
+#: includes/settings/invoice_settings.php:439
+msgid "Invoice Padding Number"
+msgstr "Faktura polstring Antal"
+
+#: includes/settings/invoice_settings.php:446
+msgid "Reset Invoice Number"
+msgstr "Nulstil Fakturanummer"
+
+#: includes/settings/invoice_settings.php:450
+msgid "Invoice Number Prefix"
+msgstr "Fakturanummer præfiks"
+
+#: includes/settings/invoice_settings.php:457
+msgid "Invoice Number Postfix"
+msgstr "Fakturanummer Postfix"
+
+#: includes/settings/invoice_settings.php:464
+#, fuzzy
+msgid "Add Payment Information on the Invoice"
+msgstr "Tilføje betalingsoplysninger i faktura"
+
+#: includes/settings/invoice_settings.php:473
+#, fuzzy
+msgid "Add Coupon Information on the Invoice"
+msgstr "Tilføje betalingsoplysninger i faktura"
+
+#: includes/settings/invoice_settings.php:482
+msgid "Show Print Invoice option to customers"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:492
+#, fuzzy
+msgid "Tax Type"
+msgstr "Total Skat :"
+
+#: includes/settings/invoice_settings.php:515
+#, fuzzy
+msgid "Leave blank to not use a custom logo for invoice."
+msgstr "Efterlad tomt for ikke at bruge et tilpasset logo."
+
+#: includes/settings/invoice_settings.php:533
+#, fuzzy
+msgid "Additional Fields on Checkout Page"
+msgstr "Checkout yderligere felter"
+
+#: includes/settings/invoice_settings.php:554
+#, fuzzy
+msgid "Add Custom Field"
+msgstr "Tilpasset sidefod"
+
+#: includes/settings/invoice_settings.php:557
+#, fuzzy
+msgid ""
+"Select the additional information you want to have on the Checkout page."
+msgstr "Vælg de ekstra oplysninger, du vil have i fakturaen."
+
+#: includes/settings/invoice_settings.php:564
+#, fuzzy
+msgid "Additional Fields on Invoice"
+msgstr "Checkout yderligere felter"
+
+#: includes/settings/invoice_settings.php:604
+#, fuzzy
+msgid "Select the additional information you want to display on the Invoice."
+msgstr "Vælg de ekstra oplysninger, du vil have i fakturaen."
+
+#: includes/settings/invoice_settings.php:634
+msgid ""
+"Select the additional information you want to display on the Invoice Product "
+"Table."
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:154
+#, fuzzy
+msgid "Packing Slip Settings : "
+msgstr "Fastgør Packing Slip med e-mail"
+
+#: includes/settings/packing_list_settings.php:158
+#, fuzzy
+msgid "Enable/Disable Packing Slip"
+msgstr "Fastgør Packing Slip med e-mail"
+
+#: includes/settings/packing_list_settings.php:374
+msgid "Include Item/Product Image"
+msgstr "Medtag Vare / Produktbillede"
+
+#: includes/settings/packing_list_settings.php:384
+msgid "Include Price"
+msgstr "Medtag Pris"
+
+#: includes/settings/packing_list_settings.php:435
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Packing Slip."
+msgstr "Vælg de ekstra oplysninger, du vil have i følgesedlen."
+
+#: includes/settings/packing_list_settings.php:465
+msgid ""
+"Select the additional information you want to display on the Packing Slip "
+"Product Table."
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:2
+msgid "Shipping Label Settings :"
+msgstr "Forsendelse Label Indstillinger:"
+
+#: includes/settings/shipping_label_settings.php:6
+#, fuzzy
+msgid "Enable/Disable Shipping Label"
+msgstr "Forsendelse Label Indstillinger:"
+
+#: includes/settings/shipping_label_settings.php:16
+msgid "Shipping Label Size"
+msgstr "Forsendelse Label Size"
+
+#: includes/settings/shipping_label_settings.php:19
+#: includes/settings/shipping_label_settings.php:24
+msgid "Full Page"
+msgstr "Fuld side"
+
+#: includes/settings/shipping_label_settings.php:20
+#: includes/settings/shipping_label_settings.php:25
+msgid "4x6"
+msgstr "4x6"
+
+#: includes/settings/shipping_label_settings.php:31
+#, fuzzy
+msgid "Custom Shipping Label Size"
+msgstr "Forsendelse Label Size"
+
+#: includes/settings/shipping_label_settings.php:37
+msgid "Enable Contact Number"
+msgstr "Aktivere kontakt nummer"
+
+#: includes/settings/shipping_label_settings.php:44
+msgid "Check to add Contact Number to Shipping Labels"
+msgstr "Check at tilføje kontakt nummer til Shipping etiketter"
+
+#: includes/settings/shipping_label_settings.php:63
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Shipping Label."
+msgstr "Vælg de yderligere oplysninger, du vil have i Shipping etiket."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Nøglen licensen til %s er udløbet. Du kan genaktivere eller købe en licens "
+"nøgle fra din konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Abonnementet for %s er på hold. Du kan genaktivere abonnementet fra din "
+"konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"Abonnementet for %s er blevet annulleret. Du kan forny abonnementet fra din "
+"konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a> . En ny "
+"licensnøgle vil blive sendt til dig efter din bestilling er gennemført."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Abonnementet for %s er udløbet. Du kan genaktivere abonnementet fra din "
+"konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Abonnementet for %s er blevet suspenderet. Du kan genaktivere abonnementet "
+"fra din konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Abonnementet for %s er endnu ikke afsluttet. Du kan kontrollere status for "
+"abonnementet fra din konto <a href=\"%s\" target=\"_blank"
+"\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"Abonnementet for %s er blevet placeret i papirkurven og vil blive slettet "
+"snart. Du kan købe et nyt abonnement fra din konto <a href=\"%s\" target="
+"\"_blank\">instrumentbrættet</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Et abonnement for %s kunne ikke findes. Du kan købe et abonnement fra din "
+"konto <a href=\"%s\" target=\"_blank\">instrumentbrættet</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"En licensnøgle for %s kunne ikke findes. Måske du har glemt at indtaste en "
+"licensnøgle ved opsætning af %s, eller nøglen var deaktiveret i kontoen. Du "
+"kan genaktivere licensnøglen på din plugin <a href=\"%s\" target=\"_blank"
+"\">Indstillingsside</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Download tilladelse for %s er blevet tilbagekaldt muligvis på grund af en "
+"licensnøglen eller abonnement udløber. Du kan genaktivere eller købe en "
+"licensnøgle fra dit <a href=\"%s\" target=\"_blank\">instrumentbrættet</a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"%s er ikke blevet aktiveret. Gå til plugin- <a href=\"%s\" target=\"_blank"
+"\">Indstillingsside</a> og indtaste licensnøglen og licens email hen til "
+"aktivere %s."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Du har ændret abonnement til %s, så du skal indtaste din nye API "
+"licensnøglen på indstillingssiden. Licensnøglen skal have ankom i din "
+"indbakke, hvis ikke du kan få det ved at logge ind din konto <a href=\"%s\" "
+"target=\"_blank\">instrumentbrættet</a>."
+
+#: wf-template/wf-integrated-dispatch-label.php:13
+#: wf-template/wf-integrated-dispatch-label.php:107
+#: wf-template/wf-integrated-dispatch-label.php:113
+#: wf-template/wf-integrated-dispatch-label.php:117
+#: wf-template/wf-integrated-dispatch-label.php:123
+#: wf-template/wf-integrated-dispatch-label.php:132
+#: wf-template/wf-integrated-dispatch-label.php:151
+#: wf-template/wf-integrated-dispatch-label.php:163
+#: wf-template/wf-integrated-dispatch-label.php:171
+#: wf-template/wf-integrated-dispatch-label.php:176
+#: wf-template/wf-integrated-dispatch-label.php:182
+#: wf-template/wf-integrated-dispatch-label.php:187
+#: wf-template/wf-integrated-dispatch-label.php:191
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:74
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:123
+#: wf-template/wf-label-pdf-template.php:66
+msgid " "
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:21
+msgid "Order Date: "
+msgstr "Dato for afsendelse"
+
+#: wf-template/wf-integrated-dispatch-label.php:24
+#, fuzzy
+msgid "Dispatch Date: "
+msgstr "Hente forsendelsen etiket"
+
+#: wf-template/wf-integrated-dispatch-label.php:39
+#: wf-template/wf_template_customize_for_delivery_note.php:1608
+#: wf-template/wf_template_customize_for_invoice.php:1638
+#: wf-template/wf_template_customize_for_packing_slip.php:1608
+#: wf-woocommerce-packing-list.php:2690
+msgid "SKU"
+msgstr "SKU"
+
+#: wf-template/wf-integrated-dispatch-label.php:40
+#: wf-template/wf-integrated-dispatch-label.php:44
+#: wf-template/wf_template_customize_for_delivery_note.php:1613
+#: wf-template/wf_template_customize_for_invoice.php:1643
+#: wf-template/wf_template_customize_for_packing_slip.php:1613
+#: wf-woocommerce-packing-list.php:2691
+msgid "Product"
+msgstr "Produkt"
+
+#: wf-template/wf-integrated-dispatch-label.php:41
+#: wf-template/wf-integrated-dispatch-label.php:45
+#: wf-woocommerce-packing-list.php:2692
+msgid "Quantity"
+msgstr "Mængde"
+
+#: wf-template/wf-integrated-dispatch-label.php:42
+#: wf-template/wf-integrated-dispatch-label.php:46
+#: wf-woocommerce-packing-list.php:2693
+msgid "Total Price"
+msgstr "Total pris"
+
+#: wf-template/wf-integrated-dispatch-label.php:131
+#: wf-woocommerce-packing-list.php:2694
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: wf-template/wf-integrated-dispatch-label.php:139
+msgid " via "
+msgstr " via "
+
+#: wf-template/wf-integrated-dispatch-label.php:149
+#: wf-template/wf-integrated-dispatch-label.php:161
+#: wf-woocommerce-packing-list.php:2699
+msgid "Shipping"
+msgstr "Forsendelse"
+
+#: wf-template/wf-integrated-dispatch-label.php:175
+#: wf-template/wf_template_customize_for_invoice.php:1691
+msgid "Total Tax:"
+msgstr "Total Skat :"
+
+#: wf-template/wf-integrated-dispatch-label.php:181
+#: wf-template/wf_template_customize_for_invoice.php:1681
+msgid "Cart Discount:"
+msgstr "Kurv Rabat:"
+
+#: wf-template/wf-integrated-dispatch-label.php:186
+#: wf-template/wf_template_customize_for_invoice.php:1686
+msgid "Order Discount:"
+msgstr "Bestil Rabat:"
+
+#: wf-template/wf-integrated-dispatch-label.php:190
+#: wf-template/wf_template_customize_for_delivery_note.php:1628
+#: wf-template/wf_template_customize_for_invoice.php:1655
+#: wf-template/wf_template_customize_for_packing_slip.php:1628
+#: wf-woocommerce-packing-list.php:2695
+msgid "Total"
+msgstr "Total"
+
+#: wf-template/wf-integrated-dispatch-label.php:194
+#: wf-woocommerce-packing-list.php:2696
+msgid "Payment Method"
+msgstr "Betalingsmetode"
+
+#: wf-template/wf-integrated-dispatch-label.php:207
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:119
+msgid "Shipping address: "
+msgstr "Forsendelse adresse :"
+
+#: wf-template/wf-integrated-dispatch-label.php:227
+msgid "Return address: "
+msgstr "returadresse"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:69
+msgid "Billing address: "
+msgstr "Betalingsadresse"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:93
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:139
+#: wf-template/wf-label-pdf-template.php:82
+msgid ", "
+msgstr ","
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:101
+msgid "SSN: "
+msgstr "SSN :"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:105
+msgid "VAT: "
+msgstr "moms:"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:108
+msgid "Email: "
+msgstr "E-mail :"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:111
+msgid "Phone: "
+msgstr "Telefon :"
+
+#: wf-template/wf-label-pdf-template.php:63
+msgid "To"
+msgstr "Til"
+
+#: wf-template/wf-label-pdf-template.php:90
+msgid "Ph no:"
+msgstr "Ph No:"
+
+#: wf-template/wf-label-pdf-template.php:105
+msgid "Tracking Number :"
+msgstr "Tracking nummer :"
+
+#: wf-template/wf-label-pdf-template.php:134
+msgid "FROM"
+msgstr "FRA"
+
+#: wf-template/wf-label-pdf-template.php:137
+msgid "Order Number "
+msgstr "Ordrenummer"
+
+#: wf-template/wf-label-pdf-template.php:138
+#: wf-template/wf-label-pdf-template.php:143
+#: wf-template/wf-label-pdf-template.php:151
+msgid ": "
+msgstr ":"
+
+#: wf-template/wf-label-pdf-template.php:142
+msgid "Weight "
+msgstr "Vægt"
+
+#: wf-template/wf-label-pdf-template.php:150
+msgid "Ship Date "
+msgstr "Dato for afsendelse"
+
+#: wf-template/wf-label-pdf-template.php:165
+msgid " - "
+msgstr "-"
+
+#: wf-template/wf-label-template-body.php:24
+msgid "Print"
+msgstr "Trykke"
+
+#: wf-template/wf-label-template-body.php:48
+#: wf-template/wf_template_customize_for_delivery_note.php:953
+#: wf-template/wf_template_customize_for_packing_slip.php:953
+msgid "Order Number"
+msgstr "Ordrenummer"
+
+#: wf-template/wf-label-template-body.php:53
+msgid "Weight"
+msgstr "Vægt"
+
+#: wf-template/wf-label-template-body.php:59
+msgid "Ship Date"
+msgstr "Dato for afsendelse"
+
+#: wf-template/wf-label-template-body.php:68
+msgid "FROM:"
+msgstr "FRA"
+
+#: wf-template/wf-label-template-body.php:84
+msgid "TO:"
+msgstr "Til:"
+
+#: wf-template/wf-label-template-header.php:4
+#: wf-template/wf-template-header.php:4
+msgid "Print Shipment Label"
+msgstr "print Forsendelse mærke"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:835
+#: wf-template/wf_template_customize_for_invoice.php:869
+#: wf-template/wf_template_customize_for_packing_slip.php:835
+msgid "Field Attributes"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:842
+#: wf-template/wf_template_customize_for_invoice.php:876
+#: wf-template/wf_template_customize_for_packing_slip.php:842
+#, fuzzy
+msgid "Save and Activate"
+msgstr "Gem ændringer"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:900
+#: wf-template/wf_template_customize_for_invoice.php:934
+#: wf-template/wf_template_customize_for_packing_slip.php:900
+#, fuzzy
+msgid "Company Logo"
+msgstr "firmanavn"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:908
+#: wf-template/wf_template_customize_for_invoice.php:943
+#: wf-template/wf_template_customize_for_packing_slip.php:908
+msgid "Display"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:934
+#: wf-template/wf_template_customize_for_invoice.php:969
+#: wf-template/wf_template_customize_for_packing_slip.php:934
+msgid "Extra Details"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:938
+#: wf-template/wf_template_customize_for_invoice.php:973
+#: wf-template/wf_template_customize_for_packing_slip.php:938
+msgid "Font Size"
+msgstr "Skriftstørrelse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:960
+#: wf-template/wf_template_customize_for_delivery_note.php:1026
+#: wf-template/wf_template_customize_for_delivery_note.php:1091
+#: wf-template/wf_template_customize_for_delivery_note.php:1261
+#: wf-template/wf_template_customize_for_delivery_note.php:1307
+#: wf-template/wf_template_customize_for_delivery_note.php:1353
+#: wf-template/wf_template_customize_for_delivery_note.php:1399
+#: wf-template/wf_template_customize_for_delivery_note.php:1444
+#: wf-template/wf_template_customize_for_delivery_note.php:1489
+#: wf-template/wf_template_customize_for_invoice.php:995
+#: wf-template/wf_template_customize_for_invoice.php:1061
+#: wf-template/wf_template_customize_for_invoice.php:1126
+#: wf-template/wf_template_customize_for_invoice.php:1296
+#: wf-template/wf_template_customize_for_invoice.php:1342
+#: wf-template/wf_template_customize_for_invoice.php:1388
+#: wf-template/wf_template_customize_for_invoice.php:1434
+#: wf-template/wf_template_customize_for_invoice.php:1479
+#: wf-template/wf_template_customize_for_invoice.php:1524
+#: wf-template/wf_template_customize_for_packing_slip.php:960
+#: wf-template/wf_template_customize_for_packing_slip.php:1026
+#: wf-template/wf_template_customize_for_packing_slip.php:1091
+#: wf-template/wf_template_customize_for_packing_slip.php:1261
+#: wf-template/wf_template_customize_for_packing_slip.php:1307
+#: wf-template/wf_template_customize_for_packing_slip.php:1353
+#: wf-template/wf_template_customize_for_packing_slip.php:1399
+#: wf-template/wf_template_customize_for_packing_slip.php:1444
+#: wf-template/wf_template_customize_for_packing_slip.php:1489
+#, fuzzy
+msgid "Font size"
+msgstr "Skriftstørrelse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:965
+#: wf-template/wf_template_customize_for_delivery_note.php:1031
+#: wf-template/wf_template_customize_for_delivery_note.php:1096
+#: wf-template/wf_template_customize_for_delivery_note.php:1358
+#: wf-template/wf_template_customize_for_delivery_note.php:1404
+#: wf-template/wf_template_customize_for_delivery_note.php:1449
+#: wf-template/wf_template_customize_for_delivery_note.php:1494
+#: wf-template/wf_template_customize_for_invoice.php:1000
+#: wf-template/wf_template_customize_for_invoice.php:1066
+#: wf-template/wf_template_customize_for_invoice.php:1131
+#: wf-template/wf_template_customize_for_invoice.php:1393
+#: wf-template/wf_template_customize_for_invoice.php:1439
+#: wf-template/wf_template_customize_for_invoice.php:1484
+#: wf-template/wf_template_customize_for_invoice.php:1529
+#: wf-template/wf_template_customize_for_invoice.php:1673
+#: wf-template/wf_template_customize_for_invoice.php:1678
+#: wf-template/wf_template_customize_for_invoice.php:1683
+#: wf-template/wf_template_customize_for_invoice.php:1688
+#: wf-template/wf_template_customize_for_invoice.php:1693
+#: wf-template/wf_template_customize_for_invoice.php:1698
+#: wf-template/wf_template_customize_for_invoice.php:1703
+#: wf-template/wf_template_customize_for_packing_slip.php:965
+#: wf-template/wf_template_customize_for_packing_slip.php:1031
+#: wf-template/wf_template_customize_for_packing_slip.php:1096
+#: wf-template/wf_template_customize_for_packing_slip.php:1358
+#: wf-template/wf_template_customize_for_packing_slip.php:1404
+#: wf-template/wf_template_customize_for_packing_slip.php:1449
+#: wf-template/wf_template_customize_for_packing_slip.php:1494
+msgid "Text"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:970
+#: wf-template/wf_template_customize_for_delivery_note.php:1036
+#: wf-template/wf_template_customize_for_delivery_note.php:1101
+#: wf-template/wf_template_customize_for_invoice.php:1005
+#: wf-template/wf_template_customize_for_invoice.php:1071
+#: wf-template/wf_template_customize_for_invoice.php:1136
+#: wf-template/wf_template_customize_for_packing_slip.php:970
+#: wf-template/wf_template_customize_for_packing_slip.php:1036
+#: wf-template/wf_template_customize_for_packing_slip.php:1101
+msgid "Style"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:986
+#: wf-template/wf_template_customize_for_delivery_note.php:1052
+#: wf-template/wf_template_customize_for_delivery_note.php:1117
+#: wf-template/wf_template_customize_for_delivery_note.php:1157
+#: wf-template/wf_template_customize_for_delivery_note.php:1198
+#: wf-template/wf_template_customize_for_delivery_note.php:1239
+#: wf-template/wf_template_customize_for_delivery_note.php:1285
+#: wf-template/wf_template_customize_for_delivery_note.php:1331
+#: wf-template/wf_template_customize_for_delivery_note.php:1377
+#: wf-template/wf_template_customize_for_delivery_note.php:1423
+#: wf-template/wf_template_customize_for_delivery_note.php:1468
+#: wf-template/wf_template_customize_for_delivery_note.php:1513
+#: wf-template/wf_template_customize_for_invoice.php:1021
+#: wf-template/wf_template_customize_for_invoice.php:1087
+#: wf-template/wf_template_customize_for_invoice.php:1152
+#: wf-template/wf_template_customize_for_invoice.php:1192
+#: wf-template/wf_template_customize_for_invoice.php:1233
+#: wf-template/wf_template_customize_for_invoice.php:1274
+#: wf-template/wf_template_customize_for_invoice.php:1320
+#: wf-template/wf_template_customize_for_invoice.php:1366
+#: wf-template/wf_template_customize_for_invoice.php:1412
+#: wf-template/wf_template_customize_for_invoice.php:1458
+#: wf-template/wf_template_customize_for_invoice.php:1503
+#: wf-template/wf_template_customize_for_invoice.php:1548
+#: wf-template/wf_template_customize_for_packing_slip.php:986
+#: wf-template/wf_template_customize_for_packing_slip.php:1052
+#: wf-template/wf_template_customize_for_packing_slip.php:1117
+#: wf-template/wf_template_customize_for_packing_slip.php:1157
+#: wf-template/wf_template_customize_for_packing_slip.php:1198
+#: wf-template/wf_template_customize_for_packing_slip.php:1239
+#: wf-template/wf_template_customize_for_packing_slip.php:1285
+#: wf-template/wf_template_customize_for_packing_slip.php:1331
+#: wf-template/wf_template_customize_for_packing_slip.php:1377
+#: wf-template/wf_template_customize_for_packing_slip.php:1423
+#: wf-template/wf_template_customize_for_packing_slip.php:1468
+#: wf-template/wf_template_customize_for_packing_slip.php:1513
+#, fuzzy
+msgid "Color"
+msgstr "Brand farve"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1001
+#: wf-template/wf_template_customize_for_invoice.php:1036
+#: wf-template/wf_template_customize_for_packing_slip.php:1001
+#, fuzzy
+msgid "Invoice Date"
+msgstr "Dato for afsendelse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1008
+#: wf-template/wf_template_customize_for_delivery_note.php:1073
+#: wf-template/wf_template_customize_for_invoice.php:1043
+#: wf-template/wf_template_customize_for_invoice.php:1108
+#: wf-template/wf_template_customize_for_packing_slip.php:1008
+#: wf-template/wf_template_customize_for_packing_slip.php:1073
+msgid "Format"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1066
+#: wf-template/wf_template_customize_for_invoice.php:1101
+#: wf-template/wf_template_customize_for_packing_slip.php:1066
+#: wf-woocommerce-packing-list.php:2683
+msgid "Order Date"
+msgstr "Dato for afsendelse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1130
+#: wf-template/wf_template_customize_for_invoice.php:1165
+#: wf-template/wf_template_customize_for_packing_slip.php:1130
+#, fuzzy
+msgid "From Address"
+msgstr "Sender By ( Påkrævet for fra adresse ) ."
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1136
+#: wf-template/wf_template_customize_for_delivery_note.php:1177
+#: wf-template/wf_template_customize_for_delivery_note.php:1218
+#: wf-template/wf_template_customize_for_invoice.php:1171
+#: wf-template/wf_template_customize_for_invoice.php:1212
+#: wf-template/wf_template_customize_for_invoice.php:1253
+#: wf-template/wf_template_customize_for_packing_slip.php:1136
+#: wf-template/wf_template_customize_for_packing_slip.php:1177
+#: wf-template/wf_template_customize_for_packing_slip.php:1218
+msgid "Title"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1142
+#: wf-template/wf_template_customize_for_delivery_note.php:1183
+#: wf-template/wf_template_customize_for_delivery_note.php:1224
+#: wf-template/wf_template_customize_for_delivery_note.php:1270
+#: wf-template/wf_template_customize_for_delivery_note.php:1316
+#: wf-template/wf_template_customize_for_delivery_note.php:1362
+#: wf-template/wf_template_customize_for_delivery_note.php:1408
+#: wf-template/wf_template_customize_for_delivery_note.php:1453
+#: wf-template/wf_template_customize_for_delivery_note.php:1498
+#: wf-template/wf_template_customize_for_invoice.php:1177
+#: wf-template/wf_template_customize_for_invoice.php:1218
+#: wf-template/wf_template_customize_for_invoice.php:1259
+#: wf-template/wf_template_customize_for_invoice.php:1305
+#: wf-template/wf_template_customize_for_invoice.php:1351
+#: wf-template/wf_template_customize_for_invoice.php:1397
+#: wf-template/wf_template_customize_for_invoice.php:1443
+#: wf-template/wf_template_customize_for_invoice.php:1488
+#: wf-template/wf_template_customize_for_invoice.php:1533
+#: wf-template/wf_template_customize_for_packing_slip.php:1142
+#: wf-template/wf_template_customize_for_packing_slip.php:1183
+#: wf-template/wf_template_customize_for_packing_slip.php:1224
+#: wf-template/wf_template_customize_for_packing_slip.php:1270
+#: wf-template/wf_template_customize_for_packing_slip.php:1316
+#: wf-template/wf_template_customize_for_packing_slip.php:1362
+#: wf-template/wf_template_customize_for_packing_slip.php:1408
+#: wf-template/wf_template_customize_for_packing_slip.php:1453
+#: wf-template/wf_template_customize_for_packing_slip.php:1498
+msgid "Text Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1171
+#: wf-template/wf_template_customize_for_invoice.php:1206
+#: wf-template/wf_template_customize_for_packing_slip.php:1171
+#, fuzzy
+msgid "Billing Address"
+msgstr "Betalingsadresse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1212
+#: wf-template/wf_template_customize_for_invoice.php:1247
+#: wf-template/wf_template_customize_for_packing_slip.php:1212
+#, fuzzy
+msgid "Shipping Address"
+msgstr "leveringsadresse"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1254
+#: wf-template/wf_template_customize_for_invoice.php:1289
+#: wf-template/wf_template_customize_for_packing_slip.php:1254
+#, fuzzy
+msgid "Email Field"
+msgstr "E-mail :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1300
+#: wf-template/wf_template_customize_for_invoice.php:1335
+#: wf-template/wf_template_customize_for_packing_slip.php:1300
+#, fuzzy
+msgid "Tel Field"
+msgstr "Tel :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1346
+#: wf-template/wf_template_customize_for_invoice.php:1381
+#: wf-template/wf_template_customize_for_packing_slip.php:1346
+#, fuzzy
+msgid "VAT Field"
+msgstr "moms:"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1392
+#: wf-template/wf_template_customize_for_invoice.php:1427
+#: wf-template/wf_template_customize_for_packing_slip.php:1392
+#, fuzzy
+msgid "SSN Field"
+msgstr "SSN :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1437
+#: wf-template/wf_template_customize_for_invoice.php:1472
+#: wf-template/wf_template_customize_for_packing_slip.php:1437
+#: wf-woocommerce-packing-list.php:2697
+#, fuzzy
+msgid "Shipping Method"
+msgstr "Betalingsmetode"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1482
+#: wf-template/wf_template_customize_for_invoice.php:1517
+#: wf-template/wf_template_customize_for_packing_slip.php:1482
+#, fuzzy
+msgid "Tracking Number"
+msgstr "Tracking nummer :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1526
+#: wf-template/wf_template_customize_for_invoice.php:1561
+#: wf-template/wf_template_customize_for_packing_slip.php:1526
+#, fuzzy
+msgid "Product Table"
+msgstr "Produkt"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1533
+#: wf-template/wf_template_customize_for_invoice.php:1568
+#: wf-template/wf_template_customize_for_packing_slip.php:1533
+#, fuzzy
+msgid "Head Color"
+msgstr "Brand farve"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1538
+#: wf-template/wf_template_customize_for_invoice.php:1573
+#: wf-template/wf_template_customize_for_packing_slip.php:1538
+#, fuzzy
+msgid "Text Color"
+msgstr "Brand farve"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1543
+#: wf-template/wf_template_customize_for_invoice.php:1578
+#: wf-template/wf_template_customize_for_packing_slip.php:1543
+msgid "Head Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1572
+#: wf-template/wf_template_customize_for_invoice.php:1607
+#: wf-template/wf_template_customize_for_packing_slip.php:1572
+#, fuzzy
+msgid "Body Color"
+msgstr "Brand farve"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1577
+#: wf-template/wf_template_customize_for_invoice.php:1612
+#: wf-template/wf_template_customize_for_packing_slip.php:1577
+msgid "Body Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1603
+#: wf-template/wf_template_customize_for_packing_slip.php:1603
+msgid "Image"
+msgstr "Billede"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1619
+#: wf-template/wf_template_customize_for_invoice.php:1649
+#: wf-template/wf_template_customize_for_packing_slip.php:1619
+msgid "Qty"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1623
+#: wf-template/wf_template_customize_for_packing_slip.php:1623
+msgid "Total Weight"
+msgstr "Totalvægt"
+
+#: wf-template/wf_template_customize_for_invoice.php:988
+#, fuzzy
+msgid "Invoice Number"
+msgstr "Brug ordrenummer som Fakturanummer"
+
+#: wf-template/wf_template_customize_for_invoice.php:1666
+#, fuzzy
+msgid "Extra Charges Fields"
+msgstr "Yderligere felter"
+
+#: wf-template/wf_template_customize_for_invoice.php:1671
+#, fuzzy
+msgid "Sub Total:"
+msgstr "Total"
+
+#: wf-template/wf_template_customize_for_invoice.php:1676
+#, fuzzy
+msgid "Shipping:"
+msgstr "Forsendelse"
+
+#: wf-template/wf_template_customize_for_invoice.php:1696
+#, fuzzy
+msgid "Total:"
+msgstr "Total"
+
+#: wf-template/wf_template_customize_for_invoice.php:1701
+#, fuzzy
+msgid "Payment Method:"
+msgstr "Betalingsmetode"
+
+#: wf-woocommerce-packing-list.php:33
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete Print Invoices, "
+"Packing List & Labels for WooCommerce (BASIC) and then try again"
+msgstr ""
+"Oops! Du prøvede at installere overkurs gengivelse uden deaktivering og "
+"sletning af den grundlæggende version. Venligst deaktivere og slette "
+"udskrive fakturaer, pakning liste & etiketter for WooCommerce (BASIC) og "
+"prøv igen"
+
+#: wf-woocommerce-packing-list.php:36
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete WooCommerce "
+"Shipping Labels (BASIC) and then try again"
+msgstr ""
+"Oops! Du prøvede at installere overkurs gengivelse uden deaktivering og "
+"sletning af den grundlæggende version. Venligst deaktivere og slette "
+"WooCommerce Shipping etiketter (BASIC) og prøv igen"
+
+#: wf-woocommerce-packing-list.php:109 wf-woocommerce-packing-list.php:127
+#: wf-woocommerce-packing-list.php:1386 wf-woocommerce-packing-list.php:1390
+#: wf-woocommerce-packing-list.php:1576 wf-woocommerce-packing-list.php:1579
+msgid "Print Invoice"
+msgstr "Udskriv faktura"
+
+#: wf-woocommerce-packing-list.php:141 wf-woocommerce-packing-list.php:1398
+#: wf-woocommerce-packing-list.php:1402 wf-woocommerce-packing-list.php:1403
+#: wf-woocommerce-packing-list.php:1570 wf-woocommerce-packing-list.php:1573
+msgid "Print Packing List"
+msgstr "Print Pakkeliste"
+
+#: wf-woocommerce-packing-list.php:156 wf-woocommerce-packing-list.php:1422
+#: wf-woocommerce-packing-list.php:1426 wf-woocommerce-packing-list.php:1427
+#: wf-woocommerce-packing-list.php:1588 wf-woocommerce-packing-list.php:1591
+msgid "Print Delivery Note"
+msgstr "Udskriv følgeseddel"
+
+#: wf-woocommerce-packing-list.php:250
+msgid "Pack Items Individually"
+msgstr "Pack emner individuelt"
+
+#: wf-woocommerce-packing-list.php:251
+msgid "Weight Based Packing"
+msgstr "Vægtbaseret Emballage"
+
+#: wf-woocommerce-packing-list.php:252
+msgid "Box Packing"
+msgstr "boks pakning"
+
+#: wf-woocommerce-packing-list.php:253
+msgid "Single Package Per Order"
+msgstr "Enkelt pakke per ordre"
+
+#: wf-woocommerce-packing-list.php:256
+msgid "Pack Heavier Items First"
+msgstr "Pack Tungere Elementer First"
+
+#: wf-woocommerce-packing-list.php:257
+msgid "Pack Lighter Items First"
+msgstr "Pack Lysere Elementer First"
+
+#: wf-woocommerce-packing-list.php:258
+msgid "Pack Purely Divided By Weight"
+msgstr "Pack Rent Opdelt efter vægt"
+
+#: wf-woocommerce-packing-list.php:376
+msgctxt "placeholder"
+msgid "Enter "
+msgstr "Enter"
+
+#: wf-woocommerce-packing-list.php:391
+msgid "Invoice"
+msgstr "Kvittering"
+
+#: wf-woocommerce-packing-list.php:495 wf-woocommerce-packing-list.php:508
+msgid "-"
+msgstr "-"
+
+#: wf-woocommerce-packing-list.php:579
+msgid "Settings"
+msgstr "Indstillinger"
+
+#: wf-woocommerce-packing-list.php:581
+msgid "Support"
+msgstr "Kundeservice"
+
+#: wf-woocommerce-packing-list.php:607 wf-woocommerce-packing-list.php:624
+msgid "You are not allowed to view this page."
+msgstr "Du har ikke tilladelse til at se denne side ."
+
+#: wf-woocommerce-packing-list.php:792 wf-woocommerce-packing-list.php:834
+msgid "You need to Add Shipping from Address to Print shipping labels"
+msgstr "Du er nødt til Tilføj Shipping fra Adresse Print forsendelsesetiketter"
+
+#: wf-woocommerce-packing-list.php:818
+msgid "Unable to download Shipping Label. Please check the items in the order."
+msgstr ""
+"Afskåret fra dataoverføre Shipping etiket. Tjek venligst elementer i "
+"rækkefølgen."
+
+#: wf-woocommerce-packing-list.php:870
+msgid "Unable to print Shipping Labels. Please check the items in the order."
+msgstr ""
+"Der kan ikke udskrives på Shipping etiketter. Tjek venligst elementer i "
+"rækkefølgen."
+
+#: wf-woocommerce-packing-list.php:925
+msgid "Unable to print Packing List. Please check the items in the order."
+msgstr ""
+"Stand til at udskrive følgesedlen. Tjek venligst elementer i rækkefølgen."
+
+#: wf-woocommerce-packing-list.php:1015
+msgid "Unable to print Delivery Note. Please check the items in the order."
+msgstr ""
+"Stand til at udskrive følgeseddel. Tjek venligst elementer i rækkefølgen."
+
+#: wf-woocommerce-packing-list.php:1088
+msgid "Unable to download Delivery Note. Please check the items in the order."
+msgstr ""
+"Afskåret fra dataoverføre følgeseddel. Tjek venligst elementer i rækkefølgen."
+
+#: wf-woocommerce-packing-list.php:1145 wf-woocommerce-packing-list.php:1148
+#: wf-woocommerce-packing-list.php:1153 wf-woocommerce-packing-list.php:1894
+#: wf-woocommerce-packing-list.php:2018
+msgid "n/a"
+msgstr "N/A"
+
+#: wf-woocommerce-packing-list.php:1204
+#, fuzzy
+msgid "Invoice/Pack List"
+msgstr "Print Pakkeliste"
+
+#: wf-woocommerce-packing-list.php:1206
+msgid "Print Options"
+msgstr "Trykke muligheder"
+
+#: wf-woocommerce-packing-list.php:1210
+msgid "Customize"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1235
+msgid ""
+"WooCommerce - Print Invoice, Packing Slip, Delivery Note & Label Settings"
+msgstr ""
+"WooCommerce - Print fakturaen, følgesedlen, følgeseddel & Etiketindstillinger"
+
+#: wf-woocommerce-packing-list.php:1253
+msgid "Your settings have been saved."
+msgstr "Dine indstillinger er blevet gemt."
+
+#: wf-woocommerce-packing-list.php:1351
+msgid "Save Changes"
+msgstr "Gem ændringer"
+
+#: wf-woocommerce-packing-list.php:1367
+msgid "Print Actions"
+msgstr "Udskriv Handlinger"
+
+#: wf-woocommerce-packing-list.php:1382
+#, fuzzy
+msgid "<strong>Invoice Number: </strong> "
+msgstr "Brug ordrenummer som Fakturanummer"
+
+#: wf-woocommerce-packing-list.php:1391
+#, fuzzy
+msgid "Print Invoice "
+msgstr "Udskriv faktura"
+
+#: wf-woocommerce-packing-list.php:1410 wf-woocommerce-packing-list.php:1414
+#: wf-woocommerce-packing-list.php:1415
+msgid "Print Shipping Label"
+msgstr "print Forsendelse mærke"
+
+#: wf-woocommerce-packing-list.php:1434 wf-woocommerce-packing-list.php:1438
+#: wf-woocommerce-packing-list.php:1439
+msgid "Download Shipping Label"
+msgstr "Hent Shipping Label"
+
+#: wf-woocommerce-packing-list.php:1447 wf-woocommerce-packing-list.php:1451
+#: wf-woocommerce-packing-list.php:1452 wf-woocommerce-packing-list.php:1601
+#: wf-woocommerce-packing-list.php:1604
+msgid "Download Dispatch Label"
+msgstr "Hente forsendelsen etiket"
+
+#: wf-woocommerce-packing-list.php:1582 wf-woocommerce-packing-list.php:1585
+msgid "Print Shipping Labels"
+msgstr "Print Shipping etiketter"
+
+#: wf-woocommerce-packing-list.php:1594 wf-woocommerce-packing-list.php:1597
+msgid "Download Shipping Labels"
+msgstr "Hent Shipping etiketter"
+
+#: wf-woocommerce-packing-list.php:2075
+msgid "Ph No : "
+msgstr "Ph nej :"
+
+#: wf-woocommerce-packing-list.php:2673 wf-woocommerce-packing-list.php:2682
+msgid "INVOICE"
+msgstr "Kvittering"
+
+#: wf-woocommerce-packing-list.php:2684
+msgid "Billing address"
+msgstr "Betalingsadresse"
+
+#: wf-woocommerce-packing-list.php:2685
+msgid "Shipping address"
+msgstr "leveringsadresse"
+
+#: wf-woocommerce-packing-list.php:2686
+msgid "Email"
+msgstr "E-mail :"
+
+#: wf-woocommerce-packing-list.php:2687
+msgid "Tel"
+msgstr "Tel :"
+
+#: wf-woocommerce-packing-list.php:2688
+msgid "VAT"
+msgstr "Moms"
+
+#: wf-woocommerce-packing-list.php:2689
+msgid "SSN"
+msgstr "CFR:"
+
+#: wf-woocommerce-packing-list.php:2698
+msgid "Tracking number"
+msgstr "Tracking nummer :"
+
+#: wf-woocommerce-packing-list.php:2700
+msgid "Shipping Service"
+msgstr "Forsendelse måde"
+
+#: wf-woocommerce-packing-list.php:2701
+msgid "Cart Discount"
+msgstr "Kurv Rabat:"
+
+#: wf-woocommerce-packing-list.php:2702
+msgid "Order Discount"
+msgstr "Bestil Rabat:"
+
+#: wf-woocommerce-packing-list.php:2703
+msgid "Total Tax"
+msgstr "Total Skat :"

@@ -1,0 +1,211 @@
+# Translation of Plugins - Custom Order Numbers for WooCommerce - Stable (latest release) in English (UK)
+# This file is distributed under the same license as the Plugins - Custom Order Numbers for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-28 20:04:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: en_GB\n"
+"Project-Id-Version: Plugins - Custom Order Numbers for WooCommerce - Stable (latest release)\n"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:96
+msgid "Yearly"
+msgstr "Yearly"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:95
+msgid "Monthly"
+msgstr "Monthly"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:94
+msgid "Daily"
+msgstr "Daily"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:93
+msgid "Disabled"
+msgstr "Disabled"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:87
+msgid "Sequential: Reset Counter"
+msgstr "Sequential: Reset Counter"
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:171
+msgid "Are you sure?"
+msgstr "Are you sure?"
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:108
+msgid "Order Number"
+msgstr "Order Number"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:172
+msgid "This will add \"Order Number\" meta box to each order's edit page. \"Order Numbers Counter\" must be set to \"Sequential\"."
+msgstr "This will add an \"Order Number\" meta box to each order's edit page. \"Order Numbers Counter\" must be set to \"Sequential\"."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:170
+msgid "Manual Order Number Counter"
+msgstr "Manual Order Number Counter"
+
+#. Author URI of the plugin/theme
+msgid "http://www.algoritmika.com"
+msgstr "http://www.algoritmika.com"
+
+#. Author of the plugin/theme
+msgid "Algoritmika Ltd"
+msgstr "Algoritmika Ltd"
+
+#. Description of the plugin/theme
+msgid "Custom order numbers for WooCommerce."
+msgstr "Custom order numbers for WooCommerce."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpcodefactory.com/item/custom-order-numbers-woocommerce/"
+msgstr "https://wpcodefactory.com/item/custom-order-numbers-woocommerce/"
+
+#. Plugin Name of the plugin/theme
+msgid "Custom Order Numbers for WooCommerce"
+msgstr "Custom Order Numbers for WooCommerce"
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:170
+msgid "Renumerate orders"
+msgstr "Renumerate orders"
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:168
+msgid "Press the button below to renumerate all existing orders. First order number will be <strong>%d</strong> (as set in <a href=\"%s\">WooCommerce > Settings > Custom Order Numbers</a>)."
+msgstr "Press the button below to renumerate all existing orders. First order number will be <strong>%d</strong> (as set in <a href=\"%s\">WooCommerce > Settings > Custom Order Numbers</a>)."
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:163
+msgid "%d orders successfully renumerated!"
+msgstr "%d orders successfully renumerated!"
+
+#: includes/class-alg-wc-custom-order-numbers-core.php:139
+#: includes/class-alg-wc-custom-order-numbers-core.php:140
+#: includes/class-alg-wc-custom-order-numbers-core.php:165
+msgid "Renumerate Orders"
+msgstr "Renumerate Orders"
+
+#: includes/admin/class-alg-wc-settings-custom-order-numbers.php:24
+msgid "Custom Order Numbers"
+msgstr "Custom Order Numbers"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:163
+msgid "Enable Order Admin Search by Custom Number"
+msgstr "Enable Order Admin Search by Custom Number"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:156
+msgid "Enable Order Tracking by Custom Number"
+msgstr "Enable Order Tracking by Custom Number"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:150
+msgid "This should be enabled if you have a lot of simultaneous orders in your shop - to prevent duplicate order numbers (sequential)."
+msgstr "This should be enabled if you have a lot of simultaneous orders in your shop - to prevent duplicate order numbers (sequential)."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:148
+msgid "Use MySQL Transaction"
+msgstr "Use MySQL Transaction"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:140
+msgid "Date suffix after order number (optional). This will change the suffixes for all existing orders. Value is passed directly to PHP `date` function, so most of PHP date formats can be used. The only exception is using `\\` symbol in date format, as this symbol will be excluded from date. Try: Y-m-d- or mdy."
+msgstr "Date suffix after order number (optional). This will change the suffixes for all existing orders. Value is passed directly to PHP `date` function, so most of PHP date formats can be used. The only exception is using `\\` symbol in date format, as this symbol will be excluded from date. Try: Y-m-d- or mdy."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:138
+msgid "Order Number Date Suffix"
+msgstr "Order Number Date Suffix"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:130
+msgid "Suffix after order number (optional). This will change the suffixes for all existing orders."
+msgstr "Suffix after order number (optional). This will change the suffixes for all existing orders."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:128
+msgid "Order Number Custom Suffix"
+msgstr "Order Number Custom Suffix"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:120
+msgid "Minimum width of number without prefix (zeros will be added to the left side). This will change the minimum width of order number for all existing orders. E.g. set to 5 to have order number displayed as 00001 instead of 1. Leave zero to disable."
+msgstr "Minimum width of number without prefix (zeros will be added to the left side). This will change the minimum width of order number for all existing orders. E.g. set to 5 to have order number displayed as 00001 instead of 1. Leave zero to disable."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:118
+msgid "Order Number Width"
+msgstr "Order Number Width"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:110
+msgid "Date prefix before order number (optional). This will change the prefixes for all existing orders. Value is passed directly to PHP `date` function, so most of PHP date formats can be used. The only exception is using `\\` symbol in date format, as this symbol will be excluded from date. Try: Y-m-d- or mdy."
+msgstr "Date prefix before order number (optional). This will change the prefixes for all existing orders. Value is passed directly to PHP `date` function, so most of PHP date formats can be used. The only exception is using `\\` symbol in date format, as this symbol will be excluded from date. Try: Y-m-d- or mdy."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:108
+msgid "Order Number Date Prefix"
+msgstr "Order Number Date Prefix"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:101
+msgid "Prefix before order number (optional). This will change the prefixes for all existing orders."
+msgstr "Prefix before order number (optional). This will change the prefixes for all existing orders."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:100
+msgid "Order Number Custom Prefix"
+msgstr "Order Number Custom Prefix"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:81
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:88
+msgid "This will be ignored if sequential order numbering is disabled."
+msgstr "This will be ignored if sequential order numbering is disabled."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:80
+msgid "Use <a class=\"button-primary\" id=\"alg-tool-button\" href=\"%s\">Renumerate Orders tool</a> for existing orders."
+msgstr "Use <a class=\"button-primary\" id=\"alg-tool-button\" href=\"%s\">Renumerate Orders tool</a> for existing orders."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:80
+msgid "Next new order will be given this number."
+msgstr "Next new order will be given this number."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:79
+msgid "Next Order Number"
+msgstr "Next Order Number"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:75
+msgid "Order ID"
+msgstr "Order ID"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:74
+msgid "Sequential"
+msgstr "Sequential"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:69
+msgid "Order Numbers Counter"
+msgstr "Order Numbers Counter"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:63
+msgid "Custom Order Numbers for WooCommerce."
+msgstr "Custom Order Numbers for WooCommerce."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:62
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:149
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:157
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:164
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:171
+msgid "Enable"
+msgstr "Enable"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:61
+msgid "WooCommerce Custom Order Numbers"
+msgstr "WooCommerce Custom Order Numbers"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:57
+msgid "Enable sequential order numbering, set custom number prefix, suffix and number width."
+msgstr "Enable sequential order numbering, set custom number prefix, suffix and number width."
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:55
+msgid "Custom Order Numbers Options"
+msgstr "Custom Order Numbers Options"
+
+#: includes/admin/class-alg-wc-custom-order-numbers-settings-general.php:24
+msgid "General"
+msgstr "General"
+
+#: custom-order-numbers-for-woocommerce.php:115
+msgid "Unlock All"
+msgstr "Unlock All"
+
+#: custom-order-numbers-for-woocommerce.php:113
+msgid "Settings"
+msgstr "Settings"

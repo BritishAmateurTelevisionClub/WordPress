@@ -1,0 +1,1810 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-08-18 16:58+0530\n"
+"PO-Revision-Date: 2017-08-18 17:03+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar_DZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/settings/delivery_note_settings.php:154
+#, fuzzy
+msgid "Delivery Note Settings : "
+msgstr "تسليم ملاحظة إعدادات:"
+
+#: includes/settings/delivery_note_settings.php:158
+#, fuzzy
+msgid "Enable/Disable Delivery Note"
+msgstr "تمكين / تعطيل ملاحظة التسليم"
+
+#: includes/settings/delivery_note_settings.php:169
+#: includes/settings/diapatch_label_settings.php:16
+#: includes/settings/invoice_settings.php:208
+#: includes/settings/packing_list_settings.php:169
+#: includes/settings/shipping_label_settings.php:17
+#, fuzzy
+msgid "Standard Templates"
+msgstr "قوالب قياسية"
+
+#: includes/settings/delivery_note_settings.php:238
+#: includes/settings/diapatch_label_settings.php:90
+#: includes/settings/invoice_settings.php:277
+#: includes/settings/packing_list_settings.php:238
+#: includes/settings/shipping_label_settings.php:87
+#, fuzzy
+msgid "Custom Templates"
+msgstr "قوالب مخصصة"
+
+#: includes/settings/delivery_note_settings.php:375
+#: includes/settings/packing_list_settings.php:372
+#, fuzzy
+msgid "Include Item/Product Image"
+msgstr "تمكين / تعطيل التعبئة زلة"
+
+#: includes/settings/delivery_note_settings.php:384
+msgid "Enable to include Item/Product image in delivery note"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:389
+#: includes/settings/packing_list_settings.php:386
+#, fuzzy
+msgid "Include Price"
+msgstr "تضمين السعر"
+
+#: includes/settings/delivery_note_settings.php:397
+msgid "Enable to include Price column in delivery note"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:402
+#: includes/settings/packing_list_settings.php:400
+#, fuzzy
+msgid "Remove Total Weight"
+msgstr "الوزن الكلي"
+
+#: includes/settings/delivery_note_settings.php:409
+msgid " Remove Total weight column from Delivery Note"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:415
+#: includes/settings/diapatch_label_settings.php:231
+#: includes/settings/packing_list_settings.php:412
+#: includes/settings/shipping_label_settings.php:250
+#, fuzzy
+msgid "Additional Fields"
+msgstr "حقول إضافية"
+
+#: includes/settings/delivery_note_settings.php:453
+#: includes/settings/invoice_settings.php:694
+#: includes/settings/packing_list_settings.php:450
+#, fuzzy
+msgid "Add Existing Order Meta Field"
+msgstr "إضافة حقل ميتا حقل موجود"
+
+#: includes/settings/delivery_note_settings.php:455
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Delivery Note."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على ملاحظة التسليم."
+
+#: includes/settings/delivery_note_settings.php:460
+#: includes/settings/invoice_settings.php:701
+#: includes/settings/packing_list_settings.php:457
+#, fuzzy
+msgid "Product Meta Fields"
+msgstr "حقول ميتا للمنتج"
+
+#: includes/settings/delivery_note_settings.php:482
+#: includes/settings/invoice_settings.php:723
+#: includes/settings/packing_list_settings.php:479
+#, fuzzy
+msgid "Add Product Meta"
+msgstr "إضافة منتج ميتا"
+
+#: includes/settings/delivery_note_settings.php:485
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on Delivery Note "
+"(Product Table)."
+msgstr ""
+"حدد المعلومات الإضافية التي تريد عرضها على ملاحظة التسليم (جدول المنتج)."
+
+#: includes/settings/delivery_note_settings.php:490
+#: includes/settings/generic_settings.php:142
+#: includes/settings/invoice_settings.php:731
+#: includes/settings/packing_list_settings.php:487
+#, fuzzy
+msgid "Custom Footer"
+msgstr "تذييل مخصص"
+
+#: includes/settings/delivery_note_settings.php:494
+#: includes/settings/generic_settings.php:146
+#: includes/settings/invoice_settings.php:735
+#: includes/settings/packing_list_settings.php:491
+#, fuzzy
+msgid "Your custom footer for the print."
+msgstr "التذييل المخصص للطباعة."
+
+#: includes/settings/diapatch_label_settings.php:2
+#, fuzzy
+msgid "Dispatch Label Settings :"
+msgstr "تحميل ديسباتش التسمية"
+
+#: includes/settings/diapatch_label_settings.php:6
+#, fuzzy
+msgid "Enable/Disable Dispatch Label"
+msgstr "تمكين / تعطيل تسمية الإرسال"
+
+#: includes/settings/diapatch_label_settings.php:245
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Dispatch Label."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على علامة الإرسال."
+
+#: includes/settings/email_settings.php:2
+#, fuzzy
+msgid "Email Settings : "
+msgstr "إعدادات البريد الإلكتروني :"
+
+#: includes/settings/email_settings.php:6
+#, fuzzy
+msgid "Sent Invoice Email"
+msgstr "تم إرسال فاتورة البريد الإلكتروني"
+
+#: includes/settings/email_settings.php:24
+#, fuzzy
+msgid "Sent Packing Slip Email"
+msgstr "أرسلت التعبئة زلة البريد الإلكتروني"
+
+#: includes/settings/email_settings.php:43
+#, fuzzy
+msgid "Sent Delivery Note Email"
+msgstr "أرسلت تسليم ملاحظة البريد الإلكتروني"
+
+#: includes/settings/generic_settings.php:2
+#, fuzzy
+msgid "Generic Settings :"
+msgstr "Pakning Listeindstillinger :"
+
+#: includes/settings/generic_settings.php:92
+#, fuzzy
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#: includes/settings/generic_settings.php:96
+#, fuzzy
+msgid "Your company name for the print."
+msgstr "اسم شركتك للطباعة."
+
+#: includes/settings/generic_settings.php:99
+#: includes/settings/generic_settings.php:109
+#: includes/settings/generic_settings.php:123
+#: includes/settings/generic_settings.php:150
+#: includes/settings/invoice_settings.php:606
+#, fuzzy
+msgid "Note:"
+msgstr "تسليم ملاحظة إعدادات:"
+
+#: includes/settings/generic_settings.php:100
+#, fuzzy
+msgid "Leave blank to not print a company name."
+msgstr "اتركه فارغا لعدم طباعة اسم الشركة."
+
+#: includes/settings/generic_settings.php:105
+#: includes/settings/invoice_settings.php:602
+#, fuzzy
+msgid "Custom Logo"
+msgstr "اتركه فارغا حتى لا تستخدم شعارا مخصصا للفاتورة."
+
+#: includes/settings/generic_settings.php:107
+#: includes/settings/invoice_settings.php:604
+#, fuzzy
+msgid "Upload Image"
+msgstr "صورة"
+
+#: includes/settings/generic_settings.php:110
+#, fuzzy
+msgid "Leave blank to not use a custom logo."
+msgstr "اتركه فارغا حتى لا تستخدم شعارا مخصصا."
+
+#: includes/settings/generic_settings.php:115
+#, fuzzy
+msgid "Returns Policy, Conditions, etc."
+msgstr "سياسة الإرجاع، والشروط، وما إلى ذلك."
+
+#: includes/settings/generic_settings.php:119
+#, fuzzy
+msgid "Here you can add some policies, conditions etc."
+msgstr "هنا يمكنك إضافة بعض السياسات والظروف وما إلى ذلك."
+
+#: includes/settings/generic_settings.php:124
+#, fuzzy
+msgid "Leave blank to not print anything."
+msgstr "اتركه فارغا لعدم طباعة أي شيء."
+
+#: includes/settings/generic_settings.php:130
+#, fuzzy
+msgid "Brand Color"
+msgstr "لون الرأس"
+
+#: includes/settings/generic_settings.php:136
+#, fuzzy
+msgid "Choose the color you want to use for table header in documents"
+msgstr "اختر اللون الذي تريد استخدامه لرأس الجدول في المستندات"
+
+#: includes/settings/generic_settings.php:151
+#, fuzzy
+msgid "Leave blank to not to print a footer."
+msgstr "اتركه فارغا لعدم طباعة أي شيء."
+
+#: includes/settings/generic_settings.php:160
+#, fuzzy
+msgid "Shipping From Address : "
+msgstr "من عنوان حجم الخط"
+
+#: includes/settings/generic_settings.php:164
+#, fuzzy
+msgid "Sender Name"
+msgstr "اسم المرسل"
+
+#: includes/settings/generic_settings.php:168
+#, fuzzy
+msgid "Sender name (Required for from address)."
+msgstr "اسم المرسل (مطلوب للعنوان)."
+
+#: includes/settings/generic_settings.php:174
+#, fuzzy
+msgid "Sender Address Line1"
+msgstr "إلى عنوان"
+
+#: includes/settings/generic_settings.php:179
+#, fuzzy
+msgid "Sender Address Line1 (Required for from address)."
+msgstr "عنوان عنوان المرسل 1 (مطلوب من العنوان)."
+
+#: includes/settings/generic_settings.php:185
+#, fuzzy
+msgid "Sender Address Line2"
+msgstr "إلى عنوان"
+
+#: includes/settings/generic_settings.php:190
+#, fuzzy
+msgid "Sender Address Line2 (Optional). "
+msgstr "عنوان عنوان المرسل 2 (اختياري)."
+
+#: includes/settings/generic_settings.php:195
+#, fuzzy
+msgid "Sender City"
+msgstr "اسم المرسل"
+
+#: includes/settings/generic_settings.php:200
+#, fuzzy
+msgid "Sender City(Required for from address)."
+msgstr "عنوان عنوان المرسل 1 (مطلوب من العنوان)."
+
+#: includes/settings/generic_settings.php:205
+#, fuzzy
+msgid "Sender Country"
+msgstr "عنوان عنوان المرسل 2 (اختياري)."
+
+#: includes/settings/generic_settings.php:210
+#, fuzzy
+msgid "Sender Country (Required for from address)."
+msgstr "عنوان عنوان المرسل 1 (مطلوب من العنوان)."
+
+#: includes/settings/generic_settings.php:215
+#, fuzzy
+msgid "Sender Postal Code"
+msgstr "عنوان عنوان المرسل 2 (اختياري)."
+
+#: includes/settings/generic_settings.php:220
+#, fuzzy
+msgid "Sender Postal Code (Required for from address)."
+msgstr "عنوان عنوان المرسل 1 (مطلوب من العنوان)."
+
+#: includes/settings/generic_settings.php:230
+#: includes/settings/invoice_settings.php:619
+#, fuzzy
+msgid "Advanced Options"
+msgstr "التذييل المخصص للطباعة.خيارات الطباعة"
+
+#: includes/settings/generic_settings.php:234
+#, fuzzy
+msgid "Preview Before Printing"
+msgstr "معاينة قبل الطباعة"
+
+#: includes/settings/generic_settings.php:238
+#: includes/settings/generic_settings.php:244
+#: includes/settings/generic_settings.php:351
+#, fuzzy
+msgid "Enabled"
+msgstr "تمكين"
+
+#: includes/settings/generic_settings.php:240
+#: includes/settings/generic_settings.php:246
+#, fuzzy
+msgid "Disabled"
+msgstr "معاق"
+
+#: includes/settings/generic_settings.php:251
+#, fuzzy
+msgid "Include DataMatrix Information"
+msgstr "تضمين معلومات داتاماتريكس"
+
+#: includes/settings/generic_settings.php:258
+#, fuzzy
+msgid "Check to add datamatrix information in shipping labels and invoice"
+msgstr "تحقق لإضافة معلومات داتاماتريكس في تسميات الشحن والفاتورة"
+
+#: includes/settings/generic_settings.php:263
+#, fuzzy
+msgid "Enable Variation Data"
+msgstr "Activez le nom de produit complet"
+
+#: includes/settings/generic_settings.php:270
+#, fuzzy
+msgid ""
+"Check to add variation information to Invoice, Packing Slip and Delivery Note"
+msgstr "تحقق لإضافة معلومات الاختلاف إلى الفاتورة، التعبئة زلة والتسليم ملاحظة"
+
+#: includes/settings/generic_settings.php:275
+#, fuzzy
+msgid "Add SKU"
+msgstr "تحقق لإضافة سكو إلى الفاتورة، التعبئة زلة والتسليم ملاحظة"
+
+#: includes/settings/generic_settings.php:282
+#, fuzzy
+msgid "Check to add SKU to Invoice, Packing Slip and Delivery Note"
+msgstr "تحقق لإضافة سكو إلى الفاتورة، التعبئة زلة والتسليم ملاحظة"
+
+#: includes/settings/generic_settings.php:289
+#, fuzzy
+msgid "Packaging Type"
+msgstr "نوع التغليف"
+
+#: includes/settings/generic_settings.php:310
+#, fuzzy
+msgid "Packaging Process"
+msgstr "عملية التعبئة والتغليف"
+
+#: includes/settings/generic_settings.php:330
+#, fuzzy
+msgid "Maximum Package Weight"
+msgstr "تعيين أقصى وزن للحزمة."
+
+#: includes/settings/generic_settings.php:334
+#, fuzzy
+msgid "Set the maximum weight for the package."
+msgstr "تعيين أقصى وزن للحزمة."
+
+#: includes/settings/generic_settings.php:341
+#, fuzzy
+msgid "Box Sizes"
+msgstr "أحجام الصندوق"
+
+#: includes/settings/generic_settings.php:346
+#, fuzzy
+msgid "Length"
+msgstr "الطول"
+
+#: includes/settings/generic_settings.php:347
+#: wf-template/wf_template_customize_for_delivery_note.php:924
+#: wf-template/wf_template_customize_for_dispatch_label.php:977
+#: wf-template/wf_template_customize_for_invoice.php:1002
+#: wf-template/wf_template_customize_for_invoice.php:1758
+#: wf-template/wf_template_customize_for_packing_slip.php:924
+#: wf-template/wf_template_customize_for_shipping_label.php:491
+#, fuzzy
+msgid "Width"
+msgstr "عرض"
+
+#: includes/settings/generic_settings.php:348
+#: wf-template/wf_template_customize_for_delivery_note.php:929
+#: wf-template/wf_template_customize_for_dispatch_label.php:982
+#: wf-template/wf_template_customize_for_invoice.php:1007
+#: wf-template/wf_template_customize_for_invoice.php:1762
+#: wf-template/wf_template_customize_for_packing_slip.php:929
+#: wf-template/wf_template_customize_for_shipping_label.php:496
+#, fuzzy
+msgid "Height"
+msgstr "ارتفاع"
+
+#: includes/settings/generic_settings.php:349
+#, fuzzy
+msgid "Box Weight"
+msgstr "أحجام الصندوق"
+
+#: includes/settings/generic_settings.php:350
+#, fuzzy
+msgid "Max Weight"
+msgstr "تعيين أقصى وزن للحزمة."
+
+#: includes/settings/generic_settings.php:357
+#, fuzzy
+msgid "Add Box"
+msgstr "إزالة مربع (مربعات) محددة"
+
+#: includes/settings/generic_settings.php:358
+#, fuzzy
+msgid "Remove selected box(es)"
+msgstr "إزالة مربع (مربعات) محددة"
+
+#: includes/settings/generic_settings.php:361
+#, fuzzy
+msgid ""
+"Items will be packed into these boxes depending based on item dimensions and "
+"volume. Dimensions will be passed to FedEx and used for packing. Items not "
+"fitting into boxes will be packed individually."
+msgstr ""
+"وسوف تكون معبأة العناصر في هذه الصناديق اعتمادا على أبعاد البند وحجم. سيتم "
+"تمرير الأبعاد إلى فيديكس وتستخدم للتغليف. البنود غير المناسب في صناديق سوف "
+"تكون معبأة بشكل فردي."
+
+#: includes/settings/generic_settings.php:389
+#, fuzzy
+msgid "Font Name"
+msgstr "إلى عنوان حجم الخط"
+
+#: includes/settings/generic_settings.php:403
+#, fuzzy
+msgid "Big5 font supports Chinese Language. For more information check the "
+msgstr "خط Big5 يدعم اللغة الصينية. لمزيد من المعلومات تحقق من"
+
+#: includes/settings/generic_settings.php:405
+#: wf-woocommerce-packing-list.php:548
+#, fuzzy
+msgid "Documentation"
+msgstr "كابل بيانات"
+
+#: includes/settings/generic_settings.php:410
+#, fuzzy
+msgid "Tracking Number Meta"
+msgstr "رقم التتبع ميتا"
+
+#: includes/settings/generic_settings.php:417
+#, fuzzy
+msgid "Display State Name"
+msgstr "اسم حالة العرض"
+
+#: includes/settings/invoice_settings.php:194
+#, fuzzy
+msgid "Invoice Settings : "
+msgstr "فاتورة"
+
+#: includes/settings/invoice_settings.php:198
+#, fuzzy
+msgid "Enable/Disable Invoice"
+msgstr "تمكين / تعطيل الفاتورة"
+
+#: includes/settings/invoice_settings.php:412
+#, fuzzy
+msgid "Order Status to Generate Invoice"
+msgstr "حالة الطلب لإنشاء الفاتورة"
+
+#: includes/settings/invoice_settings.php:424
+#, fuzzy
+msgid "Use Order Number as Invoice Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:433
+#, fuzzy
+msgid "Invoice Start Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:440
+#, fuzzy
+msgid "Invoice Padding Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:447
+#, fuzzy
+msgid "Reset Invoice Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:451
+#, fuzzy
+msgid "Invoice Number Prefix"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:458
+#, fuzzy
+msgid "Invoice Number Postfix"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: includes/settings/invoice_settings.php:465
+#, fuzzy
+msgid "Add Payment Information on the Invoice"
+msgstr "إضافة معلومات الدفع في الفاتورة"
+
+#: includes/settings/invoice_settings.php:474
+#, fuzzy
+msgid "Add Coupon Information on the Invoice"
+msgstr "إضافة قسيمة معلومات عن الفاتورة"
+
+#: includes/settings/invoice_settings.php:483
+#, fuzzy
+msgid "Show Print Invoice option to customers"
+msgstr "عرض طباعة الفاتورة الخيار للعملاء"
+
+#: includes/settings/invoice_settings.php:561
+#, fuzzy
+msgid "Signature in print invoice"
+msgstr "التوقيع"
+
+#: includes/settings/invoice_settings.php:579
+#, fuzzy
+msgid "Upload Signature"
+msgstr "التوقيع"
+
+#: includes/settings/invoice_settings.php:584
+#, fuzzy
+msgid "Tax Type"
+msgstr "مجموع الضريبة"
+
+#: includes/settings/invoice_settings.php:607
+#, fuzzy
+msgid "Leave blank to not use a custom logo for invoice."
+msgstr "اتركه فارغا حتى لا تستخدم شعارا مخصصا للفاتورة."
+
+#: includes/settings/invoice_settings.php:625
+#, fuzzy
+msgid "Additional Fields on Checkout Page"
+msgstr "الحقول الإضافية في صفحة الدفع"
+
+#: includes/settings/invoice_settings.php:646
+#, fuzzy
+msgid "Add Custom Field"
+msgstr "إضافة حقل ميتا حقل موجود"
+
+#: includes/settings/invoice_settings.php:649
+#, fuzzy
+msgid ""
+"Select the additional information you want to have on the Checkout page."
+msgstr "حدد المعلومات الإضافية التي تريد الحصول عليها في صفحة تشيكوت."
+
+#: includes/settings/invoice_settings.php:656
+#, fuzzy
+msgid "Additional Fields on Invoice"
+msgstr "حقول إضافية في الفاتورة"
+
+#: includes/settings/invoice_settings.php:696
+#, fuzzy
+msgid "Select the additional information you want to display on the Invoice."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على الفاتورة."
+
+#: includes/settings/invoice_settings.php:726
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Invoice Product "
+"Table."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على جدول منتج الفاتورة."
+
+#: includes/settings/packing_list_settings.php:154
+#, fuzzy
+msgid "Packing Slip Settings : "
+msgstr "أرسلت التعبئة زلة البريد الإلكتروني"
+
+#: includes/settings/packing_list_settings.php:158
+#, fuzzy
+msgid "Enable/Disable Packing Slip"
+msgstr "تمكين / تعطيل التعبئة زلة"
+
+#: includes/settings/packing_list_settings.php:381
+msgid "Enable to include Item/Product image in packing list"
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:394
+msgid "Enable to include Price column in packing list"
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:406
+msgid "Enable to remove total weight column from packing Slip"
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:452
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Packing Slip."
+msgstr "حدد المعلومات الإضافية التي ترغب في عرضها على زلة التعبئة."
+
+#: includes/settings/packing_list_settings.php:482
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Packing Slip "
+"Product Table."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على جدول منتجات التعبئة."
+
+#: includes/settings/shipping_label_settings.php:3
+#, fuzzy
+msgid "Shipping Label Settings :"
+msgstr "تفاصيل الشحن"
+
+#: includes/settings/shipping_label_settings.php:7
+#, fuzzy
+msgid "Enable/Disable Shipping Label"
+msgstr "تمكين / تعطيل تصنيف الشحن"
+
+#: includes/settings/shipping_label_settings.php:223
+#, fuzzy
+msgid "Shipping Label Size"
+msgstr "تفاصيل الشحن"
+
+#: includes/settings/shipping_label_settings.php:226
+#: includes/settings/shipping_label_settings.php:231
+#, fuzzy
+msgid "Full Page"
+msgstr "Activez le nom de produit complet"
+
+#: includes/settings/shipping_label_settings.php:227
+#: includes/settings/shipping_label_settings.php:232
+msgid "4x6"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:238
+#, fuzzy
+msgid "Custom Shipping Label Size"
+msgstr "مخصص حجم التسمية الشحن"
+
+#: includes/settings/shipping_label_settings.php:243
+msgid "Enter the Width & Height values in INCHES"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:264
+#, fuzzy
+msgid ""
+"Select the additional information you want to display on the Shipping Label."
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على ملصق الشحن."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, fuzzy, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"انتهت صلاحية مفتاح الترخيص ل٪ s. يمكنك إعادة تنشيط مفتاح ترخيص أو شراؤه من "
+"حسابك <a href=\"٪s\" target=\"_blank\"> لوحة التحكم </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:69
+#, fuzzy
+msgid "Billing address: "
+msgstr "إلى عنوان"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:74
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:130
+#: wf-template/wf-label-pdf-template.php:66
+msgid " "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:93
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:146
+#: wf-template/wf-label-pdf-template.php:82
+msgid ", "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:103
+#, fuzzy
+msgid "SSN: "
+msgstr "SSN :"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:111
+#, fuzzy
+msgid "VAT: "
+msgstr "T.V.A:"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:115
+#, fuzzy
+msgid "Email: "
+msgstr "البريد الإلكتروني"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:118
+#, fuzzy
+msgid "Phone: "
+msgstr "هاتف:"
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:126
+#, fuzzy
+msgid "Shipping address: "
+msgstr "إلى عنوان"
+
+#: wf-template/wf-label-pdf-template.php:63
+msgid "To"
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:90
+#, fuzzy
+msgid "Ph no:"
+msgstr "رقم ف:"
+
+#: wf-template/wf-label-pdf-template.php:105
+#, fuzzy
+msgid "Tracking Number :"
+msgstr "أرقام التتبع"
+
+#: wf-template/wf-label-pdf-template.php:134
+#, fuzzy
+msgid "FROM"
+msgstr "من العنوان حجم الخط"
+
+#: wf-template/wf-label-pdf-template.php:137
+#, fuzzy
+msgid "Order Number "
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: wf-template/wf-label-pdf-template.php:138
+#: wf-template/wf-label-pdf-template.php:143
+#: wf-template/wf-label-pdf-template.php:151
+msgid ": "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:142
+#, fuzzy
+msgid "Weight "
+msgstr "تعيين أقصى وزن للحزمة."
+
+#: wf-template/wf-label-pdf-template.php:150
+#, fuzzy
+msgid "Ship Date "
+msgstr "تاريخ"
+
+#: wf-template/wf-label-pdf-template.php:165
+msgid " - "
+msgstr ""
+
+#: wf-template/wf-label-template-header.php:4
+#: wf-template/wf-template-header.php:4
+#, fuzzy
+msgid "Print Shipment Label"
+msgstr "طباعة ملصق الشحن"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:835
+#: wf-template/wf_template_customize_for_dispatch_label.php:887
+#: wf-template/wf_template_customize_for_invoice.php:912
+#: wf-template/wf_template_customize_for_packing_slip.php:835
+#: wf-template/wf_template_customize_for_shipping_label.php:439
+#, fuzzy
+msgid "Field Attributes"
+msgstr "سمات الحقل"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:842
+#: wf-template/wf_template_customize_for_dispatch_label.php:894
+#: wf-template/wf_template_customize_for_invoice.php:919
+#: wf-template/wf_template_customize_for_packing_slip.php:842
+#: wf-template/wf_template_customize_for_shipping_label.php:446
+#, fuzzy
+msgid "Save and Activate"
+msgstr "حفظ وتنشيط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:900
+#: wf-template/wf_template_customize_for_dispatch_label.php:952
+#: wf-template/wf_template_customize_for_invoice.php:977
+#: wf-template/wf_template_customize_for_packing_slip.php:900
+#: wf-template/wf_template_customize_for_shipping_label.php:467
+#, fuzzy
+msgid "Company Logo"
+msgstr "شعار الشركة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:908
+#: wf-template/wf_template_customize_for_dispatch_label.php:961
+#: wf-template/wf_template_customize_for_invoice.php:986
+#: wf-template/wf_template_customize_for_packing_slip.php:908
+#: wf-template/wf_template_customize_for_shipping_label.php:475
+#, fuzzy
+msgid "Display"
+msgstr "حدد المعلومات الإضافية التي تريد عرضها على الفاتورة."
+
+#: wf-template/wf_template_customize_for_delivery_note.php:934
+#: wf-template/wf_template_customize_for_invoice.php:1012
+#: wf-template/wf_template_customize_for_packing_slip.php:934
+#, fuzzy
+msgid "Extra Details"
+msgstr "تفاصيل الشحن"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:938
+#: wf-template/wf_template_customize_for_dispatch_label.php:992
+#: wf-template/wf_template_customize_for_invoice.php:1016
+#: wf-template/wf_template_customize_for_packing_slip.php:938
+#, fuzzy
+msgid "Font Size"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:953
+#: wf-template/wf_template_customize_for_packing_slip.php:953
+#, fuzzy
+msgid "Order Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:960
+#: wf-template/wf_template_customize_for_delivery_note.php:1026
+#: wf-template/wf_template_customize_for_delivery_note.php:1091
+#: wf-template/wf_template_customize_for_delivery_note.php:1261
+#: wf-template/wf_template_customize_for_delivery_note.php:1307
+#: wf-template/wf_template_customize_for_delivery_note.php:1353
+#: wf-template/wf_template_customize_for_delivery_note.php:1399
+#: wf-template/wf_template_customize_for_delivery_note.php:1444
+#: wf-template/wf_template_customize_for_delivery_note.php:1489
+#: wf-template/wf_template_customize_for_dispatch_label.php:1014
+#: wf-template/wf_template_customize_for_dispatch_label.php:1080
+#: wf-template/wf_template_customize_for_dispatch_label.php:1145
+#: wf-template/wf_template_customize_for_dispatch_label.php:1353
+#: wf-template/wf_template_customize_for_dispatch_label.php:1399
+#: wf-template/wf_template_customize_for_dispatch_label.php:1445
+#: wf-template/wf_template_customize_for_dispatch_label.php:1491
+#: wf-template/wf_template_customize_for_dispatch_label.php:1536
+#: wf-template/wf_template_customize_for_dispatch_label.php:1581
+#: wf-template/wf_template_customize_for_invoice.php:1038
+#: wf-template/wf_template_customize_for_invoice.php:1104
+#: wf-template/wf_template_customize_for_invoice.php:1169
+#: wf-template/wf_template_customize_for_invoice.php:1339
+#: wf-template/wf_template_customize_for_invoice.php:1385
+#: wf-template/wf_template_customize_for_invoice.php:1431
+#: wf-template/wf_template_customize_for_invoice.php:1477
+#: wf-template/wf_template_customize_for_invoice.php:1522
+#: wf-template/wf_template_customize_for_invoice.php:1567
+#: wf-template/wf_template_customize_for_invoice.php:1726
+#: wf-template/wf_template_customize_for_packing_slip.php:960
+#: wf-template/wf_template_customize_for_packing_slip.php:1026
+#: wf-template/wf_template_customize_for_packing_slip.php:1091
+#: wf-template/wf_template_customize_for_packing_slip.php:1261
+#: wf-template/wf_template_customize_for_packing_slip.php:1307
+#: wf-template/wf_template_customize_for_packing_slip.php:1353
+#: wf-template/wf_template_customize_for_packing_slip.php:1399
+#: wf-template/wf_template_customize_for_packing_slip.php:1444
+#: wf-template/wf_template_customize_for_packing_slip.php:1489
+#, fuzzy
+msgid "Font size"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:965
+#: wf-template/wf_template_customize_for_delivery_note.php:1031
+#: wf-template/wf_template_customize_for_delivery_note.php:1096
+#: wf-template/wf_template_customize_for_delivery_note.php:1358
+#: wf-template/wf_template_customize_for_delivery_note.php:1404
+#: wf-template/wf_template_customize_for_delivery_note.php:1449
+#: wf-template/wf_template_customize_for_delivery_note.php:1494
+#: wf-template/wf_template_customize_for_dispatch_label.php:1019
+#: wf-template/wf_template_customize_for_dispatch_label.php:1085
+#: wf-template/wf_template_customize_for_dispatch_label.php:1150
+#: wf-template/wf_template_customize_for_dispatch_label.php:1450
+#: wf-template/wf_template_customize_for_dispatch_label.php:1496
+#: wf-template/wf_template_customize_for_dispatch_label.php:1541
+#: wf-template/wf_template_customize_for_dispatch_label.php:1586
+#: wf-template/wf_template_customize_for_dispatch_label.php:1737
+#: wf-template/wf_template_customize_for_dispatch_label.php:1742
+#: wf-template/wf_template_customize_for_dispatch_label.php:1747
+#: wf-template/wf_template_customize_for_dispatch_label.php:1752
+#: wf-template/wf_template_customize_for_dispatch_label.php:1757
+#: wf-template/wf_template_customize_for_dispatch_label.php:1762
+#: wf-template/wf_template_customize_for_dispatch_label.php:1767
+#: wf-template/wf_template_customize_for_invoice.php:1043
+#: wf-template/wf_template_customize_for_invoice.php:1109
+#: wf-template/wf_template_customize_for_invoice.php:1174
+#: wf-template/wf_template_customize_for_invoice.php:1436
+#: wf-template/wf_template_customize_for_invoice.php:1482
+#: wf-template/wf_template_customize_for_invoice.php:1527
+#: wf-template/wf_template_customize_for_invoice.php:1572
+#: wf-template/wf_template_customize_for_invoice.php:1731
+#: wf-template/wf_template_customize_for_invoice.php:1786
+#: wf-template/wf_template_customize_for_invoice.php:1791
+#: wf-template/wf_template_customize_for_invoice.php:1796
+#: wf-template/wf_template_customize_for_invoice.php:1801
+#: wf-template/wf_template_customize_for_invoice.php:1806
+#: wf-template/wf_template_customize_for_invoice.php:1811
+#: wf-template/wf_template_customize_for_invoice.php:1816
+#: wf-template/wf_template_customize_for_packing_slip.php:965
+#: wf-template/wf_template_customize_for_packing_slip.php:1031
+#: wf-template/wf_template_customize_for_packing_slip.php:1096
+#: wf-template/wf_template_customize_for_packing_slip.php:1358
+#: wf-template/wf_template_customize_for_packing_slip.php:1404
+#: wf-template/wf_template_customize_for_packing_slip.php:1449
+#: wf-template/wf_template_customize_for_packing_slip.php:1494
+#, fuzzy
+msgid "Text"
+msgstr "لون الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:970
+#: wf-template/wf_template_customize_for_delivery_note.php:1036
+#: wf-template/wf_template_customize_for_delivery_note.php:1101
+#: wf-template/wf_template_customize_for_dispatch_label.php:1024
+#: wf-template/wf_template_customize_for_dispatch_label.php:1090
+#: wf-template/wf_template_customize_for_dispatch_label.php:1155
+#: wf-template/wf_template_customize_for_invoice.php:1048
+#: wf-template/wf_template_customize_for_invoice.php:1114
+#: wf-template/wf_template_customize_for_invoice.php:1179
+#: wf-template/wf_template_customize_for_packing_slip.php:970
+#: wf-template/wf_template_customize_for_packing_slip.php:1036
+#: wf-template/wf_template_customize_for_packing_slip.php:1101
+#, fuzzy
+msgid "Style"
+msgstr "قلم المدقة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:986
+#: wf-template/wf_template_customize_for_delivery_note.php:1052
+#: wf-template/wf_template_customize_for_delivery_note.php:1117
+#: wf-template/wf_template_customize_for_delivery_note.php:1157
+#: wf-template/wf_template_customize_for_delivery_note.php:1198
+#: wf-template/wf_template_customize_for_delivery_note.php:1239
+#: wf-template/wf_template_customize_for_delivery_note.php:1285
+#: wf-template/wf_template_customize_for_delivery_note.php:1331
+#: wf-template/wf_template_customize_for_delivery_note.php:1377
+#: wf-template/wf_template_customize_for_delivery_note.php:1423
+#: wf-template/wf_template_customize_for_delivery_note.php:1468
+#: wf-template/wf_template_customize_for_delivery_note.php:1513
+#: wf-template/wf_template_customize_for_dispatch_label.php:1040
+#: wf-template/wf_template_customize_for_dispatch_label.php:1106
+#: wf-template/wf_template_customize_for_dispatch_label.php:1171
+#: wf-template/wf_template_customize_for_dispatch_label.php:1211
+#: wf-template/wf_template_customize_for_dispatch_label.php:1252
+#: wf-template/wf_template_customize_for_dispatch_label.php:1293
+#: wf-template/wf_template_customize_for_dispatch_label.php:1377
+#: wf-template/wf_template_customize_for_dispatch_label.php:1423
+#: wf-template/wf_template_customize_for_dispatch_label.php:1469
+#: wf-template/wf_template_customize_for_dispatch_label.php:1515
+#: wf-template/wf_template_customize_for_dispatch_label.php:1560
+#: wf-template/wf_template_customize_for_dispatch_label.php:1605
+#: wf-template/wf_template_customize_for_invoice.php:1064
+#: wf-template/wf_template_customize_for_invoice.php:1130
+#: wf-template/wf_template_customize_for_invoice.php:1195
+#: wf-template/wf_template_customize_for_invoice.php:1235
+#: wf-template/wf_template_customize_for_invoice.php:1276
+#: wf-template/wf_template_customize_for_invoice.php:1317
+#: wf-template/wf_template_customize_for_invoice.php:1363
+#: wf-template/wf_template_customize_for_invoice.php:1409
+#: wf-template/wf_template_customize_for_invoice.php:1455
+#: wf-template/wf_template_customize_for_invoice.php:1501
+#: wf-template/wf_template_customize_for_invoice.php:1546
+#: wf-template/wf_template_customize_for_invoice.php:1591
+#: wf-template/wf_template_customize_for_packing_slip.php:986
+#: wf-template/wf_template_customize_for_packing_slip.php:1052
+#: wf-template/wf_template_customize_for_packing_slip.php:1117
+#: wf-template/wf_template_customize_for_packing_slip.php:1157
+#: wf-template/wf_template_customize_for_packing_slip.php:1198
+#: wf-template/wf_template_customize_for_packing_slip.php:1239
+#: wf-template/wf_template_customize_for_packing_slip.php:1285
+#: wf-template/wf_template_customize_for_packing_slip.php:1331
+#: wf-template/wf_template_customize_for_packing_slip.php:1377
+#: wf-template/wf_template_customize_for_packing_slip.php:1423
+#: wf-template/wf_template_customize_for_packing_slip.php:1468
+#: wf-template/wf_template_customize_for_packing_slip.php:1513
+#, fuzzy
+msgid "Color"
+msgstr "لون الرأس"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1001
+#: wf-template/wf_template_customize_for_invoice.php:1079
+#: wf-template/wf_template_customize_for_packing_slip.php:1001
+#, fuzzy
+msgid "Invoice Date"
+msgstr "تاريخ"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1008
+#: wf-template/wf_template_customize_for_delivery_note.php:1073
+#: wf-template/wf_template_customize_for_dispatch_label.php:1062
+#: wf-template/wf_template_customize_for_dispatch_label.php:1127
+#: wf-template/wf_template_customize_for_invoice.php:1086
+#: wf-template/wf_template_customize_for_invoice.php:1151
+#: wf-template/wf_template_customize_for_packing_slip.php:1008
+#: wf-template/wf_template_customize_for_packing_slip.php:1073
+#: wf-template/wf_template_customize_for_shipping_label.php:560
+#, fuzzy
+msgid "Format"
+msgstr "شكل"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1066
+#: wf-template/wf_template_customize_for_dispatch_label.php:1120
+#: wf-template/wf_template_customize_for_invoice.php:1144
+#: wf-template/wf_template_customize_for_packing_slip.php:1066
+#: wf-woocommerce-packing-list.php:2649
+#, fuzzy
+msgid "Order Date"
+msgstr "تاريخ"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1130
+#: wf-template/wf_template_customize_for_dispatch_label.php:1184
+#: wf-template/wf_template_customize_for_invoice.php:1208
+#: wf-template/wf_template_customize_for_packing_slip.php:1130
+#: wf-template/wf_template_customize_for_shipping_label.php:588
+#: wf-woocommerce-packing-list.php:2671
+#, fuzzy
+msgid "From Address"
+msgstr "من عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1136
+#: wf-template/wf_template_customize_for_delivery_note.php:1177
+#: wf-template/wf_template_customize_for_delivery_note.php:1218
+#: wf-template/wf_template_customize_for_dispatch_label.php:1190
+#: wf-template/wf_template_customize_for_dispatch_label.php:1231
+#: wf-template/wf_template_customize_for_dispatch_label.php:1272
+#: wf-template/wf_template_customize_for_dispatch_label.php:1315
+#: wf-template/wf_template_customize_for_invoice.php:1214
+#: wf-template/wf_template_customize_for_invoice.php:1255
+#: wf-template/wf_template_customize_for_invoice.php:1296
+#: wf-template/wf_template_customize_for_packing_slip.php:1136
+#: wf-template/wf_template_customize_for_packing_slip.php:1177
+#: wf-template/wf_template_customize_for_packing_slip.php:1218
+#: wf-template/wf_template_customize_for_shipping_label.php:594
+#: wf-template/wf_template_customize_for_shipping_label.php:626
+#, fuzzy
+msgid "Title"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1142
+#: wf-template/wf_template_customize_for_delivery_note.php:1183
+#: wf-template/wf_template_customize_for_delivery_note.php:1224
+#: wf-template/wf_template_customize_for_delivery_note.php:1270
+#: wf-template/wf_template_customize_for_delivery_note.php:1316
+#: wf-template/wf_template_customize_for_delivery_note.php:1362
+#: wf-template/wf_template_customize_for_delivery_note.php:1408
+#: wf-template/wf_template_customize_for_delivery_note.php:1453
+#: wf-template/wf_template_customize_for_delivery_note.php:1498
+#: wf-template/wf_template_customize_for_dispatch_label.php:1196
+#: wf-template/wf_template_customize_for_dispatch_label.php:1237
+#: wf-template/wf_template_customize_for_dispatch_label.php:1278
+#: wf-template/wf_template_customize_for_dispatch_label.php:1320
+#: wf-template/wf_template_customize_for_dispatch_label.php:1362
+#: wf-template/wf_template_customize_for_dispatch_label.php:1408
+#: wf-template/wf_template_customize_for_dispatch_label.php:1454
+#: wf-template/wf_template_customize_for_dispatch_label.php:1500
+#: wf-template/wf_template_customize_for_dispatch_label.php:1545
+#: wf-template/wf_template_customize_for_dispatch_label.php:1590
+#: wf-template/wf_template_customize_for_invoice.php:1220
+#: wf-template/wf_template_customize_for_invoice.php:1261
+#: wf-template/wf_template_customize_for_invoice.php:1302
+#: wf-template/wf_template_customize_for_invoice.php:1348
+#: wf-template/wf_template_customize_for_invoice.php:1394
+#: wf-template/wf_template_customize_for_invoice.php:1440
+#: wf-template/wf_template_customize_for_invoice.php:1486
+#: wf-template/wf_template_customize_for_invoice.php:1531
+#: wf-template/wf_template_customize_for_invoice.php:1576
+#: wf-template/wf_template_customize_for_invoice.php:1735
+#: wf-template/wf_template_customize_for_packing_slip.php:1142
+#: wf-template/wf_template_customize_for_packing_slip.php:1183
+#: wf-template/wf_template_customize_for_packing_slip.php:1224
+#: wf-template/wf_template_customize_for_packing_slip.php:1270
+#: wf-template/wf_template_customize_for_packing_slip.php:1316
+#: wf-template/wf_template_customize_for_packing_slip.php:1362
+#: wf-template/wf_template_customize_for_packing_slip.php:1408
+#: wf-template/wf_template_customize_for_packing_slip.php:1453
+#: wf-template/wf_template_customize_for_packing_slip.php:1498
+#, fuzzy
+msgid "Text Align"
+msgstr "لون الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1171
+#: wf-template/wf_template_customize_for_dispatch_label.php:1225
+#: wf-template/wf_template_customize_for_invoice.php:1249
+#: wf-template/wf_template_customize_for_packing_slip.php:1171
+#, fuzzy
+msgid "Billing Address"
+msgstr "إلى عنوان"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1212
+#: wf-template/wf_template_customize_for_dispatch_label.php:1266
+#: wf-template/wf_template_customize_for_invoice.php:1290
+#: wf-template/wf_template_customize_for_packing_slip.php:1212
+#, fuzzy
+msgid "Shipping Address"
+msgstr "إلى عنوان"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1254
+#: wf-template/wf_template_customize_for_dispatch_label.php:1346
+#: wf-template/wf_template_customize_for_invoice.php:1332
+#: wf-template/wf_template_customize_for_packing_slip.php:1254
+#, fuzzy
+msgid "Email Field"
+msgstr "E-mail :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1300
+#: wf-template/wf_template_customize_for_dispatch_label.php:1392
+#: wf-template/wf_template_customize_for_invoice.php:1378
+#: wf-template/wf_template_customize_for_packing_slip.php:1300
+#, fuzzy
+msgid "Tel Field"
+msgstr "الهاتف"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1346
+#: wf-template/wf_template_customize_for_dispatch_label.php:1438
+#: wf-template/wf_template_customize_for_invoice.php:1424
+#: wf-template/wf_template_customize_for_packing_slip.php:1346
+#, fuzzy
+msgid "VAT Field"
+msgstr "T.V.A:"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1392
+#: wf-template/wf_template_customize_for_dispatch_label.php:1484
+#: wf-template/wf_template_customize_for_invoice.php:1470
+#: wf-template/wf_template_customize_for_packing_slip.php:1392
+#, fuzzy
+msgid "SSN Field"
+msgstr "SSN :"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1437
+#: wf-template/wf_template_customize_for_dispatch_label.php:1529
+#: wf-template/wf_template_customize_for_invoice.php:1515
+#: wf-template/wf_template_customize_for_packing_slip.php:1437
+#: wf-woocommerce-packing-list.php:2663
+#, fuzzy
+msgid "Shipping Method"
+msgstr "تفاصيل الشحن"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1482
+#: wf-template/wf_template_customize_for_dispatch_label.php:1574
+#: wf-template/wf_template_customize_for_invoice.php:1560
+#: wf-template/wf_template_customize_for_packing_slip.php:1482
+#, fuzzy
+msgid "Tracking Number"
+msgstr "أرقام التتبع"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1526
+#: wf-template/wf_template_customize_for_dispatch_label.php:1622
+#: wf-template/wf_template_customize_for_invoice.php:1604
+#: wf-template/wf_template_customize_for_packing_slip.php:1526
+#, fuzzy
+msgid "Product Table"
+msgstr "جدول المنتج"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1533
+#: wf-template/wf_template_customize_for_dispatch_label.php:1629
+#: wf-template/wf_template_customize_for_invoice.php:1611
+#: wf-template/wf_template_customize_for_packing_slip.php:1533
+#, fuzzy
+msgid "Head Color"
+msgstr "لون الرأس"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1538
+#: wf-template/wf_template_customize_for_dispatch_label.php:1634
+#: wf-template/wf_template_customize_for_invoice.php:1616
+#: wf-template/wf_template_customize_for_packing_slip.php:1538
+#, fuzzy
+msgid "Text Color"
+msgstr "لون الخط"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1543
+#: wf-template/wf_template_customize_for_dispatch_label.php:1639
+#: wf-template/wf_template_customize_for_invoice.php:1621
+#: wf-template/wf_template_customize_for_packing_slip.php:1543
+#, fuzzy
+msgid "Head Align"
+msgstr "رأس محاذاة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1572
+#: wf-template/wf_template_customize_for_dispatch_label.php:1670
+#: wf-template/wf_template_customize_for_invoice.php:1650
+#: wf-template/wf_template_customize_for_packing_slip.php:1572
+#, fuzzy
+msgid "Body Color"
+msgstr "لون الجسم"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1577
+#: wf-template/wf_template_customize_for_dispatch_label.php:1675
+#: wf-template/wf_template_customize_for_invoice.php:1655
+#: wf-template/wf_template_customize_for_packing_slip.php:1577
+#, fuzzy
+msgid "Body Align"
+msgstr "الجسم محاذاة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1603
+#: wf-template/wf_template_customize_for_packing_slip.php:1603
+#, fuzzy
+msgid "Image"
+msgstr "صورة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1608
+#: wf-template/wf_template_customize_for_dispatch_label.php:1701
+#: wf-template/wf_template_customize_for_invoice.php:1679
+#: wf-template/wf_template_customize_for_packing_slip.php:1608
+#: wf-woocommerce-packing-list.php:2656
+#, fuzzy
+msgid "SKU"
+msgstr "تحقق لإضافة سكو إلى الفاتورة، التعبئة زلة والتسليم ملاحظة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1613
+#: wf-template/wf_template_customize_for_dispatch_label.php:1706
+#: wf-template/wf_template_customize_for_invoice.php:1684
+#: wf-template/wf_template_customize_for_packing_slip.php:1613
+#: wf-woocommerce-packing-list.php:2657
+#, fuzzy
+msgid "Product"
+msgstr "تمكين / تعطيل التعبئة زلة"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1619
+#: wf-template/wf_template_customize_for_dispatch_label.php:1712
+#: wf-template/wf_template_customize_for_invoice.php:1690
+#: wf-template/wf_template_customize_for_packing_slip.php:1619
+msgid "Qty"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1623
+#: wf-template/wf_template_customize_for_packing_slip.php:1623
+#, fuzzy
+msgid "Total Weight"
+msgstr "الوزن الكلي"
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1628
+#: wf-template/wf_template_customize_for_dispatch_label.php:1718
+#: wf-template/wf_template_customize_for_invoice.php:1696
+#: wf-template/wf_template_customize_for_packing_slip.php:1628
+#: wf-woocommerce-packing-list.php:2661
+#, fuzzy
+msgid "Total"
+msgstr "مجموع الضريبة"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:987
+msgid "Tag Line"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1007
+#: wf-template/wf_template_customize_for_invoice.php:1031
+#, fuzzy
+msgid "Invoice Number"
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1055
+#, fuzzy
+msgid "Dispatch Date"
+msgstr "تاريخ"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1308
+#, fuzzy
+msgid "Return Address"
+msgstr "إلى عنوان"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1730
+#: wf-template/wf_template_customize_for_invoice.php:1779
+#, fuzzy
+msgid "Extra Charges Fields"
+msgstr "تفاصيل إضافية"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1735
+#: wf-template/wf_template_customize_for_invoice.php:1784
+#, fuzzy
+msgid "Sub Total:"
+msgstr "مجموع الضريبة"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1740
+#: wf-template/wf_template_customize_for_invoice.php:1789
+#, fuzzy
+msgid "Shipping:"
+msgstr "تفاصيل الشحن"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1745
+#: wf-template/wf_template_customize_for_invoice.php:1794
+#, fuzzy
+msgid "Cart Discount:"
+msgstr "سلة الخصم"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1750
+#: wf-template/wf_template_customize_for_invoice.php:1799
+#, fuzzy
+msgid "Order Discount:"
+msgstr "طلب تخفيض"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1755
+#: wf-template/wf_template_customize_for_invoice.php:1804
+#, fuzzy
+msgid "Total Tax:"
+msgstr "مجموع الضريبة"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1760
+#: wf-template/wf_template_customize_for_invoice.php:1809
+#, fuzzy
+msgid "Total:"
+msgstr "مجموع الضريبة"
+
+#: wf-template/wf_template_customize_for_dispatch_label.php:1765
+#: wf-template/wf_template_customize_for_invoice.php:1814
+#, fuzzy
+msgid "Payment Method:"
+msgstr "طريقة الدفع او السداد"
+
+#: wf-template/wf_template_customize_for_invoice.php:1719
+#: wf-woocommerce-packing-list.php:2670
+msgid "Signature"
+msgstr "التوقيع"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:501
+msgid "Logo Margin Top"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_shipping_label.php:507
+msgid "Logo Margin Bottom"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_shipping_label.php:512
+msgid "Logo Margin Right"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_shipping_label.php:515
+msgid "Logo Margin Left"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_shipping_label.php:519
+#, fuzzy
+msgid "Company Name Font Size"
+msgstr "من عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:533
+msgid "Shipping Details"
+msgstr "تفاصيل الشحن"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:540
+#, fuzzy
+msgid "Shipping Details Font Size"
+msgstr "تفاصيل الشحن"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:545
+#, fuzzy
+msgid "Order Title"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:550
+#, fuzzy
+msgid "Weight Title"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:555
+#, fuzzy
+msgid "Ship Date Title"
+msgstr "تاريخ"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:600
+msgid "From Title Font Size"
+msgstr "من العنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:606
+msgid "From address Font Size"
+msgstr "من عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:620
+msgid "To Address"
+msgstr "إلى عنوان"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:632
+msgid "To Title Font Size"
+msgstr "إلى عنوان حجم الخط"
+
+#: wf-template/wf_template_customize_for_shipping_label.php:638
+msgid "To address Font Size"
+msgstr "لمعالجة حجم الخط"
+
+#: wf-woocommerce-packing-list.php:33
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete Print Invoices, "
+"Packing List & Labels for WooCommerce (BASIC) and then try again"
+msgstr ""
+"وجه الفتاة! حاولت تثبيت الإصدار قسط دون إلغاء تنشيط وحذف النسخة الأساسية. "
+"يرجى إلغاء تنشيط وحذف طباعة الفواتير، قائمة التعبئة والتسميات ل ووكومرس "
+"(باسيك) ثم حاول مرة أخرى"
+
+#: wf-woocommerce-packing-list.php:36
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete WooCommerce "
+"Shipping Labels (BASIC) and then try again"
+msgstr ""
+"وجه الفتاة! حاولت تثبيت الإصدار قسط دون إلغاء تنشيط وحذف النسخة الأساسية. "
+"يرجى إلغاء تنشيط وحذف تسميات الشحن ووكومرس (باسيك) ثم حاول مرة أخرى"
+
+#: wf-woocommerce-packing-list.php:241
+#, fuzzy
+msgid "Pack Items Individually"
+msgstr "حزمة العناصر بشكل فردي"
+
+#: wf-woocommerce-packing-list.php:242
+#, fuzzy
+msgid "Weight Based Packing"
+msgstr "الوزن الكلي"
+
+#: wf-woocommerce-packing-list.php:243
+#, fuzzy
+msgid "Box Packing"
+msgstr "إزالة مربع (مربعات) محددة"
+
+#: wf-woocommerce-packing-list.php:244
+#, fuzzy
+msgid "Single Package Per Order"
+msgstr "حزمة واحدة لكل طلب"
+
+#: wf-woocommerce-packing-list.php:247
+#, fuzzy
+msgid "Pack Heavier Items First"
+msgstr "حزمة العناصر بشكل فردي"
+
+#: wf-woocommerce-packing-list.php:248
+#, fuzzy
+msgid "Pack Lighter Items First"
+msgstr "حزمة العناصر بشكل فردي"
+
+#: wf-woocommerce-packing-list.php:249
+#, fuzzy
+msgid "Pack Purely Divided By Weight"
+msgstr "حزمة تنقسم بحزم من الوزن"
+
+#: wf-woocommerce-packing-list.php:386
+#, fuzzy
+msgid "Invoice"
+msgstr "فاتورة"
+
+#: wf-woocommerce-packing-list.php:480 wf-woocommerce-packing-list.php:493
+msgid "-"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:547
+#, fuzzy
+msgid "Settings"
+msgstr "Pakning Listeindstillinger :"
+
+#: wf-woocommerce-packing-list.php:549
+msgid "Support"
+msgstr "الدعم"
+
+#: wf-woocommerce-packing-list.php:572 wf-woocommerce-packing-list.php:585
+#, fuzzy
+msgid "You are not allowed to view this page."
+msgstr "لا يسمح لك بعرض هذه الصفحة."
+
+#: wf-woocommerce-packing-list.php:791
+#, fuzzy
+msgid "You need to Add Shipping from Address to Print shipping labels"
+msgstr "تحتاج إلى إضافة الشحن من العنوان إلى طباعة تسميات الشحن"
+
+#: wf-woocommerce-packing-list.php:827
+#, fuzzy
+msgid "Unable to print Shipping Labels. Please check the items in the order."
+msgstr "تعذر طباعة ملصقات الشحن. يرجى التحقق من البنود في النظام."
+
+#: wf-woocommerce-packing-list.php:918
+#, fuzzy
+msgid "Unable to print Packing List. Please check the items in the order."
+msgstr "غير قادر على طباعة قائمة التعبئة. يرجى التحقق من البنود في النظام."
+
+#: wf-woocommerce-packing-list.php:1005
+#, fuzzy
+msgid "Unable to print Delivery Note. Please check the items in the order."
+msgstr "تعذر طباعة ملاحظة التسليم. يرجى التحقق من البنود في النظام."
+
+#: wf-woocommerce-packing-list.php:1135 wf-woocommerce-packing-list.php:1143
+#: wf-woocommerce-packing-list.php:1829 wf-woocommerce-packing-list.php:1959
+#: wf-woocommerce-packing-list.php:1965
+msgid "n/a"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1138
+msgid "0"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1189
+#, fuzzy
+msgid "Invoice/Pack List"
+msgstr "فاتورة / حزمة قائمة"
+
+#: wf-woocommerce-packing-list.php:1191
+#, fuzzy
+msgid "Print Options"
+msgstr "التذييل المخصص للطباعة.خيارات الطباعة"
+
+#: wf-woocommerce-packing-list.php:1195
+#, fuzzy
+msgid "Customize"
+msgstr "يعدل أو يكيف"
+
+#: wf-woocommerce-packing-list.php:1216
+#, fuzzy
+msgid ""
+"WooCommerce - Print Invoice, Packing Slip, Delivery Note & Label Settings"
+msgstr "ووكومرس - طباعة الفاتورة، التعبئة زلة، مذكرة التسليم وإعدادات التسمية"
+
+#: wf-woocommerce-packing-list.php:1234
+#, fuzzy
+msgid "Your settings have been saved."
+msgstr "تم حفظ إعداداتك."
+
+#: wf-woocommerce-packing-list.php:1332
+#, fuzzy
+msgid "Save Changes"
+msgstr "حفظ وتنشيط"
+
+#: wf-woocommerce-packing-list.php:1347
+#, fuzzy
+msgid "Print Actions"
+msgstr "طباعة الإجراءات"
+
+#: wf-woocommerce-packing-list.php:1361
+#, fuzzy
+msgid "<strong>Invoice Number: </strong> "
+msgstr "استخدم رقم الطلب كعدد الفاتورة"
+
+#: wf-woocommerce-packing-list.php:1366
+#, fuzzy
+msgid "Print Invoice "
+msgstr "فاتورة طباعة"
+
+#: wf-woocommerce-packing-list.php:1374 wf-woocommerce-packing-list.php:1513
+#: wf-woocommerce-packing-list.php:1515
+#, fuzzy
+msgid "Print Packing List"
+msgstr ""
+"وجه الفتاة! حاولت تثبيت الإصدار قسط دون إلغاء تنشيط وحذف النسخة الأساسية. "
+"يرجى إلغاء تنشيط وحذف طباعة الفواتير، قائمة التعبئة والتسميات ل ووكومرس "
+"(باسيك) ثم حاول مرة أخرى"
+
+#: wf-woocommerce-packing-list.php:1382
+#, fuzzy
+msgid "Print Shipping Label"
+msgstr "تفاصيل الشحن"
+
+#: wf-woocommerce-packing-list.php:1390 wf-woocommerce-packing-list.php:1525
+#: wf-woocommerce-packing-list.php:1527
+#, fuzzy
+msgid "Print Delivery Note"
+msgstr "تسليم ملاحظة إعدادات:طباعة ملاحظة التسليم"
+
+#: wf-woocommerce-packing-list.php:1400
+msgid "Print Dispatch Label"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1517 wf-woocommerce-packing-list.php:1519
+#, fuzzy
+msgid "Print Invoice"
+msgstr "فاتورة طباعة"
+
+#: wf-woocommerce-packing-list.php:1521 wf-woocommerce-packing-list.php:1523
+#, fuzzy
+msgid "Print Shipping Labels"
+msgstr "تفاصيل الشحن"
+
+#: wf-woocommerce-packing-list.php:1531 wf-woocommerce-packing-list.php:1532
+msgid "Print Dispatch Labels"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2021 wf-woocommerce-packing-list.php:2065
+#, fuzzy
+msgid "Ph No : "
+msgstr "رقم ف:"
+
+#: wf-woocommerce-packing-list.php:2070
+msgid "Email : "
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2648
+#, fuzzy
+msgid "INVOICE"
+msgstr "فاتورة"
+
+#: wf-woocommerce-packing-list.php:2650
+#, fuzzy
+msgid "Billing address"
+msgstr "إلى عنوان"
+
+#: wf-woocommerce-packing-list.php:2651
+#, fuzzy
+msgid "Shipping address"
+msgstr "إلى عنوان"
+
+#: wf-woocommerce-packing-list.php:2652
+#, fuzzy
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: wf-woocommerce-packing-list.php:2653
+#, fuzzy
+msgid "Tel"
+msgstr "الهاتف"
+
+#: wf-woocommerce-packing-list.php:2654
+#, fuzzy
+msgid "VAT"
+msgstr "T.V.A:"
+
+#: wf-woocommerce-packing-list.php:2655
+#, fuzzy
+msgid "SSN"
+msgstr "SSN :"
+
+#: wf-woocommerce-packing-list.php:2658
+#, fuzzy
+msgid "Quantity"
+msgstr "كمية"
+
+#: wf-woocommerce-packing-list.php:2659
+#, fuzzy
+msgid "Total Price"
+msgstr "تضمين السعر"
+
+#: wf-woocommerce-packing-list.php:2660
+#, fuzzy
+msgid "Subtotal"
+msgstr "حاصل الجمع"
+
+#: wf-woocommerce-packing-list.php:2662
+#, fuzzy
+msgid "Payment Method"
+msgstr "طريقة الدفع او السداد"
+
+#: wf-woocommerce-packing-list.php:2664
+#, fuzzy
+msgid "Tracking number"
+msgstr "أرقام التتبع"
+
+#: wf-woocommerce-packing-list.php:2665
+#, fuzzy
+msgid "Shipping"
+msgstr "تفاصيل الشحن"
+
+#: wf-woocommerce-packing-list.php:2666
+#, fuzzy
+msgid "Shipping Service"
+msgstr "تفاصيل الشحن"
+
+#: wf-woocommerce-packing-list.php:2667
+#, fuzzy
+msgid "Cart Discount"
+msgstr "سلة الخصم"
+
+#: wf-woocommerce-packing-list.php:2668
+#, fuzzy
+msgid "Order Discount"
+msgstr "طلب تخفيض"
+
+#: wf-woocommerce-packing-list.php:2669
+#, fuzzy
+msgid "Total Tax"
+msgstr "مجموع الضريبة"
+
+#: wf-woocommerce-packing-list.php:2672
+msgid "Date"
+msgstr "تاريخ"
+
+#, fuzzy
+#~ msgid "Check to add Contact Number to Shipping Labels"
+#~ msgstr "حدد لإضافة رقم جهة الاتصال إلى تصنيفات الشحن"
+
+#, fuzzy
+#~ msgid "Order Date: "
+#~ msgstr "تاريخ الشحن"
+
+#, fuzzy
+#~ msgid "Dispatch Date: "
+#~ msgstr "تمكين / تعطيل تسمية الإرسال"
+
+#, fuzzy
+#~ msgid " via "
+#~ msgstr "بواسطة"
+
+#, fuzzy
+#~ msgid "Return address: "
+#~ msgstr "عنوان وصول الفواتير"
+
+#, fuzzy
+#~ msgid "Print"
+#~ msgstr "التذييل المخصص للطباعة.خيارات الطباعة"
+
+#, fuzzy
+#~ msgid "Weight"
+#~ msgstr "تعيين أقصى وزن للحزمة."
+
+#, fuzzy
+#~ msgid "Ship Date"
+#~ msgstr "تاريخ الشحن"
+
+#, fuzzy
+#~ msgid "FROM:"
+#~ msgstr "اسم المرسل (مطلوب للعنوان)."
+
+#, fuzzy
+#~ msgid ""
+#~ "Unable to download Shipping Label. Please check the items in the order."
+#~ msgstr "تعذر تنزيل تصنيف الشحن. يرجى التحقق من البنود في النظام."
+
+#, fuzzy
+#~ msgid ""
+#~ "Unable to download Delivery Note. Please check the items in the order."
+#~ msgstr "تعذر تنزيل ملاحظة التسليم. يرجى التحقق من البنود في النظام."
+
+#, fuzzy
+#~ msgid "Download Shipping Label"
+#~ msgstr "تحميل تسمية الشحن"
+
+#, fuzzy
+#~ msgid "Download Dispatch Label"
+#~ msgstr "تحميل ديسباتش التسمية"
+
+#, fuzzy
+#~ msgid "Download Shipping Labels"
+#~ msgstr "تحميل تسميات الشحن"

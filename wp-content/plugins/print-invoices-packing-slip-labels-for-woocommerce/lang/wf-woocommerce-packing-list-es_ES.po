@@ -1,0 +1,1453 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Print Invoice, Packing Slip, Delivery Note & Label "
+"Plugin for WooCommerce\n"
+"POT-Creation-Date: 2017-04-17 18:21+0530\n"
+"PO-Revision-Date: 2017-04-17 19:14+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/settings/delivery_note_settings.php:154
+msgid "Delivery Note Settings : "
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:158
+#: includes/settings/invoice_settings.php:197
+#: includes/settings/packing_list_settings.php:158
+msgid "Standard Templates"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:227
+#: includes/settings/invoice_settings.php:266
+#: includes/settings/packing_list_settings.php:227
+msgid "Custom Templates"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:362
+#: includes/settings/diapatch_label_settings.php:6
+#: includes/settings/invoice_settings.php:554
+#: includes/settings/packing_list_settings.php:384
+#: includes/settings/shipping_label_settings.php:33
+msgid "Additional Fields"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:400
+#: includes/settings/invoice_settings.php:592
+#: includes/settings/packing_list_settings.php:422
+msgid "Add Existing Order Meta Field"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:402
+msgid "Select the additional information you want to have in Delivery Note."
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:407
+#: includes/settings/invoice_settings.php:599
+#: includes/settings/packing_list_settings.php:429
+msgid "Product Meta Fields"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:429
+#: includes/settings/invoice_settings.php:621
+#: includes/settings/packing_list_settings.php:451
+msgid "Add Product Meta"
+msgstr ""
+
+#: includes/settings/delivery_note_settings.php:432
+msgid ""
+"Select the additional information you want to have in Delivery Note (Product "
+"Table)."
+msgstr ""
+
+#: includes/settings/diapatch_label_settings.php:2
+msgid "Dispatch Label Settings :"
+msgstr ""
+
+#: includes/settings/diapatch_label_settings.php:20
+msgid "Select the additional information you want to have in Dispatch Label."
+msgstr ""
+
+#: includes/settings/email_settings.php:2
+msgid "Email Settings : "
+msgstr ""
+
+#: includes/settings/email_settings.php:6
+msgid "Attach Invoice with Email"
+msgstr ""
+
+#: includes/settings/email_settings.php:22
+msgid "Attach Packing Slip with Email"
+msgstr ""
+
+#: includes/settings/email_settings.php:37
+msgid "Attach Delivery Note with Email"
+msgstr ""
+
+#: includes/settings/generic_settings.php:2
+msgid "Generic Settings :"
+msgstr ""
+
+#: includes/settings/generic_settings.php:38
+msgid "Company Name"
+msgstr ""
+
+#: includes/settings/generic_settings.php:42
+msgid "Your custom company name for the print."
+msgstr ""
+
+#: includes/settings/generic_settings.php:45
+#: includes/settings/generic_settings.php:55
+#: includes/settings/generic_settings.php:69
+#: includes/settings/generic_settings.php:96
+#: includes/settings/invoice_settings.php:504
+msgid "Note:"
+msgstr ""
+
+#: includes/settings/generic_settings.php:46
+msgid "Leave blank to not to print a company name."
+msgstr ""
+
+#: includes/settings/generic_settings.php:51
+#: includes/settings/invoice_settings.php:500
+msgid "Custom Logo"
+msgstr ""
+
+#: includes/settings/generic_settings.php:53
+#: includes/settings/invoice_settings.php:502
+msgid "Upload Image"
+msgstr ""
+
+#: includes/settings/generic_settings.php:56
+msgid "Leave blank to not to use a custom logo."
+msgstr ""
+
+#: includes/settings/generic_settings.php:61
+msgid "Returns Policy, Conditions, etc."
+msgstr ""
+
+#: includes/settings/generic_settings.php:65
+msgid "Here you can add some policies, conditions etc."
+msgstr ""
+
+#: includes/settings/generic_settings.php:70
+msgid "Leave blank to not to print any policy."
+msgstr ""
+
+#: includes/settings/generic_settings.php:76
+msgid "Brand Color"
+msgstr ""
+
+#: includes/settings/generic_settings.php:82
+msgid "Choose the color you want to use for table header in documents"
+msgstr ""
+
+#: includes/settings/generic_settings.php:88
+msgid "Custom Footer"
+msgstr ""
+
+#: includes/settings/generic_settings.php:92
+msgid "Your custom footer for the print."
+msgstr ""
+
+#: includes/settings/generic_settings.php:97
+msgid "Leave blank to not to print a footer."
+msgstr ""
+
+#: includes/settings/generic_settings.php:102
+msgid "Preview Before Printing"
+msgstr ""
+
+#: includes/settings/generic_settings.php:106
+#: includes/settings/generic_settings.php:112
+#: includes/settings/generic_settings.php:219
+msgid "Enabled"
+msgstr ""
+
+#: includes/settings/generic_settings.php:108
+#: includes/settings/generic_settings.php:114
+msgid "Disabled"
+msgstr ""
+
+#: includes/settings/generic_settings.php:119
+msgid "Include DataMatrix Information"
+msgstr ""
+
+#: includes/settings/generic_settings.php:126
+msgid "Check to add datamatrix information in shipping labels and invoice"
+msgstr ""
+
+#: includes/settings/generic_settings.php:131
+msgid "Enable Variation Data"
+msgstr ""
+
+#: includes/settings/generic_settings.php:138
+msgid ""
+"Check to add variation information to Invoice, Packing Slip and Delivery Note"
+msgstr ""
+
+#: includes/settings/generic_settings.php:143
+msgid "Add SKU"
+msgstr ""
+
+#: includes/settings/generic_settings.php:150
+msgid "Check to add SKU to Invoice, Packing Slip and Delivery Note"
+msgstr ""
+
+#: includes/settings/generic_settings.php:157
+msgid "Packaging Type"
+msgstr ""
+
+#: includes/settings/generic_settings.php:178
+msgid "Packaging Process"
+msgstr ""
+
+#: includes/settings/generic_settings.php:198
+msgid "Maximum Package Weight"
+msgstr ""
+
+#: includes/settings/generic_settings.php:202
+msgid "Set the maximum weight for the package."
+msgstr ""
+
+#: includes/settings/generic_settings.php:209
+msgid "Box Sizes"
+msgstr ""
+
+#: includes/settings/generic_settings.php:214
+msgid "Length"
+msgstr ""
+
+#: includes/settings/generic_settings.php:215
+#: wf-template/wf_template_customize_for_delivery_note.php:924
+#: wf-template/wf_template_customize_for_invoice.php:958
+#: wf-template/wf_template_customize_for_packing_slip.php:924
+msgid "Width"
+msgstr ""
+
+#: includes/settings/generic_settings.php:216
+#: wf-template/wf_template_customize_for_delivery_note.php:929
+#: wf-template/wf_template_customize_for_invoice.php:963
+#: wf-template/wf_template_customize_for_packing_slip.php:929
+msgid "Height"
+msgstr ""
+
+#: includes/settings/generic_settings.php:217
+msgid "Box Weight"
+msgstr ""
+
+#: includes/settings/generic_settings.php:218
+msgid "Max Weight"
+msgstr ""
+
+#: includes/settings/generic_settings.php:225
+msgid "Add Box"
+msgstr ""
+
+#: includes/settings/generic_settings.php:226
+msgid "Remove selected box(es)"
+msgstr ""
+
+#: includes/settings/generic_settings.php:229
+msgid ""
+"Items will be packed into these boxes depending based on item dimensions and "
+"volume. Dimensions will be passed to FedEx and used for packing. Items not "
+"fitting into boxes will be packed individually."
+msgstr ""
+
+#: includes/settings/generic_settings.php:258
+msgid "Font Name"
+msgstr ""
+
+#: includes/settings/generic_settings.php:272
+msgid "Big5 font supports Chinese Language. For more information check the "
+msgstr ""
+
+#: includes/settings/generic_settings.php:274
+#: wf-woocommerce-packing-list.php:464
+msgid "Documentation"
+msgstr ""
+
+#: includes/settings/generic_settings.php:280
+msgid "Shipping From Address : "
+msgstr ""
+
+#: includes/settings/generic_settings.php:284
+msgid "Sender Name"
+msgstr ""
+
+#: includes/settings/generic_settings.php:288
+msgid "Sender name (Required for from address)."
+msgstr ""
+
+#: includes/settings/generic_settings.php:294
+msgid "Sender Address Line1"
+msgstr ""
+
+#: includes/settings/generic_settings.php:299
+msgid "Sender Address Line1 (Required for from address)."
+msgstr ""
+
+#: includes/settings/generic_settings.php:305
+msgid "Sender Address Line2"
+msgstr ""
+
+#: includes/settings/generic_settings.php:310
+msgid "Sender Address Line2 (Optional). "
+msgstr ""
+
+#: includes/settings/generic_settings.php:315
+msgid "Sender City"
+msgstr ""
+
+#: includes/settings/generic_settings.php:320
+msgid "Sender City(Required for from address)."
+msgstr ""
+
+#: includes/settings/generic_settings.php:325
+msgid "Sender Country"
+msgstr ""
+
+#: includes/settings/generic_settings.php:330
+msgid "Sender Country (Required for from address)."
+msgstr ""
+
+#: includes/settings/generic_settings.php:335
+msgid "Sender Postal Code"
+msgstr ""
+
+#: includes/settings/generic_settings.php:340
+msgid "Sender Postal Code (Required for from address)."
+msgstr ""
+
+#: includes/settings/invoice_settings.php:193
+msgid "Invoice Settings : "
+msgstr ""
+
+#: includes/settings/invoice_settings.php:401
+msgid "Generate Invoice For"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:413
+msgid "Use Order Number as Invoice Number"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:422
+msgid "Invoice Start Number"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:429
+msgid "Invoice Padding Number"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:436
+msgid "Reset Invoice Number"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:440
+msgid "Invoice Number Prefix"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:447
+msgid "Invoice Number Postfix"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:454
+msgid "Add Payment Information in Invoice"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:463
+msgid "Add Coupon Information in Invoice"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:472
+msgid "Show Print Invoice option to customers"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:482
+msgid "Tax Type"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:505
+msgid "Leave blank to not to use a custom logo for invoice."
+msgstr ""
+
+#: includes/settings/invoice_settings.php:517
+msgid "Advanced Options"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:523
+msgid "Checkout Additional Fields"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:544
+msgid "Add Custom Field"
+msgstr ""
+
+#: includes/settings/invoice_settings.php:547
+msgid "Select the additional information you want to have in Checkout."
+msgstr ""
+
+#: includes/settings/invoice_settings.php:594
+msgid "Select the additional information you want to have in Invoice."
+msgstr ""
+
+#: includes/settings/invoice_settings.php:624
+msgid ""
+"Select the additional information you want to have in Invoice Product Table."
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:154
+msgid "Packing Slip Settings : "
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:363
+msgid "Include Item/Product Image"
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:373
+msgid "Include Price"
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:424
+msgid "Select the additional information you want to have in Packing Slip."
+msgstr ""
+
+#: includes/settings/packing_list_settings.php:454
+msgid ""
+"Select the additional information you want to have in Packing Slip Product "
+"Table."
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:2
+msgid "Shipping Label Settings :"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:6
+msgid "Shipping Label Size"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:9
+#: includes/settings/shipping_label_settings.php:14
+msgid "Full Page"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:10
+#: includes/settings/shipping_label_settings.php:15
+msgid "4x6"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:21
+msgid "Enable Contact Number"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:28
+msgid "Check to add Contact Number to Shipping Labels"
+msgstr ""
+
+#: includes/settings/shipping_label_settings.php:47
+msgid "Select the additional information you want to have in Shipping Label."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:9
+#: wf-template/wf-packinglist-pdf-template.php:9
+msgid "Order: "
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:14
+#: wf-template/wf-integrated-dispatch-label.php:21
+#: wf-template/wf-invoice-pdf-template.php:20
+#: wf-template/wf-packinglist-pdf-template.php:14
+msgid "Order Date: "
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:28
+#: wf-template/wf-deliverynote-pdf-template.php:35
+#: wf-template/wf-deliverynote-pdf-template.php:41
+#: wf-template/wf-deliverynote-pdf-template.php:53
+#: wf-template/wf-packinglist-pdf-template.php:28
+#: wf-template/wf-packinglist-pdf-template.php:35
+#: wf-template/wf-packinglist-pdf-template.php:41
+#: wf-template/wf-packinglist-pdf-template.php:53
+#: wf-template/wf_template_customize_for_delivery_note.php:1603
+#: wf-template/wf_template_customize_for_packing_slip.php:1603
+msgid "Image"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:29
+#: wf-template/wf-deliverynote-pdf-template.php:42
+#: wf-template/wf-deliverynote-pdf-template.php:47
+#: wf-template/wf-deliverynote-pdf-template.php:63
+#: wf-template/wf-integrated-dispatch-label.php:39
+#: wf-template/wf-invoice-pdf-template.php:32
+#: wf-template/wf-packinglist-pdf-template.php:29
+#: wf-template/wf-packinglist-pdf-template.php:42
+#: wf-template/wf-packinglist-pdf-template.php:47
+#: wf-template/wf-packinglist-pdf-template.php:63
+#: wf-template/wf_template_customize_for_delivery_note.php:1608
+#: wf-template/wf_template_customize_for_invoice.php:1637
+#: wf-template/wf_template_customize_for_packing_slip.php:1608
+#: wf-woocommerce-packing-list.php:2494
+msgid "SKU"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:30
+#: wf-template/wf-deliverynote-pdf-template.php:36
+#: wf-template/wf-deliverynote-pdf-template.php:43
+#: wf-template/wf-deliverynote-pdf-template.php:48
+#: wf-template/wf-deliverynote-pdf-template.php:54
+#: wf-template/wf-deliverynote-pdf-template.php:58
+#: wf-template/wf-deliverynote-pdf-template.php:64
+#: wf-template/wf-deliverynote-pdf-template.php:68
+#: wf-template/wf-integrated-dispatch-label.php:40
+#: wf-template/wf-integrated-dispatch-label.php:44
+#: wf-template/wf-invoice-pdf-template.php:33
+#: wf-template/wf-invoice-pdf-template.php:37
+#: wf-template/wf-packinglist-pdf-template.php:30
+#: wf-template/wf-packinglist-pdf-template.php:36
+#: wf-template/wf-packinglist-pdf-template.php:43
+#: wf-template/wf-packinglist-pdf-template.php:48
+#: wf-template/wf-packinglist-pdf-template.php:54
+#: wf-template/wf-packinglist-pdf-template.php:58
+#: wf-template/wf-packinglist-pdf-template.php:64
+#: wf-template/wf-packinglist-pdf-template.php:68
+#: wf-template/wf_template_customize_for_delivery_note.php:1613
+#: wf-template/wf_template_customize_for_invoice.php:1642
+#: wf-template/wf_template_customize_for_packing_slip.php:1613
+#: wf-woocommerce-packing-list.php:2495
+msgid "Product"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:31
+#: wf-template/wf-deliverynote-pdf-template.php:37
+#: wf-template/wf-deliverynote-pdf-template.php:44
+#: wf-template/wf-deliverynote-pdf-template.php:49
+#: wf-template/wf-deliverynote-pdf-template.php:55
+#: wf-template/wf-deliverynote-pdf-template.php:59
+#: wf-template/wf-deliverynote-pdf-template.php:65
+#: wf-template/wf-deliverynote-pdf-template.php:69
+#: wf-template/wf-integrated-dispatch-label.php:41
+#: wf-template/wf-integrated-dispatch-label.php:45
+#: wf-template/wf-invoice-pdf-template.php:34
+#: wf-template/wf-invoice-pdf-template.php:38
+#: wf-template/wf-packinglist-pdf-template.php:31
+#: wf-template/wf-packinglist-pdf-template.php:37
+#: wf-template/wf-packinglist-pdf-template.php:44
+#: wf-template/wf-packinglist-pdf-template.php:49
+#: wf-template/wf-packinglist-pdf-template.php:55
+#: wf-template/wf-packinglist-pdf-template.php:59
+#: wf-template/wf-packinglist-pdf-template.php:65
+#: wf-template/wf-packinglist-pdf-template.php:69
+#: wf-woocommerce-packing-list.php:2496
+msgid "Quantity"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:32
+#: wf-template/wf-deliverynote-pdf-template.php:38
+#: wf-template/wf-deliverynote-pdf-template.php:45
+#: wf-template/wf-deliverynote-pdf-template.php:50
+#: wf-template/wf-deliverynote-pdf-template.php:56
+#: wf-template/wf-deliverynote-pdf-template.php:60
+#: wf-template/wf-deliverynote-pdf-template.php:66
+#: wf-template/wf-deliverynote-pdf-template.php:70
+#: wf-template/wf-packinglist-pdf-template.php:32
+#: wf-template/wf-packinglist-pdf-template.php:38
+#: wf-template/wf-packinglist-pdf-template.php:45
+#: wf-template/wf-packinglist-pdf-template.php:50
+#: wf-template/wf-packinglist-pdf-template.php:56
+#: wf-template/wf-packinglist-pdf-template.php:60
+#: wf-template/wf-packinglist-pdf-template.php:66
+#: wf-template/wf-packinglist-pdf-template.php:70
+#: wf-template/wf_template_customize_for_delivery_note.php:1623
+#: wf-template/wf_template_customize_for_packing_slip.php:1623
+msgid "Total Weight"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:33
+#: wf-template/wf-deliverynote-pdf-template.php:39
+#: wf-template/wf-deliverynote-pdf-template.php:51
+#: wf-template/wf-deliverynote-pdf-template.php:61
+#: wf-template/wf-integrated-dispatch-label.php:42
+#: wf-template/wf-integrated-dispatch-label.php:46
+#: wf-template/wf-invoice-pdf-template.php:35
+#: wf-template/wf-invoice-pdf-template.php:39
+#: wf-template/wf-packinglist-pdf-template.php:33
+#: wf-template/wf-packinglist-pdf-template.php:39
+#: wf-template/wf-packinglist-pdf-template.php:51
+#: wf-template/wf-packinglist-pdf-template.php:61
+#: wf-woocommerce-packing-list.php:2497
+msgid "Total Price"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:136
+#: wf-template/wf-deliverynote-pdf-template.php:175
+#: wf-template/wf-deliverynote-pdf-template.php:224
+#: wf-template/wf-deliverynote-pdf-template.php:255
+#: wf-template/wf-deliverynote-pdf-template.php:294
+#: wf-template/wf-deliverynote-pdf-template.php:315
+#: wf-template/wf-deliverynote-pdf-template.php:348
+#: wf-template/wf-deliverynote-pdf-template.php:370
+#: wf-template/wf-packinglist-pdf-template.php:137
+#: wf-template/wf-packinglist-pdf-template.php:176
+#: wf-template/wf-packinglist-pdf-template.php:225
+#: wf-template/wf-packinglist-pdf-template.php:256
+#: wf-template/wf-packinglist-pdf-template.php:295
+#: wf-template/wf-packinglist-pdf-template.php:316
+#: wf-template/wf-packinglist-pdf-template.php:349
+#: wf-template/wf-packinglist-pdf-template.php:371
+#: wf-woocommerce-packing-list.php:1090 wf-woocommerce-packing-list.php:1093
+#: wf-woocommerce-packing-list.php:1098 wf-woocommerce-packing-list.php:1762
+#: wf-woocommerce-packing-list.php:1830
+msgid "n/a"
+msgstr ""
+
+#: wf-template/wf-deliverynote-pdf-template.php:138
+#: wf-template/wf-deliverynote-pdf-template.php:177
+#: wf-template/wf-deliverynote-pdf-template.php:257
+#: wf-template/wf-deliverynote-pdf-template.php:317
+#: wf-template/wf-integrated-dispatch-label.php:13
+#: wf-template/wf-integrated-dispatch-label.php:107
+#: wf-template/wf-integrated-dispatch-label.php:113
+#: wf-template/wf-integrated-dispatch-label.php:117
+#: wf-template/wf-integrated-dispatch-label.php:123
+#: wf-template/wf-integrated-dispatch-label.php:132
+#: wf-template/wf-integrated-dispatch-label.php:151
+#: wf-template/wf-integrated-dispatch-label.php:163
+#: wf-template/wf-integrated-dispatch-label.php:171
+#: wf-template/wf-integrated-dispatch-label.php:176
+#: wf-template/wf-integrated-dispatch-label.php:182
+#: wf-template/wf-integrated-dispatch-label.php:187
+#: wf-template/wf-integrated-dispatch-label.php:191
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:74
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:123
+#: wf-template/wf-invoice-pdf-template.php:13
+#: wf-template/wf-invoice-pdf-template.php:99
+#: wf-template/wf-invoice-pdf-template.php:105
+#: wf-template/wf-invoice-pdf-template.php:109
+#: wf-template/wf-invoice-pdf-template.php:115
+#: wf-template/wf-invoice-pdf-template.php:124
+#: wf-template/wf-invoice-pdf-template.php:146
+#: wf-template/wf-invoice-pdf-template.php:159
+#: wf-template/wf-invoice-pdf-template.php:168
+#: wf-template/wf-invoice-pdf-template.php:173
+#: wf-template/wf-invoice-pdf-template.php:179
+#: wf-template/wf-invoice-pdf-template.php:184
+#: wf-template/wf-invoice-pdf-template.php:188
+#: wf-template/wf-label-pdf-template.php:66
+#: wf-template/wf-packinglist-pdf-template.php:139
+#: wf-template/wf-packinglist-pdf-template.php:178
+#: wf-template/wf-packinglist-pdf-template.php:258
+#: wf-template/wf-packinglist-pdf-template.php:318
+msgid " "
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:24
+msgid "Dispatch Date: "
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:131
+#: wf-template/wf-invoice-pdf-template.php:123
+#: wf-woocommerce-packing-list.php:2498
+msgid "Subtotal"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:139
+#: wf-template/wf-invoice-pdf-template.php:134
+msgid " via "
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:149
+#: wf-template/wf-integrated-dispatch-label.php:161
+#: wf-template/wf-invoice-pdf-template.php:144
+#: wf-template/wf-invoice-pdf-template.php:157
+#: wf-woocommerce-packing-list.php:2503
+msgid "Shipping"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:175
+#: wf-template/wf-invoice-pdf-template.php:172
+#: wf-template/wf_template_customize_for_invoice.php:1690
+msgid "Total Tax:"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:181
+#: wf-template/wf-invoice-pdf-template.php:178
+#: wf-template/wf_template_customize_for_invoice.php:1680
+msgid "Cart Discount:"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:186
+#: wf-template/wf-invoice-pdf-template.php:183
+#: wf-template/wf_template_customize_for_invoice.php:1685
+msgid "Order Discount:"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:190
+#: wf-template/wf-invoice-pdf-template.php:187
+#: wf-template/wf_template_customize_for_delivery_note.php:1628
+#: wf-template/wf_template_customize_for_invoice.php:1654
+#: wf-template/wf_template_customize_for_packing_slip.php:1628
+#: wf-woocommerce-packing-list.php:2499
+msgid "Total"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:194
+#: wf-template/wf-invoice-pdf-template.php:191
+#: wf-woocommerce-packing-list.php:2500
+msgid "Payment Method"
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:206
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:119
+msgid "Shipping address: "
+msgstr ""
+
+#: wf-template/wf-integrated-dispatch-label.php:226
+msgid "Return address: "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:69
+msgid "Billing address: "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:93
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:139
+#: wf-template/wf-label-pdf-template.php:82
+msgid ", "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:101
+msgid "SSN: "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:105
+msgid "VAT: "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:108
+msgid "Email: "
+msgstr ""
+
+#: wf-template/wf-invoice-packingslip-deliverynote-template.php:111
+msgid "Phone: "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:63
+msgid "To"
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:90
+msgid "Ph no:"
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:105
+msgid "Tracking Number :"
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:134
+msgid "FROM"
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:137
+msgid "Order Number "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:138
+#: wf-template/wf-label-pdf-template.php:143
+#: wf-template/wf-label-pdf-template.php:151
+msgid ": "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:142
+msgid "Weight "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:150
+msgid "Ship Date "
+msgstr ""
+
+#: wf-template/wf-label-pdf-template.php:165
+msgid " - "
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:15
+msgid "Print"
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:39
+#: wf-template/wf_template_customize_for_delivery_note.php:953
+#: wf-template/wf_template_customize_for_packing_slip.php:953
+msgid "Order Number"
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:44
+msgid "Weight"
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:50
+msgid "Ship Date"
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:59
+msgid "FROM:"
+msgstr ""
+
+#: wf-template/wf-label-template-body.php:75
+msgid "TO:"
+msgstr ""
+
+#: wf-template/wf-label-template-header.php:4
+#: wf-template/wf-template-header.php:4
+msgid "Print Shipment Label"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:835
+#: wf-template/wf_template_customize_for_invoice.php:869
+#: wf-template/wf_template_customize_for_packing_slip.php:835
+msgid "Field Attributes"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:842
+#: wf-template/wf_template_customize_for_invoice.php:876
+#: wf-template/wf_template_customize_for_packing_slip.php:842
+msgid "Save and Activate"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:900
+#: wf-template/wf_template_customize_for_invoice.php:934
+#: wf-template/wf_template_customize_for_packing_slip.php:900
+msgid "Comapny Logo"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:908
+#: wf-template/wf_template_customize_for_invoice.php:942
+#: wf-template/wf_template_customize_for_packing_slip.php:908
+msgid "Display"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:934
+#: wf-template/wf_template_customize_for_invoice.php:968
+#: wf-template/wf_template_customize_for_packing_slip.php:934
+msgid "Extra Details"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:938
+#: wf-template/wf_template_customize_for_invoice.php:972
+#: wf-template/wf_template_customize_for_packing_slip.php:938
+msgid "Font Size"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:960
+#: wf-template/wf_template_customize_for_delivery_note.php:1026
+#: wf-template/wf_template_customize_for_delivery_note.php:1091
+#: wf-template/wf_template_customize_for_delivery_note.php:1261
+#: wf-template/wf_template_customize_for_delivery_note.php:1307
+#: wf-template/wf_template_customize_for_delivery_note.php:1353
+#: wf-template/wf_template_customize_for_delivery_note.php:1399
+#: wf-template/wf_template_customize_for_delivery_note.php:1444
+#: wf-template/wf_template_customize_for_delivery_note.php:1489
+#: wf-template/wf_template_customize_for_invoice.php:994
+#: wf-template/wf_template_customize_for_invoice.php:1060
+#: wf-template/wf_template_customize_for_invoice.php:1125
+#: wf-template/wf_template_customize_for_invoice.php:1295
+#: wf-template/wf_template_customize_for_invoice.php:1341
+#: wf-template/wf_template_customize_for_invoice.php:1387
+#: wf-template/wf_template_customize_for_invoice.php:1433
+#: wf-template/wf_template_customize_for_invoice.php:1478
+#: wf-template/wf_template_customize_for_invoice.php:1523
+#: wf-template/wf_template_customize_for_packing_slip.php:960
+#: wf-template/wf_template_customize_for_packing_slip.php:1026
+#: wf-template/wf_template_customize_for_packing_slip.php:1091
+#: wf-template/wf_template_customize_for_packing_slip.php:1261
+#: wf-template/wf_template_customize_for_packing_slip.php:1307
+#: wf-template/wf_template_customize_for_packing_slip.php:1353
+#: wf-template/wf_template_customize_for_packing_slip.php:1399
+#: wf-template/wf_template_customize_for_packing_slip.php:1444
+#: wf-template/wf_template_customize_for_packing_slip.php:1489
+msgid "Font size"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:965
+#: wf-template/wf_template_customize_for_delivery_note.php:1031
+#: wf-template/wf_template_customize_for_delivery_note.php:1096
+#: wf-template/wf_template_customize_for_delivery_note.php:1358
+#: wf-template/wf_template_customize_for_delivery_note.php:1404
+#: wf-template/wf_template_customize_for_delivery_note.php:1449
+#: wf-template/wf_template_customize_for_delivery_note.php:1494
+#: wf-template/wf_template_customize_for_invoice.php:999
+#: wf-template/wf_template_customize_for_invoice.php:1065
+#: wf-template/wf_template_customize_for_invoice.php:1130
+#: wf-template/wf_template_customize_for_invoice.php:1392
+#: wf-template/wf_template_customize_for_invoice.php:1438
+#: wf-template/wf_template_customize_for_invoice.php:1483
+#: wf-template/wf_template_customize_for_invoice.php:1528
+#: wf-template/wf_template_customize_for_invoice.php:1672
+#: wf-template/wf_template_customize_for_invoice.php:1677
+#: wf-template/wf_template_customize_for_invoice.php:1682
+#: wf-template/wf_template_customize_for_invoice.php:1687
+#: wf-template/wf_template_customize_for_invoice.php:1692
+#: wf-template/wf_template_customize_for_invoice.php:1697
+#: wf-template/wf_template_customize_for_invoice.php:1702
+#: wf-template/wf_template_customize_for_packing_slip.php:965
+#: wf-template/wf_template_customize_for_packing_slip.php:1031
+#: wf-template/wf_template_customize_for_packing_slip.php:1096
+#: wf-template/wf_template_customize_for_packing_slip.php:1358
+#: wf-template/wf_template_customize_for_packing_slip.php:1404
+#: wf-template/wf_template_customize_for_packing_slip.php:1449
+#: wf-template/wf_template_customize_for_packing_slip.php:1494
+msgid "Text"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:970
+#: wf-template/wf_template_customize_for_delivery_note.php:1036
+#: wf-template/wf_template_customize_for_delivery_note.php:1101
+#: wf-template/wf_template_customize_for_invoice.php:1004
+#: wf-template/wf_template_customize_for_invoice.php:1070
+#: wf-template/wf_template_customize_for_invoice.php:1135
+#: wf-template/wf_template_customize_for_packing_slip.php:970
+#: wf-template/wf_template_customize_for_packing_slip.php:1036
+#: wf-template/wf_template_customize_for_packing_slip.php:1101
+msgid "Style"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:986
+#: wf-template/wf_template_customize_for_delivery_note.php:1052
+#: wf-template/wf_template_customize_for_delivery_note.php:1117
+#: wf-template/wf_template_customize_for_delivery_note.php:1157
+#: wf-template/wf_template_customize_for_delivery_note.php:1198
+#: wf-template/wf_template_customize_for_delivery_note.php:1239
+#: wf-template/wf_template_customize_for_delivery_note.php:1285
+#: wf-template/wf_template_customize_for_delivery_note.php:1331
+#: wf-template/wf_template_customize_for_delivery_note.php:1377
+#: wf-template/wf_template_customize_for_delivery_note.php:1423
+#: wf-template/wf_template_customize_for_delivery_note.php:1468
+#: wf-template/wf_template_customize_for_delivery_note.php:1513
+#: wf-template/wf_template_customize_for_invoice.php:1020
+#: wf-template/wf_template_customize_for_invoice.php:1086
+#: wf-template/wf_template_customize_for_invoice.php:1151
+#: wf-template/wf_template_customize_for_invoice.php:1191
+#: wf-template/wf_template_customize_for_invoice.php:1232
+#: wf-template/wf_template_customize_for_invoice.php:1273
+#: wf-template/wf_template_customize_for_invoice.php:1319
+#: wf-template/wf_template_customize_for_invoice.php:1365
+#: wf-template/wf_template_customize_for_invoice.php:1411
+#: wf-template/wf_template_customize_for_invoice.php:1457
+#: wf-template/wf_template_customize_for_invoice.php:1502
+#: wf-template/wf_template_customize_for_invoice.php:1547
+#: wf-template/wf_template_customize_for_packing_slip.php:986
+#: wf-template/wf_template_customize_for_packing_slip.php:1052
+#: wf-template/wf_template_customize_for_packing_slip.php:1117
+#: wf-template/wf_template_customize_for_packing_slip.php:1157
+#: wf-template/wf_template_customize_for_packing_slip.php:1198
+#: wf-template/wf_template_customize_for_packing_slip.php:1239
+#: wf-template/wf_template_customize_for_packing_slip.php:1285
+#: wf-template/wf_template_customize_for_packing_slip.php:1331
+#: wf-template/wf_template_customize_for_packing_slip.php:1377
+#: wf-template/wf_template_customize_for_packing_slip.php:1423
+#: wf-template/wf_template_customize_for_packing_slip.php:1468
+#: wf-template/wf_template_customize_for_packing_slip.php:1513
+msgid "Color"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1001
+#: wf-template/wf_template_customize_for_invoice.php:1035
+#: wf-template/wf_template_customize_for_packing_slip.php:1001
+msgid "Invoice Date"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1008
+#: wf-template/wf_template_customize_for_delivery_note.php:1073
+#: wf-template/wf_template_customize_for_invoice.php:1042
+#: wf-template/wf_template_customize_for_invoice.php:1107
+#: wf-template/wf_template_customize_for_packing_slip.php:1008
+#: wf-template/wf_template_customize_for_packing_slip.php:1073
+msgid "Format"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1066
+#: wf-template/wf_template_customize_for_invoice.php:1100
+#: wf-template/wf_template_customize_for_packing_slip.php:1066
+#: wf-woocommerce-packing-list.php:2487
+msgid "Order Date"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1130
+#: wf-template/wf_template_customize_for_invoice.php:1164
+#: wf-template/wf_template_customize_for_packing_slip.php:1130
+msgid "From Address"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1136
+#: wf-template/wf_template_customize_for_delivery_note.php:1177
+#: wf-template/wf_template_customize_for_delivery_note.php:1218
+#: wf-template/wf_template_customize_for_invoice.php:1170
+#: wf-template/wf_template_customize_for_invoice.php:1211
+#: wf-template/wf_template_customize_for_invoice.php:1252
+#: wf-template/wf_template_customize_for_packing_slip.php:1136
+#: wf-template/wf_template_customize_for_packing_slip.php:1177
+#: wf-template/wf_template_customize_for_packing_slip.php:1218
+msgid "Title"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1142
+#: wf-template/wf_template_customize_for_delivery_note.php:1183
+#: wf-template/wf_template_customize_for_delivery_note.php:1224
+#: wf-template/wf_template_customize_for_delivery_note.php:1270
+#: wf-template/wf_template_customize_for_delivery_note.php:1316
+#: wf-template/wf_template_customize_for_delivery_note.php:1362
+#: wf-template/wf_template_customize_for_delivery_note.php:1408
+#: wf-template/wf_template_customize_for_delivery_note.php:1453
+#: wf-template/wf_template_customize_for_delivery_note.php:1498
+#: wf-template/wf_template_customize_for_invoice.php:1176
+#: wf-template/wf_template_customize_for_invoice.php:1217
+#: wf-template/wf_template_customize_for_invoice.php:1258
+#: wf-template/wf_template_customize_for_invoice.php:1304
+#: wf-template/wf_template_customize_for_invoice.php:1350
+#: wf-template/wf_template_customize_for_invoice.php:1396
+#: wf-template/wf_template_customize_for_invoice.php:1442
+#: wf-template/wf_template_customize_for_invoice.php:1487
+#: wf-template/wf_template_customize_for_invoice.php:1532
+#: wf-template/wf_template_customize_for_packing_slip.php:1142
+#: wf-template/wf_template_customize_for_packing_slip.php:1183
+#: wf-template/wf_template_customize_for_packing_slip.php:1224
+#: wf-template/wf_template_customize_for_packing_slip.php:1270
+#: wf-template/wf_template_customize_for_packing_slip.php:1316
+#: wf-template/wf_template_customize_for_packing_slip.php:1362
+#: wf-template/wf_template_customize_for_packing_slip.php:1408
+#: wf-template/wf_template_customize_for_packing_slip.php:1453
+#: wf-template/wf_template_customize_for_packing_slip.php:1498
+msgid "Text Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1171
+#: wf-template/wf_template_customize_for_invoice.php:1205
+#: wf-template/wf_template_customize_for_packing_slip.php:1171
+msgid "Billing Address"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1212
+#: wf-template/wf_template_customize_for_invoice.php:1246
+#: wf-template/wf_template_customize_for_packing_slip.php:1212
+msgid "Shipping Address"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1254
+#: wf-template/wf_template_customize_for_invoice.php:1288
+#: wf-template/wf_template_customize_for_packing_slip.php:1254
+msgid "Email Field"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1300
+#: wf-template/wf_template_customize_for_invoice.php:1334
+#: wf-template/wf_template_customize_for_packing_slip.php:1300
+msgid "Tel Field"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1346
+#: wf-template/wf_template_customize_for_invoice.php:1380
+#: wf-template/wf_template_customize_for_packing_slip.php:1346
+msgid "VAT Field"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1392
+#: wf-template/wf_template_customize_for_invoice.php:1426
+#: wf-template/wf_template_customize_for_packing_slip.php:1392
+msgid "SSN Field"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1437
+#: wf-template/wf_template_customize_for_invoice.php:1471
+#: wf-template/wf_template_customize_for_packing_slip.php:1437
+#: wf-woocommerce-packing-list.php:2501
+msgid "Shipping Method"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1482
+#: wf-template/wf_template_customize_for_invoice.php:1516
+#: wf-template/wf_template_customize_for_packing_slip.php:1482
+msgid "Tracking Number"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1526
+#: wf-template/wf_template_customize_for_invoice.php:1560
+#: wf-template/wf_template_customize_for_packing_slip.php:1526
+msgid "Product Table"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1533
+#: wf-template/wf_template_customize_for_invoice.php:1567
+#: wf-template/wf_template_customize_for_packing_slip.php:1533
+msgid "Head Color"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1538
+#: wf-template/wf_template_customize_for_invoice.php:1572
+#: wf-template/wf_template_customize_for_packing_slip.php:1538
+msgid "Text Color"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1543
+#: wf-template/wf_template_customize_for_invoice.php:1577
+#: wf-template/wf_template_customize_for_packing_slip.php:1543
+msgid "Head Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1572
+#: wf-template/wf_template_customize_for_invoice.php:1606
+#: wf-template/wf_template_customize_for_packing_slip.php:1572
+msgid "Body Color"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1577
+#: wf-template/wf_template_customize_for_invoice.php:1611
+#: wf-template/wf_template_customize_for_packing_slip.php:1577
+msgid "Body Align"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_delivery_note.php:1619
+#: wf-template/wf_template_customize_for_invoice.php:1648
+#: wf-template/wf_template_customize_for_packing_slip.php:1619
+msgid "Qty"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:987
+msgid "Invoice Number"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:1665
+msgid "Extra Charges Fields"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:1670
+msgid "Sub Total:"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:1675
+msgid "Shipping:"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:1695
+msgid "Total:"
+msgstr ""
+
+#: wf-template/wf_template_customize_for_invoice.php:1700
+msgid "Payment Method:"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:32
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete Print Invoices, "
+"Packing List & Labels for WooCommerce (BASIC) and then try again"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:35
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete WooCommerce "
+"Shipping Labels (BASIC) and then try again"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:184
+msgid "Pack Items Individually"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:185
+msgid "Weight Based Packing"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:186
+msgid "Box Packing"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:187
+msgid "Single Package Per Order"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:190
+msgid "Pack Heavier Items First"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:191
+msgid "Pack Lighter Items First"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:192
+msgid "Pack Purely Divided By Weight"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:310
+msgid "Invoice"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:379 wf-woocommerce-packing-list.php:392
+msgid "-"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:463
+msgid "Settings"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:465
+msgid "Support"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:491 wf-woocommerce-packing-list.php:508
+msgid "You are not allowed to view this page."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:708
+msgid "Unable to download Packing List. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:737 wf-woocommerce-packing-list.php:779
+msgid "You need to Add Shipping from Address to Print shipping labels"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:763
+msgid "Unable to download Shipping Label. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:815
+msgid "Unable to print Shipping Labels. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:870
+msgid "Unable to print Packing List. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:960
+msgid "Unable to print Delivery Note. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1033
+msgid "Unable to download Delivery Note. Please check the items in the order."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1135
+msgid "Invoice/Pack List"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1137
+msgid "Print Options"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1141
+msgid "Customize"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1166
+msgid ""
+"WooCommerce - Print Invoice, Packing Slip, Delivery Note & Label Settings"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1184
+msgid "Your settings have been saved."
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1282
+msgid "Save Changes"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1298
+msgid "Print Actions"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1318 wf-woocommerce-packing-list.php:1492
+#: wf-woocommerce-packing-list.php:1495
+msgid "Print Invoice"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1328 wf-woocommerce-packing-list.php:1486
+#: wf-woocommerce-packing-list.php:1489
+msgid "Print Packing List"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1338
+msgid "Print Shipping Label"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1348 wf-woocommerce-packing-list.php:1504
+#: wf-woocommerce-packing-list.php:1507
+msgid "Print Delivery Note"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1358
+msgid "Download Shipping Label"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1369 wf-woocommerce-packing-list.php:1523
+#: wf-woocommerce-packing-list.php:1526
+msgid "Download Dispatch Label"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1498 wf-woocommerce-packing-list.php:1501
+msgid "Print Shipping Labels"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1510 wf-woocommerce-packing-list.php:1513
+msgid "Download Shipping Labels"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1517 wf-woocommerce-packing-list.php:1520
+msgid "Download Packing List"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1529 wf-woocommerce-packing-list.php:1532
+msgid "Download Delivery Note"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:1881
+msgid "Ph No : "
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2477 wf-woocommerce-packing-list.php:2486
+msgid "INVOICE"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2488
+msgid "Billing address"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2489
+msgid "Shipping address"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2490
+msgid "Email"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2491
+msgid "Tel"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2492
+msgid "VAT"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2493
+msgid "SSN"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2502
+msgid "Tracking number"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2504
+msgid "Shipping Service"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2505
+msgid "Cart Discount"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2506
+msgid "Order Discount"
+msgstr ""
+
+#: wf-woocommerce-packing-list.php:2507
+msgid "Total Tax"
+msgstr ""

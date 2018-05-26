@@ -1,0 +1,99 @@
+.RTL_wrapper
+{ 
+	  direction: rtl;
+  unicode-bidi: embed;
+}
+.RTL_wrapper caption, th, td {
+	text-align: right;
+}
+.RTL_wrapper q:after, q:before, blockquote:after, blockquote:before {
+  content: '';
+  content: none;
+}
+.RTL_wrapper body .left {
+  float: right;
+}
+.RTL_wrapper body .right {
+  float: left;
+}
+.RTL_wrapper header figure {
+  float: right;
+  margin-left: 10px;
+ 
+}
+.billing_address{
+  float:right !important; 
+  width: 49%;
+}
+.shipping_address{
+  float:left !important; 
+  width: 49%;
+}
+.RTL_wrapper header .company-info {
+  float: left;
+  
+}
+.RTL_wrapper header .company-info .icon
+{
+	right: -15px;
+
+}
+.RTL_wrapper .header_left
+{
+  float:right; 
+  width:auto; 
+  text-align:right;
+}
+.RTL_wrapper .header_right
+{
+  float:left; 
+  width:25%; 
+  text-align:left;
+}
+
+.RTL_wrapper section table tbody td.desc {
+  text-align: right;
+}
+.RTL_wrapper section table tbody td.qty {
+  text-align: right;
+}
+.RTL_wrapper section table.grand-total tbody tr td {
+  padding: 0px 12px 10px;
+  text-align: left;
+}
+.RTL_wrapper section table.grand-total tbody .grand-total div {
+  float: left;
+  
+}
+.RTL_wrapper section table.grand-total tbody .grand-total div span {
+  
+  margin-left: 20px;
+  
+}
+.RTL_wrapper p
+{
+	text-align:right;
+	 
+}
+.order_details
+      {
+        float:left !important;
+        line-height:15px;
+        margin-left:5% !important;
+        margin-right:unset;
+      }
+      .from_address_details
+      {
+        float:right!important; 
+        width:49%; 
+        margin-top:10px; 
+        margin-right:10px; 
+        margin-left:unset;
+        font-size:10px;
+      }
+      .to_address_details
+      {
+        width: 100%;
+        margin-right: 20%;
+        margin-left:unset;
+      }

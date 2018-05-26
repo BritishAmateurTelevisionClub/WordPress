@@ -1,0 +1,81 @@
+= 1.3.0 - 15/03/2018 =
+
+* [Add] - Option for WooCommerce Subscriptions to configure a recurring or one-time fee (Requires WC 3.3+ and WCS 2.2.16+)
+* [Add] - get_id() method to WAF_Fee class (dev)
+* [Improvement] - Use new WC methods instead of properties
+
+= 1.2.3 - 29/06/2017 =
+
+* [Fix] - Cost per product search field not working
+* [Improvement] - Extra cost option styling - make sure all fields are the same size
+* [Improvement] - Use jQuery.repeater to handle extra cost option rows
+* [Improvement] - Update WP Conditions to 1.0.3
+		- [Fix] - 'User role' condition 'Guest' wasn't working
+        - [Improvement] - Allow conditions outside postbox / multiple times inside. Not limited to .postbox class.
+        - [Add] - Zipcode range support. E.g. 'Zipcode' = 'equal to' = '10000-20000,30000-40000'
+
+
+= 1.2.2 - 30/03/2017 =
+
+* [Fix] - Auto updater not being able to called when performing updater actions
+
+= 1.2.1 - 12/03/2017 =
+
+* [Add] - WC 3.0 compatibility
+* [Add] - PHP 7.1 compatibility
+* [Improvement] - Refactor conditional code. - If using custom code in relation to Advanced Fees > please verify the working -
+
+= 1.2.0 - 17/01/2017 =
+
+* [Add] - Feature to set percentage cost based on group subtotal (e.g. subtotal of the category/shipping class/product).
+* [Add] - Feature to set interval cost. E.g. $10 per 2kg.
+* [Add[ - Feature to set the min/max fields with group subtotals (add a '$') and group weights (add a 'w')
+* [Add] - Unit tests
+* [Add] - Abstraction improvements (code)
+
+= 1.1.7 - 13/09/2016 =
+
+* [Fix] - Bug introduced in 1.1.6 causing 'cost per product' product values not saving
+
+= 1.1.6 - 06/09/2016 =
+
+* [Improvement] - Refactored condition code (backend)
+* [Improvement] - Improved 'product' condition value fields (allow searching) and supports huge amounts of product
+* [Improvement] - Add support for continents in the 'country' condition (requires WC 2.6+)
+* [Improvement] - Improved zipcode matching
+* [Improvement] - Allow dollar and percentage signs in the 'coupon' condition to setup the condition based on the amounts instead of solely coupon codes
+
+= 1.1.5 - 11/07/2016 =
+
+* [Fix] - Small 'Cost per weight' issue in WC 2.6
+* [Fix] - Javascript snag introduced in 1.1.4
+
+= 1.1.4 - 23/05/2016 =
+
+* [Improvement] - Use searchable selects for relevant condition values
+* [Improvement] - Make the adding condition (groups) process more smooth
+* [Add] - Support for WooCommerce Advanced Shipping in the 'shipping method' condition.
+* [Fix] - Allow asterisk in 'fee amount' field.
+
+= 1.1.3 - 28/01/2016 =
+
+* [Update] - Update the Updater class from EDDSL
+
+= 1.1.2 - 22/01/2016 =
+
+* [Tweak] - Support comma decimal numbers for fees
+* [Fix] - Some (cc) gateways kept refreshing on checkout
+
+= 1.1.1 - 02/11/2015 =
+
+* [Fix] - Credit card form kept refreshing due to 'change'
+
+= 1.1.0 - 01/10/2015 =
+
+* [Add] - Extra cost options, set cost per weight, shipping class, category, product!!
+* [Improvement] - Add extra nonce checks for AJAX calls
+
+
+= 1.0.0 - 25/08/2015 =
+
+* First version
