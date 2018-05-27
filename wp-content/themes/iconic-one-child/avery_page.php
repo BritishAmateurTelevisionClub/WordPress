@@ -45,7 +45,7 @@ function save_template_javascript() { ?>
                        });
 
                         window.open(
-                            'https://beta.batc.org.uk/wp-content/themes/iconic-one-child/avery_labels.php?user_id=' + ids,
+                            'https://batc.org.uk/wp-content/themes/iconic-one-child/avery_labels.php?user_id=' + ids,
                             '_blank'
                             );
                     } else if ($('#bulk-action-selector-top').val() == 'renewal-letter') {
@@ -57,7 +57,7 @@ function save_template_javascript() { ?>
                        });
 
                         window.open(
-                            'https://beta.batc.org.uk/wp-content/themes/iconic-one-child/generate_pdf.php?user_id=' + ids,
+                            'https://batc.org.uk/wp-content/themes/iconic-one-child/generate_pdf.php?user_id=' + ids,
                             '_blank'
                             );
                     }
