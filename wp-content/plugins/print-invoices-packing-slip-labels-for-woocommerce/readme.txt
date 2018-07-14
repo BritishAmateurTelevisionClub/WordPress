@@ -1,10 +1,10 @@
 === WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels ===
-Contributors: xadapter, mujeebur
+Contributors: webtoffee
 Donate link: 
 Tags: woocommerce pdf invoices, woocommerce pdf invoices & packing slips, woocommerce packing slip, woocommerce print invoice,woocommerce shipping labels, woocommerce invoice
 Requires at least: 3.0.1
-Tested up to: 4.9.6
-Stable tag: 2.3.4
+Tested up to: 4.9.7
+Stable tag: 2.3.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,9 +83,9 @@ You can print packing slips / packing list  from your computer using this plugin
 
 You can print dispatch labels from your computer using this plugin. Woocommerce dispatch labels/ woocommerce dispatch labels /  woocommerce dispatch labels can be directly printed from the order page. 
 
-= About XAdapter =
+= About WebToffee =
 
-XAdapter creates quality WordPress/WooCommerce plug-ins that are easy to use and customize. We are proud to have thousands of customers actively using our plugins across the globe.
+WebToffee creates quality WordPress/WooCommerce plug-ins that are easy to use and customize. We are proud to have thousands of customers actively using our plugins across the globe.
 
 == Installation ==
 
@@ -116,6 +116,16 @@ The plugin is very easy to configure. We have a step by step tutorial on setting
 8. Individual Order Details Screen
 
 == Changelog ==
+
+= 2.3.6 =
+
+* Support for UTF-8 currency symbols
+* Download PDF option for invoice
+
+= 2.3.5 =
+
+* Invoice template modification.
+* Bug fix.
 
 = 2.3.4 =
 
@@ -244,7 +254,7 @@ The plugin is very easy to configure. We have a step by step tutorial on setting
  
 == Upgrade Notice ==
 
-= 2.3.4 =
+= 2.3.6 =
 
-* Email being sent twice fixed.
-* Tested OK with WooCommerce 3.4.0.
+* Support for UTF-8 currency symbols
+* Download PDF option for invoice

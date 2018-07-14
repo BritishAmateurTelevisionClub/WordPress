@@ -115,7 +115,7 @@ class WC_Order_Export_Ajax {
 		$main_settings = WC_Order_Export_Admin::load_main_settings();
 
 		$result = WC_Order_Export_Engine::build_files_and_export( $settings, '', $main_settings['limit_button_test'] );
-		echo $result;
+		echo str_replace("<br>", "\r\n", $result);
 	}
 
 	public function preview() {
@@ -163,6 +163,15 @@ class WC_Order_Export_Ajax {
     public function get_order_billing_values() {
 		echo json_encode( WC_Order_Export_Data_Extractor_UI::get_order_meta_values('_billing_', $_POST['item']) );
     }
+    
+	public function get_order_item_names() {
+		echo json_encode( WC_Order_Export_Data_Extractor_UI::get_order_item_names($_POST['item_type']) );
+	}
+	public function get_order_item_meta_key_values() {
+		echo json_encode( WC_Order_Export_Data_Extractor_UI::get_order_item_meta_key_values($_POST['meta_key']) );
+	}
+	
+	
 
 	public function send_headers( $format, $download_name = '') {
 		WC_Order_Export_Engine::kill_buffers();

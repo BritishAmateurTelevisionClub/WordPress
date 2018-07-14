@@ -142,7 +142,6 @@ class WOE_Formatter_Xls extends WOE_Formatter {
 			}
 			fwrite( $this->handle, '</table>' );
 		} else {
-			do_action ( 'woe_xls_print_footer', $this->objPHPExcel, $this );
 			if ( $this->settings['auto_width'] ) {
 				try {
 					$sheet = $this->objPHPExcel->getActiveSheet();
@@ -156,7 +155,7 @@ class WOE_Formatter_Xls extends WOE_Formatter {
 					//do nothing here , adjustment failed gracefully
 				}
 			}
-
+			do_action ( 'woe_xls_print_footer', $this->objPHPExcel, $this );
 			$objWriter = PHPExcel_IOFactory::createWriter($this->objPHPExcel, $this->settings['use_xls_format'] ? 'Excel5' : 'Excel2007');
 			$objWriter->save( $this->filename );
 		}

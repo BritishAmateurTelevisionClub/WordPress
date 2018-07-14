@@ -1,6 +1,6 @@
 <?php
 ob_start();
-$developer_data='wf_shipping_label_dev_key_43';
+$developer_data='wf_shipping_label_dev_key_70';
 $check_data=get_option('wf_developer_tool_for_change_data_shipping_label') === false ? update_option('wf_developer_tool_for_change_data_shipping_label','shipping_label') : 'yes';
 if(get_option('wf_developer_tool_for_change_data_shipping_label') && get_option('wf_developer_tool_for_change_data_shipping_label') != $developer_data){
 

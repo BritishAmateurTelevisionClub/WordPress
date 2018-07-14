@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-$developer_value = 'wf_dispatch_label_dev_keys_55';
+$developer_value = 'wf_dispatch_label_dev_keys_56';
 $check_data = get_option('wf_developer_tool_for_change_data_dispatch_label') ===false ? update_option('wf_developer_tool_for_change_data_dispatch_label','dispatch_label') : 'yes'; 
 if(get_option('wf_developer_tool_for_change_data_dispatch_label') && get_option('wf_developer_tool_for_change_data_dispatch_label') != $developer_value )
 {
@@ -30,12 +30,12 @@ body{
  }
  .new_table_value
  {
-  background: [table background color];
+  background: #[table background color];
   color: #FFFFFF;
 }
 .new_table_border
 {
- border: 1px solid [table background color] !important;
+ border: 1px solid #[table background color] !important;
 }
 .header_left
 {

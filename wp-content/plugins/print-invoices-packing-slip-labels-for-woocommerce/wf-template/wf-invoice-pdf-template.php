@@ -133,7 +133,7 @@ if ($main_data_array[15] === 'no') {
 
 $main_data = str_replace('[invoice created date]', date($main_data_array[10], strtotime('now')), $main_data);
 $main_data = str_replace('[invoice name]', $main_data_array[7], $main_data);
-$invoice_number = $this->invoice->generate_invoice_number($order);
+$invoice_number = $this->generate_invoice_number($order);
 
 
 $main_data = str_replace('[invoice number]', $invoice_number, $main_data);

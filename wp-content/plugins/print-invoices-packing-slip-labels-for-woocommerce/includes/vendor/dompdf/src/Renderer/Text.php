@@ -10,7 +10,6 @@
 namespace Dompdf\Renderer;
 
 use Dompdf\Adapter\CPDF;
-use Dompdf\FontMetrics;
 use Dompdf\Frame;
 
 /**
@@ -80,7 +79,8 @@ class Text extends AbstractRenderer
           array($this->_canvas->get_page_number()),
           $text
         );*/
-         $this->_canvas->text($x, $y, $text,
+
+        $this->_canvas->text($x, $y, $text,
             $font, $size,
             $style->color, $word_spacing, $char_spacing);
 
@@ -101,7 +101,7 @@ class Text extends AbstractRenderer
         $underline_position = -0.08;
 
         if ($this->_canvas instanceof CPDF) {
-            $cpdf_font = @$this->_canvas->get_cpdf()->fonts[$style->font_family];
+            $cpdf_font = $this->_canvas->get_cpdf()->fonts[$style->font_family];
 
             if (isset($cpdf_font["UnderlinePosition"])) {
                 $underline_position = $cpdf_font["UnderlinePosition"] / 1000;

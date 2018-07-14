@@ -2,7 +2,7 @@
 /**
  * Custom Order Numbers for WooCommerce - Core Class
  *
- * @version 1.1.2
+ * @version 1.2.0
  * @since   1.0.0
  * @author  Algoritmika Ltd.
  */
@@ -18,6 +18,7 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 *
 	 * @version 1.1.1
 	 * @since   1.0.0
+	 * @todo    (feature) (maybe) prefix / suffix per order (i.e. different prefix / suffix for different orders)
 	 */
 	function __construct() {
 		if ( 'yes' === get_option( 'alg_wc_custom_order_numbers_enabled', 'yes' ) ) {
@@ -42,8 +43,8 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 *
 	 * @version 1.1.2
 	 * @since   1.1.2
-	 * @todo    use transactions on `alg_wc_custom_order_numbers_use_mysql_transaction_enabled`
-	 * @todo    (maybe) customizable reset value (i.e. `1`)
+	 * @todo    (dev) use MySQL transaction
+	 * @todo    (feature) (maybe) customizable reset value (i.e. `1`)
 	 */
 	function maybe_reset_sequential_counter( $current_order_number, $order_id ) {
 		if ( 'no' != ( $reset_period = get_option( 'alg_wc_custom_order_numbers_counter_reset_enabled', 'no' ) ) ) {
@@ -147,30 +148,35 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	/**
 	 * Add Renumerate Orders tool to WooCommerce menu (the content).
 	 *
-	 * @version 1.1.1
+	 * @version 1.2.0
 	 * @since   1.0.0
-	 * @todo    (maybe) more results
-	 * @todo    (maybe) check if sequential is enabled
+	 * @todo    (dev) more results
 	 */
-	public function create_renumerate_orders_tool() {
-		$html = '';
-		$result_message = '';
+	function create_renumerate_orders_tool() {
+		$html                   = '';
+		$result_message         = '';
 		$last_renumerated_order = 0;
 		if ( isset( $_POST['alg_renumerate_orders'] ) ) {
 			$total_renumerated_orders = $this->renumerate_orders();
 			$last_renumerated_order   = $total_renumerated_orders[1];
 			$total_renumerated_orders = $total_renumerated_orders[0];
-			$result_message = '<p><div class="updated"><p><strong>' . sprintf( __( '%d orders successfully renumerated!', 'custom-order-numbers-for-woocommerce' ), $total_renumerated_orders ) . '</strong></p></div></p>';
+			$result_message           = '<p><div class="updated"><p><strong>' .
+				sprintf( __( '%d orders successfully renumerated!', 'custom-order-numbers-for-woocommerce' ), $total_renumerated_orders ) . '</strong></p></div></p>';
 		}
 		$html .= '<h1>' . __( 'Renumerate Orders', 'custom-order-numbers-for-woocommerce' ) . '</h1>';
 		$html .= $result_message;
+		$html .= '<p>' . sprintf( __( 'Plugin settings: <a href="%s">WooCommerce > Settings > Custom Order Numbers</a>.', 'custom-order-numbers-for-woocommerce' ),
+			admin_url( 'admin.php?page=wc-settings&tab=alg_wc_custom_order_numbers' ) ) . '</p>';
 		$next_order_number = ( 0 != $last_renumerated_order ) ? ( $last_renumerated_order + 1 ) : get_option( 'alg_wc_custom_order_numbers_counter', 1 );
-		$html .= '<p>' . sprintf( __( 'Press the button below to renumerate all existing orders. First order number will be <strong>%d</strong> (as set in <a href="%s">WooCommerce > Settings > Custom Order Numbers</a>).', 'custom-order-numbers-for-woocommerce' ), $next_order_number, admin_url( 'admin.php?page=wc-settings&tab=alg_wc_custom_order_numbers' ) ) . '</p>';
+		$html .= '<p>' . __( 'Press the button below to renumerate all existing orders.', 'custom-order-numbers-for-woocommerce' ) . '</p>';
+		if ( 'sequential' === get_option( 'alg_wc_custom_order_numbers_counter_type', 'sequential' ) ) {
+			$html .= '<p>' . sprintf( __( 'First order number will be <strong>%d</strong>.', 'custom-order-numbers-for-woocommerce' ), $next_order_number ) . '</p>';
+		}
 		$html .= '<form method="post" action="">';
 		$html .= '<input class="button-primary" type="submit" name="alg_renumerate_orders" value="' . __( 'Renumerate orders', 'custom-order-numbers-for-woocommerce' ) . '"' .
 			' onclick="return confirm(\'' . __( 'Are you sure?', 'custom-order-numbers-for-woocommerce' ) . '\')">';
 		$html .= '</form>';
-		echo $html;
+		echo '<div class="wrap">' . $html . '</div>';
 	}
 
 	/**
@@ -179,14 +185,14 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 * @version 1.1.2
 	 * @since   1.0.0
 	 */
-	public function renumerate_orders() {
+	function renumerate_orders() {
 		if ( 'sequential' === get_option( 'alg_wc_custom_order_numbers_counter_type', 'sequential' ) && 'no' != get_option( 'alg_wc_custom_order_numbers_counter_reset_enabled', 'no' ) ) {
 			update_option( 'alg_wc_custom_order_numbers_counter_previous_order_date', 0 );
 		}
 		$total_renumerated = 0;
-		$last_renumerated = 0;
-		$offset = 0;
-		$block_size = 512;
+		$last_renumerated  = 0;
+		$offset            = 0;
+		$block_size        = 512;
 		while( true ) {
 			$args = array(
 				'post_type'      => 'shop_order',
@@ -243,7 +249,7 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 * @since   1.0.0
 	 */
 	function add_order_number_to_tracking( $order_number ) {
-		$offset = 0;
+		$offset     = 0;
 		$block_size = 512;
 		while( true ) {
 			$args = array(
@@ -277,10 +283,10 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 * @version 1.1.0
 	 * @since   1.0.0
 	 */
-	public function display_order_number( $order_number, $order ) {
+	function display_order_number( $order_number, $order ) {
 		$is_wc_version_below_3 = version_compare( get_option( 'woocommerce_version', null ), '3.0.0', '<' );
-		$order_id = ( $is_wc_version_below_3 ? $order->id : $order->get_id() );
-		$order_number_meta = get_post_meta( $order_id, '_alg_wc_custom_order_number', true );
+		$order_id              = ( $is_wc_version_below_3 ? $order->id : $order->get_id() );
+		$order_number_meta     = get_post_meta( $order_id, '_alg_wc_custom_order_number', true );
 		if ( '' == $order_number_meta || 'order_id' === get_option( 'alg_wc_custom_order_numbers_counter_type', 'sequential' ) ) {
 			$order_number_meta = $order_id;
 		}
@@ -295,23 +301,24 @@ class Alg_WC_Custom_Order_Numbers_Core {
 	 * @version 1.0.0
 	 * @since   1.0.0
 	 */
-	public function add_new_order_number( $order_id ) {
+	function add_new_order_number( $order_id ) {
 		$this->add_order_number_meta( $order_id, false );
 	}
 
 	/**
 	 * Add/update order_number meta to order.
 	 *
-	 * @version 1.1.2
+	 * @version 1.2.0
 	 * @since   1.0.0
-	 * @todo    (maybe) check if sequential is enabled
 	 */
-	public function add_order_number_meta( $order_id, $do_overwrite ) {
+	function add_order_number_meta( $order_id, $do_overwrite ) {
 		if ( 'shop_order' !== get_post_type( $order_id ) ) {
 			return false;
 		}
 		if ( true === $do_overwrite || 0 == get_post_meta( $order_id, '_alg_wc_custom_order_number', true ) ) {
-			if ( 'yes' === get_option( 'alg_wc_custom_order_numbers_use_mysql_transaction_enabled', 'yes' ) ) {
+			$counter_type = get_option( 'alg_wc_custom_order_numbers_counter_type', 'sequential' );
+			if ( 'sequential' === $counter_type ) {
+				// Using MySQL transaction, so in case of a lot of simultaneous orders in the shop - prevent duplicate sequential order numbers
 				global $wpdb;
 				$wpdb->query( 'START TRANSACTION' );
 				$wp_options_table = $wpdb->prefix . 'options';
@@ -324,19 +331,21 @@ class Alg_WC_Custom_Order_Numbers_Core {
 						array( 'option_name'  => 'alg_wc_custom_order_numbers_counter' )
 					);
 					if ( NULL != $result_update || $result_select->option_value == ( $current_order_number + 1 ) ) {
-						$wpdb->query( 'COMMIT' ); // all ok
+						$wpdb->query( 'COMMIT' );   // all ok
 						update_post_meta( $order_id, '_alg_wc_custom_order_number', $current_order_number );
 					} else {
 						$wpdb->query( 'ROLLBACK' ); // something went wrong, Rollback
 						return false;
 					}
 				} else {
-					$wpdb->query( 'ROLLBACK' ); // something went wrong, Rollback
+					$wpdb->query( 'ROLLBACK' );     // something went wrong, Rollback
 					return false;
 				}
-			} else {
-				$current_order_number = $this->maybe_reset_sequential_counter( get_option( 'alg_wc_custom_order_numbers_counter', 1 ), $order_id );
-				update_option( 'alg_wc_custom_order_numbers_counter', ( $current_order_number + 1 ) );
+			} elseif ( 'hash_crc32' === $counter_type ) {
+				$current_order_number = sprintf( "%u", crc32( $order_id ) );
+				update_post_meta( $order_id, '_alg_wc_custom_order_number', $current_order_number );
+			} else { // 'order_id'
+				$current_order_number = '';
 				update_post_meta( $order_id, '_alg_wc_custom_order_number', $current_order_number );
 			}
 			return $current_order_number;

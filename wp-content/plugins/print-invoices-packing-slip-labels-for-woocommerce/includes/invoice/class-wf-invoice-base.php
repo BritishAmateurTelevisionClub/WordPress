@@ -84,38 +84,7 @@ if (!class_exists('Wf_Invoice_Base')) {
             return $shortcode_text;
         }
 
-        // Function to generate invoice number
-        public function generate_invoice_number($order) {
-            
-            $order_num = $order->get_order_number();
-            $order_id = (WC()->version < '2.7.0') ? $order->id : $order->get_id();
-            $wf_invoice_id = get_post_meta($order_id, 'wf_invoice_number', true);
-
-            $wf_invoice_as_ordernumber = get_option('woocommerce_wf_invoice_as_ordernumber');
-            if ($wf_invoice_as_ordernumber == "Yes") {
-                if (!empty($wf_invoice_id)) {
-                    return $wf_invoice_id;
-                } else {
-                    $padded_invoice_number = $this->add_invoice_padding($order_num);
-                    $invoice_number = $this->add_postfix_prefix($padded_invoice_number);
-                    update_post_meta($order_id, 'wf_invoice_number', $invoice_number);
-                    return $invoice_number;
-                }
-            } else {
-                if (!empty($wf_invoice_id)) {
-                    return $wf_invoice_id;
-                } else {
-                    $Current_invoice_number = get_option('woocommerce_wf_Current_Invoice_number');
-                    update_option('woocommerce_wf_Current_Invoice_number', ++$Current_invoice_number);
-                    $new_invoice_number = get_option('woocommerce_wf_Current_Invoice_number');
-                    $padded_invoice_number = $this->add_invoice_padding($new_invoice_number);
-                    $invoice_number = $this->add_postfix_prefix($padded_invoice_number);
-                    update_post_meta($order_id, 'wf_invoice_number', $invoice_number);
-                    return $invoice_number;
-                }
-            }
-        }
-
+        
         /* Ajax reset invoice number */
 
         public function reset_invoice_number() {
@@ -217,13 +186,13 @@ if (!class_exists('Wf_Invoice_Base')) {
                    $item_meta = (WC()->version < '3.1.0') ? new WC_Order_Item_Meta($item) : new WC_Order_Item_Product($item);
                     // first, is there order item meta avaialble to display?
                     $variation;
-                    $variation = (WC()->version < '3.1.0') ? $item_meta->display(true, true) : '';
+                    $variation = function_exists('wc_get_order_item_meta') ? wc_get_order_item_meta($item_id, '', false) : $order->get_item_meta($item_id);
                     if (!$variation && $_product && isset($product_variation_data)) {
                         // otherwise (for an order added through the admin) lets display the formatted variation data so we have something to fall back to
-                        $variation = wc_get_formatted_variation($product_variation_data, true);
+                        $variation = $this->get_order_line_item_variation_data($item_id, $_product, $order);
                     }
                     if ($variation) {
-                        $variation = '<br/>' . $variation;
+                        $variation = $this->get_order_line_item_variation_data($item_id, $_product, $order);
                     }
 
 
@@ -293,10 +262,10 @@ if (!class_exists('Wf_Invoice_Base')) {
                     }
                     if ($main_data_array[67] != 'default') {
                         $return .= '<td  style="word-wrap: break-word;color:' . $main_data_array[67] . ';text-align:unset;" class="total">';
-                        $return .= $item_price;
+                        $return .= wc_price($item_price,array('currency' => $user_currency));
                     } else {
-                        $return .= '<td  style="word-wrap: break-word;color:black;text-align:unset;" class="total">';
-                        $return .= $item_price;
+                        $return .= '<td style="word-wrap: break-word;color:black;text-align:unset;" class="total">';
+                        $return .= wc_price($item_price,array('currency' => $user_currency));
                     }
                     $return .= '</td>';
 

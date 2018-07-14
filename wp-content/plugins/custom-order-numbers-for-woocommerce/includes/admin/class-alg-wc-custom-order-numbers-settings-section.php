@@ -2,7 +2,7 @@
 /**
  * Custom Order Numbers for WooCommerce - Section Settings
  *
- * @version 1.0.0
+ * @version 1.2.0
  * @since   1.0.0
  * @author  Algoritmika Ltd.
  */
@@ -38,11 +38,28 @@ class Alg_WC_Custom_Order_Numbers_Settings_Section {
 	/**
 	 * get_settings.
 	 *
-	 * @version 1.0.0
+	 * @version 1.2.0
 	 * @since   1.0.0
 	 */
 	function get_settings() {
-		return apply_filters( 'alg_custom_order_numbers_settings_' . $this->id, array() );
+		return array_merge( apply_filters( 'alg_custom_order_numbers_settings_' . $this->id, array() ), array(
+			array(
+				'title'     => __( 'Reset Settings', 'custom-order-numbers-for-woocommerce' ),
+				'type'      => 'title',
+				'id'        => 'alg_wc_custom_order_numbers_' . $this->id . '_reset_options',
+			),
+			array(
+				'title'     => __( 'Reset section settings', 'custom-order-numbers-for-woocommerce' ),
+				'desc'      => '<strong>' . __( 'Reset', 'custom-order-numbers-for-woocommerce' ) . '</strong>',
+				'id'        => 'alg_wc_custom_order_numbers_' . $this->id . '_reset',
+				'default'   => 'no',
+				'type'      => 'checkbox',
+			),
+			array(
+				'type'      => 'sectionend',
+				'id'        => 'alg_wc_custom_order_numbers_' . $this->id . '_reset_options',
+			),
+		) );
 	}
 
 	/**

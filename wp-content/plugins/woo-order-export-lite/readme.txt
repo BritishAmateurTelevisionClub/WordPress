@@ -5,7 +5,7 @@ Tags: woocommerce,export,order,xls,csv,xml,woo export lite,export orders,orders 
 Requires PHP: 5.3.0
 Requires at least: 4.7
 Tested up to: 4.9
-Stable tag: 1.5.4
+Stable tag: 1.5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,8 +65,8 @@ Need help? Create ticket in [helpdesk system](https://algolplus.freshdesk.com). 
 
 Check [some snippets](https://algolplus.com/plugins/snippets-plugins/) for popular plugins or review  [this page](https://algolplus.com/plugins/code-samples/) to study how to extend the plugin.
 
-= I want to add new attribute to export  =
-Check screenshot #5! You should open section "Set up fields", scroll down to field "Products", click button  "Set up fields", click button "Add field", select field in the dropdown, type column title and press button "Add".
+= I want to add a product attribute to the export  =
+Check screenshot #5! You should open section "Set up fields", scroll down to field "Products", click button  "Set up fields", select field in the dropdown, type column title and press button "Add field".
 
 = I can't filter/export custom attribute for Simple Product =
 I'm sorry, but it's impossible. You should add this attribute to Products>Attributes at first and use "Filter by Product Taxonomies".
@@ -81,7 +81,7 @@ Please, increase "memory_limit" upto 256M or ask hosting support to do it.
 Open order, look at items and remember meta name.
 Visit WooCommerce>Export Orders,
 open section "Set up fields", scroll down to "Products", click button "Set up fields" ( you will see popup)
-select SAME name in first dropdown
+select SAME name in second dropdown
 
 = When exporting .csv containing european special characters , I want to open this csv in Excel without extra actions =
 You  should open tab "CSV" and set up ISO-8859-1 as codepage.
@@ -102,6 +102,21 @@ Yes, you can email a request to aprokaev@gmail.com. We intensively develop this 
 6. Select orders to export and use "bulk action".
 
 == Changelog ==
+
+= 1.5.5 - 2018-06-08 =
+* Added filter by item name
+* Added filter by item metadata
+* Added operators <,>,>=,<= for order and product custom fields
+* Updated filter by shipping method (adapted for WooCommerce 3.4)
+* Fixed bug in filter by product taxonomies 
+* Allow to enter time in date range filter (after date)
+* Show sections "Filter by order" and "Filter by coupon" as opened if some checkboxes are ON in these sections
+* Added order field "Total Orders For Customer"
+* Splited product field "Name" to "Item Name" and "Product Name" (to export current product name)
+* Automatically scroll section "Setup Fields" to bottom after adding new field
+* Export multiple values from same item meta
+* Added new hooks for summary reports
+* Prevent csv injection (we add space if cell value starts with =,+,-,@). Thank Bhushan Patil for finding this vulnerability!
 
 = 1.5.4 - 2018-04-25 =
 * Prompting to save changes if user modifies settings

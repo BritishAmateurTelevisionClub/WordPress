@@ -1,6 +1,7 @@
 <?php 
 $acive_template = get_option('wf_delivery_note_active_key');
-
+$order = ( WC()->version < '2.7.0' ) ? new WC_Order($order) : new wf_order($order);
+$order_id = (WC()->version < '2.7.0') ? $order->id : $order->get_id();
 $main_data = get_option($acive_template);
 if(get_option($acive_template.'value'))
 	{
@@ -104,7 +105,7 @@ else
 
 $main_data 		= str_replace('[order date title size]', $title_size, $main_data);
 $main_data 		= str_replace('[order date label]', __($main_data_array[18], 'wf-woocommerce-packing-list'), $main_data);
-$order_date 	= date($main_data_array[16], strtotime((WC()->version < '2.7.0') ? $order->order_date : $order->get_date_created()));
+$order_date 	= get_the_date( $main_data_array[16], $order_id );
 $order_date 	= apply_filters('wf_pklist_modify_order_date',$order_date, $order, $action);
 $main_data 		= str_replace('[order date]', $order_date, $main_data);
 $main_data 		= str_replace('[order date font size]','font-size:'.$main_data_array[17].'px !important;', $main_data);
@@ -285,6 +286,7 @@ else
 }
 
 $billing_phone = (WC()->version < '2.7.0') ? $order->billing_phone : $order->get_billing_phone();
+$billing_phone = apply_filters('wf_alter_billing_phone_number',$billing_phone,$order_id);
 if($billing_phone != '')
 {
 	$main_data 		= str_replace('[wf tel show hide]','', $main_data);

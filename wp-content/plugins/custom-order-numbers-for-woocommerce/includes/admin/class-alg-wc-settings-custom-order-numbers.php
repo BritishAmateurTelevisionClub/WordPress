@@ -2,7 +2,7 @@
 /**
  * Custom Order Numbers for WooCommerce - Settings
  *
- * @version 1.0.0
+ * @version 1.2.0
  * @since   1.0.0
  * @author  Algoritmika Ltd.
  */
@@ -34,6 +34,36 @@ class Alg_WC_Settings_Custom_Order_Numbers extends WC_Settings_Page {
 	function get_settings() {
 		global $current_section;
 		return apply_filters( 'woocommerce_get_settings_' . $this->id . '_' . $current_section, array() );
+	}
+
+	/**
+	 * maybe_reset_settings.
+	 *
+	 * @version 1.2.0
+	 * @since   1.2.0
+	 */
+	function maybe_reset_settings() {
+		global $current_section;
+		if ( 'yes' === get_option( $this->id . '_' . $current_section . '_reset', 'no' ) ) {
+			foreach ( $this->get_settings() as $value ) {
+				if ( isset( $value['default'] ) && isset( $value['id'] ) ) {
+					delete_option( $value['id'] );
+					$autoload = isset( $value['autoload'] ) ? ( bool ) $value['autoload'] : true;
+					add_option( $value['id'], $value['default'], '', ( $autoload ? 'yes' : 'no' ) );
+				}
+			}
+		}
+	}
+
+	/**
+	 * Save settings.
+	 *
+	 * @version 1.2.0
+	 * @since   1.2.0
+	 */
+	function save() {
+		parent::save();
+		$this->maybe_reset_settings();
 	}
 
 }

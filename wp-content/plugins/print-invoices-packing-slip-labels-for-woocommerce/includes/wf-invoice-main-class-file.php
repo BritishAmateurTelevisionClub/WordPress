@@ -24,6 +24,7 @@ if(!class_exists('WF_Invoice_Plugin_Main_Class'))
 				'print_packing_list',
 				'print_shipment_label',
 				'print_delivery_note',
+				'download_invoice',
 				'download_shipment_label',
 				
 			);
@@ -34,6 +35,7 @@ if(!class_exists('WF_Invoice_Plugin_Main_Class'))
 				'print_delivery_note'  => 'Print Delivery Note'
 			);
 			$this->download_documents = array(
+				'download_invoice' => 'Download Invoice',
 				'download_shipment_label'     => 'Download Shipping Label',
 				
 			);

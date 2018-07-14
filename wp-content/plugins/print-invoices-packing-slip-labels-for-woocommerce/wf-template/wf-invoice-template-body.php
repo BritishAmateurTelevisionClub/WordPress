@@ -60,7 +60,7 @@ $billing_email = (WC()->version < '2.7.0') ? $order->billing_email : $order->get
 if($billing_email != '')
 {
 	$main_data 		= str_replace('[wf email show hide]','', $main_data);
-	$main_data 		= str_replace('[email label]', 'Email :', $main_data);
+	$main_data 		= str_replace('[email label]', 'Email:', $main_data);
 	$main_data 		= str_replace('[email address]', $billing_email, $main_data); 
 }
 else
@@ -74,7 +74,7 @@ $billing_phone = (WC()->version < '2.7.0') ? $order->billing_phone : $order->get
 if($billing_phone != '')
 {
 	$main_data 		= str_replace('[wf tel show hide]','', $main_data);
-	$main_data 		= str_replace('[mobile label]', 'Phone number :', $main_data);
+	$main_data 		= str_replace('[mobile label]', 'Phone number:', $main_data);
 	$main_data 		= str_replace('[mobile number]', $billing_phone, $main_data); 
 }
 else
@@ -113,7 +113,7 @@ else
 {
 	$main_data 		= str_replace('[order number switch]','', $main_data);
 	$order_number           = (WC()->version < '2.7.0') ? $order->id : $order->get_id();
-$main_data 		= str_replace('[order number label]', __('Order No' , 'wf-woocommerce-packing-list') , $main_data);
+$main_data 		= str_replace('[order number label]',$main_data_array[90] , $main_data);
 $main_data 		= str_replace('[order number]', $order->get_order_number() , $main_data);
 }
 $main_data 		= str_replace('[order number prob]','font-size:'.$main_data_array[89].'px !important;', $main_data);
@@ -142,7 +142,7 @@ else
 
 $main_data 		= str_replace('[invoice created date]',date($main_data_array[10],strtotime('now')), $main_data);
 $main_data 		= str_replace('[invoice name]', $main_data_array[7], $main_data);
-$invoice_number         = $this->invoice->generate_invoice_number($order);
+$invoice_number         = $this->generate_invoice_number($order);
 $main_data 		= str_replace('[invoice number]', $invoice_number , $main_data);
 
 
@@ -156,7 +156,7 @@ if($main_data_array[14] != 'default')
 else
 	{$main_data 		= str_replace('[invoice date color code]','', $main_data);}
 $main_data 		= str_replace('[order date label]', __($main_data_array[18], 'wf-woocommerce-packing-list'), $main_data);
-$order_date 	= date($main_data_array[16], strtotime((WC()->version < '2.7.0') ? $order->order_date : $order->get_date_created()));
+$order_date 	= get_the_date( $main_data_array[16], $order_id );
 $order_date 	= apply_filters('wf_pklist_modify_order_date',$order_date, $order, $action);
 $main_data 		= str_replace('[order date]', $order_date, $main_data);
 $main_data 		= str_replace('[order date font size]','font-size:'.$main_data_array[17].'px !important;', $main_data);
@@ -394,7 +394,7 @@ else
 }
 
 
-if ($action === 'print_invoice') 
+if ($action === 'print_invoice' || $action === 'download_invoice') 
 { 
 	$table_column_sizes = $this->get_table_column_sizes($order);
 
@@ -406,22 +406,25 @@ if ($action === 'print_invoice')
 	else
 	{
 		$main_data 		= str_replace('[wf product table show hide]','', $main_data);
-		if($main_data_array[64] != 'default')
+		if($main_data_array[64] == 'default')
 		{
-			$main_data 		= str_replace('[wf product table head color]','background:#'.$main_data_array[64].' !important;', $main_data);
-			$main_data 		= str_replace('[border-base-theme-color]',$main_data_array[64], $main_data);
-			$main_data 		= str_replace('[table border top color]', $main_data_array[64], $main_data); 
-			$main_data 		= str_replace('[table background color]', $main_data_array[64], $main_data);
-			$main_data 		= str_replace('[table coloum brand color]', $main_data_array[64], $main_data); 
-	
-		}
-		else
-		{
+
 			$main_data 		= str_replace('[table border top color]', $this->wf_packinglist_brand_color, $main_data);
 			$main_data 		= str_replace('[wf product table head color]','', $main_data);
 			$main_data 		= str_replace('[border-base-theme-color]','66BDA9', $main_data);
 			$main_data 		= str_replace('[table background color]', $this->wf_packinglist_brand_color, $main_data);
 			$main_data 		= str_replace('[table coloum brand color]', $this->wf_packinglist_brand_color, $main_data); 
+
+			
+	
+		}
+		else
+		{
+			$main_data 		= str_replace('[wf product table head color]','background:#'.$main_data_array[64].' !important;', $main_data);
+			$main_data 		= str_replace('[border-base-theme-color]',$main_data_array[64], $main_data);
+			$main_data 		= str_replace('[table border top color]',$main_data_array[64], $main_data); 
+			$main_data 		= str_replace('[table background color]', $main_data_array[64], $main_data);
+			$main_data 		= str_replace('[table coloum brand color]', $main_data_array[64], $main_data); 
 	
 		}
 		if($main_data_array[65] != 'default')
@@ -468,7 +471,16 @@ if ($action === 'print_invoice')
 	$main_data 		= str_replace('[table Total Tax text]', $main_data_array[77], $main_data);
 
 	$main_data 		= str_replace('[table invoice total label]', $main_data_array[78], $main_data);
-	$main_data 		= str_replace('[table tax item value]', wc_price($order->get_total_tax(),array('currency'=>$user_currency)), $main_data);
+	$total_tax 		= $order->get_total_tax();
+	$main_data 		= str_replace('[table tax item value]', wc_price($total_tax,array('currency'=>$user_currency)) , $main_data);
+	if($total_tax == 0)
+	{
+		$main_data 		= str_replace('[wf tt show hide]','display:none;', $main_data);
+	}
+	else
+	{
+		$main_data 		= str_replace('[wf tt show hide]','', $main_data);
+	}
 	$main_data 		= str_replace('[fee text]', $main_data_array[93], $main_data);
 
 	if (get_option('woocommerce_calc_shipping') === 'yes'){
@@ -479,14 +491,22 @@ if ($action === 'print_invoice')
 			$Shipping = '';
 			$Shipping_cost = 0;
 			$Shipping_all_details='';
+			$count_for_shipping = 0;
 			foreach($Shippingdetials as $key){
-
+				$count_for_shipping++;
 				$Shipping_details = wc_price($key['cost'],array('currency'=>$user_currency)).' '.' via '.$key['name'].'.';
 				$Shipping_cost += ($key['cost']);
 				$Shipping_all_details .= $Shipping_details.'<br/>';
 			}
 			$Shipping_cost_details = wc_price($Shipping_cost,array('currency'=>$user_currency));
+			if($count_for_shipping>1)
+			{
 			$Shipping = $Shipping_all_details.'<br/>'.$Shipping_cost_details.'(Total)';
+			}
+			else
+			{
+				$Shipping = $Shipping_all_details;
+			}
 			
 			
 		} 

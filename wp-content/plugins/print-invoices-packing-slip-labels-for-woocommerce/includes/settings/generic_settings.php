@@ -1,6 +1,9 @@
 <?php
     $woocommerce_wf_packinglist_rtl_settings_enable = get_option('woocommerce_wf_packinglist_rtl_settings_enable') != '' ? get_option('woocommerce_wf_packinglist_rtl_settings_enable') : 'No';
 
+    $woocommerce_wf_currency_support = get_option('woocommerce_wf_currency_support') != '' ? get_option('woocommerce_wf_currency_support') : 'No';
+    
+
 ?>
 <div id="General" class="tabcontent">
     <h3 class="settings_headings"><?php _e('Generic Settings :', 'wf-woocommerce-packing-list'); ?></h3>
@@ -95,6 +98,7 @@
 ', 'wf-woocommerce-packing-list') ?> </span></div></th>
                 <td>
                     <input type="text" name="woocommerce_wf_packinglist_companyname" class="regular-text" value="<?php echo stripslashes(get_option('woocommerce_wf_packinglist_companyname')); ?>" />                        
+                    
                     <br/>
                     <span class="description"><?php
                             echo '<strong>' . __('Note:', 'wf-woocommerce-packing-list') . '</strong> ';
@@ -107,7 +111,9 @@
                 <th> <label for="woocommerce_wf_packinglist_logo"><b><?php _e('Custom Logo', 'wf-woocommerce-packing-list'); ?></b></label><div class="woocommerce-help-tip" style="position:absolute;margin-left:auto;padding-left:30px"><span class="tooltiptext"><?php _e('Set URL or upload a custom image for adding logo to all labels.
 ', 'wf-woocommerce-packing-list') ?> </span></div></th>
                 <td><input id="woocommerce_wf_packinglist_logo" type="text" size="36" name="woocommerce_wf_packinglist_logo" value="<?php echo get_option('woocommerce_wf_packinglist_logo'); ?>" />
-                    <input id="upload_image_button" type="button"  class="btn btn-info btn-sm" value="<?php _e('Upload Image', 'wf-woocommerce-packing-list'); ?>" /><br />                    
+                    <input id="upload_image_button" type="button"  class="btn btn-info btn-sm" value="<?php _e('Upload Image', 'wf-woocommerce-packing-list'); ?>" /><br />
+                    <span class="description"><?php
+                            echo '<p>We recommend you to upload a 150 x 30 px logo </p>';?></span>                  
                     <span class="description"><?php
                         echo '<strong>' . __('Note:', 'wf-woocommerce-packing-list') . '</strong> ';
                         echo __('Leave blank to not use a custom logo.', 'wf-woocommerce-packing-list');
@@ -180,6 +186,7 @@
 
             </td>   
             </tr>
+            
         </table>
         <input class="toggle-box" id="identifier-2" type="checkbox"  value='Yes' name='wf_view_checkbox_data_general'<?php
                             if ($this->wf_view_checkbox_data_general == "Yes")

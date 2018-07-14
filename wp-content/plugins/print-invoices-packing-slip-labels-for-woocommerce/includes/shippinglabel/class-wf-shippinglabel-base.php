@@ -24,6 +24,7 @@ if (!class_exists('Wf_Shippinglabel_Base')) {
         public function get_shipto_address($order) {
 
             $order = ( WC()->version < '2.7.0' ) ? new WC_Order($order) : new wf_order($order);
+            $order_id = (WC()->version < '2.7.0') ? $order->id : $order->get_id();
             $shipping_address = array();
             $shippto_address = '';
             if ($_GET['type'] == 'print_shipment_label') {
@@ -37,19 +38,18 @@ if (!class_exists('Wf_Shippinglabel_Base')) {
                     $shippto_address.= '<p>' . $order->get_formatted_shipping_address() . '</p>';
                 }
                 $billing_phone = (WC()->version < '2.7.0') ? $order->billing_phone : $order->get_billing_phone();
+                $billing_phone = apply_filters('wf_alter_billing_phone_number',$billing_phone,$order_id);
                 if($billing_phone != '') {
                     $shippto_address.= "<p><strong>";
                     $shippto_address.= __('Ph No : ', 'wf-woocommerce-shipment-label-printing');
-                    $shippto_address.= $order->billing_phone . '</strong></p>';
-                    
-
+                    $shippto_address.= $billing_phone . '</strong></p>';
                 }
                 $billing_email = (WC()->version < '2.7.0') ? $order->billing_email : $order->get_billing_email();
-                
+                $billing_email = apply_filters('wf_alter_billing_email',$billing_email,$order_id);
                 if($billing_email != '') {
                    $shippto_address.= "<p><strong>";
                     $shippto_address.= __('Email : ', 'wf-woocommerce-shipment-label-printing');
-                    $shippto_address.= $order->billing_email . '</strong></p>';
+                    $shippto_address.= $billing_email . '</strong></p>';
 
                 }
                 $shippto_address = apply_filters('wf_alter_shipmentlabel_shipto_address', $shippto_address, $order);

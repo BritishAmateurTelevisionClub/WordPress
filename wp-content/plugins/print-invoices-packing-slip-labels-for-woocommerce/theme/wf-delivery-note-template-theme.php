@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-$developer_value = 'wf_dn_dev_key_check_14';
+$developer_value = 'wf_dn_dev_key_check_15';
 $check_data = get_option('wf_developer_tool_for_change_data_in_dn') ===false ? update_option('wf_developer_tool_for_change_data_in_dn','print_invoice') : 'yes'; 
 if(get_option('wf_developer_tool_for_change_data_in_dn') && get_option('wf_developer_tool_for_change_data_in_dn') != $developer_value )
 {
@@ -39,12 +39,12 @@ if(get_option('wf_developer_tool_for_change_data_in_dn') && get_option('wf_devel
  }
  .new_table_value
  {
-  background: [table background color];
+  background: #[table background color];
   color: #FFFFFF;
 }
 .new_table_border
 {
- border: 1px solid [table background color] !important;
+ border: 1px solid #[table background color] !important;
 }
 .billing_address{
   float:left; 

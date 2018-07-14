@@ -10,6 +10,7 @@ class WC_Order_Export_Engine {
 	public static $date_format;
 
 	public static $order_id = '';
+	public static $orders_exported = 0;
 	public static $make_separate_orders = false;
 	//
 	public static function export( $settings, $filepath ) {
@@ -35,13 +36,53 @@ class WC_Order_Export_Engine {
 			$filename = self::make_filename( $settings['export_filename'] );
 			$custom_export = apply_filters('woe_custom_export_to_'.$export_type,false, $filename, $filepath, $exporter);
 			if( !$custom_export ) {
-				$results[] = $exporter->run_export( $filename, $filepath );
+				// try many times?
+				$num_retries = 0;
+				while( $num_retries < $exporter->get_num_of_retries() ) {
+					$num_retries++;
+					$results[] = $exporter->run_export( $filename, $filepath );
+					if( $exporter->finished_successfully )
+						break;
+				}	
 			} else {
 				$results[] = $custom_export;
 			}
 		}
 		return implode( "<br>\r\n", $results );
 	}
+
+    public static function prepare( $settings, $filepath ) {
+        if( empty($settings['destination']['type']) ) {
+            return __( "No destination selected", 'woo-order-export-lite' );
+        }
+
+        if( !is_array( $settings[ 'destination' ][ 'type' ] ) ) {
+            $settings[ 'destination' ][ 'type' ] = array( $settings[ 'destination' ][ 'type' ] );
+        }
+        $results = array( );
+        foreach( $settings[ 'destination' ][ 'type' ] as $export_type ) {
+            $export_type = strtolower( $export_type );
+            if ( ! in_array( strtoupper( $export_type ), WC_Order_Export_Admin::$export_types ) ) {
+                return __( "Wrong export type", 'woo-order-export-lite' );
+            }
+
+            include_once dirname( dirname( __FILE__ ) ) . "/exports/abstract-class-woe-export.php";
+            include_once dirname( dirname( __FILE__ ) ) . "/exports/class-woe-export-{$export_type}.php";
+            $class    = 'WOE_Export_' . $export_type;
+            $exporter = new $class( $settings['destination'] );
+
+            $filename = self::make_filename( $settings['export_filename'] );
+            $custom_prepare = apply_filters('woe_custom_prepare_to_'.$export_type,false, $filename, $filepath, $exporter);
+            if( !$custom_prepare ) {
+                if ( method_exists($exporter, 'prepare') ) {
+                    $results[] = $exporter->prepare( $filename, $filepath );
+                }
+            } else {
+                $results[] = $custom_prepare;
+            }
+        }
+        return $results;
+    }
 
 	public static function make_filename( $mask ) {
 		if ( self::$make_separate_orders && strpos( $mask, '%order_id' ) === false ) {
@@ -147,7 +188,9 @@ class WC_Order_Export_Engine {
 
 		$class = 'WOE_Formatter_' . $format;
 
-		return new $class( $mode, $fname, $format_settings, $format, $labels, $field_formats, self::$date_format );
+        do_action( 'woe_init_custom_formatter', $mode, $fname, $format_settings, $format, $labels, $field_formats, self::$date_format, $settings );
+
+        return new $class( $mode, $fname, $format_settings, $format, $labels, $field_formats, self::$date_format );
 	}
 
 	private static function init_labels( $settings, &$labels, &$static_vals, &$field_formats ) {
@@ -213,6 +256,7 @@ class WC_Order_Export_Engine {
 
 	private static function _make_header( $format, $labels, $csv_max ) {
 		$header = ( $format == 'xls' OR $format == 'csv' OR $format == 'tsv' ) ? self::_make_header_csv( $labels, $csv_max ) : '';
+        do_action( 'woe_make_header_custom_formatter', $format, $labels, $csv_max );
 
 		return $header;
 	}
@@ -251,7 +295,9 @@ class WC_Order_Export_Engine {
 			$options['populate_other_columns_product_rows'] = 1;
 		}
 		$options['item_rows_start_from_new_line'] = ( $format == 'csv' AND @$settings['format_csv_item_rows_start_from_new_line'] );
-		
+		$options['products_mode'] = isset($settings['order_fields']['products']['repeat']) ? $settings['order_fields']['products']['repeat'] : "";
+		$options['coupons_mode'] = isset($settings['order_fields']['coupons']['repeat']) ? $settings['order_fields']['coupons']['repeat'] : "";
+
 		if( !empty($settings['all_products_from_order']) )
 			$options['include_products'] = false;
 		else
@@ -358,7 +404,11 @@ class WC_Order_Export_Engine {
 		self::$current_job_settings = $settings;
 		self::$current_job_build_mode = $make_mode;
 		self::$date_format = trim( $settings['date_format'] . ' ' . $settings['time_format'] );
-		self::$extractor_options = self::_install_options( $settings );
+		//debug sql?
+		if ( $make_mode == 'preview' AND $settings['enable_debug'] )
+			WC_Order_Export_Data_Extractor::start_track_queries( );
+		// might run sql!	
+		self::$extractor_options = self::_install_options( $settings ); 
 
 		if ( $output_mode == 'browser' ) {
 			$filename = 'php://output';
@@ -376,9 +426,6 @@ class WC_Order_Export_Engine {
 			return $filename;
 		}
 
-		//debug sql!
-		if ( $make_mode == 'preview' AND $settings['enable_debug'] )
-			WC_Order_Export_Data_Extractor::start_track_queries( );
 			
 		//get IDs
 		$sql = WC_Order_Export_Data_Extractor::sql_get_order_ids( $settings );
@@ -419,6 +466,7 @@ class WC_Order_Export_Engine {
 		self::maybe_start_summary_report();
 
 		WC_Order_Export_Data_Extractor::prepare_for_export();
+		self::$orders_exported = 0;// incorrect value
 		foreach ( $order_ids as $order_id ) {
 			$order_id = apply_filters( "woe_order_export_started", $order_id);
 			if( !$order_id )
@@ -446,7 +494,8 @@ class WC_Order_Export_Engine {
 			$formater->finish_partial();
 		elseif ( $make_mode == 'preview') {
 			self::maybe_output_summary_report( $formater );
-			if( $settings['enable_debug'] ) {
+			$flat_formats = array( 'XLS', 'CSV', 'TSV' );//limit debug output 
+			if( $settings['enable_debug'] AND in_array( $settings['format'], $flat_formats )  ) {
 				echo "<b>" . __( 'Main SQL queries are listed below', 'woo-order-export-lite' ) . "</b>";
 				echo '<textarea rows=5 style="width:100%">';
 				$s = array();
@@ -508,8 +557,10 @@ class WC_Order_Export_Engine {
 		$header = self::_make_header( $format, $labels, $csv_max );
 
 		$formater->start( $header );
+		do_action( 'woe_start_custom_formatter', $header );
 
 		WC_Order_Export_Data_Extractor::prepare_for_export();
+		self::$orders_exported = 0;
 		foreach ( $order_ids as $order_id ) {
 			$order_id = apply_filters( "woe_order_export_started", $order_id);
 			if( !$order_id )
@@ -524,13 +575,19 @@ class WC_Order_Export_Engine {
 					do_action( "woe_order_row_exported", $row, $order_id);
 				}
 			}
-			do_action( "woe_order_exported", $order_id);
+            do_action( "woe_order_exported", $order_id);
+
+            do_action( 'woe_formatter_output_custom_formatter', $order_id, $labels, $format, $filters_active,
+                $csv_max, $export, $get_coupon_meta, $static_vals, self::$extractor_options );
+
+			self::$orders_exported++;
 			self::try_modify_status( $order_id, $settings );
 			self::try_mark_order( $order_id, $settings );
 		}
 		
 		self::maybe_output_summary_report( $formater );
 		$formater->finish();
+        do_action( 'woe_finish_custom_formatter' );
 
 		do_action( 'woe_export_finished');
 		return $filename;
@@ -600,6 +657,7 @@ class WC_Order_Export_Engine {
 				}
 			}
 			do_action( "woe_order_exported", $order_id);
+			self::$orders_exported = 1;
 			self::try_modify_status( $order_id, $settings );
 			self::try_mark_order( $order_id, $settings );
 			$formater->finish();
@@ -634,7 +692,17 @@ class WC_Order_Export_Engine {
 			$result  = __( 'Nothing to export. Please, adjust your filters', 'woo-order-export-lite' );
 		return $result;
 	}
-	
+
+    public static function build_files_and_prepare( $settings, $filename = '', $limit = 0, $order_ids = array( ) ) {
+        $file = self::build_file_full( $settings, $filename, $limit, $order_ids );
+        if ( $file !== false ) {
+            $result = self::prepare( $settings, $file );
+            return $result;
+        } else {
+            return __( 'Nothing to export. Please, adjust your filters', 'woo-order-export-lite' );
+        }
+    }
+
 
 	//SUMMARY report starts here 
 	private static function check_create_session() {
@@ -684,10 +752,12 @@ class WC_Order_Export_Engine {
 			if( !isset($products[$item_id]) )
 				continue;
 			$prepared_product = $products[$item_id];
+			$product   = $order->get_product_from_item( $item );
 			
 			//ok can process this product
 			$product_id = !empty($item['variation_id']) ? $item['variation_id'] : $item['product_id'];
 			$key = !empty($product_id) ? $product_id : $item['name'];
+			$key = apply_filters( "woe_summary_products_adjust_key", $key, $product, $item, $order );
 			if( !isset($_SESSION['woe_summary_products'][$key]) ) {
 				//take only exported fields to match columns
 				$summary_product = array_intersect_key( $prepared_product, $_SESSION['woe_summary_columns'] );
@@ -695,6 +765,7 @@ class WC_Order_Export_Engine {
 				$summary_rows = apply_filters("woe_summary_column_keys", array( 'qty'=>0, 'total'=>0 ) );
 				foreach($summary_rows  as $k=>$default)
 					$summary_product[ $k ] = $default;
+				$summary_product = apply_filters( "woe_summary_products_prepare_product", $summary_product, $key, $product, $item, $order );
 				$_SESSION['woe_summary_products'][$key] = $summary_product;
 			}	
 			//sum items 	

@@ -1,6 +1,6 @@
 <?php
 $active_template = get_option('wf_shipping_label_active_key');
-$invoice_number         = $this->invoice->generate_invoice_number($order);
+$invoice_number         = $this->generate_invoice_number($order);
 $main_data = get_option($active_template);
 if(get_option($active_template.'value')){
 	$main_data_value = get_option($active_template.'value');

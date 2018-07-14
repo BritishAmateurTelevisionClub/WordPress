@@ -81,7 +81,7 @@ else
 
 $main_data 		= str_replace('[invoice created date]',date($main_data_array[10],strtotime('now')), $main_data);
 $main_data 		= str_replace('[invoice name]', $main_data_array[7], $main_data);
-$invoice_number = $this->invoice->generate_invoice_number($order);
+$invoice_number = $this->generate_invoice_number($order);
 $main_data 		= str_replace('[invoice number]', $invoice_number , $main_data);
 $main_data 		= str_replace('[invoice Date label text]',__($main_data_array[12], 'wf-woocommerce-packing-list'), $main_data);
 
@@ -94,7 +94,7 @@ else
 
 $main_data 		= str_replace('[order date title size]', $title_size, $main_data);
 $main_data 		= str_replace('[order date label]', __($main_data_array[18], 'wf-woocommerce-packing-list'), $main_data);
-$order_date 	= date($main_data_array[16], strtotime((WC()->version < '2.7.0') ? $order->order_date : $order->get_date_created()));
+$order_date 	= get_the_date( $main_data_array[16], $order_id );
 $order_date 	= apply_filters('wf_pklist_modify_order_date',$order_date, $order, $action);
 $main_data 		= str_replace('[order date]', $order_date, $main_data);
 $main_data 		= str_replace('[order date font size]','font-size:'.$main_data_array[17].'px !important;', $main_data);

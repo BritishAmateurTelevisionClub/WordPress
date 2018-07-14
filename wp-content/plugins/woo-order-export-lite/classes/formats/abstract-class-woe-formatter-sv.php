@@ -43,7 +43,7 @@ abstract class WOE_Formatter_sv extends WOE_Formatter {
 				$this->rows[] = $data;
 			} else {
 				do_action( "woe_before_{$this->format}_print_header", $this->handle, $data, $this);
-				if( !apply_filters("woe_{$this->format}_custom_output_func",false, $this->handle, $data, $this->delimiter, $this->linebreak, $this->enclosure ) ) {
+				if( !apply_filters("woe_{$this->format}_custom_output_func",false, $this->handle, $data, $this->delimiter, $this->linebreak, $this->enclosure, true ) ) {
 					if ( $this->enclosure !== '' ) {
 						fputcsv( $this->handle, $data, $this->delimiter, $this->enclosure );
 					} else {
@@ -68,7 +68,7 @@ abstract class WOE_Formatter_sv extends WOE_Formatter {
 		if ( $this->mode == 'preview' ) {
 			$this->rows[] = $rec;
 		} else {
-			if( ! apply_filters("woe_{$this->format}_custom_output_func",false, $this->handle, $rec, $this->delimiter, $this->linebreak, $this->enclosure ) ) {
+			if( ! apply_filters("woe_{$this->format}_custom_output_func",false, $this->handle, $rec, $this->delimiter, $this->linebreak, $this->enclosure, false ) ) {
 				if ( $this->enclosure !== '' ) {
 					fputcsv( $this->handle, $rec, $this->delimiter, $this->enclosure );
 				} else {
@@ -99,15 +99,22 @@ abstract class WOE_Formatter_sv extends WOE_Formatter {
 	}
 
 	protected function prepare_array( &$arr ) {
-		$this->encode_array( $arr );
-	}
-
-	protected function encode_array( &$arr ) {
+		if( apply_filters("woe_stop_csv_injection", true) ) {
+			$arr = array_map( array( $this, 'stop_csv_injection' ), $arr );
+		}	
+			
 		if ( ! in_array( $this->encoding, array( '', 'utf-8', 'UTF-8' ) ) ) {
 			$arr = array_map( array( $this, 'encode_value' ), $arr );
 		}
 	}
 
+	protected function stop_csv_injection( $value ) {
+		$formula_chars = array( "=","+","-","@" );
+		if ( in_array( substr($value,0,1), $formula_chars) )
+			$value = " " . $value;
+		return $value;
+	}
+	
 	protected function encode_value( $value ) {
 		return iconv( 'UTF-8', $this->encoding, $value );
 	}

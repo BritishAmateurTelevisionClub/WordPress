@@ -228,7 +228,9 @@ input.date{
 #schedule-1{
     margin-top: 8px;
 }
-#schedule-2, #schedule-3{
+#schedule-2,
+#schedule-3,
+#schedule-4 {
     margin-top: 8px;
 }
 .ftp-settings label{
@@ -326,7 +328,7 @@ input.date{
     margin-left: 10px !important;
 }
 
-#add_attributes,#add_taxonomies,#add_shipping_locations,#add_billing_locations,#add_custom_fields,#add_product_custom_fields{
+#add_attributes,#add_taxonomies,#add_shipping_locations,#add_billing_locations,#add_custom_fields,#add_product_custom_fields,#add_item_names,#add_item_metadata{
     font-size: large;
 }
 
@@ -334,7 +336,7 @@ input.date{
     margin-bottom: 5px;
 }
 
-#select_attributes,#select_taxonomies,#text_shipping_locations,#text_billing_locations,#select_custom_fields,#select_product_custom_fields, #select_itemmeta{
+#select_attributes,#select_taxonomies,#text_shipping_locations,#text_billing_locations,#select_custom_fields,#select_product_custom_fields,#select_itemmeta,#text_item_names,#text_item_metadata{
     width: 120px;
 }
 .dashicons{
@@ -580,17 +582,20 @@ input.date{
     width: 120px;
 }
 
-#d-schedule-3 .block {
+#d-schedule-3 .block,
+#d-schedule-4 .block {
     margin-left: 20px;
     margin-right: 5px;
 }
 
-#d-schedule-3 .block.disabled {
+#d-schedule-3 .block.disabled,
+#d-schedule-4 .block.disabled {
     pointer-events: none;
     opacity: 0.7;
 }
 
-#d-schedule-3 .input-times {
+#d-schedule-3 .input-times,
+#d-schedule-4 .input-date-times {
     width: 100%;
     min-height: 30px;
     background-color: white;
@@ -601,7 +606,8 @@ input.date{
     display: inline-block;
 }
 
-#d-schedule-3 .time {
+#d-schedule-3 .time,
+#d-schedule-4 .time {
     background-color: #e4e4e4;
     border: 1px solid #aaa;
     border-radius: 4px;
@@ -611,7 +617,8 @@ input.date{
     padding: 0 5px;
 }
 
-#d-schedule-3 .btn-delete {
+#d-schedule-3 .btn-delete,
+#d-schedule-4 .btn-delete {
     color: #999;
     cursor: pointer;
     display: inline-block;
@@ -619,6 +626,14 @@ input.date{
     margin-right: 2px;
 }
 
-#d-schedule-3 .btn-delete:hover {
+#d-schedule-3 .btn-delete:hover,
+#d-schedule-4 .btn-delete:hover {
     color: #333;
+}
+
+#d-schedule-4 .date-picker .datetimes-date {
+    max-width: 120px;
+    height: 28px;
+    vertical-align: middle;
+    background: url("../img/calendar.png") 98px 5px no-repeat;
 }

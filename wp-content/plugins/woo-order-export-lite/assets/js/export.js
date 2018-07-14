@@ -35,6 +35,10 @@ window.onload = function () {
 			return undefined;
 		}
 	} );
+	
+	//force style for popup!
+	var style = jQuery('<style>#TB_ajaxContent { overflow: auto !important; }</style>');
+    jQuery('html > head').append(style);
 };
 
 function bind_events() {
@@ -720,6 +724,128 @@ function bind_events() {
         }
         return false;
     } )
+	
+	
+    // ITEM NAMES
+    jQuery( '#item_names' ).change( function() {
+
+        jQuery( '#text_item_names' ).attr( 'disabled', 'disabled' );
+        var data = {
+            'item_type': jQuery( this ).val(),
+            method: "get_order_item_names",
+            action: "order_exporter"
+        };
+
+        jQuery.post( ajaxurl, data, function( response ) {
+            jQuery( '#text_item_names--select2 select' ).select2('destroy');
+            jQuery( '#text_item_names, #text_item_names--select2' ).remove();
+            if ( response ) {
+                var options = '';
+                jQuery.each( response, function( index, value ) {
+                    options += '<option>' + value + '</option>';
+                } );
+
+                var $select = jQuery( '<div id="text_item_names--select2" style="margin-top: 0px;margin-right: 6px; vertical-align: top; display: inline-block;"><select id="text_item_names">' + options + '</select></div>' );
+                $select.insertBefore( jQuery( '#add_item_names' ) )
+                $select.find('select').select2({ tags: true });
+            }
+            else {
+                jQuery( '<input type="text" id="text_item_names" style="margin-right: 8px;">' ).insertBefore( jQuery( '#add_item_names' ) );
+            }
+        }, 'json' );
+    } );
+
+    jQuery( '#add_item_names' ).click( function() {
+
+        var val = jQuery( "#text_item_names" ).val();
+        var val2 = jQuery( '#item_names' ).val();
+        var val_op = jQuery( '#item_name_compare' ).val();
+        if ( val != null && val2 != null && val.length && val2.length ) {
+            val = val2 + val_op + val;
+
+            var f = true;
+            jQuery( '#item_names_check' ).next().find( 'ul li' ).each( function() {
+                if ( jQuery( this ).attr( 'title' ) == val ) {
+                    f = false;
+                }
+            } );
+
+            if ( f ) {
+
+                jQuery( '#item_names_check' ).append( '<option selected="selected" value="' + val + '">' + val + '</option>' );
+                jQuery( '#item_names_check' ).select2(select2WODropdownOpts);
+
+                jQuery( '#item_names_check option' ).each( function() {
+                    jQuery( '#item_names_check option[value=\"' + jQuery( this ).val() + '\"]:not(:last)' ).remove();
+                } );
+
+                jQuery( "input#text_item_names" ).val( '' );
+            }
+        }
+        return false;
+    } );
+	
+    // ITEM METADATA
+    jQuery( '#item_metadata' ).change( function() {
+
+        jQuery( '#text_item_metadata' ).attr( 'disabled', 'disabled' );
+        var data = {
+            'meta_key': jQuery( this ).val(),
+            method: "get_order_item_meta_key_values",
+            action: "order_exporter"
+        };
+
+        jQuery.post( ajaxurl, data, function( response ) {
+            jQuery( '#text_item_metadata--select2 select' ).select2('destroy');
+            jQuery( '#text_item_metadata, #text_item_metadata--select2' ).remove();
+            if ( response ) {
+                var options = '';
+                jQuery.each( response, function( index, value ) {
+                    options += '<option>' + value + '</option>';
+                } );
+
+                var $select = jQuery( '<div id="text_item_metadata--select2" style="margin-top: 0px;margin-right: 6px; vertical-align: top; display: inline-block;"><select id="text_item_metadata">' + options + '</select></div>' );
+                $select.insertBefore( jQuery( '#add_item_metadata' ) )
+                $select.find('select').select2({ tags: true });
+            }
+            else {
+                jQuery( '<input type="text" id="text_item_metadata" style="margin-right: 8px;">' ).insertBefore( jQuery( '#add_item_metadata' ) );
+            }
+        }, 'json' );
+    } );
+
+    jQuery( '#add_item_metadata' ).click( function() {
+
+        var val = jQuery( "#text_item_metadata" ).val();
+        var val2 = jQuery( '#item_metadata' ).val();
+        var val_op = jQuery( '#item_metadata_compare' ).val();
+        if ( val != null && val2 != null && val.length && val2.length ) {
+            val = val2 + val_op + val;
+
+            var f = true;
+            jQuery( '#item_metadata_check' ).next().find( 'ul li' ).each( function() {
+                if ( jQuery( this ).attr( 'title' ) == val ) {
+                    f = false;
+                }
+            } );
+
+            if ( f ) {
+
+                jQuery( '#item_metadata_check' ).append( '<option selected="selected" value="' + val + '">' + val + '</option>' );
+                jQuery( '#item_metadata_check' ).select2(select2WODropdownOpts);
+
+                jQuery( '#item_metadata_check option' ).each( function() {
+                    jQuery( '#item_metadata_check option[value=\"' + jQuery( this ).val() + '\"]:not(:last)' ).remove();
+                } );
+
+                jQuery( "input#text_item_metadata" ).val( '' );
+            }
+        }
+        return false;
+    } );
+	
+
+	
 
 	jQuery( '#summary_report_by_products_checkbox' ).on('change', function() {
 		jQuery('#manage_fields').parent().toggle(jQuery('#summary_report_by_products_checkbox').val());
@@ -838,6 +964,8 @@ function add_custom_field( to, index_p, format, colname, value ) {
                                                 </li>\
                         ';
     to.append( row );
+
+	scroll_to_added_field( to );
 }
 
 function add_custom_meta( to, index_p, format, label, colname ) {
@@ -857,6 +985,17 @@ function add_custom_meta( to, index_p, format, label, colname ) {
                                                 </li>\
                         ';
     to.append( row );
+	scroll_to_added_field( to );
+}
+
+function scroll_to_added_field( to ) {
+	// scroll to added element
+
+	to.parent().scrollTop(to[0].scrollHeight);
+
+	if ( to.parent().prop('id') === 'fields' ) {
+		jQuery( window ).scrollTop( to.parent().offset().top + to.parent().outerHeight() - jQuery( window ).height() / 2 );
+	}
 }
 
 function formatItemSelection( item ) {
@@ -908,7 +1047,15 @@ function select2_inits()
     } );
     jQuery( "#billing_locations_check" ).select2(select2WODropdownOpts);
 
+    jQuery( "#item_names" ).select2( {
+        width: 150
+    } );
+    jQuery( "#item_names_check" ).select2(select2WODropdownOpts);
 
+    jQuery( "#item_metadata" ).select2( {
+        width: 150
+    } );
+    jQuery( "#item_metadata_check" ).select2(select2WODropdownOpts);
 
     jQuery( "#product_categories" ).select2( {
         ajax: {

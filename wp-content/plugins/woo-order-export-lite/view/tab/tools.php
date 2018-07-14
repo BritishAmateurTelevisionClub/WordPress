@@ -83,7 +83,7 @@ $type_labels = !$WC_Order_Export::is_full_version() ? array() : array(
             jQuery( this ).select();
         } );
 
-        jQuery( '#tools-import-text' ).on( 'keyup', function () {
+        jQuery( '#tools-import-text' ).on( 'input propertychange', function () {
             var $textarea = jQuery( this ).val();
             var disable = ( $textarea.length == '' );
             $( "#submit-import" ).prop( "disabled", disable );

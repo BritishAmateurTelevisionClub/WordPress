@@ -10,6 +10,11 @@
   content: '';
   content: none;
 }
+.RTL_wrapper body
+{
+  font-family: DejaVu Sans, sans-serif;
+  
+}
 .RTL_wrapper body .left {
   float: right;
 }
@@ -28,6 +33,14 @@
 .shipping_address{
   float:left !important; 
   width: 49%;
+}
+#sltoid
+{
+  padding-right: 20px;
+}
+#toAddress
+{
+  padding-right: 20px;
 }
 .RTL_wrapper header .company-info {
   float: left;

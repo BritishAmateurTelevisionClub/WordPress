@@ -10,7 +10,7 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 	// ADD custom fields for export
 	public static function get_all_order_custom_meta_fields( $sql_order_ids='' ) {
 		global $wpdb;
-		
+
 		$transient_key = 'woe_get_all_order_custom_meta_fields_results_'.md5( json_encode( $sql_order_ids ) ); // complex key
 		$fields = get_transient( $transient_key );
 		if($fields  === false) {
@@ -26,7 +26,7 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 				   	$user_ids = $wpdb->get_col( "SELECT  ID FROM {$wpdb->users} ORDER BY ID DESC LIMIT 1000"); // take last 1000
 					$user_ids = join( ",", $user_ids);
 					$where_users = "WHERE user_id IN ($user_ids)";
-				}	
+				}
 				else
 					$where_users = '';
 				$user_fields = $wpdb->get_col( "SELECT DISTINCT meta_key FROM {$wpdb->usermeta} $where_users" );
@@ -41,7 +41,7 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 			$fields    = array_unique( array_merge( $fields, $user_fields ) );
 			sort( $fields );
 			//debug set_transient( $transient_key, $fields, 60 ); //valid for a 1 min
-		}	
+		}
 		return apply_filters( 'woe_get_all_order_custom_meta_fields', $fields );
 	}
 
@@ -230,9 +230,11 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 	}
 
 	public static function get_products_itemmeta_values( $key ) {
-        global $wpdb;
+       	global $wpdb;
+		$max_len = apply_filters( 'woe_itemmeta_values_max_length', 50 );
+		$limit = apply_filters( 'woe_itemmeta_values_max_records', 200 );
         $meta_key_ent = esc_html($key);
-		$metas = $wpdb->get_col( $wpdb->prepare("SELECT DISTINCT meta_value FROM {$wpdb->prefix}woocommerce_order_itemmeta where meta_key = '%s' OR meta_key='%s' LIMIT 100", $key, $meta_key_ent ));
+		$metas = $wpdb->get_col( $wpdb->prepare("SELECT DISTINCT meta_value FROM {$wpdb->prefix}woocommerce_order_itemmeta where (meta_key = '%s' OR meta_key='%s') AND LENGTH(meta_value) <= $max_len LIMIT $limit", $key, $meta_key_ent ));
 		sort( $metas );
 		return $metas;
 	}
@@ -266,6 +268,44 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 		sort( $data );
 		return $data;
 	}
+	
+	public static function get_order_item_names( $type ) {
+       	global $wpdb;
+       	
+		$names = $wpdb->get_col( $wpdb->prepare("SELECT DISTINCT order_item_name FROM {$wpdb->prefix}woocommerce_order_items WHERE order_item_type = %s ORDER BY order_item_id DESC LIMIT 1000", $type) );
+		sort($names);
+		return $names;
+	}
+	
+	public static function get_item_meta_keys() {
+       	global $wpdb;
+       	
+		$names = $wpdb->get_results( "SELECT distinct order_item_type,meta_key  FROM  {$wpdb->prefix}woocommerce_order_items AS items
+			INNER JOIN (SELECT ID AS order_id FROM {$wpdb->prefix}posts WHERE post_type='shop_order' ORDER BY ID DESC LIMIT 1000) AS orders ON orders.order_id = items.order_id 
+			JOIN {$wpdb->prefix}woocommerce_order_itemmeta AS meta ON meta.order_item_id = items.order_item_id
+			ORDER BY order_item_type,meta_key" );
+		
+		$keys = array();
+		foreach($names as $n) 
+			$keys[$n->order_item_type][$n->meta_key] = $n->meta_key;
+		return $keys;
+	}
+	
+	public static function get_order_item_meta_key_values( $meta_key ) {
+       	global $wpdb;
+       	
+       	self::extract_item_type_and_key( $meta_key , $type, $key );
+       	
+       	//we skip serialized and long values!
+		$values = $wpdb->get_col( $wpdb->prepare( "SELECT distinct meta_value FROM  {$wpdb->prefix}woocommerce_order_items AS items
+			JOIN {$wpdb->prefix}woocommerce_order_itemmeta AS meta ON meta.order_item_id = items.order_item_id
+			WHERE items.order_item_type = %s AND meta.meta_key=%s 
+				AND meta_value NOT LIKE  'a:%' AND LENGTH(meta_value)<20
+			ORDER BY meta_value", $type,$key ) );
+		return $values;
+	}
+
+	
 
 
 	public static function get_order_product_fields( $format ) {
@@ -273,7 +313,8 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 			'item_id'     => array( 'label' => __( 'Item ID', 'woo-order-export-lite' ), 'checked' => 0 ),
 			'line_id'     => array( 'label' => __( 'Item #', 'woo-order-export-lite' ), 'checked' => 1 ),
 			'sku'         => array( 'label' => __( 'SKU', 'woo-order-export-lite' ), 'checked' => 1 ),
-			'name'        => array( 'label' => __( 'Name', 'woo-order-export-lite' ), 'checked' => 1 ),
+			'name'        => array( 'label' => __( 'Item Name', 'woo-order-export-lite' ), 'checked' => 1 ),
+			'product_name'=> array( 'label' => __( 'Product Name', 'woo-order-export-lite' ), 'checked' => 0 ),
 			'product_variation' => array( 'label' => __( 'Product Variation', 'woo-order-export-lite' ), 'checked' => 0 ),
 			'seller'      => array( 'label' => __( 'Item Seller', 'woo-order-export-lite' ), 'checked' => 0 ),
 			'qty'         => array( 'label' => __( 'Quantity', 'woo-order-export-lite' ), 'checked' => 1 ),
@@ -373,11 +414,12 @@ class WC_Order_Export_Data_Extractor_UI extends WC_Order_Export_Data_Extractor {
 
 	public static function get_order_fields_user() {
 		return array(
-			'customer_ip_address' => array( 'label' => __( 'Customer IP address', 'woo-order-export-lite' ), 'checked' => 0 ),
-			'customer_user'       => array( 'label' => __( 'Customer User ID', 'woo-order-export-lite' ), 'checked' => 0 ),
-			'user_login'          => array( 'label' => __( 'Customer Username', 'woo-order-export-lite' ), 'checked' => 0 ),
-			'user_email'          => array( 'label' => __( 'Customer User Email', 'woo-order-export-lite' ), 'checked' => 0 ),
-			'user_role'           => array( 'label' => __( 'Customer Role', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'customer_ip_address'   => array( 'label' => __( 'Customer IP address', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'customer_user'         => array( 'label' => __( 'Customer User ID', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'user_login'            => array( 'label' => __( 'Customer Username', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'user_email'            => array( 'label' => __( 'Customer User Email', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'user_role'             => array( 'label' => __( 'Customer Role', 'woo-order-export-lite' ), 'checked' => 0 ),
+			'customer_total_orders' => array( 'label' => __( 'Customer Total Orders', 'woo-order-export-lite' ), 'checked' => 0 ),
 		);
 	}
 

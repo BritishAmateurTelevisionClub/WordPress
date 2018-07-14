@@ -84,7 +84,7 @@ class Options
      * The default paper size.
      *
      * North America standard is "letter"; other countries generally "a4"
-     * @see Dompdf\Adapter\CPDF::PAPER_SIZES for valid sizes
+     * @see \Dompdf\Adapter\CPDF::PAPER_SIZES for valid sizes
      *
      * @var string
      */
@@ -179,7 +179,7 @@ class Options
      *
      * @var bool
      */
-    private $isRemoteEnabled = true;
+    private $isRemoteEnabled = false;
 
     /**
      * Enable inline Javascript
@@ -196,7 +196,7 @@ class Options
      *
      * @var bool
      */
-    private $isHtml5ParserEnabled = true;
+    private $isHtml5ParserEnabled = false;
 
     /**
      * Whether to enable font subsetting or not.
@@ -291,6 +291,7 @@ class Options
      */
     public function __construct(array $attributes = null)
     {
+        
         $this->setChroot(realpath(__DIR__ . "/../"));
         $this->setRootDir($this->getChroot());
         $this->setTempDir(sys_get_temp_dir());

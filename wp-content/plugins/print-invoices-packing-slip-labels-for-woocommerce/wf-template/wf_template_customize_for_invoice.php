@@ -248,8 +248,7 @@ function eh_theme_value_assign($given_template) {
 
     .tooltips:hover .tooltiptext {
         visibility: visible;
-    }
-
+    }    
 
 </style>
 <script>
@@ -476,7 +475,23 @@ if ($main_data_array[24] != 'default') {
 }
 
 $customize_data = str_replace('[from address font size]', '14', $customize_data);
-$customize_data = str_replace('[from address]', 'Name<br>Company name<br>Address1<br>Address2<br>State<br>Country', $customize_data);
+$order = new WC_Order(0);
+$ship_from_address = $this->wf_shipment_label_get_from_address('shipping_label',$order );
+$from_address_data = '';
+foreach ($ship_from_address as $key => $value) {
+    if (!empty($value)) {
+        $from_address_data .= $value . ' <br>';
+    }
+}
+if(empty($from_address_data)){
+    $customize_data = str_replace('[from address]',"<i style = 'color:red;'>Please fill up 'From Address' details from the General tab</i>", $customize_data);
+    $customize_data = str_replace('[from address label]', '', $customize_data);
+}
+else
+{
+   $customize_data = str_replace('[from address]',$from_address_data, $customize_data); 
+}
+
 $customize_data = str_replace('[billing address title size]', '14', $customize_data);
 $customize_data = str_replace('[billing address label]', $main_data_array[26], $customize_data);
 
@@ -500,18 +515,18 @@ if ($main_data_array[28] != 'default') {
 $customize_data = str_replace('[billing address font size]', '14', $customize_data);
 $customize_data = str_replace('[billing address data]', 'Name<br>Company name<br>Address1<br>Address2<br>State<br>Country<br>', $customize_data);
 
-$customize_data = str_replace('[email label]', $main_data_array[35], $customize_data);
+$customize_data = str_replace('[email label]', 'Email:', $customize_data);
 $customize_data = str_replace('[email address]', 'info@invoice.com', $customize_data);
 
 
-    $customize_data = str_replace('[wf email show hide]', 'display:none;', $customize_data);
+    $customize_data = str_replace('[wf email show hide]', '', $customize_data);
 
 
-$customize_data = str_replace('[mobile label]', $main_data_array[40], $customize_data);
+$customize_data = str_replace('[mobile label]', 'Phone number:', $customize_data);
 $customize_data = str_replace('[mobile number]', '+123 4567890', $customize_data);
 
 
-    $customize_data = str_replace('[wf tel show hide]', 'display:none;', $customize_data);
+    $customize_data = str_replace('[wf tel show hide]', '', $customize_data);
 
 
 
@@ -669,25 +684,15 @@ if ($main_data_array[63] === 'no') {
     $customize_data = str_replace('[wf product table body text align]', 'text-align:' . $main_data_array[68] . ';', $customize_data);
     $customize_data = str_replace('[product label text]', $main_data_array[70], $customize_data);
 
-    if ($this->wf_pklist_add_sku === 'Yes') {
-        $customize_data = str_replace('[sku label text]', $main_data_array[69], $customize_data);
+    
+        $customize_data = str_replace('[sku label text]', 'SKU' , $customize_data);
         $customize_data = str_replace('[table colum span]', '1', $customize_data);
 
         $customize_data = str_replace('[table colum span hide]', '', $customize_data);
         $customize_data = str_replace('[table quantity text]', $main_data_array[71], $customize_data);
         $customize_data = str_replace('[table price text]', $default_active_array[88], $customize_data);
         $customize_data = str_replace('[table toatl price text]', $main_data_array[72], $customize_data);
-    } else {
-        $customize_data = str_replace('[table colum span]', '2', $customize_data);
-
-        $customize_data = str_replace('[table colum span hide]', 'display:none !important;', $customize_data);
-        $customize_data = str_replace('[sku label text]', '', $customize_data);
-        $customize_data = str_replace('[table quantity text]', $main_data_array[71], $customize_data);
-        $customize_data = str_replace('[table price text]', $default_active_array[88], $customize_data);
-        $customize_data = str_replace('[table toatl price text]', $main_data_array[72], $customize_data);
-    }
 }
-
 
 $customize_data = str_replace('[table border top color]', $this->wf_packinglist_brand_color, $customize_data);
 $customize_data = str_replace('[table background color]', $this->wf_packinglist_brand_color, $customize_data);
@@ -717,11 +722,8 @@ $customize_data = str_replace('[table tax item value]', '$10.00', $customize_dat
 $customize_data = str_replace('[table invoice total value]', '$105.10', $customize_data);
 $customize_data = str_replace('[table payment info value]', 'PayPal', $customize_data);
 
-if ($this->wf_pklist_add_sku === 'Yes') {
-    $customize_data = str_replace('[table tbody content value]', '<tr><td class="qty" style="text-align:unset;">Red_Ball</td><td class="desc" style="text-align:unset;">Jumbing LED Light Wall Ball</td><td class="unit" style="text-align:unset;">5</td><td class="" style="text-align:unset;">$20.00</td><td class="total" style="text-align:unset;">$100.00</td></tr>', $customize_data);
-} else {
-    $customize_data = str_replace('[table tbody content value]', '<tr><td class="desc" style="text-align:unset;" colspan="2">Jumbing LED Light Wall Ball</td><td class="unit" style="text-align:unset;">5</td><td class="" style="text-align:unset;">$20.00</td><td class="total" style="text-align:unset;">$100.00</td></tr>', $customize_data);
-}
+    
+    $customize_data = str_replace('[table tbody content value]', '<tr><td class="qty" id="th_sku1" style="text-align:unset;">Red_Ball</td><td id="th_product1" class="desc" style="text-align:unset;">Jumbing LED Light Wall Ball</td><td id="th_qty1" class="unit" style="text-align:unset">5</td><td id="th_price1" class="desc" style="text-align:unset;">$20.00</td><td id="th_total1" class="total" style="text-align:unset;">$100.00</td></tr>', $customize_data);
 $customize_data = str_replace('[invoice barcode data]', '', $customize_data);
 $customize_data = str_replace('[invoice return policy data]', '', $customize_data);
 $customize_data = str_replace('[invoice footor data]', '', $customize_data);
@@ -731,8 +733,7 @@ $customize_data = str_replace('[invoice extra firlds import]', '', $customize_da
 $customize_data = str_replace('[invoice extra firlds import old one]', '', $customize_data);
 echo $customize_data;
 ?>
-                                        <div style="position: absolute;top:10px;"><button class="button button-secondary " style="display:none;" onclick="PrintElem('my_new_invoice', '<?php echo WF_INVOICE_MAIN_ROOT_PATH; ?> ', 'show')"  type="button"><i class="fa fa-eye"></i></button> 
-                                        </div>
+                                       
                                     </div>
                                     <!-- end of accordion -->
                                 </div>

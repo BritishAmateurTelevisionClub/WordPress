@@ -545,6 +545,7 @@ class Wf_Document_common {
                         $image_id = ($var_image_id == '') ? get_post_thumbnail_id($parent_id) : $var_image_id;
                         $attachment = wp_get_attachment_image_src($image_id);
                 }
+
                 if ((get_option('woocommerce_wf_attach_image_packinglist') == 'Yes' && $show_price === FALSE) & $print_type != 'dn') {
                     $return .= '<tr><td class="thumb column-thumb" data-colname="Image" style="color:black;text-align:center; border: 1px solid lightgrey; padding:5px;">';
                     if (!empty($attachment[0])) {

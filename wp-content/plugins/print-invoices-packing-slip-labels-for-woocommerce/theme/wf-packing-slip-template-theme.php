@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-$developer_value = 'wf_pk_dev_key_check_37';
+$developer_value = 'wf_pk_dev_key_check_67';
 $check_data = get_option('wf_developer_tool_for_change_data_in_pk') ===false ? update_option('wf_developer_tool_for_change_data_in_pk','print_invoice') : 'yes'; 
 if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_developer_tool_for_change_data_in_pk') != $developer_value )
 {
@@ -16,6 +16,9 @@ if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_devel
 .qty {
    border: 1px solid lightgrey !important; padding:5px;  width: auto;
  }
+ body{
+  margin :0;
+ }
  .desc {
    border: 1px solid lightgrey !important; padding:10px;  width: auto;
  }
@@ -25,9 +28,10 @@ if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_devel
  .total{
    border: 1px solid lightgrey !important; padding:5px; width: auto; 
  }
+
  .new_table_value
  {
-  background: [table background color];
+  background: #[table background color] !important;
   color: #FFFFFF;
 }
 .header_left
@@ -42,6 +46,7 @@ if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_devel
   width:25%; 
   text-align:right;
 }
+
 .billing_address{
   float:left; 
   width: 49%;
@@ -62,9 +67,23 @@ if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_devel
   size: auto;
   margin: 0;
       }
+      .new_table_border{
+        border-collapse: collapse !important;
+        border: 1px solid #[table background color] !important;
+      }
+      .RTL_wrapper
+      {
+        
+        padding-top: 30px;
+      }
+.packinglist
+ {
+        padding-left:30px;
+        padding-right:30px;
+ }
 </style>
 <div class='RTL_wrapper'>
-<div style='[invoice main height and width] margin:auto;'>
+<div class= 'packinglist' style='[invoice main height and width] margin:auto;'>
   <header>
     <div class='header_left'>
     <h1 style='[extra field1 size]'>
@@ -157,12 +176,11 @@ if(get_option('wf_developer_tool_for_change_data_in_pk') && get_option('wf_devel
 </div>
 </div>
 <div style='[wffootor style]'>
-  <div class='article' style='border-bottom: solid 1px lightgrey;font-size:[return policy content size]px;'>
+  <div class='article' style='font-size:[return policy content size]px;'>
     [invoice return policy data]
   </div>
   <div class='footer' style='font-size:[footor content size]px;bottom:10px;' >[invoice footor data]</div>
-</div> 
-[invoice barcode data]     
+</div>     
 <div style='clear:both;'></div>
 </div>
 </div>

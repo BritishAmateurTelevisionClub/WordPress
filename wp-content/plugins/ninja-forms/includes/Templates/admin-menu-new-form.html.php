@@ -468,7 +468,10 @@ Label Three, value-three, 3
 
 <script id="tmpl-nf-edit-setting-number" type="text/template">
     <label for="{{{ data.name }}}">{{{ data.label }}} {{{ data.renderTooltip() }}}
-        <input type="number" class="setting" id="{{{ data.name }}}" value="{{{ data.value }}}" placeholder="{{{ ( 'undefined' != typeof data.placeholder ) ? data.placeholder : '' }}}" />
+        <input type="number" class="setting" id="{{{ data.name }}}"
+               value="{{{ data.value }}}" {{{ data.renderMinMax() }}}
+               placeholder="{{{ ('undefined' != typeof data.placeholder ) ? data.placeholder : '' }}}" />
+	    <em>{{{ data.renderMinMaxHelper() }}}</em>
     </label>
 </script>
 
@@ -499,6 +502,13 @@ Label Three, value-three, 3
         </select>
         <div></div>
     </label>
+</script>
+
+<script id="tmpl-nf-edit-setting-email-select" type="text/template">
+	<label for="{{{ data.name }}}" class="nf-select">{{{ data.label }}} {{{ data.renderTooltip() }}}
+			{{{ data.renderEmailFieldOptions() }}}
+		<div></div>
+	</label>
 </script>
 
 <script id="tmpl-nf-edit-setting-field-select" type="text/template">
@@ -737,9 +747,9 @@ Label Three, value-three, 3
 	<div>
 		<span class="dashicons dashicons-menu handle"></span>
 	</div>
-	<div>
+	<div class="nf-select">
 		<# try { #>
-		{{{ data.renderFieldSelect( 'field', data.field ) }}}
+		{{{ data.renderNonSaveFieldSelect( 'field', data.field ) }}}
 		<# } catch ( err ) { #>
 		<input type="text" class="setting" value="{{ data.field }}" data-id="field" >
 		<# } #>

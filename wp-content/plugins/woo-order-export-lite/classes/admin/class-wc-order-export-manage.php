@@ -91,7 +91,9 @@ class WC_Order_Export_Manage {
 			'payment_methods',
 			'product_attributes',
             'product_itemmeta',
-			'product_taxonomies'
+			'product_taxonomies',
+			'item_names',
+			'item_metadata',
 		);
 		foreach ( $multiselects as $m_select ) {
 			if ( ! isset( $new_settings[ $m_select ] ) ) {
@@ -100,6 +102,7 @@ class WC_Order_Export_Manage {
 		}
 
 		$settings = self::get( $in['mode'], $in['id'] );
+        $settings['id'] = $in['id'];
 		// setup new values for same keys
 		foreach ( $new_settings as $key => $val ) {
 			$settings[ $key ] = $val;
@@ -164,6 +167,9 @@ class WC_Order_Export_Manage {
 	}
 
 	static function apply_defaults( $mode, $settings ) {
+	
+		$settings = apply_filters( "woe_before_apply_default_settings", $settings , $mode);
+		
 		$defaults = array(
 			'mode'                                           => $mode,
 			'title'                                          => '',
@@ -177,6 +183,8 @@ class WC_Order_Export_Manage {
 			'to_date'                                        => '',
 			'shipping_locations'                             => array(),
 			'shipping_methods'                               => array(),
+			'item_names'                                     => array(),
+			'item_metadata'                                  => array(),
 			'user_roles'                                     => array(),
 			'user_names'                                     => array(),
             'billing_locations'                              => array(),
