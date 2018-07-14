@@ -317,9 +317,14 @@ jQuery(document).ready(function($)
       {
         document.title = json.stream_title + " - BATC Live Streaming";
         $("#video-title").text(json.stream_title);
-        
+        var stream_isflash = true;
+        if(json.streaming_type_flash == "0" && json.streaming_type_html5 == "1")
+        {
+          stream_isflash = false;
+        }
+        console.log("Flash: " + stream_isflash); 
         /* Build Video Player Here */
-		batcPlayer_init('#video-player', json.stream_output_url, !!json.streaming_type_flash, false); // TODO: Add Flash/Transcoded switches
+		batcPlayer_init('#video-player', json.stream_output_url, stream_isflash, false); // TODO: Add Flash/Transcoded switches
         
         /* Build Chat */
         if('chat_on' in json && json.chat_on=='1')

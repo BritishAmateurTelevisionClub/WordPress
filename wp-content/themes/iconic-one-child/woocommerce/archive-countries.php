@@ -19,7 +19,7 @@ get_header(); ?>
       <header class="entry-header">
         <h1 class="entry-title">Join The BATC</h1>
       </header>
-        
+
         <?php echo do_shortcode( '[country_select]' ); ?>
 
 		</div><!-- #content -->

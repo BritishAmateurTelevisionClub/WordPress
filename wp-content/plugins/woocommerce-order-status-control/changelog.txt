@@ -1,5 +1,13 @@
 *** WooCommerce Order Status Control Changelog ***
 
+2018.05.23 -version 1.9.1
+ * Misc - Add support for WooCommerce 3.4
+
+2018.01.26 - version 1.9.0
+ * Misc - Add support for WooCommerce 3.3
+ * Misc - Remove support for WooCommerce 2.5
+ * Fix - Update settings field location in general options
+
 2017.03.28 - version 1.8.0
  * Misc - Added support for WooCommerce 3.0
  * Misc - Removed support for WooCommerce 2.4

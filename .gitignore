@@ -9,3 +9,4 @@ wp-config.php
 wp-admin/cache/
 wp-content/uploads/
 wp-content/plugins/wp-pdf-stamper/stamped-files/
+wp-content/plugins/indeed-membership-pro/users.csv

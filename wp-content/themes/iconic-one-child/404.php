@@ -14,7 +14,7 @@ get_header(); ?>
 
 			<article id="post-0" class="post error404 no-results not-found">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'Sorry, there's nothing here please try again', 'iconic-one' ); ?></h1>
+					<h1 class="entry-title"><?php _e( 'Sorry, there is nothing here, please try again', 'iconic-one' ); ?></h1>
 				</header>
 
 				<div class="entry-content">

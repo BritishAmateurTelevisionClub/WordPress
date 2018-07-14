@@ -74,7 +74,10 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 
 	<fieldset>
 		<h1><?php _e( 'Password change', 'woocommerce' ); ?></h1>
-
+		
+		<p>
+			Note - if you cut and paste your current password from an email program,  please be very careful not to include any spaces at the beginning or the end.  If you are having problems such as incorrect password, please type the password in manually or paste it in to a text editor to confirm there are no additional characters added by your mail client.
+		</p>
 		<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 			<label for="password_current"><?php _e( 'Current password (leave blank to leave unchanged)', 'woocommerce' ); ?></label>
 			<input type="password" class="woocommerce-Input woocommerce-Input--password input-text" name="password_current" id="password_current" />

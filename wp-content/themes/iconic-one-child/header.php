@@ -44,7 +44,7 @@ $user = get_userdata( $user_id );
 $active_level = $wpdb->get_row('SELECT expire_time FROM ' . $wpdb->prefix . 'ihc_user_levels WHERE user_id="' . $user_id . '" AND NOT level_id="14";');
 $active_level_time = $active_level->expire_time;
 
-$payment_extra = date('Y-m-d H:i:s', strtotime($active_level_time. ' - 14 days'));
+$payment_extra = date('Y-m-d H:i:s', strtotime($active_level_time. ' - 22 days'));
 
 if (new DateTime() > new DateTime($payment_extra) || empty($active_level_time)) {
 }

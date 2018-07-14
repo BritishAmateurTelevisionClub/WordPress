@@ -1,10 +1,8 @@
 === WooCommerce Order Status Control ===
-Author: skyverge, woocommerce
+Author: skyverge
 Tags: woocommerce
-Requires at least: 4.1
-Tested up to: 4.7.3
-Requires WooCommerce at least: 2.5.5
-Tested WooCommerce up to: 3.0.0
+Requires at least: 4.4
+Tested up to: 4.9.6
 
 Automatically change order status to complete for all orders or just virtual orders when payment is successful
 

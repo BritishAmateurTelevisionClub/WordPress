@@ -18,7 +18,7 @@
  *
  * @package   SkyVerge/WooCommerce/Plugin/Classes
  * @author    SkyVerge
- * @copyright Copyright (c) 2013-2017, SkyVerge, Inc.
+ * @copyright Copyright (c) 2013-2018, SkyVerge, Inc.
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
  */
 
@@ -34,13 +34,13 @@ if ( ! class_exists( 'SV_WC_Plugin' ) ) :
  * plugin.  This class handles all the "non-feature" support tasks such
  * as verifying dependencies are met, loading the text domain, etc.
  *
- * @version 4.6.0
+ * @version 4.9.0
  */
 abstract class SV_WC_Plugin {
 
 
 	/** Plugin Framework Version */
-	const VERSION = '4.6.0';
+	const VERSION = '4.9.0';
 
 	/** @var object single instance of plugin */
 	protected static $instance;
@@ -74,6 +74,9 @@ abstract class SV_WC_Plugin {
 
 	/** @var SV_WC_Admin_Notice_Handler the admin notice handler class */
 	private $admin_notice_handler;
+
+	/** @var bool whether a PHP upgrade notice should be displayed in the admin */
+	private $display_php_notice = false;
 
 
 	/**
@@ -118,6 +121,10 @@ abstract class SV_WC_Plugin {
 			$this->text_domain = $args['text_domain'];
 		}
 
+		if ( isset( $args['display_php_notice'] ) ) {
+			$this->display_php_notice = $args['display_php_notice'];
+		}
+
 		// include library files after woocommerce is loaded
 		add_action( 'sv_wc_framework_plugins_loaded', array( $this, 'lib_includes' ) );
 
@@ -154,7 +161,11 @@ abstract class SV_WC_Plugin {
 		add_action( 'init', array( $this, 'load_translations' ) );
 
 		// add any PHP incompatibilities to the system status report
-		add_filter( 'woocommerce_debug_posting', array( $this, 'add_system_status_php_information' ) );
+		if ( SV_WC_Plugin_Compatibility::is_wc_version_gte_3_0() ) {
+			add_filter( 'woocommerce_system_status_environment_rows', array( $this, 'add_system_status_php_information' ) );
+		} else {
+			add_filter( 'woocommerce_debug_posting', array( $this, 'add_system_status_php_information' ) );
+		}
 	}
 
 
@@ -230,7 +241,10 @@ abstract class SV_WC_Plugin {
 	 */
 	protected function load_textdomain( $textdomain, $path ) {
 
-		$locale = apply_filters( 'plugin_locale', get_locale(), $textdomain );
+		// user's locale if in the admin for WP 4.7+, or the site locale otherwise
+		$locale = is_admin() && is_callable( 'get_user_locale' ) ? get_user_locale() : get_locale();
+
+		$locale = apply_filters( 'plugin_locale', $locale, $textdomain );
 
 		load_textdomain( $textdomain, WP_LANG_DIR . '/' . $textdomain . '/' . $textdomain . '-' . $locale . '.mo' );
 
@@ -374,6 +388,7 @@ abstract class SV_WC_Plugin {
 	 * @since 3.0.0
 	 */
 	protected function add_dependencies_admin_notices() {
+		global $sv_wc_php_notice_added;
 
 		// report any missing extensions
 		$missing_extensions = $this->get_missing_extension_dependencies();
@@ -460,6 +475,55 @@ abstract class SV_WC_Plugin {
 					'notice_class' => 'error',
 				) );
 			}
+		}
+
+		// add the PHP 5.6+ notice
+		if ( ! $sv_wc_php_notice_added && $this->display_php_notice && version_compare( PHP_VERSION, '5.6.0', '<' ) ) {
+
+			$message = '<p>';
+
+			$message .= sprintf(
+				/* translators: Placeholders: %1$s - <strong>, %2$s - </strong> */
+				__( 'Hey there! We\'ve noticed that your server is running %1$san outdated version of PHP%2$s, which is the programming language that WooCommerce and its extensions are built on.
+					The PHP version that is currently used for your site is no longer maintained, nor %1$sreceives security updates%2$s; newer versions are faster and more secure.', 'woocommerce-plugin-framework' ),
+				'<strong>', '</strong>'
+			);
+
+			$message .= '</p><p>';
+
+			$deadline = strtotime( 'May 2018' );
+
+			if ( time() < $deadline ) {
+
+				$message .= sprintf(
+					/* translators: Placeholders: %1$s - WooCommerce plugin name, %2$s - a month and year, such as May 2018 */
+					__( 'As a result, %1$s will no longer support this version starting %2$s and you should upgrade PHP prior to this date.', 'woocommerce-plugin-framework' ),
+					$this->get_plugin_name(),
+					'<strong>' . date_i18n( 'F Y', $deadline ) . '</strong>'
+				);
+
+			} else {
+
+				$message .= sprintf(
+					/* translators: Placeholders: %s - WooCommerce plugin name */
+					__( 'As a result, %s no longer supports this version and you should upgrade PHP as soon as possible.', 'woocommerce-plugin-framework' ),
+					$this->get_plugin_name()
+				);
+			}
+
+			$message .= ' ' . sprintf(
+				/* translators: Placeholders: %1$s - <a>, %2$s - </a> */
+				__( 'Your hosting provider can do this for you. %1$sHere are some resources to help you upgrade%2$s and to explain PHP versions further.', 'woocommerce-plugin-framework' ),
+				'<a href="http://skyver.ge/upgradephp">', '</a>'
+			);
+
+			$message .= '</p>';
+
+			$this->get_admin_notice_handler()->add_admin_notice( $message, 'sv-wc-outdated-php-version', array(
+				'notice_class' => 'error',
+			) );
+
+			$sv_wc_php_notice_added = true;
 		}
 	}
 

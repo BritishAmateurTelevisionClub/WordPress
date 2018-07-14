@@ -5,11 +5,11 @@
  * Description: Automatically change order status to complete for all orders or just virtual orders when payment is successful
  * Author: SkyVerge
  * Author URI: http://www.woocommerce.com
- * Version: 1.8.0
+ * Version: 1.9.1
  * Text Domain: woocommerce-order-status-control
  * Domain Path: /i18n/languages/
  *
- * Copyright: (c) 2013-2017, SkyVerge, Inc. (info@skyverge.com)
+ * Copyright: (c) 2013-2018, SkyVerge, Inc. (info@skyverge.com)
  *
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -17,8 +17,12 @@
  * @package   WC-Order-Status-Control
  * @author    SkyVerge
  * @category  Utility
- * @copyright Copyright (c) 2013-2017, SkyVerge, Inc.
+ * @copyright Copyright (c) 2013-2018, SkyVerge, Inc.
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ *
+ * Woo: 439037:32400e509c7c36dcc1cd368e8267d981
+ * WC requires at least: 2.6.14
+ * WC tested up to: 3.4.0
  */
 
 defined( 'ABSPATH' ) or exit;
@@ -41,9 +45,9 @@ if ( ! class_exists( 'SV_WC_Framework_Bootstrap' ) ) {
 	require_once( plugin_dir_path( __FILE__ ) . 'lib/skyverge/woocommerce/class-sv-wc-framework-bootstrap.php' );
 }
 
-SV_WC_Framework_Bootstrap::instance()->register_plugin( '4.6.0', __( 'WooCommerce Order Status Control', 'woocommerce-order-status-control' ), __FILE__, 'init_woocommerce_order_status_control', array(
-	'minimum_wc_version'   => '2.5.5',
-	'minimum_wp_version'   => '4.1',
+SV_WC_Framework_Bootstrap::instance()->register_plugin( '4.9.0', __( 'WooCommerce Order Status Control', 'woocommerce-order-status-control' ), __FILE__, 'init_woocommerce_order_status_control', array(
+	'minimum_wc_version'   => '2.6.14',
+	'minimum_wp_version'   => '4.4',
 	'backwards_compatible' => '4.4',
 ) );
 
@@ -75,7 +79,7 @@ class WC_Order_Status_Control extends SV_WC_Plugin {
 
 
 	/** plugin version number */
-	const VERSION = '1.8.0';
+	const VERSION = '1.9.1';
 
 	/** @var WC_Order_Status_Control single instance of this plugin */
 	protected static $instance;
@@ -98,7 +102,8 @@ class WC_Order_Status_Control extends SV_WC_Plugin {
 			self::PLUGIN_ID,
 			self::VERSION,
 			array(
-				'text_domain' => 'woocommerce-order-status-control',
+				'text_domain'        => 'woocommerce-order-status-control',
+				'display_php_notice' => true,
 			)
 		);
 
@@ -212,12 +217,16 @@ class WC_Order_Status_Control extends SV_WC_Plugin {
 
 		$updated_settings = array();
 
-		foreach ( $settings as $setting ) {
+		for( $i = 0; $i < sizeof( $settings ); $i++ ) {
 
-			$updated_settings[] = $setting;
+			$updated_settings[] = $settings[$i];
+			$next_setting = isset( $settings[ $i + 1 ] ) ? $settings[ $i + 1 ] : array();
 
-			if ( isset( $setting['id'] ) && 'woocommerce_demo_store' === $setting['id'] ) {
-				$updated_settings = array_merge( $updated_settings, $this->get_global_settings() );
+			// insert our field just before the general options end marker
+			if ( ! empty( $next_setting ) ) {
+				if ( isset( $next_setting['id'] ) && 'general_options' === $next_setting['id'] && isset( $next_setting['type'] ) && 'sectionend' === $next_setting['type'] ) {
+					$updated_settings = array_merge( $updated_settings, $this->get_global_settings() );
+				}
 			}
 		}
 
@@ -330,7 +339,7 @@ class WC_Order_Status_Control extends SV_WC_Plugin {
 	 * @return string
 	 */
 	public function get_support_url() {
-		return 'https://woocommerce.com/my-account/tickets/';
+		return 'https://woocommerce.com/my-account/marketplace-ticket-form/';
 	}
 
 
