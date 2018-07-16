@@ -239,7 +239,6 @@ class WC_Form_Handler {
 		$required_fields = apply_filters( 'woocommerce_save_account_details_required_fields', array(
 			'account_first_name'    => __( 'First name', 'woocommerce' ),
 			'account_last_name'     => __( 'Last name', 'woocommerce' ),
-			'account_display_name'  => __( 'Display name', 'woocommerce' ),
 			'account_email'         => __( 'Email address', 'woocommerce' ),
 		) );
 
