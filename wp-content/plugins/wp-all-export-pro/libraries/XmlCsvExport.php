@@ -87,8 +87,8 @@ final Class XmlCsvExport
             // Get custom field snippets
             $snippets = array();
             $exportOptions = XmlExportEngine::$exportOptions;
-
             $snippetParser = new \Wpae\App\Service\SnippetParser();
+            $wpaeString = new WpaeString();
 
             if (
                 (XmlExportEngine::$exportOptions['export_to'] == XmlExportEngine::EXPORT_TYPE_CSV) &&
@@ -144,8 +144,17 @@ final Class XmlCsvExport
                             $multipleFieldsValue = $exportOptions['cc_combine_multiple_fields_value'][$ID];
 
                             foreach ($article as $snippetName => $articleValue) {
-                                $multipleFieldsValue = str_replace("{" . $snippetName . "}", $articleValue, $multipleFieldsValue);
+
+                                if($wpaeString->isBetween($multipleFieldsValue, "{".$snippetName."}", '[',']')) {
+                                    // Replace snippets in functions
+                                    $multipleFieldsValue = str_replace("{" . $snippetName . "}", '$articleData**OPENARR**"'.$snippetName.'"**CLOSEARR**', $multipleFieldsValue);
+                                } else {
+                                    // Replace snippets not in functions
+                                    $multipleFieldsValue = str_replace("{" . $snippetName . "}", $articleValue, $multipleFieldsValue);
+
+                                }
                             }
+
                             $functions = $snippetParser->parseFunctions($multipleFieldsValue);
 
                             $multipleFieldsValue = \Wpae\App\Service\CombineFields::prepareMultipleFieldsValue($functions, $multipleFieldsValue, $article);

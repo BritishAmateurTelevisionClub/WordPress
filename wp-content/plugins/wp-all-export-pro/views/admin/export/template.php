@@ -333,7 +333,7 @@
 						/** @var string $random */
 						$random = uniqid();
 						?>
-			            <div class="wpallexport-collapsed-content" style="padding: 0; overflow: hidden; height: 180px;">
+			            <div class="wpallexport-collapsed-content" style="padding: 0; overflow: hidden; min-height: 180px;">
 			                <div class="wpallexport-collapsed-content-inner">               
 			                    <div class="wp-all-export-wpml-options">
 							        <h4><?php _e('Language', 'wp_all_export_plugin'); ?></h4>

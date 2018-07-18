@@ -64,6 +64,7 @@ $l10n = array(
                         </div>
 						<?php wp_nonce_field('options', '_wpnonce_options') ?>
 						<input type="hidden" name="is_submitted" value="1" />
+                        <input type="hidden" name="record-count" class="wpae-record-count" value="0" />
 
                         <input style="padding:20px 50px 20px 50px;" type="submit" class="rad10 wp_all_export_confirm_and_run" value="<?php _e('Confirm & Run Export', 'wp_all_export_plugin') ?>" />
                     </form>
@@ -95,6 +96,7 @@ $l10n = array(
 					<input type="hidden" name="taxonomy_to_export" value="<?php echo $post['taxonomy_to_export'];?>">
 					<input type="hidden" name="wpml_lang" value="<?php echo empty(PMXE_Plugin::$session->wpml_lang) ? $post['wpml_lang'] : PMXE_Plugin::$session->wpml_lang;?>" />
 					<input type="hidden" id="export_variations" name="export_variations" value="<?php echo XmlExportEngine::getProductVariationMode();?>" />
+                    <input type="hidden" name="record-count" class="wpae-record-count" value="0" />
 
 					<?php \Wpae\Pro\Filtering\FilteringFactory::render_filtering_block( $engine, $this->isWizard, $post ); ?>
                     <?php include(__DIR__ . "/../../../src/Scheduling/views/SchedulingOptions.php"); ?>

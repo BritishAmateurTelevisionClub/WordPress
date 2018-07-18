@@ -463,7 +463,7 @@ class Vc_Settings {
 		);
 		wp_localize_script( 'wpb_js_composer_settings', 'vcData', apply_filters( 'vc_global_js_data', array(
 			'version' => WPB_VC_VERSION,
-			'debug' => wpb_debug(),
+			'debug' => false,
 		) ) );
 		wp_localize_script( 'wpb_js_composer_settings', 'i18nLocaleSettings', $this->locale );
 	}

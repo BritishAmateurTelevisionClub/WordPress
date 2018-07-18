@@ -44,3 +44,13 @@ function wpb_map( $attributes ) {
 
 	vc_map( $attributes );
 }
+
+/**
+ * @deprecated 5.2
+ * @return string
+ */
+function vc_generate_dependencies_attributes() {
+	_deprecated_function( 'vc_generate_dependencies_attributes', '5.1', '' );
+
+	return '';
+}

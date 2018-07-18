@@ -35,6 +35,9 @@
 	function selectSpreadsheet()
 	{
 		vm.isGoogleMerchantsExport = false;
+		if(vm.availableDataSelector.css('position') == 'fixed') {
+            $('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
+        }
 		resetDraggable();
 		angular.element(document.getElementById('googleMerchants')).injector().get('$rootScope').$broadcast('googleMerchantsDeselected');
 		$('.wpallexport-custom-xml-template').slideUp();
@@ -679,7 +682,9 @@
 			data: request,
 			success: function(response) {
 
-				vm.hasVariations = response.hasVariations;
+                $('.wpae-record-count').val(response.found_records);
+
+                vm.hasVariations = response.hasVariations;
 				if(vm.hasVariations) {
 
 					if($('#export_to_sheet').val() == 'xls' || $('#export_to_sheet').val() == 'xlsx') {
@@ -2201,6 +2206,10 @@
                 }
                 vm.isGoogleMerchantsExport = false;
 
+                if(vm.availableDataSelector.css('position') == 'fixed') {
+                    $('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
+                }
+
 				if(!angular.isUndefined(e.originalEvent)) {
 					if ( ! $('.wpallexport-file-options').hasClass('closed')) $('.wpallexport-file-options').find('.wpallexport-collapsed-header').click();
 				}
@@ -2212,6 +2221,10 @@
 					angular.element(document.getElementById('googleMerchants')).injector().get('$rootScope').$broadcast('googleMerchantsDeselected');
                 }
                 vm.isGoogleMerchantsExport = false;
+
+                if(vm.availableDataSelector.css('position') == 'fixed') {
+                    $('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
+                }
 
     			$('.simple_xml_template_options').slideUp();
     			$('.wpallexport-simple-xml-template').slideUp();
@@ -2283,6 +2296,11 @@
 				resetDraggable();
 				angular.element(document.getElementById('googleMerchants')).injector().get('$rootScope').$broadcast('googleMerchantsDeselected');
     			vm.isGoogleMerchantsExport = false;
+
+                if(vm.availableDataSelector.css('position') == 'fixed') {
+                    $('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
+                }
+
                 $('.simple_xml_template_options').slideUp();
     			$('.wpallexport-simple-xml-template').slideDown();
     			$('.wpallexport-custom-xml-template').slideUp();
@@ -2432,13 +2450,15 @@
 
 		$(window).scroll(function (e) {
 
-			var isPositionFixed = (vm.availableDataSelector.css('position') == 'fixed');
-			if ($(this).scrollTop() > originalOffset && !isPositionFixed) {
-				$('.template-sidebar').find('.wpae_available_data').css({'position': 'fixed', 'top': '50px'});
-			}
-			if ($(this).scrollTop() < originalOffset && isPositionFixed) {
-				$('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
-			}
+			if(vm.isGoogleMerchantsExport) {
+                var isPositionFixed = (vm.availableDataSelector.css('position') == 'fixed');
+                if ($(this).scrollTop() > originalOffset && !isPositionFixed) {
+                    $('.template-sidebar').find('.wpae_available_data').css({'position': 'fixed', 'top': '50px'});
+                }
+                if ($(this).scrollTop() < originalOffset && isPositionFixed) {
+                    $('.template-sidebar').find('.wpae_available_data').css({'position': 'static', 'top': '50px'});
+                }
+            }
 		});
 	}
 

@@ -144,7 +144,9 @@ function pmxe_wp_loaded() {
 
 	if ( ! empty($cron_job_key) and ! empty($_GET['export_id']) and ! empty($_GET['export_key']) and $_GET['export_key'] == $cron_job_key and !empty($_GET['action']) and in_array($_GET['action'], array('processing', 'trigger'))) {
 
-		$logger = create_function('$m', 'echo "<p>$m</p>\\n";');
+		$logger = function($m) {
+		    echo "<p>$m</p>\\n";
+		};
 
 		$export = new PMXE_Export_Record();
 

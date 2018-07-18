@@ -150,7 +150,7 @@ return array(
 			'description' => __( 'Select animation style.', 'js_composer' ),
 			'param_name' => 'animation',
 			'value' => getVcShared( 'animation styles' ),
-			'std' => 'easeinOutCubic',
+			'std' => 'easeInOutCubic',
 		),
 		vc_map_add_css_animation(),
 		array(

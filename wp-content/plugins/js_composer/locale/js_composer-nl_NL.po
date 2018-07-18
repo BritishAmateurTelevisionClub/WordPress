@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPBakery WPBakery Page Builder v3.6.14.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-10 14:29+0300\n"
-"PO-Revision-Date: 2017-10-10 14:32+0300\n"
+"POT-Creation-Date: 2018-05-14 16:20+0300\n"
+"PO-Revision-Date: 2018-05-14 16:20+0300\n"
 "Last-Translator: Michael M <hello@wpbakery.com>\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
@@ -1600,7 +1600,7 @@ msgstr ""
 #: config/./content/shortcode-vc-toggle.php:57
 #: config/./grids/class-vc-grids-common.php:1126
 #: config/./grids/class-vc-grids-common.php:1175
-#: include/./helpers/helpers_api.php:500
+#: include/./helpers/helpers_api.php:498
 msgid "Default"
 msgstr ""
 
@@ -2525,10 +2525,10 @@ msgstr ""
 #: config/./grids/class-vc-grids-common.php:277
 #: config/./tta/shortcode-vc-tta-section.php:48
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:109
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1272
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1335
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1449
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1280
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1343
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1457
 #: include/./params/loop/loop.php:446
 #: include/./params/sorted_list/sorted_list.php:91
 #: include/./params/vc_link/vc_link.php:18
@@ -2943,8 +2943,8 @@ msgstr "Datum"
 # @ js_composer
 #: config/./content/shortcode-vc-posts-slider.php:134
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:107
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1464
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1489
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
 msgid "ID"
 msgstr "ID"
 
@@ -6661,7 +6661,6 @@ msgid "WPBakery Page Builder"
 msgstr ""
 
 #: include/./autoload/vc-pages/welcome-screen.php:38
-#: include/./classes/core/class-vc-base.php:630
 msgid "About"
 msgstr ""
 
@@ -6800,12 +6799,6 @@ msgstr ""
 msgid "WPBakery Page Builder Settings"
 msgstr ""
 
-#: include/./classes/core/class-vc-base.php:627
-#: include/./classes/core/class-vc-base.php:760
-#: include/./templates/pages/vc-welcome/index.php:24
-msgid "Settings"
-msgstr ""
-
 #: include/./classes/core/class-vc-base.php:629
 msgid "About WPBakery Page Builder"
 msgstr ""
@@ -6829,6 +6822,11 @@ msgstr "Voeg afbeelding toe"
 #: include/./classes/core/class-vc-base.php:759
 msgid "Add Images"
 msgstr "Voeg afbeeldingen toe"
+
+#: include/./classes/core/class-vc-base.php:760
+#: include/./templates/pages/vc-welcome/index.php:24
+msgid "Settings"
+msgstr ""
 
 #: include/./classes/core/class-vc-base.php:762
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:120
@@ -7334,10 +7332,6 @@ msgstr ""
 msgid "Responsive preview"
 msgstr "Responsive afbeeldingen galerij"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:115
-msgid "&wpb_vc_js_status=true"
-msgstr ""
-
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:117
 msgid "Cancel all changes and return to WP dashboard"
 msgstr ""
@@ -7352,18 +7346,12 @@ msgstr ""
 msgid "Save as Pending"
 msgstr "Aflopend"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:138
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:139
 msgid "Publish"
 msgstr ""
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:142
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:143
 msgid "Submit for Review"
-msgstr ""
-
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:164
-msgid "Exit WPBakery Page Builder edit mode"
 msgstr ""
 
 # @ default
@@ -7425,12 +7413,6 @@ msgstr ""
 msgid "Save current layout as a template"
 msgstr "Sla huidige pagina op als template"
 
-# @ js_composer
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:98
-#, fuzzy
-msgid "Template name"
-msgstr "Templates"
-
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:100
 msgid "Save Template"
 msgstr ""
@@ -7438,29 +7420,6 @@ msgstr ""
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:103
 msgid "Save layout and reuse it on different sections of this site."
 msgstr ""
-
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:188
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:232
-#: include/./params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:85
-#: include/./params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:86
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:155
-msgid "Preview template"
-msgstr ""
-
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:189
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:233
-#: include/./templates/editors/partials/vc_welcome_block.tpl.php:63
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:141
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:143
-msgid "Add template"
-msgstr ""
-
-# @ js_composer
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:192
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:149
-#, fuzzy
-msgid "Delete template"
-msgstr "Voorproef layout template."
 
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:415
 msgid "Error: wrong template id."
@@ -7950,9 +7909,9 @@ msgid ""
 "specific \"content block\" related color is set."
 msgstr ""
 "Hier kunt u standaard visuele verschijning van WPBakery Page Builder content "
-"elementen bewerken. Standaard WPBakery Page Builder is het gebruik van neutrale "
-"lichtgrijze thema. Veranderen van \"Main accent color\" zal effect hebben "
-"voor alle content elementen als er geen specifieke \"content block\" "
+"elementen bewerken. Standaard WPBakery Page Builder is het gebruik van "
+"neutrale lichtgrijze thema. Veranderen van \"Main accent color\" zal effect "
+"hebben voor alle content elementen als er geen specifieke \"content block\" "
 "gerelateerde kleur is ingesteld."
 
 # @ js_composer
@@ -8121,36 +8080,36 @@ msgid "Delete %s"
 msgstr "Verwijder %s"
 
 # @ js_composer
-#: include/./classes/shortcodes/shortcodes.php:1133
+#: include/./classes/shortcodes/shortcodes.php:1136
 #, php-format
 msgid "Append to this %s"
 msgstr "Toevoegen aan deze %s"
 
 # @ js_composer
-#: include/./classes/shortcodes/shortcodes.php:1135
+#: include/./classes/shortcodes/shortcodes.php:1138
 #, php-format
 msgid "Prepend to this %s"
 msgstr "Vooraan toevoegen aan deze %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1138
+#: include/./classes/shortcodes/shortcodes.php:1141
 #, php-format
 msgid "Move this %s"
 msgstr ""
 
 # @ js_composer
-#: include/./classes/shortcodes/shortcodes.php:1144
+#: include/./classes/shortcodes/shortcodes.php:1147
 #, php-format
 msgid "Edit this %s"
 msgstr "Bewerk deze %s"
 
 # @ js_composer
-#: include/./classes/shortcodes/shortcodes.php:1145
+#: include/./classes/shortcodes/shortcodes.php:1148
 #, php-format
 msgid "Clone this %s"
 msgstr "Kopieer deze %s"
 
 # @ js_composer
-#: include/./classes/shortcodes/shortcodes.php:1146
+#: include/./classes/shortcodes/shortcodes.php:1149
 #, php-format
 msgid "Delete this %s"
 msgstr "Verwijder deze %s"
@@ -8261,14 +8220,6 @@ msgstr ""
 #: include/./classes/shortcodes/vc-gitem.php:98
 msgid "Delete this grid item "
 msgstr ""
-
-# @ js_composer
-#: include/./classes/shortcodes/vc-posts-grid.php:135
-#: include/./templates/shortcodes/post_block/_item.php:22
-#: include/./templates/shortcodes/vc_posts_slider.php:167
-#, php-format
-msgid "Permalink to %s"
-msgstr "Permalink naar %s"
 
 # @ js_composer
 #: include/./classes/shortcodes/vc-row.php:47
@@ -8912,119 +8863,119 @@ msgid ""
 "products are shown on a page. This will not add pagination to the shortcode. "
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1283
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1346
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1460
 msgid "Id"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1267
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1330
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1444
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
 msgid "Sku"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Name"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Slug"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1463
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
 msgid "SKU"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1465
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
 msgid "Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1466
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
 msgid "Regular Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1467
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
 msgid "Sale Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1468
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1476
 msgid "Price html"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1469
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1477
 msgid "Reviews count"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1470
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1478
 msgid "Short description"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1479
 msgid "Dimensions"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1480
 msgid "Rating count"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1481
 msgid "Weight"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1482
 msgid "Is on sale"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1483
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1509
 msgid "Custom field"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1490
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
 msgid "Order number"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1491
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
 msgid "Currency"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1492
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
 msgid "Total"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1493
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
 msgid "Status"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1494
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1502
 msgid "Payment method"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1495
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1503
 msgid "Billing address city"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1496
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1504
 msgid "Billing address country"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1505
 msgid "Shipping address city"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1506
 msgid "Shipping address country"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1507
 msgid "Customer Note"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1508
 msgid "Customer API"
 msgstr ""
 
@@ -9097,36 +9048,36 @@ msgid "Wrong vc_map object. Base attribute is required"
 msgstr ""
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:492
+#: include/./helpers/helpers_api.php:490
 msgid "CSS Animation"
 msgstr "CSS animatie"
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:502
+#: include/./helpers/helpers_api.php:500
 msgid "Top to bottom"
 msgstr "Van boven naar beneden"
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:503
+#: include/./helpers/helpers_api.php:501
 msgid "Bottom to top"
 msgstr "Van beneden naar boven"
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:504
+#: include/./helpers/helpers_api.php:502
 msgid "Left to right"
 msgstr "Links naar rechts"
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:505
+#: include/./helpers/helpers_api.php:503
 msgid "Right to left"
 msgstr "Rechts naar links"
 
 # @ js_composer
-#: include/./helpers/helpers_api.php:506
+#: include/./helpers/helpers_api.php:504
 msgid "Appear from center"
 msgstr "Verschijn vanuit midden"
 
-#: include/./helpers/helpers_api.php:511
+#: include/./helpers/helpers_api.php:509
 msgid ""
 "Select type of animation for element to be animated when it \"enters\" the "
 "browsers viewport (Note: works only in modern browsers)."
@@ -10197,22 +10148,6 @@ msgstr "Selecteer URL"
 msgid "URL"
 msgstr "URL"
 
-# @ js_composer
-#: include/./templates/editors/backend_editor.tpl.php:52
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:70
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:80
-msgid "Loading, please wait..."
-msgstr "Laden, even geduld aub.."
-
-# @ js_composer
-#: include/./templates/editors/backend_editor.tpl.php:54
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:72
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:82
-msgid "Crunching..."
-msgstr "Verkleinen..."
-
 #: include/./templates/editors/partials/add_element_search.tpl.php:11
 msgid "Search element by name"
 msgstr ""
@@ -10337,13 +10272,6 @@ msgstr ""
 msgid "Save as Element"
 msgstr "Aflopend"
 
-# @ js_composer
-#: include/./templates/editors/partials/settings_presets_popup.tpl.php:35
-#, fuzzy
-#| msgid "Link title"
-msgid "Untitled"
-msgstr "Link titel"
-
 #: include/./templates/editors/partials/templates_search.tpl.php:11
 #: include/./templates/editors/popups/shared-templates/category.tpl.php:42
 msgid "Search template by name"
@@ -10377,6 +10305,12 @@ msgstr "Tekst blok"
 
 #: include/./templates/editors/partials/vc_welcome_block.tpl.php:52
 msgid "Add Text Block"
+msgstr ""
+
+#: include/./templates/editors/partials/vc_welcome_block.tpl.php:63
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:141
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:143
+msgid "Add template"
 msgstr ""
 
 #: include/./templates/editors/partials/vc_welcome_block.tpl.php:84
@@ -10449,6 +10383,16 @@ msgstr ""
 
 #: include/./templates/editors/popups/shared-templates/category.tpl.php:113
 msgid "Access Library"
+msgstr ""
+
+# @ js_composer
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:149
+#, fuzzy
+msgid "Delete template"
+msgstr "Voorproef layout template."
+
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:155
+msgid "Preview template"
 msgstr ""
 
 #: include/./templates/editors/popups/vc_ui-panel-add-element.tpl.php:25
@@ -10766,21 +10710,21 @@ msgid ""
 "you to get around plugin:"
 msgstr ""
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:26
+#: include/./templates/pages/vc-welcome/vc-resources.php:23
 msgid "Official Support"
 msgstr ""
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:28
+#: include/./templates/pages/vc-welcome/vc-resources.php:25
 #, php-format
 msgid ""
 "To get your support related question answered in the fastest timing, please "
 "head over to our <a href=\"%s\" target=\"_blank\">support page</a> and open "
 "Support ticket. To open a support ticket you should have a valid support "
 "subscription in case if your support has expired you can <a href=\"%s\" "
-"target=\"_blank\">purchase support extension</a> on CodeCanyon."
+"target=\"_blank\">purchase support extension</a> on support.wpbakery.com."
 msgstr ""
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:30
+#: include/./templates/pages/vc-welcome/vc-resources.php:27
 #, php-format
 msgid ""
 "Before applying for support please make sure you understand the rules of "
@@ -10803,7 +10747,6 @@ msgstr ""
 # @ js_composer
 #: include/./templates/pages/vc-welcome/vc-welcome.php:21
 #, fuzzy
-#| msgid "Font Color"
 msgid "Native Colors"
 msgstr "Tekst Kleur"
 
@@ -10816,7 +10759,6 @@ msgstr ""
 # @ js_composer
 #: include/./templates/pages/vc-welcome/vc-welcome.php:28
 #, fuzzy
-#| msgid "Icon"
 msgid "New Icons"
 msgstr "Icoon"
 
@@ -10874,6 +10816,22 @@ msgstr ""
 #, php-format
 msgid "View all posts in %s"
 msgstr ""
+
+# @ js_composer
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
+msgid "Loading, please wait..."
+msgstr "Laden, even geduld aub.."
+
+# @ js_composer
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
+msgid "Crunching..."
+msgstr "Verkleinen..."
+
+# @ js_composer
+#: include/./templates/shortcodes/post_block/_item.php:22
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink naar %s"
 
 # @ js_composer
 #: include/./templates/shortcodes/vc_accordion_tab.php:26
@@ -10940,1235 +10898,12 @@ msgid "Featured"
 msgstr "Uitgelicht"
 
 # @ js_composer
-#~ msgid "WPBakery Page Builder"
-#~ msgstr "WPBakery Page Builder"
-
-# @ js_composer
-#~ msgid "WPBakery Page Builder Settings"
-#~ msgstr "Visual Composter instellingen"
-
-# @ js_composer
 #, fuzzy
-#~ msgid "Edit %s with WPBakery Page Builder"
-#~ msgstr "WPBakery Page Builder"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Edit with WPBakery Page Builder"
-#~ msgstr "WPBakery Page Builder"
-
-# @ js_composer
-#~ msgid "Save current page as a Template"
-#~ msgstr "Sla huidige pagina op als template"
-
-# @ js_composer
-#~ msgid "Load Template"
-#~ msgstr "Template laden"
-
-# @ js_composer
-#~ msgid "No custom templates yet."
-#~ msgstr "Er zijn nog geen aangepaste templates."
-
-# @ js_composer
-#~ msgid "Show WPBakery Page Builder & default editor"
-#~ msgstr "Toon WPBakery Page Builder & standaard editor"
-
-# @ js_composer
-#~ msgid "Show only WPBakery Page Builder"
-#~ msgstr "Toon alleen WPBakery Page Builder"
-
-# @ js_composer
-#~ msgid "Don't allow to use WPBakery Page Builder"
-#~ msgstr "Sta niet toe om WPBakery Page Builder te gebruiken"
-
-# @ js_composer
-#~ msgid "WPBakery Page Builder access"
-#~ msgstr "WPBakery Page Builder toegang"
-
-# @ js_composer
-#~ msgid "Enabled shortcodes"
-#~ msgstr "Schakel shortcodes in"
-
-# @ js_composer
-#~ msgid "Select All"
-#~ msgstr "Selecteer alles"
-
-# @ js_composer
-#~ msgid "Select none"
-#~ msgstr "Selecteer niets"
-
-# @ js_composer
-#~ msgid "Empty value"
-#~ msgstr "Lege Waarde"
-
-# @ js_composer
-#~ msgid "This is required to enable file writing for js_composer"
-#~ msgstr ""
-#~ "Dit is nodig om bestanden schrijven in te schakelen voor js_composer"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Downloading package from envato market..."
-#~ msgstr "Download pakket vanaf envato market&#8230;"
-
-# @ js_composer
-#~ msgid "Error! Envato API error"
-#~ msgstr "Fout! Envato API fout "
-
-# @ js_composer
-#~ msgid "Error on unzipping package"
-#~ msgstr "Fout bij uitpakken van het zip bestand"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "My templates"
+#~ msgid "Template name"
 #~ msgstr "Templates"
 
 # @ js_composer
 #, fuzzy
-#~ msgid "Default templates"
-#~ msgstr "Voorproef layout template."
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Post Carousel"
-#~ msgstr "Carousel"
-
-# @ js_composer
-#~ msgid "Call to Action Button"
-#~ msgstr "Call to Action Button"
-
-# @ js_composer
-#~ msgid "Posts Grid"
-#~ msgstr "Berichten raster"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Download new version from CodeCanyon."
-#~ msgstr "Download nieuwe versie van CodeCanyon"
-
-# @ js_composer
-#~ msgid "Update WPBakery Page Builder now."
-#~ msgstr "Update WPBakery Page Builder nu"
-
-# @ js_composer
-#~ msgid "What text use as form title. Leave blank if no title is needed."
-#~ msgstr ""
-#~ "Welke tekst moet er gebruikt worden als titel. Laat leeg indien er geen "
-#~ "titel nodig is."
-
-# @ js_composer
-#~ msgid "Regular size"
-#~ msgstr "Standaard formaat"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Select type of animation if you want this element to be animated when it "
-#~ "enters into the browsers viewport. Note: Works only in modern browsers."
-#~ msgstr ""
-#~ "Selecteer het type animatie als u wilt dat dit element te worden "
-#~ "geanimeerd wanneer deze in de viewport van de browsers binnenkomt. Let "
-#~ "op: Werkt alleen in moderne browsers."
-
-# @ js_composer
-#~ msgid "Select font color"
-#~ msgstr "Selecteer een tekst kleur"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Design options"
-#~ msgstr "Design opties"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Separator color."
-#~ msgstr "Divider border kleur"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Separator style."
-#~ msgstr "Separator titel"
-
-# @ js_composer
-#~ msgid "Separator title."
-#~ msgstr "Separator titel"
-
-# @ js_composer
-#~ msgid "Align center"
-#~ msgstr "centraal uitlijnen"
-
-# @ js_composer
-#~ msgid "Align left"
-#~ msgstr "links uitlijnen"
-
-# @ js_composer
-#~ msgid "Align right"
-#~ msgstr "rechts uitlijnen"
-
-# @ js_composer
-#~ msgid "Message box type"
-#~ msgstr "bericht kader type"
-
-# @ js_composer
-#~ msgid "Select message type."
-#~ msgstr "Selecteer bericht type"
-
-# @ js_composer
-#~ msgid "Facebook like button"
-#~ msgstr "Facebook Like knop"
-
-# @ js_composer
-#~ msgid "Button count"
-#~ msgstr "Knop telling"
-
-# @ js_composer
-#~ msgid "Box count"
-#~ msgstr "Kader telling"
-
-# @ js_composer
-#~ msgid "Share on twitter button"
-#~ msgstr "Deel op twitter knop"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select type of annotation"
-#~ msgstr "Selecteer aantekeningstype"
-
-# @ js_composer
-#~ msgid "Button layout"
-#~ msgstr "Knop layout"
-
-# @ js_composer
-#~ msgid "Toggle block title."
-#~ msgstr "Schakel blok titel"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter text which will be used as widget title. Leave blank if no title is "
-#~ "needed."
-#~ msgstr ""
-#~ "Welke tekst er gebruikt moet worden als widget titel, laat leeg indien er "
-#~ "geen titel gebruikt hoeft te worden"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter image size. Example: \"thumbnail\", \"medium\", \"large\", \"full\" "
-#~ "or other sizes defined by current theme. Alternatively enter image size "
-#~ "in pixels: 200x100 (Width x Height). Leave empty to use \"thumbnail\" "
-#~ "size."
-#~ msgstr ""
-#~ "Voer beeldformaat in. Voorbeeld: thumbnail, medium, groot, volledige of "
-#~ "andere maten gedefinieerd door de huidige thema. Alternatieve invoer "
-#~ "beeldgrootte in pixels: 200x100 (breedte x hoogte). Laat leeg om "
-#~ "'thumbnail' formaat te gebruiken."
-
-# @ js_composer
-#~ msgid "Link to large image?"
-#~ msgstr "Link naar grote afbeelding?"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "If selected, image will be linked to the larger image."
-#~ msgstr ""
-#~ "Indien geselecteerd zal de afbeelding gelinkt zijn naar een groter "
-#~ "formaat."
-
-# @ js_composer
-#~ msgid "Yes, please"
-#~ msgstr "Ja, graag"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Enter URL if you want this image to have a link."
-#~ msgstr "Voer url in indien u wilt dat deze afbeelding een link heeft."
-
-# @ js_composer
-#~ msgid "On click"
-#~ msgstr "Tijdens klik"
-
-# @ js_composer
-#~ msgid "Do nothing"
-#~ msgstr "Doe niks"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter links for each slide here. Divide links with linebreaks (Enter) . "
-#~ msgstr ""
-#~ "Voer links in voor iedere slider afbeelding. Scheid links met een "
-#~ "lijnbreuk (Enter)."
-
-# @ js_composer
-#~ msgid "What to do when slide is clicked?"
-#~ msgstr "Wat te doen wanneer de slider afbeelding is geklikt"
-
-# @ js_composer
-#~ msgid "Slider mode"
-#~ msgstr "Slider mode"
-
-#~ msgid ""
-#~ "Slides will be positioned horizontally (for horizontal swipes) or "
-#~ "vertically (for vertical swipes)"
-#~ msgstr ""
-#~ "Slider afbeeldingen worden horizontaal gepositioneerd (voor horizontale "
-#~ "swipes) of verticaal (voor verticale swipes)"
-
-#~ msgid "Duration of animation between slides (in ms)"
-#~ msgstr "Duur van animatie tussen slider afbeeldingen (in ms)"
-
-#, fuzzy
-#~ msgid ""
-#~ "Set numbers of slides you want to display at the same time on slider's "
-#~ "container for carousel mode. Supports also \"auto\" value, in this case "
-#~ "it will fit slides depending on container's width. \"auto\" mode isn't "
-#~ "compatible with loop mode."
-#~ msgstr ""
-#~ "Stel het aantal slider afbeeldingen in dat u tegelijkertijd wilt "
-#~ "weergeven in het slider kader voor carousel modus. Ondersteund ook 'auto' "
-#~ "waarde, in dit geval zal het de slides aanpassen afhankelijk van de "
-#~ "breedte van het kader. 'auto' modus is niet compatibel met loop modus."
-
-#~ msgid "Enables autoplay mode."
-#~ msgstr "Schakelt auto-afspelen in"
-
-#, fuzzy
-#~ msgid "If YES pagination control will be removed."
-#~ msgstr "Indien ingeschakeld zal het bestuur uitgeschakeld worden"
-
-#, fuzzy
-#~ msgid "If \"YES\" prev/next control will be removed."
-#~ msgstr "Indien \"YES\" zullen de vorige/volgende knoppen verborgen"
-
-#~ msgid "If \"YES\" part of the next slide will be visible on the right side."
-#~ msgstr ""
-#~ "Indien \"YES\" zal een deel van de volgende slide zichtbaar zijn aan de "
-#~ "rechter zijde."
-
-# @ js_composer
-#~ msgid "Enables loop mode."
-#~ msgstr "Schakel loopmodus in"
-
-# @ js_composer
-#~ msgid "Auto rotate tabs"
-#~ msgstr "Auto roteer tabbladen"
-
-# @ js_composer
-#~ msgid "Tab title."
-#~ msgstr "Tablad title"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter section number to be active on load or enter false to collapse all "
-#~ "sections."
-#~ msgstr ""
-#~ "Voer een tabblad nummer in dat actief moet zijn wanneer deze geladen "
-#~ "wordt of voer false in om alle tabbladen ingeklapt te laden."
-
-# @ js_composer
-#~ msgid "Allow collapsible all"
-#~ msgstr "Sta inklapbaar toe voor alle tabbladen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select checkbox to allow all sections to be collapsible."
-#~ msgstr "Vink aan om alle sectie inklapbaar te maken."
-
-# @ js_composer
-#~ msgid "Allow"
-#~ msgstr "Toestaan"
-
-# @ js_composer
-#~ msgid "Accordion section title."
-#~ msgstr "Accordeon sectie titel"
-
-# @ js_composer
-#~ msgid "Teaser (posts) Grid"
-#~ msgstr "Voerproef (posts) raster"
-
-# @ js_composer
-#~ msgid "Select post types to populate posts from."
-#~ msgstr "Selecteer post types om als berichten te gebruiken."
-
-# @ js_composer
-#~ msgid "Teasers count"
-#~ msgstr "Voorproef tellingen"
-
-# @ js_composer
-#~ msgid "How many teasers to show? Enter number or word \"All\"."
-#~ msgstr ""
-#~ "Hoeveel voorproeven wilt u weergeven? Voer een getal of woord in \"All\"."
-
-# @ js_composer
-#~ msgid "Full Content"
-#~ msgstr "Volledige Inhoud"
-
-# @ js_composer
-#~ msgid "Layout"
-#~ msgstr "Layout"
-
-# @ js_composer
-#~ msgid "Title + Thumbnail + Text"
-#~ msgstr "Titel + thumbnail + tekst"
-
-# @ js_composer
-#~ msgid "Thumbnail + Title + Text"
-#~ msgstr "Thumbnail + titel + tekst"
-
-# @ js_composer
-#~ msgid "Thumbnail + Text"
-#~ msgstr "Thumbnail + tekst"
-
-# @ js_composer
-#~ msgid "Thumbnail + Title"
-#~ msgstr "Thumbnail + titel"
-
-# @ js_composer
-#~ msgid "Thumbnail only"
-#~ msgstr "Alleen een thumbnail"
-
-# @ js_composer
-#~ msgid "Title + Text"
-#~ msgstr "Titel + tekst"
-
-# @ js_composer
-#~ msgid "Teaser layout."
-#~ msgstr "Voorproef layout"
-
-# @ js_composer
-#~ msgid "Thumbnail to bigger image, title to post"
-#~ msgstr "Thumbnail naar groter formaat afbeelding, titel naar post"
-
-# @ js_composer
-#~ msgid "Teaser grid layout"
-#~ msgstr "Voorproef raster layout"
-
-# @ js_composer
-#~ msgid "Grid"
-#~ msgstr "Raster"
-
-# @ js_composer
-#~ msgid "Grid with filter"
-#~ msgstr "Raster met filter"
-
-# @ js_composer
-#~ msgid "Carousel"
-#~ msgstr "Carousel"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select taxonomies."
-#~ msgstr "Selecteer taxonomieën uit."
-
-# @ js_composer
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,) to retrieve "
-#~ "only them. Use this in conjunction with \"Post types\" field."
-#~ msgstr ""
-#~ "Voer hier pagina/bericht ID's in gescheiden door komma's (,) om alleen "
-#~ "deze op te halen. Gebruikt dit in combinatie met het \"Post types\" veld."
-
-# @ js_composer
-#~ msgid "Exclude Post/Page IDs"
-#~ msgstr "Sluit bericht/pagina ID's uit"
-
-# @ js_composer
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,) to exclude "
-#~ "them from query."
-#~ msgstr ""
-#~ "Voer hier pagina/bericht ID's in gescheiden door komma's (,) om deze uit "
-#~ "te sluiten van de query."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "If you want to narrow output, enter category names here. Note: Only "
-#~ "listed categories will be included. Divide categories with linebreaks "
-#~ "(Enter) . "
-#~ msgstr ""
-#~ "Indien u de uitvoer wilt verfijnen, voer hier dan categorie namen in. "
-#~ "Opmerking: Alleen opgenomen categorieën zullen worden opgenomen. Scheidt "
-#~ "categorien met lijnbreuken (Enter)."
-
-# @ js_composer
-#~ msgid "Order way"
-#~ msgstr "Bestel manier"
-
-#, fuzzy
-#~ msgid ""
-#~ "Set numbers of slides you want to display at the same time on slider's "
-#~ "container for carousel mode. Also supports for \"auto\" value, in this "
-#~ "case it will fit slides depending on container's width. \"auto\" mode "
-#~ "doesn't compatible with loop mode."
-#~ msgstr ""
-#~ "Stel het aantal slider afbeeldingen in dat u tegelijkertijd wilt "
-#~ "weergeven in het slider kader voor carousel modus. Ondersteund ook 'auto' "
-#~ "waarde, in dit geval zal het de slides aanpassen afhankelijk van de "
-#~ "breedte van het kader. 'auto' modus is niet compatibel met loop modus."
-
-# @ js_composer
-#~ msgid "Slides count"
-#~ msgstr "Aantaal slider afbeeldingen"
-
-# @ js_composer
-#~ msgid "How many slides to show? Enter number or word \"All\"."
-#~ msgstr ""
-#~ "Hoeveel slider afbeeldingen wilt u tonen? Voer een getal of woord in \"All"
-#~ "\"."
-
-# @ js_composer
-#~ msgid "Some sliders support description text, what content use for it?"
-#~ msgstr ""
-#~ "Sommige sliders ondersteunen een beschrijving, welke content wilt u "
-#~ "hiervoor gebruiken."
-
-# @ js_composer
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,), to retrieve "
-#~ "only them. Use this in conjunction with \"Post types\" field."
-#~ msgstr ""
-#~ "Voer hier pagina/bericht ID's in gescheiden door komma's (,) om alleen "
-#~ "deze op te halen. Gebruikt dit in combinatie met het \"Post types\" veld."
-
-# @ js_composer
-#~ msgid "Place widgetised sidebar"
-#~ msgstr "Plaats Widgetised Sidebar"
-
-# @ js_composer
-#~ msgid "Select which widget area output."
-#~ msgstr "Selecteer een widget gebied voor de uitvoer."
-
-# @ js_composer
-#~ msgid "Text on the button."
-#~ msgstr "Tekst op de knop"
-
-# @ js_composer
-#~ msgid "Button link."
-#~ msgstr "Knop link."
-
-# @ js_composer
-#~ msgid "Button color."
-#~ msgstr "Knop kleur."
-
-# @ js_composer
-#~ msgid "Button icon."
-#~ msgstr "Knop icoon."
-
-# @ js_composer
-#~ msgid "Button size."
-#~ msgstr "Knop formaar"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Button style."
-#~ msgstr "Knop type"
-
-# @ js_composer
-#~ msgid "Align bottom"
-#~ msgstr "Knop uitlijnen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Call to action style."
-#~ msgstr "Call to Action Button"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select background color for your element."
-#~ msgstr "Selecteer een achtergrond kleur voor uw rij"
-
-# @ js_composer
-#~ msgid "Link to the video. More about supported formats at %s."
-#~ msgstr "Link naar de video, Meer over ondersteunde formats %s."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter map height in pixels. Example: 200 or leave it empty to make map "
-#~ "responsive."
-#~ msgstr "Voer een kaart hoogte in in pixels. Voorbeeld: 200."
-
-#~ msgid "Output raw html code on your page"
-#~ msgstr "Toon raw html code op uw pagina"
-
-#~ msgid "Output raw javascript code on your page"
-#~ msgstr "Toon raw javascript code op uw pagina"
-
-# @ js_composer
-#~ msgid "Raw js"
-#~ msgstr "Raw js"
-
-# @ js_composer
-#~ msgid "Enter your JS code."
-#~ msgstr "Voor uw JS code in."
-
-#~ msgid "Image feed from your flickr account"
-#~ msgstr "Afbeeldingsfeed vanuit uw Flickr account"
-
-# @ js_composer
-#~ msgid "Number of photos."
-#~ msgstr "Aantal foto's."
-
-# @ js_composer
-#~ msgid "Photo stream type."
-#~ msgstr "Foto stream type"
-
-# @ js_composer
-#~ msgid "Display"
-#~ msgstr "Weergeef"
-
-# @ js_composer
-#~ msgid "Latest"
-#~ msgstr "Laatste"
-
-# @ js_composer
-#~ msgid "Photo order."
-#~ msgstr "Foto volgorde"
-
-# @ js_composer
-#~ msgid "Graphic values"
-#~ msgstr "Grafische waardes"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Input graph values, titles and color here. Divide values with linebreaks "
-#~ "(Enter). Example: 90|Development|#e75956"
-#~ msgstr ""
-#~ "Voer hier waardes in voor de grafiek. Scheid waardes met lijnbreuken "
-#~ "(Enter). Voorbeeld:  90|Ontwikkeling"
-
-# @ js_composer
-#~ msgid ""
-#~ "Enter measurement units (if needed) Eg. %, px, points, etc. Graph value "
-#~ "and unit will be appended to the graph title."
-#~ msgstr ""
-#~ "Voor een maat eenheid in (indien nodig). Bijvoorbeeld: %, px, punten, "
-#~ "etc. Grafiek waarde en eenheid zal worden toegevoegd aan de grafiek titel."
-
-# @ js_composer
-#~ msgid "Bar color"
-#~ msgstr "Balk kleur"
-
-# @ js_composer
-#~ msgid "Bar custom color"
-#~ msgstr "Aangepaste balk kleur"
-
-# @ js_composer
-#~ msgid "Add Stripes?"
-#~ msgstr "Strepen toevoegen?"
-
-# @ js_composer
-#~ msgid "Add animation? Will be visible with striped bars."
-#~ msgstr "Animatie toevoegen? Zal zichtbaar zijn gestreepte balken."
-
-# @ vc_extend
-#~ msgid "Pie chart"
-#~ msgstr "Cirkeldiagram"
-
-# @ js_composer
-#~ msgid "Pie value"
-#~ msgstr "Cirkel waarde"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Input graph value here. Choose range between 0 and 100."
-#~ msgstr "Voer hier een grafiek waarde in tussen de 0-100."
-
-# @ js_composer
-#~ msgid "Pie label value"
-#~ msgstr "Cirkel label waarde"
-
-# @ js_composer
-#~ msgid "Input integer value for label. If empty \"Pie value\" will be used."
-#~ msgstr ""
-#~ "Voer een geheel getal in voor het label. Indien leeg zal \"Pie valie\" "
-#~ "gebruikt worden."
-
-# @ js_composer
-#~ msgid "Number of comments to show"
-#~ msgstr "Aantal reacties om te weergeven"
-
-# @ js_composer
-#~ msgid "Sort by"
-#~ msgstr "Sorteren op"
-
-# @ js_composer
-#~ msgid "Page IDs, separated by commas."
-#~ msgstr "Pagina IDs, gescheiden door kommas (,)."
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select menu"
-#~ msgstr "Selecteer niets"
-
-# @ js_composer
-#~ msgid "Number of posts to show"
-#~ msgstr "Aantal berichten om te weergeven"
-
-# @ js_composer
-#~ msgid "Display as dropdown"
-#~ msgstr "Toon als drop down"
-
-# @ js_composer
-#~ msgid "How many items would you like to display?"
-#~ msgstr "Hoeveel artikelen wilt u tonen?"
-
-# @ js_composer
-#~ msgid "Display item content?"
-#~ msgstr "Toon artikel inhoud?"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Total items count"
-#~ msgstr "Aantaal slider afbeeldingen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Single element width"
-#~ msgstr "Mobiele schermen breedte"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Order by post id"
-#~ msgstr "Sorteer op"
-
-# @ default
-#, fuzzy
-#~ msgid "Data settings"
-#~ msgstr "Loop instellingen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Filter size."
-#~ msgstr "Knop formaat"
-
-#, fuzzy
-#~ msgid "Pagination controls"
-#~ msgstr "Verberg pagination bestuur"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Paging color"
-#~ msgstr "Balk kleur"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Basic grid"
-#~ msgstr "Afbeeldingen raster"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "All in one grid element"
-#~ msgstr "Element toevoegen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Masonry grid"
-#~ msgstr "Metselwerk"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Media grid"
-#~ msgstr "Media galerij "
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Media grid element"
-#~ msgstr "Element toevoegen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Load more button style"
-#~ msgstr "Knop type"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select load more button style"
-#~ msgstr "Selecteer knop type"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Arrows style"
-#~ msgstr "Knop type"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Pager style"
-#~ msgstr "Afbeeldingsformaat"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Box style"
-#~ msgstr "Knop type"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Numbers"
-#~ msgstr "Aantal foto's"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Loop pager content?"
-#~ msgstr "Schakel inhoud"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Carousel effect"
-#~ msgstr "Carousel inhoud"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Please enter template name"
-#~ msgstr "Voer een template naam in"
-
-# @ js_composer
-#~ msgid "Enter custom layout for your row:"
-#~ msgstr "Voer een aangepaste layout voor deze rij in: "
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Nothing to save. Template is empty."
-#~ msgstr "Er zijn nog geen aangepaste templates."
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Map shortcode"
-#~ msgstr "Schakel shortcodes in"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Please enter shortcode string"
-#~ msgstr "Voer een nieuwe titel in voor de sectie"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Parse shortcode"
-#~ msgstr "Schakel shortcodes in"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "General information"
-#~ msgstr "Algemene instellingen"
-
-#~ msgid ""
-#~ "Hola! Please <a href=\"%s\">activate your copy</a> of WPBakery Page Builder to "
-#~ "receive automatic updates."
-#~ msgstr ""
-#~ "Hola! <a href=\"%s\">Activeer alstublieft uw product</a> van Visual "
-#~ "Composer om automatisch updates te ontvangen."
-
-# @ js_composer
-#~ msgid "Content types"
-#~ msgstr "Content types"
-
-# @ js_composer
-#~ msgid "User groups access rules"
-#~ msgstr "Gebruikersgroepen toegangs regels"
-
-# @ js_composer
-#~ msgid "Envato Username"
-#~ msgstr "Envato gebruikersnaam"
-
-# @ js_composer
-#~ msgid "Secret API Key"
-#~ msgstr "Secret API Key"
-
-# @ js_composer
-#~ msgid "WPBakery Page Builder License Key"
-#~ msgstr "WPBakery Page Builder Licentie Sleutel"
-
-# @ js_composer
-#~ msgid "Something went wrong! Please try again later."
-#~ msgstr "Er is iets misgegaan! Probeer het later nog eens."
-
-#~ msgid "License successfully activated. Thank you!"
-#~ msgstr "Licentie met succes geactiveerd. Bedankt!"
-
-#~ msgid "Your license key is deactivated."
-#~ msgstr "Uw licentie sleutel is gedeactiveerd."
-
-#~ msgid "Envato username and license key are required."
-#~ msgstr "Envato gebruikersnaam en licentie sleutel zijn verreist"
-
-#~ msgid "Invalid liense key. Please check information in your envato profile."
-#~ msgstr ""
-#~ "Ongeldige licentie sleutel. Controleer alstublieft de informatie in uw "
-#~ "Envato profiel."
-
-#~ msgid "Wrong data. Please check your information or ask support for help."
-#~ msgstr ""
-#~ "Foutieve gegevens. Controleer uw informatie of neem contact op met de "
-#~ "helpdesk."
-
-#~ msgid "License successfully activated. Thank you! (401)"
-#~ msgstr "Licentie met succes geactiveerd. Bedankt! (401)"
-
-#~ msgid ""
-#~ "Your license key is already activated on another website ({site}), you "
-#~ "should deactivate it first or <a href=\"%s\" target=\"_blank\">obtain new "
-#~ "license key</a>."
-#~ msgstr ""
-#~ "Uw licentie sleutel is al actief op een andere website ({site}), u dient "
-#~ "deze is uit te schakelen of <a href=\"%s\" target=\"_blank\">een nieuwe "
-#~ "licentie aan te schaffen</a>"
-
-#~ msgid "Deactivate license"
-#~ msgstr "Deactiveer licentie"
-
-# @ js_composer
-#~ msgid ""
-#~ "Select for which content types WPBakery Page Builder should be available during "
-#~ "post creation/editing."
-#~ msgstr ""
-#~ "Selecteer voor welke post types WPBakery Page Builder beschikbaar moet zijn "
-#~ "tijdens het aanmaken en/of bewerken van berichten / pagina's."
-
-# @ js_composer
-#~ msgid ""
-#~ "If you want to add some custom CSS code to the plugin and don't want to "
-#~ "modify any files, then it's a good place to enter your code at this field."
-#~ msgstr ""
-#~ "Als je aangepaste CSS code wilt gebruiken bij de plugin, dan kun je die "
-#~ "hier invoeren. Tijdens het updaten van de plugin blijft deze CSS code "
-#~ "bewaard."
-
-# @ js_composer
-#~ msgid ""
-#~ "Check this checkbox to prevent content elements from \"stacking\" one on "
-#~ "top other (on small media screens, eg. mobile)."
-#~ msgstr ""
-#~ "Vink deze checkbox aan om te voorkomen dat elementen boven op elkaar "
-#~ "plakken (vooral op kleine schermen zoals mobiele toestellen)."
-
-# @ js_composer
-#~ msgid ""
-#~ "Enable the use of custom design options for your site. When checked, "
-#~ "custom css file will be used."
-#~ msgstr ""
-#~ "Gebruik een aangepaste ontwerp opties voor deze website. Wanneer deze "
-#~ "optie is ingeschakeld wordt er een aangepaste CSS style gebruikt."
-
-# @ js_composer
-#~ msgid ""
-#~ "To change default vertical spacing between content elements, enter new "
-#~ "value here. Example: 20px"
-#~ msgstr ""
-#~ "Om de standaard verticale afstand tussen content elementen te wijzigen, "
-#~ "voer hier nieuwe waarde in. Voorbeeld: 20x"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "To change default horizontal spacing between columns, enter new value in "
-#~ "pixels here."
-#~ msgstr ""
-#~ "Om de standaard horizontale afstand tussen de kolommen te wijzigen, voer "
-#~ "nieuwe waarde in procenten in."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "By default content elements \"stack\" one on top other when screen size "
-#~ "is smaller then 768px. Here you can change that value if needed."
-#~ msgstr ""
-#~ "Standaard content elementen \"stack\" op elkaar wanneer het scherm "
-#~ "kleiner is dan 480px. Verander hier die waarde veranderen als dat nodig "
-#~ "is."
-
-# @ js_composer
-#~ msgid "Your Envato username."
-#~ msgstr "Uw Envato gebruikersnaam"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please enter your CodeCanyon WPBakery Page Builder license key, you can find "
-#~ "your key by following the instructions on <a href=\"%s\" target=\"_blank"
-#~ "\">this page</a>. License key looks similar to this: bjg759fk-"
-#~ "kvta-6584-94h6-75jg8vblatftq."
-#~ msgstr ""
-#~ "Vul uw CodeCanyon WPBakery Page Builder licentiesleutel in, u kunt deze vinden "
-#~ "door de instructies te volgen op <a href=\"%s\" target=\"_blank\">deze "
-#~ "pagina</a>."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "You can find API key by visiting your Envato Account page, then clicking "
-#~ "the My Settings tab. At the bottom of the page you'll find your account's "
-#~ "API key. <a href='%s' target='_blank'>Need help?</a>"
-#~ msgstr ""
-#~ "U kunt API-sleutel te vinden op uw Envato account pagina, vervolgens op "
-#~ "het tabblad Mijn instellingen. Aan de onderkant van de pagina vindt u van "
-#~ "uw account de API-sleutel."
-
-#~ msgid ""
-#~ "A valid license key qualifies you for support and enables automatic "
-#~ "updates. <strong>A license key may only be used for one WPBakery Page Builder "
-#~ "installation on one WordPress site at a time.</strong> If you previosly "
-#~ "activated your license key on another site, then you should deactivate it "
-#~ "first or <a href=\"%s\" target=\"_blank\">obtain new license key</a>."
-#~ msgstr ""
-#~ "Met een geldige licentie sleutel kwalificeert u zich voor ondersteuning "
-#~ "en automatische updates. <strong>Een licentie sleutel mag enkel gebruikt "
-#~ "worden voor één WordPress website.</strong> Indien u eerder uw licentie "
-#~ "sleutel op een andere website heeft geactiveerd, dient u deze uit te "
-#~ "schakelen of <a href=\"%s\" target=\"_blank\">een nieuwe licentie aan te "
-#~ "schaffen</a>"
-
-# @ js_composer
-#~ msgid ""
-#~ "WPBakery Page Builder: Your css class names settings are deprecated. <a href="
-#~ "\"%s\">Click here to resolve</a>."
-#~ msgstr ""
-#~ "WPBakery Page Builder: Uw instellingen voor css klasse namen zijn verouderd. <a "
-#~ "href=\"%s\"> Klik hier om te lossen </ a>."
-
-# @ js_composer
-#~ msgid ""
-#~ "<strong>Deprecated:</strong> To override class names that are applied to "
-#~ "WPBakery Page Builder content elements you should use WordPress "
-#~ "add_filter('vc_shortcodes_css_class') function. <a "
-#~ "class='vc_show_example'>See Example</a>."
-#~ msgstr ""
-#~ "<strong>Verouderd:</ strong> Om class namen die worden toegepast op "
-#~ "WPBakery Page Builder content elementen te overschrijven moet je WordPress "
-#~ "add_filter gebruiken('vc_shortcodes_css_class')<a "
-#~ "class='vc_show_example'>zie voorbeeld</ a>."
-
-# @ default
-#~ msgid ""
-#~ "You have used element class names settings to replace row and column css "
-#~ "classes."
-#~ msgstr ""
-#~ "Je hebt element class namen instellingen waarmee je rij en kolom CSS-"
-#~ "klassen vervangt."
-
-# @ default
-#~ msgid ""
-#~ "Below is code snippet which you should add to your functions.php file in "
-#~ "your theme, to replace row and column classes with custom classes saved "
-#~ "by you earlier."
-#~ msgstr ""
-#~ "Hieronder is code snippet die je moet toevoegen aan uw functions.php "
-#~ "bestand in uw thema, om rij en kolom klassen te vervangen door aangepaste "
-#~ "klassen eerder opgeslagen door jou."
-
-# @ js_composer
-#~ msgid "Remove all saved"
-#~ msgstr "Verwijder alle opgeslagen"
-
-# @ js_composer
-#~ msgid "Restore to defaults"
-#~ msgstr "Herstel naar standaard"
-
-# @ js_composer
-#~ msgid "View all posts filed under %s"
-#~ msgstr "Toon alle berichten binnen %s"
-
-# @ js_composer
-#~ msgid "Feed for all posts filed under %s"
-#~ msgstr "Feed voor alle berichten binnen %s"
-
-# @ js_composer
-#~ msgid "Wrong wpb_map object. Base attribute is required"
-#~ msgstr "Foutief wpb_map object. Base attribuut is verplicht"
-
-# @ js_composer
-#~ msgid "Post Count"
-#~ msgstr "Bericht teller"
-
-# @ js_composer
-#~ msgid "Order By"
-#~ msgstr "Sorteer op"
-
-# @ js_composer
-#~ msgid "Individual Posts/Pages"
-#~ msgstr "Individuele berichten/pagina's"
-
-#~ msgid ""
-#~ "Here you can customize teaser block design. It will be used instead of "
-#~ "default settings in \"Posts Grid\" or \"Carousel\" content elements."
-#~ msgstr ""
-#~ "Hier kunt u het voorproef blok ontwerp aan te passen. Het zal worden "
-#~ "gebruikt in plaats van standaardinstellingen in \"Posts Grid\" of "
-#~ "\"Carousel\" content elementen."
-
-#~ msgid ""
-#~ "Field type is changed from `textarea_html` to `textarea`, because it is "
-#~ "already used by `"
-#~ msgstr ""
-#~ "Veld type is veranderd van `textarea_html` naar `textarea` omdat het al "
-#~ "gebruikt wordt door `"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Edit elements"
-#~ msgstr "Element toevoegen"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Select content element to edit properties."
-#~ msgstr ""
-#~ "Klik op het potlood icoon op een content element om deze te wijzigen."
-
-#~ msgid ""
-#~ "Enter custom CSS code here. Your custom CSS will be outputted only on "
-#~ "this particular page."
-#~ msgstr ""
-#~ "Voer hier aangepaste CSS code in. Uw aangepaste CSS zal uitgevoerd worden "
-#~ "op deze specifieke pagina."
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Save template"
-#~ msgstr "Template laden"
-
-# @ js_composer
-#~ msgid "Click to toggle"
-#~ msgstr "Klik om te schakelen"
-
-# @ js_composer
-#~ msgid "Follow us on twitter"
-#~ msgstr "Volg ons op Twitter"
-
-# @ js_composer
-#~ msgid "Save"
-#~ msgstr "Opslaan"
-
-# @ js_composer
-#~ msgid ""
-#~ "There is a new version of WPBakery Page Builder available. <a href=\"http://bit."
-#~ "ly/vcomposer\" target=\"_blank\">Download version <b>%s</b></a>."
-#~ msgstr ""
-#~ "Er is een recentere versie van Visual Composter beschikbaar. <a href="
-#~ "\"http://go.wpbakery.com/wpb-buy\" target=\"_blank\">Download versie <b>%s</b></"
-#~ "a>."
-
-# @ js_composer
-#~ msgid "Wrong layout params"
-#~ msgstr "Foutieve layout parameters"
-
-# @ js_composer
-#~ msgid "Search by element name"
-#~ msgstr "Zoek op element naam"
-
-# @ js_composer
-#~ msgid "Select Content Element"
-#~ msgstr "Selecteer content element"
-
-# @ js_composer
-#~ msgid "WPBakery Page Builder for WordPress"
-#~ msgstr "WPBakery Page Builder voor WordPress"
-
-# @ js_composer
-#~ msgid ""
-#~ "Your page layout was created with previous WPBakery Page Builder version. "
-#~ "Before converting your layout to the new version, make sure to <a target="
-#~ "\"_blank\" href=\"http://kb.wpbakery.com/index.php?"
-#~ "title=Update_Visual_Composer_from_3.4_to_3.5\">read this page</a>."
-#~ msgstr ""
-#~ "De pagina layout is gecreëerd met een vorige versie van WPBakery Page Builder. "
-#~ "Lees <a target=\"_blank\" href=\"http://kb.wpbakery.com/index.php?"
-#~ "title=Update_Visual_Composer_from_3.4_to_3.5\">deze pagina</a> voordat je "
-#~ "de layout bijwerkt naar de meest recente versie."
-
-# @ js_composer
-#~ msgid "Convert to new version"
-#~ msgstr "Bijwerken naar nieuwe versie"
-
-# @ js_composer
-#~ msgid "No content yet! You should add some..."
-#~ msgstr "Er is nog geen inhoud! Start met het plaatsen hiervan.. "
-
-# @ js_composer
-#~ msgid ""
-#~ "This is a visual preview of your page. Currently, you don't have any "
-#~ "content elements. Click or drag the button <a href='#' class='add-element-"
-#~ "to-layout'><i class='icon'></i> Add element</a> on the top to add content "
-#~ "elements on your page. Alternatively add <a href='#' class='add-text-"
-#~ "block-to-content' parent-container='#visual_composer_content'><i "
-#~ "class='icon'></i> Text block</a> with single click."
-#~ msgstr ""
-#~ "Dit is een visuele voorvertoning van de pagina. Momenteel zijn er nog "
-#~ "geen enkele elementen toegevoegd. Kik of sleep de knop <a href='#' "
-#~ "class='add-element-to-layout'><i class='icon'></i>Element toevoegen</a> "
-#~ "bovenaan deze pagina om content elementen toe te voegen. U kunt ook "
-#~ "direct een <a href='#' class='add-text-block-to-content' parent-"
-#~ "container='#visual_composer_content'><i class='icon'></i>Tekst blok</a> "
-#~ "toevoegen."
-
-# @ default
-#~ msgid ""
-#~ "You do not have sufficient permissions to update plugins for this site."
-#~ msgstr ""
-#~ "Je hebt onvoldoende rechten om plugins voor deze site bij te werken."
-
-# @ js_composer
-#~ msgid "Update WPBakery Page Builder Plugin"
-#~ msgstr "Update WPBakery Page Builder Plugin"
-
-#~ msgid ""
-#~ "Error! Envato username, api key and your purchase code are required for "
-#~ "downloading updates from Envato marketplace for the WPBakery Page Builder. "
-#~ "Visit <a href=\""
-#~ msgstr ""
-#~ "Fout! Envato gebruikersnaam, api key en uw aankoop code zijn nodig voor "
-#~ "het downloaden van Envato marketplace updates voor de WPBakery Page Builder. "
-#~ "Bezoek <a href = \""
-
-# @ js_composer
-#~ msgid "Next slide"
-#~ msgstr "Volgende Slide"
-
-# @ js_composer
-#~ msgid "Read more..."
-#~ msgstr "Meer lezen..."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Enter image size. Example: 'thumbnail', 'medium', 'large', 'full' or "
-#~ "other sizes defined by current theme. Alternatively enter image size in "
-#~ "pixels: 200x100 (Width x Height). Leave empty to use 'thumbnail' size."
-#~ msgstr ""
-#~ "Voer beeldformaat in. Voorbeeld: thumbnail, medium, groot, volledige of "
-#~ "andere maten gedefinieerd door de huidige thema. Alternatieve invoer "
-#~ "beeldgrootte in pixels: 200x100 (breedte x hoogte). Laat leeg om "
-#~ "'thumbnail' formaat te gebruiken."
-
-# @ js_composer
-#~ msgid "Tour Section"
-#~ msgstr "Tour sectie"
-
-# @ js_composer
-#~ msgid "Tabbed tour section"
-#~ msgstr "Tabblad Tour sectie"
-
-# @ js_composer
-#~ msgid "Slide 2"
-#~ msgstr "Slider afbeelding 2"
-
-#~ msgid "jQuery UI accordion"
-#~ msgstr "jQuery UI accordeon"
-
-# @ js_composer
-#~ msgid "Accordion Section"
-#~ msgstr "Accordeon sectie"
-
-#~ msgid "If YES pagination control will be removed ."
-#~ msgstr "Indien ingeschakeld zal het bestuur uitgeschakeld worden"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Prpend to %s"
-#~ msgstr "Vooraan toevoegen aan deze %s"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "You Have No Content Yet! Add Some..."
-#~ msgstr "Er is nog geen inhoud! Start met het plaatsen hiervan.. "
+#~| msgid "Link title"
+#~ msgid "Untitled"
+#~ msgstr "Link titel"

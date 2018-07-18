@@ -26,31 +26,20 @@ class CombineFields
      */
     public static function prepareMultipleFieldsValue($functions, $combineMultipleFieldsValue, $articleData)
     {
+
+
         $combineFields = new CombineFields();
-
-        $quotedFunctions = array();
-
-        foreach ($functions as $function) {
-
-            $function = str_replace("\\", '', $function);
-            $function = str_replace('"', '', $function);
-            $function = str_replace("'", '', $function);
-            $function = str_replace(array('{'), '"{', $function);
-            $function = str_replace(array('}'), '}"', $function);
-
-            $quotedFunctions[] = $function;
-        }
-
-        foreach ($articleData as $key => $vl) {
-            $vl = str_replace("\"", self::DOUBLEQUOTES,$vl);
-            foreach ($quotedFunctions as &$quotedFunction) {
-                $quotedFunction = str_replace('{' . $key . '}', $vl, $quotedFunction);
-            }
-        }
 
         foreach ($functions as $key => $function) {
             if (!empty($function)) {
-                $combineMultipleFieldsValue = str_replace('[' . $function . ']', eval('return ' . $quotedFunctions[$key] . ';'), $combineMultipleFieldsValue);
+
+                $originalFunction = $function;
+
+                $function = str_replace('**OPENARR**', '[', $function);
+                $function = str_replace('**CLOSEARR**', ']', $function);
+
+                $combineMultipleFieldsValue = str_replace('[' . $originalFunction. ']', eval('return '.$function.';'), $combineMultipleFieldsValue);
+
             }
         }
 

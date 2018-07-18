@@ -156,6 +156,9 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 *
 	 */
 	public function buildEditablePage() {
+		if ( isset( $_REQUEST['action'] ) && 'vc_load_shortcode' === $_REQUEST['action'] ) {
+			return;
+		}
 		! defined( 'CONCATENATE_SCRIPTS' ) && define( 'CONCATENATE_SCRIPTS', false );
 		visual_composer()->shared_templates->init();
 		add_filter( 'the_title', array(
@@ -321,22 +324,22 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		// WARNING from shortcodes.php! Do not change this regex without changing do_shortcode_tag() and strip_shortcode_tag()
 		// Also, see shortcode_unautop() and shortcode.js.
 		return '\\[' // Opening bracket
-		. '(\\[?)' // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
-		. "($tagregexp)" // 2: Shortcode name
-		. '(?![\\w-])' // Not followed by word character or hyphen
-		. '(' // 3: Unroll the loop: Inside the opening shortcode tag
-		. '[^\\]\\/]*' // Not a closing bracket or forward slash
-		. '(?:' . '\\/(?!\\])' // A forward slash not followed by a closing bracket
-		. '[^\\]\\/]*' // Not a closing bracket or forward slash
-		. ')*?' . ')' . '(?:' . '(\\/)' // 4: Self closing tag ...
-		. '\\]' // ... and closing bracket
-		. '|' . '\\]' // Closing bracket
-		. '(?:' . '(' // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
-		. '[^\\[]*+' // Not an opening bracket
-		. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
-		. '[^\\[]*+' // Not an opening bracket
-		. ')*+' . ')' . '\\[\\/\\2\\]' // Closing shortcode tag
-		. ')?' . ')' . '(\\]?)'; // 6: Optional second closing brocket for escaping shortcodes: [[tag]]
+			. '(\\[?)' // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
+			. "($tagregexp)" // 2: Shortcode name
+			. '(?![\\w-])' // Not followed by word character or hyphen
+			. '(' // 3: Unroll the loop: Inside the opening shortcode tag
+			. '[^\\]\\/]*' // Not a closing bracket or forward slash
+			. '(?:' . '\\/(?!\\])' // A forward slash not followed by a closing bracket
+			. '[^\\]\\/]*' // Not a closing bracket or forward slash
+			. ')*?' . ')' . '(?:' . '(\\/)' // 4: Self closing tag ...
+			. '\\]' // ... and closing bracket
+			. '|' . '\\]' // Closing bracket
+			. '(?:' . '(' // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
+			. '[^\\[]*+' // Not an opening bracket
+			. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
+			. '[^\\[]*+' // Not an opening bracket
+			. ')*+' . ')' . '\\[\\/\\2\\]' // Closing shortcode tag
+			. ')?' . ')' . '(\\]?)'; // 6: Optional second closing brocket for escaping shortcodes: [[tag]]
 
 	}
 
@@ -385,13 +388,12 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		global $current_user;
 		wp_get_current_user();
 		$this->current_user = $current_user;
-		$this->post_url = vc_str_remove_protocol( get_permalink( $this->post_id ) );
+		$this->post_url = set_url_scheme( get_permalink( $this->post_id ) );
 
 		if ( ! self::inlineEnabled() || ! vc_user_access()->wpAny( array(
 				'edit_post',
 				$this->post_id,
-			) )->get()
-		) {
+			) )->get() ) {
 			header( 'Location: ' . $this->post_url );
 		}
 		$this->registerJs();
@@ -509,16 +511,18 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	function showButton( $post_id = null ) {
 		$type = get_post_type();
 
-		return self::inlineEnabled() && ! in_array( get_post_status(), array(
-			'private',
-			'trash',
-		) ) && ! in_array( $type, array(
-			'templatera',
-			'vc_grid_item',
-		) ) && vc_user_access()->wpAny( array(
-			'edit_post',
-			$post_id,
-		) )->get() && vc_check_post_type( $type );
+		$result = self::inlineEnabled() && ! in_array( get_post_status(), array(
+				'private',
+				'trash',
+			) ) && ! in_array( $type, array(
+				'templatera',
+				'vc_grid_item',
+			) ) && vc_user_access()->wpAny( array(
+				'edit_post',
+				$post_id,
+			) )->get() && vc_check_post_type( $type );
+
+		return apply_filters( 'vc_show_button_fe', $result, $post_id, $type );
 	}
 
 	/**
@@ -615,9 +619,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 				echo '<div data-type="files">';
 				_print_styles();
 				print_head_scripts();
-				print_late_styles();
-				print_footer_scripts();
-				do_action( 'wp_print_footer_scripts' );
+				wp_footer();
 				echo '</div>';
 				$output = ob_get_clean();
 				die( apply_filters( 'vc_frontend_editor_load_shortcode_ajax_output', $output ) );

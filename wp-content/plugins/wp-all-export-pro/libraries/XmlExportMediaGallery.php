@@ -47,6 +47,8 @@ final class XmlExportMediaGallery
 					'post_type' => 'attachment',
 					'posts_per_page' => -1,
 					'post_parent' => self::$pid,
+                    'orderby' => 'ID',
+                    'order' => 'ASC'
 				) );
 
 				if ( ! empty($attachments)):
@@ -122,6 +124,8 @@ final class XmlExportMediaGallery
 						'post_type' => 'attachment',
 						'posts_per_page' => -1,
 						'post_parent' => self::$pid,
+                        'orderby' => 'ID',
+                        'order' => 'ASC'
 					) );
 
 					if ( ! empty($images)):
@@ -333,7 +337,7 @@ final class XmlExportMediaGallery
 				}
 				break;
             case 'image_featured':
-                $templateOptions['is_featured'] = 0;
+                $templateOptions['is_featured'] = 1;
                 $templateOptions['is_featured_xpath'] = '{'. $element_name .'[1]}';
                 break;
 			case 'attachments':					

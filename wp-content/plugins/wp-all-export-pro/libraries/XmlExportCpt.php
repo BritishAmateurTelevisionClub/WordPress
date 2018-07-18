@@ -439,82 +439,88 @@ final class XmlExportCpt
 
 						case 'cats':
 
-							if (!empty($fieldValue)) {
+						    if($fieldLabel == 'product_visibility') {
+                                $product = wc_get_product( $entry->ID );
+                                $value = $product->get_catalog_visibility();
+                                $value = apply_filters('pmxe_woo_field', pmxe_filter($value, $fieldSnippet), $value, $entry->ID);
+                                wp_all_export_write_article($article, $element_name,$value);
+                            } else {
+                                if (!empty($fieldValue)) {
 
-								// get categories from parent product in case when variation exported
-								if ($fieldLabel != 'product_shipping_class') {
-									// get categories from parent product in case when variation exported
-									$entry_id = ($entry->post_type == 'product_variation') ? $entry->post_parent : $entry->ID;
-								} else {
-									$entry_id = $entry->ID;
-								}
+                                    // get categories from parent product in case when variation exported
+                                    if ($fieldLabel != 'product_shipping_class') {
+                                        // get categories from parent product in case when variation exported
+                                        $entry_id = ($entry->post_type == 'product_variation') ? $entry->post_parent : $entry->ID;
+                                    } else {
+                                        $entry_id = $entry->ID;
+                                    }
 
-								// switch to post language if WPML installed
-								if (class_exists('SitePress')) {
-									$post_type = get_post_type($entry_id);
-									$post_type = apply_filters('wpml_element_type', $post_type);
-									$post_language_details = apply_filters('wpml_element_language_details',
-										null,
-										array(
-											'element_id' => $entry_id,
-											'element_type' => $post_type
-										)
-									);
-									$language_code = empty($post_language_details->language_code) ? '' : $post_language_details->language_code;
-									$current_language = apply_filters('wpml_current_language', null);
-									do_action('wpml_switch_language', $language_code);
-								}
+                                    // switch to post language if WPML installed
+                                    if (class_exists('SitePress')) {
+                                        $post_type = get_post_type($entry_id);
+                                        $post_type = apply_filters('wpml_element_type', $post_type);
+                                        $post_language_details = apply_filters('wpml_element_language_details',
+                                            null,
+                                            array(
+                                                'element_id' => $entry_id,
+                                                'element_type' => $post_type
+                                            )
+                                        );
+                                        $language_code = empty($post_language_details->language_code) ? '' : $post_language_details->language_code;
+                                        $current_language = apply_filters('wpml_current_language', null);
+                                        do_action('wpml_switch_language', $language_code);
+                                    }
 
-								$txes_list = get_the_terms($entry_id, $fieldValue);
+                                    $txes_list = get_the_terms($entry_id, $fieldValue);
 
-								$hierarchy_groups = array();
+                                    $hierarchy_groups = array();
 
-								if (!is_wp_error($txes_list) and !empty($txes_list)) {
-									$txes_ids = array();
+                                    if (!is_wp_error($txes_list) and !empty($txes_list)) {
+                                        $txes_ids = array();
 
-									foreach ($txes_list as $t) {
-										$txes_ids[] = $t->term_id;
-									}
+                                        foreach ($txes_list as $t) {
+                                            $txes_ids[] = $t->term_id;
+                                        }
 
-									foreach ($txes_list as $t) {
-										if (wp_all_export_check_children_assign($t->term_id, $fieldValue, $txes_ids)) {
-											$ancestors = get_ancestors($t->term_id, $fieldValue);
-											if (count($ancestors) > 0) {
-												$hierarchy_group = array();
-												for ($i = count($ancestors) - 1; $i >= 0; $i--) {
-													$term = get_term_by('id', $ancestors[$i], $fieldValue);
-													if ($term) {
-														$hierarchy_group[] = $term->name;
-													}
-												}
-												$hierarchy_group[] = $t->name;
-												$hierarchy_groups[] = implode('>', $hierarchy_group);
-											} else {
-												$hierarchy_groups[] = $t->name;
-											}
-										}
-									}
+                                        foreach ($txes_list as $t) {
+                                            if (wp_all_export_check_children_assign($t->term_id, $fieldValue, $txes_ids)) {
+                                                $ancestors = get_ancestors($t->term_id, $fieldValue);
+                                                if (count($ancestors) > 0) {
+                                                    $hierarchy_group = array();
+                                                    for ($i = count($ancestors) - 1; $i >= 0; $i--) {
+                                                        $term = get_term_by('id', $ancestors[$i], $fieldValue);
+                                                        if ($term) {
+                                                            $hierarchy_group[] = $term->name;
+                                                        }
+                                                    }
+                                                    $hierarchy_group[] = $t->name;
+                                                    $hierarchy_groups[] = implode('>', $hierarchy_group);
+                                                } else {
+                                                    $hierarchy_groups[] = $t->name;
+                                                }
+                                            }
+                                        }
 
-									// if ( empty($hierarchy_groups) ) $hierarchy_groups = '';
+                                        // if ( empty($hierarchy_groups) ) $hierarchy_groups = '';
 
-								}
+                                    }
 
-								wp_all_export_write_article($article, $element_name, apply_filters('pmxe_post_taxonomy', pmxe_filter(implode($implode_delimiter, $hierarchy_groups), $fieldSnippet), $entry->ID));
+                                    wp_all_export_write_article($article, $element_name, apply_filters('pmxe_post_taxonomy', pmxe_filter(implode($implode_delimiter, $hierarchy_groups), $fieldSnippet), $entry->ID));
 
-								// if ( ! in_array($element_name, $taxes)) $taxes[] = $element_name;
+                                    // if ( ! in_array($element_name, $taxes)) $taxes[] = $element_name;
 
-								if ($fieldLabel == 'product_type') {
+                                    if ($fieldLabel == 'product_type') {
 
-									if ($entry->post_type == 'product_variation') $article[$element_name] = 'variable';
+                                        if ($entry->post_type == 'product_variation') $article[$element_name] = 'variable';
 
-								}
+                                    }
 
-								// swith to current language if WPML installed
-								if (class_exists('SitePress')) {
-									do_action('wpml_switch_language', $current_language);
-								}
-							}
-
+                                    // swith to current language if WPML installed
+                                    if (class_exists('SitePress')) {
+                                        do_action('wpml_switch_language', $current_language);
+                                    }
+                                }
+                            }
 							break;
 
 						case 'sql':

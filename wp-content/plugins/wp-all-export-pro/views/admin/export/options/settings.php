@@ -20,10 +20,18 @@
 							</div>
 							<div class="input" style="margin:5px 0px;">
 								<input type="hidden" name="export_only_modified_stuff" value="0" />
-								<input type="checkbox" id="export_only_modified_stuff" name="export_only_modified_stuff" value="1" <?php echo $post['export_only_modified_stuff'] ? 'checked="checked"': '' ?> />
+								<input type="checkbox" <?php if(in_array('users', $post['cpt']) || in_array('taxonomies', $post['cpt']) ) { ?> disabled="disabled" <?php } ?> id="export_only_modified_stuff" name="export_only_modified_stuff" value="1" <?php echo $post['export_only_modified_stuff'] ? 'checked="checked"': '' ?> />
 								<label for="export_only_modified_stuff"><?php printf(__('Only export %s that have been modified since last export', 'wp_all_export_plugin'), empty($post['cpt']) ? __('records', 'wp_all_export_plugin') : wp_all_export_get_cpt_name($post['cpt'], 2, $post)); ?></label>
-								<a href="#help" class="wpallexport-help" style="position: relative; top: -2px;" title="<?php _e('If re-run, this export will only include records that have been modified since last export run.', 'wp_all_export_plugin'); ?>">?</a>
-							</div>
+								<a href="#help" class="wpallexport-help" style="position: relative; top: -2px;"
+                                    <?php if(in_array('users', $post['cpt']) ) { ?>
+                                        title="<?php _e('This feature it not available for user exports.', 'wp_all_export_plugin'); ?>"
+                                    <?php } else if(in_array('taxonomies', $post['cpt'])) { ?>
+                                        title="<?php _e('This feature it not available for taxonomies exports.', 'wp_all_export_plugin'); ?>"
+                                    <?php } else { ?>
+                                        title="<?php _e('If re-run, this export will only include records that have been modified since last export run.', 'wp_all_export_plugin'); ?>"
+							        <?php } ?>
+                                >?</a>
+                            </div>
 							<div class="input" style="margin:5px 0px;">
 								<input type="hidden" name="include_bom" value="0" />
 								<input type="checkbox" id="include_bom" name="include_bom" value="1" <?php echo $post['include_bom'] ? 'checked="checked"': '' ?> />
@@ -35,17 +43,27 @@
 								<input type="checkbox" id="creata_a_new_export_file" name="creata_a_new_export_file" value="1" <?php echo $post['creata_a_new_export_file'] ? 'checked="checked"': '' ?> />
 								<label for="creata_a_new_export_file"><?php _e('Create a new file each time export is run', 'wp_all_export_plugin') ?></label>				
 								<a href="#help" class="wpallexport-help" style="position: relative; top: 0;" title="<?php _e('If disabled, the export file will be overwritten every time this export run.', 'wp_all_export_plugin'); ?>">?</a>
-							</div>							
-							<div class="input" style="margin:5px 0px;">
-								<input type="hidden" name="split_large_exports" value="0" />
-								<input type="checkbox" id="split_large_exports" name="split_large_exports" class="switcher" value="1" <?php echo $post['split_large_exports'] ? 'checked="checked"': '' ?> />
-								<label for="split_large_exports"><?php _e('Split large exports into multiple files', 'wp_all_export_plugin') ?></label>															
-								<span class="switcher-target-split_large_exports pl17" style="display:block; clear: both; width: 100%;">
+							</div>
+                            <?php if($post['export_to'] == 'csv') { ?>
+                            <div class="input" style="margin:5px 0px;">
+                                <input type="hidden" name="split_large_exports" value="0"/>
+                                <input type="checkbox" id="split_large_exports" name="split_large_exports"
+                                       class="switcher"
+                                       value="1" <?php echo $post['split_large_exports'] ? 'checked="checked"' : '' ?> />
+                                <label for="split_large_exports"><?php _e('Split large exports into multiple files', 'wp_all_export_plugin') ?></label>
+                                <span class="switcher-target-split_large_exports pl17"
+                                      style="display:block; clear: both; width: 100%;">
 									<div class="input pl17" style="margin:5px 0px;">							
-										<label for="records_per_request"><?php _e('Limit export to', 'wp_all_export_plugin');?></label> <input type="text" name="split_large_exports_count" class="wp_all_export_sub_input" style="width: 50px;" value="<?php echo esc_attr($post['split_large_exports_count']) ?>" /> <?php _e('records per file', 'wp_all_export_plugin'); ?>															
+										<label for="records_per_request"><?php _e('Limit export to', 'wp_all_export_plugin'); ?></label> <input
+                                                type="text" name="split_large_exports_count"
+                                                class="wp_all_export_sub_input" style="width: 50px;"
+                                                value="<?php echo esc_attr($post['split_large_exports_count']) ?>"/> <?php _e('records per file', 'wp_all_export_plugin'); ?>
 									</div>																				
-								</span>			
-							</div>		
+								</span>
+                            </div>
+                            <?php
+                            }
+                            ?>
 							<br>
 							<hr>
 							<p style="text-align:right;">

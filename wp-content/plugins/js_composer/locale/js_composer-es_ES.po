@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPBakery Page Builder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-10 14:29+0300\n"
-"PO-Revision-Date: 2017-10-10 14:32+0300\n"
+"POT-Creation-Date: 2018-05-14 16:17+0300\n"
+"PO-Revision-Date: 2018-05-14 16:17+0300\n"
 "Last-Translator: Michael M <hello@wpbakery.com>\n"
 "Language-Team: elpuntografico.com <contacto@elpuntografico.com>\n"
 "Language: es_ES\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: ./config/.\n"
 "X-Poedit-SearchPath-1: ./include/.\n"
 
@@ -1582,7 +1582,7 @@ msgstr "Posición del contenido"
 #: config/./content/shortcode-vc-toggle.php:57
 #: config/./grids/class-vc-grids-common.php:1126
 #: config/./grids/class-vc-grids-common.php:1175
-#: include/./helpers/helpers_api.php:500
+#: include/./helpers/helpers_api.php:498
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -2500,10 +2500,10 @@ msgstr "Dos"
 #: config/./grids/class-vc-grids-common.php:277
 #: config/./tta/shortcode-vc-tta-section.php:48
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:109
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1272
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1335
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1449
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1280
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1343
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1457
 #: include/./params/loop/loop.php:446
 #: include/./params/sorted_list/sorted_list.php:91
 #: include/./params/vc_link/vc_link.php:18
@@ -2899,8 +2899,8 @@ msgstr "Fecha"
 
 #: config/./content/shortcode-vc-posts-slider.php:134
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:107
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1464
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1489
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
 msgid "ID"
 msgstr "ID"
 
@@ -6402,8 +6402,8 @@ msgid ""
 "You have an outdated version of WPBakery Page Builder Design Options. It is "
 "required to review and save it."
 msgstr ""
-"Tienes una versión obsoleta de las opciones de diseño de WPBakery Page Builder. Es "
-"necesario revisarlo y guardarlo."
+"Tienes una versión obsoleta de las opciones de diseño de WPBakery Page "
+"Builder. Es necesario revisarlo y guardarlo."
 
 #: include/./autoload/vc-pages/page-design-options.php:56
 msgid "Open Design Options"
@@ -6427,7 +6427,6 @@ msgid "WPBakery Page Builder"
 msgstr ""
 
 #: include/./autoload/vc-pages/welcome-screen.php:38
-#: include/./classes/core/class-vc-base.php:630
 msgid "About"
 msgstr "Acerca"
 
@@ -6559,12 +6558,6 @@ msgstr ""
 msgid "WPBakery Page Builder Settings"
 msgstr "Configuración del Maquetador Visual"
 
-#: include/./classes/core/class-vc-base.php:627
-#: include/./classes/core/class-vc-base.php:760
-#: include/./templates/pages/vc-welcome/index.php:24
-msgid "Settings"
-msgstr "Ajustes"
-
 #: include/./classes/core/class-vc-base.php:629
 msgid "About WPBakery Page Builder"
 msgstr ""
@@ -6584,6 +6577,11 @@ msgstr "Añadir imágen"
 #: include/./classes/core/class-vc-base.php:759
 msgid "Add Images"
 msgstr "Añadir imágenes"
+
+#: include/./classes/core/class-vc-base.php:760
+#: include/./templates/pages/vc-welcome/index.php:24
+msgid "Settings"
+msgstr "Ajustes"
 
 #: include/./classes/core/class-vc-base.php:762
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:120
@@ -7064,10 +7062,6 @@ msgstr "Smartphone en modo vertiva"
 msgid "Responsive preview"
 msgstr "Vista previa Responsiva"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:115
-msgid "&wpb_vc_js_status=true"
-msgstr ""
-
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:117
 msgid "Cancel all changes and return to WP dashboard"
 msgstr "Cancelar todos los cambios y volver al escritorio"
@@ -7080,20 +7074,13 @@ msgstr "Guardar borrador"
 msgid "Save as Pending"
 msgstr "Guardar como Pendiente"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:138
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:139
 msgid "Publish"
 msgstr "Publicar"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:142
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:143
 msgid "Submit for Review"
 msgstr "Enviar para revisión"
-
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:164
-#, fuzzy
-msgid "Exit WPBakery Page Builder edit mode"
-msgstr "Configuración del Maquetador Visual"
 
 #: include/./classes/editors/navbar/class-vc-navbar.php:109
 #: include/./templates/editors/popups/vc_ui-panel-edit-element.tpl.php:24
@@ -7143,10 +7130,6 @@ msgstr "Acceso denegado"
 msgid "Save current layout as a template"
 msgstr "Guardar diseño actual como plantilla"
 
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:98
-msgid "Template name"
-msgstr "Nombre de la plantilla"
-
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:100
 msgid "Save Template"
 msgstr "Guardar Plantilla"
@@ -7154,27 +7137,6 @@ msgstr "Guardar Plantilla"
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:103
 msgid "Save layout and reuse it on different sections of this site."
 msgstr "Guarde su diseño y reutilícelo en diferentes secciones de su sitio."
-
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:188
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:232
-#: include/./params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:85
-#: include/./params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:86
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:155
-msgid "Preview template"
-msgstr "Previsualizar plantillas"
-
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:189
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:233
-#: include/./templates/editors/partials/vc_welcome_block.tpl.php:63
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:141
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:143
-msgid "Add template"
-msgstr "Añadir plantilla"
-
-#: include/./classes/editors/popups/class-vc-templates-panel-editor.php:192
-#: include/./templates/editors/popups/shared-templates/category.tpl.php:149
-msgid "Delete template"
-msgstr "Eliminar plantilla"
 
 #: include/./classes/editors/popups/class-vc-templates-panel-editor.php:415
 msgid "Error: wrong template id."
@@ -7415,7 +7377,8 @@ msgid ""
 "Builder."
 msgstr ""
 "¡Hola! ¿Quieres recibir actualizaciones automáticas y desbloquear soporte "
-"premium? <a href=\"%s\">Activa tu copia</a> de WPBakery Page Builder, por favor."
+"premium? <a href=\"%s\">Activa tu copia</a> de WPBakery Page Builder, por "
+"favor."
 
 #: include/./classes/settings/class-vc-license.php:421
 msgid "Dismiss this notice."
@@ -7639,10 +7602,10 @@ msgid ""
 "specific \"content block\" related color is set."
 msgstr ""
 "Aquí puedes ajustar la apariencia visual por defecto de los elementos de "
-"contenido del WPBakery Page Builder. Por defecto, WPBakery Page Builder usa el tema gris-"
-"claro neutro. Cambiar el \"Color principal del acento\" afectará a todos los "
-"elementos de contenido, a menos que ya se haya configurado un color "
-"relacionado con el \"bloque de contenido\"."
+"contenido del WPBakery Page Builder. Por defecto, WPBakery Page Builder usa "
+"el tema gris-claro neutro. Cambiar el \"Color principal del acento\" "
+"afectará a todos los elementos de contenido, a menos que ya se haya "
+"configurado un color relacionado con el \"bloque de contenido\"."
 
 #: include/./classes/settings/class-vc-settings.php:748
 msgid "Invalid Margin value."
@@ -7787,32 +7750,32 @@ msgstr "Clonar %s"
 msgid "Delete %s"
 msgstr "Eliminar %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1133
+#: include/./classes/shortcodes/shortcodes.php:1136
 #, php-format
 msgid "Append to this %s"
 msgstr "Anexar a este %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1135
+#: include/./classes/shortcodes/shortcodes.php:1138
 #, php-format
 msgid "Prepend to this %s"
 msgstr "Anteponer a este %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1138
+#: include/./classes/shortcodes/shortcodes.php:1141
 #, php-format
 msgid "Move this %s"
 msgstr "Mover este %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1144
+#: include/./classes/shortcodes/shortcodes.php:1147
 #, php-format
 msgid "Edit this %s"
 msgstr "Editar este %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1145
+#: include/./classes/shortcodes/shortcodes.php:1148
 #, php-format
 msgid "Clone this %s"
 msgstr "Clonar este %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1146
+#: include/./classes/shortcodes/shortcodes.php:1149
 #, php-format
 msgid "Delete this %s"
 msgstr "Eliminar este %s"
@@ -7916,13 +7879,6 @@ msgstr "Editar este elemento de cuadrícula"
 #: include/./classes/shortcodes/vc-gitem.php:98
 msgid "Delete this grid item "
 msgstr "Eliminar este elemento de cuadrícula "
-
-#: include/./classes/shortcodes/vc-posts-grid.php:135
-#: include/./templates/shortcodes/post_block/_item.php:22
-#: include/./templates/shortcodes/vc_posts_slider.php:167
-#, php-format
-msgid "Permalink to %s"
-msgstr "Enlace permanente para %s"
 
 #: include/./classes/shortcodes/vc-row.php:47
 msgid "Custom layout"
@@ -8511,119 +8467,119 @@ msgstr ""
 "Ten en cuenta que el  argumento \"per_page\" determinará cuántos productos "
 "se mostrarán en una página. Esto no añadirá paginación al shortcode. "
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1283
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1346
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1460
 msgid "Id"
 msgstr "Id"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1267
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1330
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1444
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
 msgid "Sku"
 msgstr "Sku"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Name"
 msgstr "Nombre"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Slug"
 msgstr "Slug"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1463
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
 msgid "SKU"
 msgstr "SKU"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1465
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
 msgid "Price"
 msgstr "Precio"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1466
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
 msgid "Regular Price"
 msgstr "Precio Normal"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1467
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
 msgid "Sale Price"
 msgstr "precio Rebajado"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1468
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1476
 msgid "Price html"
 msgstr "Html del precio"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1469
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1477
 msgid "Reviews count"
 msgstr "Número de reseñas"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1470
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1478
 msgid "Short description"
 msgstr "Descripción corta"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1479
 msgid "Dimensions"
 msgstr "Dimensiones"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1480
 msgid "Rating count"
 msgstr "Número de valoraciones"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1481
 msgid "Weight"
 msgstr "Peso"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1482
 msgid "Is on sale"
 msgstr "Está en oferta"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1483
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1509
 msgid "Custom field"
 msgstr "Campo personalizado"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1490
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
 msgid "Order number"
 msgstr "Número de pedido"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1491
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
 msgid "Currency"
 msgstr "Moneda"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1492
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
 msgid "Total"
 msgstr "Total"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1493
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
 msgid "Status"
 msgstr "Estado"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1494
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1502
 msgid "Payment method"
 msgstr "Forma de pago"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1495
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1503
 msgid "Billing address city"
 msgstr "Ciudad para la dirección de facturación"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1496
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1504
 msgid "Billing address country"
 msgstr "País para la dirección de facturación"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1505
 msgid "Shipping address city"
 msgstr "Ciudad para la dirección de entrega"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1506
 msgid "Shipping address country"
 msgstr "País para la dirección de entrega"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1507
 msgid "Customer Note"
 msgstr "Nota de compra"
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1508
 msgid "Customer API"
 msgstr "Customer API"
 
@@ -8692,31 +8648,31 @@ msgstr "Taxonomías"
 msgid "Wrong vc_map object. Base attribute is required"
 msgstr "Objeto de vc_map erróneo. Se requiere el atributo base"
 
-#: include/./helpers/helpers_api.php:492
+#: include/./helpers/helpers_api.php:490
 msgid "CSS Animation"
 msgstr "Animación CSS"
 
-#: include/./helpers/helpers_api.php:502
+#: include/./helpers/helpers_api.php:500
 msgid "Top to bottom"
 msgstr "De Arriba a Abajo"
 
-#: include/./helpers/helpers_api.php:503
+#: include/./helpers/helpers_api.php:501
 msgid "Bottom to top"
 msgstr "De Abajo a Arriba"
 
-#: include/./helpers/helpers_api.php:504
+#: include/./helpers/helpers_api.php:502
 msgid "Left to right"
 msgstr "De Izquierda a derecha"
 
-#: include/./helpers/helpers_api.php:505
+#: include/./helpers/helpers_api.php:503
 msgid "Right to left"
 msgstr "De derecha a izquierda"
 
-#: include/./helpers/helpers_api.php:506
+#: include/./helpers/helpers_api.php:504
 msgid "Appear from center"
 msgstr "Aparecer desde el centro"
 
-#: include/./helpers/helpers_api.php:511
+#: include/./helpers/helpers_api.php:509
 msgid ""
 "Select type of animation for element to be animated when it \"enters\" the "
 "browsers viewport (Note: works only in modern browsers)."
@@ -9771,20 +9727,6 @@ msgstr "Seleccionar URL"
 msgid "URL"
 msgstr "URL"
 
-#: include/./templates/editors/backend_editor.tpl.php:52
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:70
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:80
-msgid "Loading, please wait..."
-msgstr "Cargando. Por favor, espere..."
-
-#: include/./templates/editors/backend_editor.tpl.php:54
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:72
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:82
-msgid "Crunching..."
-msgstr "Cargando..."
-
 #: include/./templates/editors/partials/add_element_search.tpl.php:11
 msgid "Search element by name"
 msgstr "Buscar elemento por nombre"
@@ -9896,12 +9838,6 @@ msgstr "Guardar plantilla como"
 msgid "Save as Element"
 msgstr "Guardar como preajuste"
 
-#: include/./templates/editors/partials/settings_presets_popup.tpl.php:35
-#, fuzzy
-#| msgid "no title"
-msgid "Untitled"
-msgstr "sin título"
-
 #: include/./templates/editors/partials/templates_search.tpl.php:11
 #: include/./templates/editors/popups/shared-templates/category.tpl.php:42
 msgid "Search template by name"
@@ -9934,6 +9870,12 @@ msgstr "Añadir bloque de texto"
 #: include/./templates/editors/partials/vc_welcome_block.tpl.php:52
 msgid "Add Text Block"
 msgstr "Añadir Bloque de Texto"
+
+#: include/./templates/editors/partials/vc_welcome_block.tpl.php:63
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:141
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:143
+msgid "Add template"
+msgstr "Añadir plantilla"
 
 #: include/./templates/editors/partials/vc_welcome_block.tpl.php:84
 msgid "knowledge base"
@@ -9970,10 +9912,10 @@ msgid ""
 "\tversions only. Activate WPBakery Page Builder direct license to access "
 "Template Library and receive other benefits."
 msgstr ""
-"Las descargas de la biblioteca de plantillas de WPBakery Page Builder sólo están "
-"disponibles\tpara los usuarios registrados. Activa la licencia directa de "
-"WPBakery Page Builder para acceder a la biblioteca de plantillas y obtener otras "
-"ventajas."
+"Las descargas de la biblioteca de plantillas de WPBakery Page Builder sólo "
+"están disponibles\tpara los usuarios registrados. Activa la licencia directa "
+"de WPBakery Page Builder para acceder a la biblioteca de plantillas y "
+"obtener otras ventajas."
 
 #: include/./templates/editors/popups/shared-templates/category.tpl.php:35
 msgid "Activate License"
@@ -10007,8 +9949,8 @@ msgid ""
 "regular template\n"
 "\t\tupdates from WPBakery Page Builder team."
 msgstr ""
-"Accede a la biblioteca de plantillas de WPBakery Page Builder para obtener diseños "
-"únicos.\n"
+"Accede a la biblioteca de plantillas de WPBakery Page Builder para obtener "
+"diseños únicos.\n"
 "\t\tDescarga la plantillas seleccionadas y descubre nuevos diseños con las "
 "actualizaciones\n"
 "\t\tde plantillas del equipo de WPBakery Page Builder."
@@ -10016,6 +9958,14 @@ msgstr ""
 #: include/./templates/editors/popups/shared-templates/category.tpl.php:113
 msgid "Access Library"
 msgstr "Acceder a la biblioteca"
+
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:149
+msgid "Delete template"
+msgstr "Eliminar plantilla"
+
+#: include/./templates/editors/popups/shared-templates/category.tpl.php:155
+msgid "Preview template"
+msgstr "Previsualizar plantillas"
 
 #: include/./templates/editors/popups/vc_ui-panel-add-element.tpl.php:25
 #, fuzzy
@@ -10181,8 +10131,8 @@ msgid ""
 "By default WPBakery Page Builder is available for pages only."
 msgstr ""
 "Activar WPBakery Page Builder para páginas, entradas y tipos de entrada "
-"personalizadas. Nota: De manera predeterminada, WPBakery Page Builder sólo está "
-"disponible para páginas."
+"personalizadas. Nota: De manera predeterminada, WPBakery Page Builder sólo "
+"está disponible para páginas."
 
 #: include/./templates/pages/partials/vc-roles-parts/_presets.tpl.php:12
 msgid "Apply presets only"
@@ -10257,8 +10207,8 @@ msgid ""
 "Control user group role access to the features and options of WPBakery Page "
 "Builder - manage WordPress default and custom roles."
 msgstr ""
-"Controla el acceso a las características y opciones de WPBakery Page Builder a "
-"distintos grupos de roles - gestiona los roles predeterminados y "
+"Controla el acceso a las características y opciones de WPBakery Page Builder "
+"a distintos grupos de roles - gestiona los roles predeterminados y "
 "personalizados de WordPress."
 
 #: include/./templates/pages/vc-settings/tab.php:22
@@ -10304,10 +10254,11 @@ msgid ""
 "your page builder. If you do not wish to use WPBakery Page Builder on this "
 "WordPress site you can deactivate your license below."
 msgstr ""
-"Has activado la versión de WPBakery Page Builder que te permite acceder a todos "
-"los beneficios de ser cliente. Gracias por elegir WPBakery Page Builder como "
-"constructor de páginas. Si no deseas utilizar WPBakery Page Builder en esta "
-"instalación de WordPress, puedes desactivar tu licencia a continuación."
+"Has activado la versión de WPBakery Page Builder que te permite acceder a "
+"todos los beneficios de ser cliente. Gracias por elegir WPBakery Page "
+"Builder como constructor de páginas. Si no deseas utilizar WPBakery Page "
+"Builder en esta instalación de WordPress, puedes desactivar tu licencia a "
+"continuación."
 
 #: include/./templates/pages/vc-settings/tab.php:91
 msgid "Deactivate WPBakery Page Builder"
@@ -10322,11 +10273,11 @@ msgid ""
 "strong>, access to <strong>template library</strong> and <strong>official "
 "support.</strong>"
 msgstr ""
-"Para recibir todos los beneficios de WPBakery Page Builder, tienes que activar eu "
-"copia del plugin. Al activar la licencia de WPBakery Page Builder, desbloquearás "
-"opciones premium: <strong>actualizaciones directas de plugins</strong> , "
-"acceso a la <strong>biblioteca de plantillas</strong> y <strong>soporte "
-"oficial.</strong>"
+"Para recibir todos los beneficios de WPBakery Page Builder, tienes que "
+"activar eu copia del plugin. Al activar la licencia de WPBakery Page "
+"Builder, desbloquearás opciones premium: <strong>actualizaciones directas de "
+"plugins</strong> , acceso a la <strong>biblioteca de plantillas</strong> y "
+"<strong>soporte oficial.</strong>"
 
 #: include/./templates/pages/vc-settings/tab.php:120
 #, fuzzy, php-format
@@ -10360,7 +10311,8 @@ msgstr "Versión %s"
 #, fuzzy
 msgid "New to WPBakery Page Builder or Looking for More Information?"
 msgstr ""
-"¿es la primera vez que usas WPBakery Page Builder o necesitas más información?"
+"¿es la primera vez que usas WPBakery Page Builder o necesitas más "
+"información?"
 
 #: include/./templates/pages/vc-welcome/vc-faq.php:9
 #, fuzzy, php-format
@@ -10372,8 +10324,8 @@ msgid ""
 msgstr ""
 "WPBakery tiene documentación completa disponible en su base de conocimiento "
 "en <a target=\"_blank\" href=\"%s\">kb.wpbakery.com</a>, que cubre todo lo "
-"relacionado con WPBakery Page Builder, desde la instalación y hasta opciones más "
-"avanzadas basadas en la API interna."
+"relacionado con WPBakery Page Builder, desde la instalación y hasta opciones "
+"más avanzadas basadas en la API interna."
 
 #: include/./templates/pages/vc-welcome/vc-faq.php:100
 msgid "Visit Knowledge Base for more information"
@@ -10388,27 +10340,21 @@ msgstr ""
 "Existen algunos recursos que pueden ayudarte a comenzar a usar Visual "
 "Composer:"
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:26
+#: include/./templates/pages/vc-welcome/vc-resources.php:23
 msgid "Official Support"
 msgstr "Soporte Oficial"
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:28
+#: include/./templates/pages/vc-welcome/vc-resources.php:25
 #, php-format
 msgid ""
 "To get your support related question answered in the fastest timing, please "
 "head over to our <a href=\"%s\" target=\"_blank\">support page</a> and open "
 "Support ticket. To open a support ticket you should have a valid support "
 "subscription in case if your support has expired you can <a href=\"%s\" "
-"target=\"_blank\">purchase support extension</a> on CodeCanyon."
+"target=\"_blank\">purchase support extension</a> on support.wpbakery.com."
 msgstr ""
-"Para que tu pregunta relacionada con soporte sea respondida lo antes "
-"posible, dirígete a nuestra <a href=\"%s\" target=\"_blank\">página de "
-"soporte</a> y abre el ticket de soporte. Para abrir un ticket de soporte, "
-"debes tener una suscripción de soporte válida. Si tu soporte ha caducado, "
-"puedes <a href=\"%s\" target=\"_blank\">adquirir una extensión de soporte</"
-"a> en CodeCanyon."
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:30
+#: include/./templates/pages/vc-welcome/vc-resources.php:27
 #, php-format
 msgid ""
 "Before applying for support please make sure you understand the rules of "
@@ -10434,7 +10380,6 @@ msgstr ""
 
 #: include/./templates/pages/vc-welcome/vc-welcome.php:21
 #, fuzzy
-#| msgid "Gradient Color 1"
 msgid "Native Colors"
 msgstr "Degradado Color 1"
 
@@ -10446,7 +10391,6 @@ msgstr ""
 
 #: include/./templates/pages/vc-welcome/vc-welcome.php:28
 #, fuzzy
-#| msgid "Icon"
 msgid "New Icons"
 msgstr "Icono"
 
@@ -10458,7 +10402,6 @@ msgstr ""
 
 #: include/./templates/pages/vc-welcome/vc-welcome.php:35
 #, fuzzy
-#| msgid "Icon library"
 msgid "Icon Library Updates"
 msgstr "Biblioteca de iconos"
 
@@ -10474,8 +10417,8 @@ msgid ""
 "\"Disable responsive content elements\"."
 msgstr ""
 "Los ajustes de diseño responsivo están deshabilitados actualmente. Puedes "
-"habilitarlos en la <a href=\"%s\">página de ajustes de WPBakery Page Builder</a>, "
-"desmarcando \"Deshabilitar elementos de contenido responsive\"."
+"habilitarlos en la <a href=\"%s\">página de ajustes de WPBakery Page "
+"Builder</a>, desmarcando \"Deshabilitar elementos de contenido responsive\"."
 
 #: include/./templates/params/column_offset/template.tpl.php:31
 msgid "Device"
@@ -10507,6 +10450,19 @@ msgstr ""
 #, php-format
 msgid "View all posts in %s"
 msgstr "Ver todas las entradas en %s"
+
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
+msgid "Loading, please wait..."
+msgstr "Cargando. Por favor, espere..."
+
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
+msgid "Crunching..."
+msgstr "Cargando..."
+
+#: include/./templates/shortcodes/post_block/_item.php:22
+#, php-format
+msgid "Permalink to %s"
+msgstr "Enlace permanente para %s"
 
 #: include/./templates/shortcodes/vc_accordion_tab.php:26
 msgid "Empty section. Edit page to add content here."
@@ -10562,1137 +10518,27 @@ msgid "Featured"
 msgstr "Destacado"
 
 #, fuzzy
-#~ msgid "Column Parallax"
-#~ msgstr "Parallax"
+#~ msgid "Exit WPBakery Page Builder edit mode"
+#~ msgstr "Configuración del Maquetador Visual"
 
-#~ msgid "WPBakery Page Builder"
-#~ msgstr "WPBakery Page Builder"
+#~ msgid "Template name"
+#~ msgstr "Nombre de la plantilla"
 
-#~ msgid "Welcome to WPBakery Page Builder"
-#~ msgstr "Bienvenido a WPBakery Page Builder"
-
-#~ msgid "WPBakery Page Builder Settings"
-#~ msgstr "Configuración de WPBakery Page Builder"
-
-#~ msgid "About WPBakery Page Builder"
-#~ msgstr "Acerca de WPBakery Page Builder"
-
-#~ msgid "BACKEND EDITOR"
-#~ msgstr "Editor en el backend"
-
-#~ msgid "FRONTEND EDITOR"
-#~ msgstr "Editor en el frontend"
-
-#~ msgid "CLASSIC MODE"
-#~ msgstr "Modo clásico"
-
-#~ msgid "Edit %s with WPBakery Page Builder"
-#~ msgstr "Editar %s con el WPBakery Page Builder"
-
-#~ msgid "Edit with WPBakery Page Builder"
-#~ msgstr "Editar con WPBakery Page Builder"
-
-#~ msgid "Save current page as a Template"
-#~ msgstr "Guardar la página actual como plantilla"
-
-#~ msgid "Load Template"
-#~ msgstr "Cargar Plantilla"
-
-#~ msgid "No custom templates yet."
-#~ msgstr "No existen plantillas personalizadas."
-
-#~ msgid "Show WPBakery Page Builder & default editor"
-#~ msgstr "Mostrar WPBakery Page Builder y el editor por defecto"
-
-#~ msgid "Show only WPBakery Page Builder"
-#~ msgstr "Mostrar sólo WPBakery Page Builder"
-
-#~ msgid "Don't allow to use WPBakery Page Builder"
-#~ msgstr "No permitir usar WPBakery Page Builder"
-
-#~ msgid "WPBakery Page Builder access"
-#~ msgstr "Acceso a WPBakery Page Builder"
-
-#~ msgid "Enabled shortcodes"
-#~ msgstr "Activar shortcodes"
-
-#~ msgid "(deprecated since v%s)"
-#~ msgstr "(en desuso desde v%s)"
-
-#~ msgid "Select All"
-#~ msgstr "Seleccionar Todo"
-
-#~ msgid "Select none"
-#~ msgstr "Deseleccionar"
-
-#~ msgid "Define access rules for different user groups."
-#~ msgstr "Define las normas de acceso para los diferentes roles de usuario."
-
-#~ msgid "Select content types available to WPBakery Page Builder."
-#~ msgstr "Selecciona el tipo de contenido que podrá utilizar WPBakery Page Builder."
-
-#~ msgid "Empty value"
-#~ msgstr "Valor vacío"
-
-#~ msgid "This is required to enable file writing for js_composer"
-#~ msgstr "Es necesario para que js_composer pueda escribir fiecheros"
-
-#~ msgid "Got WPBakery Page Builder in theme?"
-#~ msgstr "¿has obtenido WPBakery Page Builder con un tema?"
-
-#~ msgid "Downloading package from envato market..."
-#~ msgstr "Descarga el paquete de envato market..."
-
-#~ msgid "Error! Envato API error"
-#~ msgstr "Error del API de Envato"
-
-#~ msgid "Error on unzipping package"
-#~ msgstr "Error al descomprimir el paquete"
-
-#~| msgid "Edit Elements"
-#~ msgid "View Elements"
-#~ msgstr "Editar elementos"
-
-#~ msgid "My templates"
-#~ msgstr "Mis plantillas"
-
-#~ msgid "Default templates"
-#~ msgstr "Plantillas predeterminadas"
-
-#~ msgid "Append previosly saved template to the current layout"
-#~ msgstr "Anexar plantilla guardada anteriormente al diseño actual"
-
-#~ msgid "Append default template to the current layout"
-#~ msgstr "Anexar plantilla predeterminada al diseño actual"
-
-#~ msgid "Activate WPBakery Page Builder"
-#~ msgstr "Activar WPBakery Page Builder"
-
-#~ msgid "Deactivate WPBakery Page Builder"
-#~ msgstr "Desactivar WPBakery Page Builder"
-
-#~ msgid "Welcome to WPBakery Page Builder %s"
-#~ msgstr "Bienvenido a WPBakery Page Builder %s"
-
-#~| msgid "Grid Builder"
-#~ msgid "Grid Builder and Interface"
-#~ msgstr "Constructor de cuadrícula"
-
-#~| msgid "Google Fonts preview"
-#~ msgid "Google Fonts Update"
-#~ msgstr "Vista previa de las fueltes de Google"
-
-#~| msgid "Grid Builder"
-#~ msgid "Grid Builder UI"
-#~ msgstr "Constructor de cuadrícula"
-
-#~ msgid "Stretch section and content (no paddings)"
-#~ msgstr "Extender sección y contenido (sin paddings)"
-
-#~ msgid "Set as default"
-#~ msgstr "Predeterminar"
-
-#~ msgid "Restore default"
-#~ msgstr "Restablecer valores por defecto"
-
-#~ msgid "View presets"
-#~ msgstr "Ver preajustes"
-
-#~ msgid "WPBakery Page Builder Template Library"
-#~ msgstr "Biblioteca de plantillas de WPBakery Page Builder"
+#, fuzzy
+#~| msgid "no title"
+#~ msgid "Untitled"
+#~ msgstr "sin título"
 
 #~ msgid ""
-#~ "Access library for different layout templates available for free download "
-#~ "and updated regularly. Download the templates you like and use them to "
-#~ "build your website within seconds."
+#~ "To get your support related question answered in the fastest timing, "
+#~ "please head over to our <a href=\"%s\" target=\"_blank\">support page</a> "
+#~ "and open Support ticket. To open a support ticket you should have a valid "
+#~ "support subscription in case if your support has expired you can <a href="
+#~ "\"%s\" target=\"_blank\">purchase support extension</a> on CodeCanyon."
 #~ msgstr ""
-#~ "Accede a la biblioteca para diferentes plantillas de diseño gratuitas y "
-#~ "actualizadas regularmente. Descargar las plantillas que quieras y "
-#~ "utilízalas para construir tu sitio web en cuestión de segundos."
-
-#~ msgid ""
-#~ "Each template of Template Library is a carefully crafted layout created "
-#~ "by pro designers. You can modify every template if you wish or use it as-"
-#~ "is. Template Library is aiming to become your number one resource to "
-#~ "receive fresh layouts and ideas."
-#~ msgstr ""
-#~ "Cada plantilla de la Biblioteca de plantillas es un diseño cuidadosamente "
-#~ "elaborado creado por diseñadores profesionales. Puedes modificar cada "
-#~ "plantilla si lo deseas o usarla tal como está. Template Library tiene "
-#~ "como objetivo convertirse en tu recurso número uno para recibir nuevos "
-#~ "diseños e ideas."
-
-#~ msgid "Section Element"
-#~ msgstr "Elemento Sección"
-
-#~ msgid ""
-#~ "Combine rows into logic groups by using section element and apply design "
-#~ "options to the whole section at once."
-#~ msgstr ""
-#~ "Combina filas en grupos lógicos utilizando el elemento sección y aplica "
-#~ "las opciones de diseño a toda la sección a la vez."
-
-#~ msgid "Editor UI Update"
-#~ msgstr "Actualización de la interfaz del editor"
-
-#~ msgid ""
-#~ "A new icon type controls offer you the best experience when working on "
-#~ "retina devices."
-#~ msgstr ""
-#~ "Un nuevo tipo de controles de icono te ofrece la mejor experiencia cuando "
-#~ "trabajas con dispositivos retina."
-
-#~ msgid "Row and Section Templates"
-#~ msgstr "Plantillas de fila y sección"
-
-#~ msgid ""
-#~ "Save row or section as a template directly from your page, post or custom "
-#~ "post type layout."
-#~ msgstr ""
-#~ "Guarda una fila o sección como plantilla directamente desde la estructura "
-#~ "de tu página, entrada o custom post type."
-
-#, fuzzy
-#~ msgid "Post Carousel"
-#~ msgstr "Carrusel"
-
-#, fuzzy
-#~ msgid "Call to Action Button"
-#~ msgstr "Llamada al botón de acción"
-
-#, fuzzy
-#~ msgid "Posts Grid"
-#~ msgstr "Pase de diapositivas de entradas"
-
-#, fuzzy
-#~ msgid "Update WPBakery Page Builder now."
-#~ msgstr "Maquetador Visual"
-
-#, fuzzy
-#~ msgid "Form title"
-#~ msgstr "Título de alternador"
-
-#, fuzzy
-#~ msgid "What text use as form title. Leave blank if no title is needed."
-#~ msgstr ""
-#~ "Introduce el texto a usar como título del widget. Si no quieres mostrar "
-#~ "título, déjalo en blanco."
-
-#~ msgid "Regular size"
-#~ msgstr "Tamaño normal"
-
-#, fuzzy
-#~ msgid "Font Color"
-#~ msgstr "Color"
-
-#, fuzzy
-#~ msgid "Select font color"
-#~ msgstr "Indica el número de columnas."
-
-#, fuzzy
-#~ msgid "Design options"
-#~ msgstr "Descripción"
-
-#, fuzzy
-#~ msgid "Separator color."
-#~ msgstr "Separador (Divisor)"
-
-#, fuzzy
-#~ msgid "Separator style."
-#~ msgstr "Título del separador."
-
-#~ msgid "Separator title."
-#~ msgstr "Título del separador."
-
-#~ msgid "Align center"
-#~ msgstr "Alinear al centro"
-
-#~ msgid "Align left"
-#~ msgstr "Alinear a la izquierda"
-
-#~ msgid "Align right"
-#~ msgstr "Alinear a la derecha"
-
-#~ msgid "Message box type"
-#~ msgstr "Tipo de caja de mensaje"
-
-#~ msgid "Select message type."
-#~ msgstr "Indica el tipo de mensaje."
-
-#, fuzzy
-#~ msgid "Facebook like button"
-#~ msgstr "Botón de 'Me gusta' de Facebook"
-
-#~ msgid "Button count"
-#~ msgstr "Botón de contador"
-
-#~ msgid "Box count"
-#~ msgstr "Caja de contador"
-
-#, fuzzy
-#~ msgid "Share on twitter button"
-#~ msgstr "Texto del botón"
-
-#, fuzzy
-#~ msgid "Select type of annotation"
-#~ msgstr "Indica el tipo de anotación."
-
-#~ msgid "Button layout"
-#~ msgstr "Diseño de botón"
-
-#~ msgid "Toggle block title."
-#~ msgstr "Título del bloque del alternador."
-
-#, fuzzy
-#~ msgid ""
-#~ "Enter text which will be used as widget title. Leave blank if no title is "
-#~ "needed."
-#~ msgstr ""
-#~ "Introduce el texto a usar como título del widget. Si no quieres mostrar "
-#~ "título, déjalo en blanco."
-
-#, fuzzy
-#~ msgid ""
-#~ "Enter image size. Example: \"thumbnail\", \"medium\", \"large\", \"full\" "
-#~ "or other sizes defined by current theme. Alternatively enter image size "
-#~ "in pixels: 200x100 (Width x Height). Leave empty to use \"thumbnail\" "
-#~ "size."
-#~ msgstr ""
-#~ "Introduce el tamaño de la imagen. Ejemplo: thumbnail, medium, large, full "
-#~ "u otros tamaños definidos por el tema actual. También puedes introducir "
-#~ "el tamaño en píxeles: 200x100 (Anchura x Altura). Si lo dejas en blanco, "
-#~ "por defecto utilizará el tamaño 'thumbnail'."
-
-#, fuzzy
-#~ msgid "Link to large image?"
-#~ msgstr "Link a la imagen grande"
-
-#, fuzzy
-#~ msgid "If selected, image will be linked to the larger image."
-#~ msgstr "Si se activa, la imagen se linkará a la imagen de mayor tamaño."
-
-#~ msgid "Yes, please"
-#~ msgstr "Sí, por favor"
-
-#, fuzzy
-#~ msgid "Enter URL if you want this image to have a link."
-#~ msgstr "Introduce una url si quieres q esta imagen tenga un link."
-
-#~ msgid "On click"
-#~ msgstr "Al clicar"
-
-#~ msgid "Do nothing"
-#~ msgstr "No hacer nada"
-
-#, fuzzy
-#~ msgid ""
-#~ "Enter links for each slide here. Divide links with linebreaks (Enter) . "
-#~ msgstr ""
-#~ "Selecciona 'Abrir link personalizado' in el parámetro 'Link' y, luego, "
-#~ "introduce aquí los links para cada diapositiva. Escribe cada link en una "
-#~ "línea distinta."
-
-#, fuzzy
-#~ msgid "What to do when slide is clicked?"
-#~ msgstr "¿Qué hacer cuando se clica en una diapositiva?"
-
-#, fuzzy
-#~ msgid "Slider mode"
-#~ msgstr "Tipo de pase de diapositivas"
-
-#, fuzzy
-#~ msgid "Enables loop mode."
-#~ msgstr "Activar shortcodes"
-
-#, fuzzy
-#~ msgid "Auto rotate tabs"
-#~ msgstr "Rotación automática de las diapositivas"
-
-#, fuzzy
-#~ msgid "Tab title."
-#~ msgstr "Título"
-
-#~ msgid "Allow collapsible all"
-#~ msgstr "Permitir que todo sea plegable"
-
-#~ msgid "Allow"
-#~ msgstr "Permitir"
-
-#, fuzzy
-#~ msgid "Accordion section title."
-#~ msgstr "Contenido desplegable en acordeón"
-
-#, fuzzy
-#~ msgid "Teaser (posts) Grid"
-#~ msgstr "Cuadrícula de entradas"
-
-#~ msgid "Select post types to populate posts from."
-#~ msgstr "Indica el tipo de entrada del cual quieres mostras entradas."
-
-#, fuzzy
-#~ msgid "Teasers count"
-#~ msgstr "Indica el número de entradas"
-
-#, fuzzy
-#~ msgid "How many teasers to show? Enter number or word \"All\"."
-#~ msgstr "¿Cuántas entradas quieres mostrar? Introduce el número o 'Todos'."
-
-#~ msgid "Full Content"
-#~ msgstr "Todo el contenido"
-
-#~ msgid "Layout"
-#~ msgstr "Diseño"
-
-#~ msgid "Title + Thumbnail + Text"
-#~ msgstr "Título + Imagen miniatura + Texto"
-
-#~ msgid "Thumbnail + Title + Text"
-#~ msgstr "Imagen miniatura + Título + Texto"
-
-#~ msgid "Thumbnail + Text"
-#~ msgstr "Imagen miniatura + Texto"
-
-#~ msgid "Thumbnail + Title"
-#~ msgstr "Imagen miniatura + Título"
-
-#~ msgid "Thumbnail only"
-#~ msgstr "Solo imagen miniatura"
-
-#~ msgid "Title + Text"
-#~ msgstr "Título + Texto"
-
-#~ msgid "Teaser layout."
-#~ msgstr "Diseño de la entrada."
-
-#~ msgid "Thumbnail to bigger image, title to post"
-#~ msgstr "De imagen miniatura a imagen grande, de título a entrada"
-
-#, fuzzy
-#~ msgid "Teaser grid layout"
-#~ msgstr "Diseño de la entrada."
-
-#~ msgid "Grid"
-#~ msgstr "Cuadrícula"
-
-#~ msgid "Grid with filter"
-#~ msgstr "Cuadrícula con filtro"
-
-#~ msgid "Carousel"
-#~ msgstr "Carrusel"
-
-#, fuzzy
-#~ msgid "Select taxonomies."
-#~ msgstr "Seleccionar taxonomías de."
-
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,) to retrieve "
-#~ "only them. Use this in conjunction with \"Post types\" field."
-#~ msgstr ""
-#~ "Para mostrar solo unas entradas concretas, rellena este campo con sus IDs "
-#~ "separados por comas (,). Utiliza esto conjunto con el campo de 'Tipo de "
-#~ "entrada'."
-
-#~ msgid "Exclude Post/Page IDs"
-#~ msgstr "IDs de las Entradas/Páginas a excluir"
-
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,) to exclude "
-#~ "them from query."
-#~ msgstr ""
-#~ "Para excluir algunas entradas concretas, rellena este campo con sus IDs "
-#~ "separados por comas (,)."
-
-#, fuzzy
-#~ msgid ""
-#~ "If you want to narrow output, enter category names here. Note: Only "
-#~ "listed categories will be included. Divide categories with linebreaks "
-#~ "(Enter) . "
-#~ msgstr ""
-#~ "Si quieres restringir las categorías, introduce sus nombres aquí. Nota: "
-#~ "Se incluirán solo las categorías listadas.  Escribe cada categoría en una "
-#~ "línea distinta."
-
-#, fuzzy
-#~ msgid "Order way"
-#~ msgstr "Ordenar por"
-
-#~ msgid "Slides count"
-#~ msgstr "Número de diapositivas"
-
-#, fuzzy
-#~ msgid "How many slides to show? Enter number or word \"All\"."
-#~ msgstr ""
-#~ "¿Cuántas diapositivas quieres mostrar? Introduce el número o 'Todas'."
-
-#~ msgid "Some sliders support description text, what content use for it?"
-#~ msgstr ""
-#~ "Algunos sistemas de pase de diapositivas permiten descripciones de texto, "
-#~ "qué contenido te gustaría usar?"
-
-#~ msgid ""
-#~ "Fill this field with page/posts IDs separated by commas (,), to retrieve "
-#~ "only them. Use this in conjunction with \"Post types\" field."
-#~ msgstr ""
-#~ "Para mostrar solo unas entradas concretas, rellena este campo con sus IDs "
-#~ "separados por comas (,). Utiliza esto conjunto con el campo de 'Tipo de "
-#~ "entrada'."
-
-#, fuzzy
-#~ msgid "Place widgetised sidebar"
-#~ msgstr "Barra adicional con widgets"
-
-#~ msgid "Select which widget area output."
-#~ msgstr "Indica qué área de widgets usar."
-
-#~ msgid "Text on the button."
-#~ msgstr "Texto del botón."
-
-#~ msgid "Button link."
-#~ msgstr "Link del botón."
-
-#~ msgid "Button color."
-#~ msgstr "Color del botón."
-
-#, fuzzy
-#~ msgid "Button icon."
-#~ msgstr "Botón de contador"
-
-#~ msgid "Button size."
-#~ msgstr "Tamaño del botón."
-
-#, fuzzy
-#~ msgid "Button style."
-#~ msgstr "Tipo de botón"
-
-#~ msgid "Align bottom"
-#~ msgstr "Alinear abajo"
-
-#, fuzzy
-#~ msgid "Call to action style."
-#~ msgstr "Llamada al botón de acción"
-
-#, fuzzy
-#~ msgid "Custom Background Color"
-#~ msgstr "Links personalizados"
-
-#, fuzzy
-#~ msgid "Select background color for your element."
-#~ msgstr "Selecciona los colores de fondo personalizados de las barras."
-
-#~ msgid "Link to the video. More about supported formats at %s."
-#~ msgstr "Link al vídeo. Más acerca de los formatos soportados en %s."
-
-#, fuzzy
-#~ msgid ""
-#~ "Enter map height in pixels. Example: 200 or leave it empty to make map "
-#~ "responsive."
-#~ msgstr "Introduce la altura del mapa en píxeles. Ejemplo: 200."
-
-#~ msgid "Raw js"
-#~ msgstr "js Puro"
-
-#, fuzzy
-#~ msgid "Enter your JS code."
-#~ msgstr "Introduce tu contenido."
-
-#~ msgid "Number of photos."
-#~ msgstr "Número de fotos."
-
-#, fuzzy
-#~ msgid "Photo stream type."
-#~ msgstr "Tipos de entradas"
-
-#~ msgid "Display"
-#~ msgstr "Mostrar"
-
-#~ msgid "Latest"
-#~ msgstr "Los más recientes"
-
-#~ msgid "Photo order."
-#~ msgstr "Orden de foto."
-
-#~ msgid "Graphic values"
-#~ msgstr "Valores de gráficos"
-
-#, fuzzy
-#~ msgid ""
-#~ "Input graph values, titles and color here. Divide values with linebreaks "
-#~ "(Enter). Example: 90|Development|#e75956"
-#~ msgstr ""
-#~ "Introduce los valores de la gráfica aquí. Separa los valores con saltos "
-#~ "de línea (Enter). Ejemplo: 90|Desarrollo"
-
-#~ msgid ""
-#~ "Enter measurement units (if needed) Eg. %, px, points, etc. Graph value "
-#~ "and unit will be appended to the graph title."
-#~ msgstr ""
-#~ "Introduce unidades de medida (si es necesario) Ej: %, px, puntos, etc. El "
-#~ "valor y unidad de la gráfica se anexará al título de la gráfica."
-
-#, fuzzy
-#~ msgid "Bar color"
-#~ msgstr "Color del botón."
-
-#, fuzzy
-#~ msgid "Bar custom color"
-#~ msgstr "Color del botón."
-
-#, fuzzy
-#~ msgid "Add Stripes?"
-#~ msgstr "Añadir imágenes"
-
-#~ msgid "Add animation? Will be visible with striped bars."
-#~ msgstr "¿Añadir animación? Será visible con barras rayadas."
-
-#, fuzzy
-#~ msgid "Pie value"
-#~ msgstr "Valores de gráficos"
-
-#~ msgid "Number of comments to show"
-#~ msgstr "Número de comentarios a mostrar"
-
-#~ msgid "Sort by"
-#~ msgstr "Ordenar por"
-
-#~ msgid "Page IDs, separated by commas."
-#~ msgstr "IDs de página, separados por comas."
-
-#, fuzzy
-#~ msgid "Select menu"
-#~ msgstr "Indica el número de columnas."
-
-#~ msgid "Number of posts to show"
-#~ msgstr "Número de entradas a mostrar"
-
-#~ msgid "Display as dropdown"
-#~ msgstr "Mostrar como desplegable"
-
-#~ msgid "How many items would you like to display?"
-#~ msgstr "¿Cuántos ítems te gustaría mostrar?"
-
-#~ msgid "Display item content?"
-#~ msgstr "¿Mostrar el contenido del ítem?"
-
-#, fuzzy
-#~ msgid "Total items count"
-#~ msgstr "Número de diapositivas"
-
-#, fuzzy
-#~ msgid "Single element width"
-#~ msgstr "Reducir anchura"
-
-#, fuzzy
-#~ msgid "Order by post id"
-#~ msgstr "Ordenar por"
-
-#, fuzzy
-#~ msgid "Data settings"
-#~ msgstr "Configuración de elemento"
-
-#, fuzzy
-#~ msgid "Filter size."
-#~ msgstr "Tamaño de botón"
-
-#, fuzzy
-#~ msgid "Pagination controls"
-#~ msgstr "Caja de contador"
-
-#, fuzzy
-#~ msgid "Paging color"
-#~ msgstr "Color del botón."
-
-#, fuzzy
-#~ msgid "Basic grid"
-#~ msgstr "Cuadrícula de imágenes"
-
-#, fuzzy
-#~ msgid "All in one grid element"
-#~ msgstr "Añadir diapositiva"
-
-#, fuzzy
-#~ msgid "Masonry grid"
-#~ msgstr "Masonry"
-
-#, fuzzy
-#~ msgid "Media grid"
-#~ msgstr "Galería de imágenes"
-
-#, fuzzy
-#~ msgid "Media grid element"
-#~ msgstr "Añadir diapositiva"
-
-#, fuzzy
-#~ msgid "Load more button style"
-#~ msgstr "Tipo de botón"
-
-#, fuzzy
-#~ msgid "Select load more button style"
-#~ msgstr "Indica el tipo de botón."
-
-#, fuzzy
-#~ msgid "Pager style"
-#~ msgstr "Tamaño de imagen"
-
-#, fuzzy
-#~ msgid "Box style"
-#~ msgstr "Tipo de botón"
-
-#, fuzzy
-#~ msgid "Numbers"
-#~ msgstr "Número de fotos"
-
-#, fuzzy
-#~ msgid "Loop pager content?"
-#~ msgstr "Contenido del alternador"
-
-#, fuzzy
-#~ msgid "Carousel effect"
-#~ msgstr "Contenido del alternador"
-
-#, fuzzy
-#~ msgid "Please enter template name"
-#~ msgstr "Plantilla del diseño de la entrada."
-
-#, fuzzy
-#~ msgid "Nothing to save. Template is empty."
-#~ msgstr "No existen plantillas personalizadas."
-
-#, fuzzy
-#~ msgid "Map shortcode"
-#~ msgstr "Activar shortcodes"
-
-#, fuzzy
-#~ msgid "Please enter shortcode string"
-#~ msgstr "Editar el título de la sección desplegable actual"
-
-#, fuzzy
-#~ msgid "Parse shortcode"
-#~ msgstr "Activar shortcodes"
-
-#, fuzzy
-#~ msgid "General information"
-#~ msgstr "Configuración General"
-
-#~ msgid "Content types"
-#~ msgstr "Tipos de contenidos"
-
-#~ msgid "User groups access rules"
-#~ msgstr "Normas de acceso de los grupos de usuarios"
-
-#, fuzzy
-#~ msgid "WPBakery Page Builder License Key"
-#~ msgstr "Maquetador Visual"
-
-#, fuzzy
-#~ msgid "Something went wrong! Please try again later."
-#~ msgstr "Algo no ha funcionado: custom.css no se ha podido crear."
-
-#~ msgid ""
-#~ "Select for which content types WPBakery Page Builder should be available during "
-#~ "post creation/editing."
-#~ msgstr ""
-#~ "Indica para qué tipo de contenido debe estar disponible el Maquetador "
-#~ "Visual mientras se crea/edita."
-
-#~ msgid ""
-#~ "If you want to add some custom CSS code to the plugin and don't want to "
-#~ "modify any files, then it's a good place to enter your code at this field."
-#~ msgstr ""
-#~ "Si quieres añadir código CSS personalizado al plugin y no quieres "
-#~ "modificar ningún archivo, introduce tu código en este campo."
-
-#~ msgid ""
-#~ "Check this checkbox to prevent content elements from \"stacking\" one on "
-#~ "top other (on small media screens, eg. mobile)."
-#~ msgstr ""
-#~ "Selecciona esta casilla para evitar que los elementos de contenido se "
-#~ "\"superpongan\" unos sobre otros (en pantallas pequeñas, p.ej: un móvil)."
-
-#~ msgid ""
-#~ "Enable the use of custom design options for your site. When checked, "
-#~ "custom css file will be used."
-#~ msgstr ""
-#~ "Activa el uso de opciones personalizadas de diseño en tu web. Cuando está "
-#~ "seleccionado, se usará el archivo de css personalizado."
-
-#~ msgid ""
-#~ "To change default vertical spacing between content elements, enter new "
-#~ "value here. Example: 20px"
-#~ msgstr ""
-#~ "Para cambiar la separación vertical por defecto entre los elementos de "
-#~ "contenido, introduce un nuevo valor aquí. Ejemplo: 20px"
-
-#, fuzzy
-#~ msgid ""
-#~ "To change default horizontal spacing between columns, enter new value in "
-#~ "pixels here."
-#~ msgstr ""
-#~ "Para cambiar la separación vertical por defecto entre los elementos de "
-#~ "contenido, introduce un nuevo valor aquí. Ejemplo: 20px"
-
-#, fuzzy
-#~ msgid ""
-#~ "By default content elements \"stack\" one on top other when screen size "
-#~ "is smaller then 768px. Here you can change that value if needed."
-#~ msgstr ""
-#~ "Por defecto, los elementos de contenido se \"superponen\" unos sobre "
-#~ "otros cuando el tamaño de pantalla es menor a 480px. Aquí puedes cambiar "
-#~ "dicho valor."
-
-#~ msgid ""
-#~ "WPBakery Page Builder: Your css class names settings are deprecated. <a href="
-#~ "\"%s\">Click here to resolve</a>."
-#~ msgstr ""
-#~ "WPBakery Page Builder: Los ajustes de los nombres de tus clases css están "
-#~ "desaprobados. <a href=\"%s\">Clica aquí para resolverlo</a>."
-
-#~ msgid ""
-#~ "<strong>Deprecated:</strong> To override class names that are applied to "
-#~ "WPBakery Page Builder content elements you should use WordPress "
-#~ "add_filter('vc_shortcodes_css_class') function. <a "
-#~ "class='vc_show_example'>See Example</a>."
-#~ msgstr ""
-#~ "<strong>Desaprovado:</strong> Para reemplazar nombres de clases aplicadas "
-#~ "a los elementos de contenido del WPBakery Page Builder debes usar la función "
-#~ "add_filter('vc_shortcodes_css_class') de WordPress. <a "
-#~ "class='vc_show_example'>Ver Ejemplo</a>"
-
-#~ msgid ""
-#~ "You have used element class names settings to replace row and column css "
-#~ "classes."
-#~ msgstr ""
-#~ "Has utilizado ajustes de los nombres de las clases de los elementos para "
-#~ "reemplazar clases css de las filas y columnas."
-
-#~ msgid ""
-#~ "Below is code snippet which you should add to your functions.php file in "
-#~ "your theme, to replace row and column classes with custom classes saved "
-#~ "by you earlier."
-#~ msgstr ""
-#~ "A continuación, está el código snippet que debes añadir al archivo "
-#~ "functions.php de tu tema, para reemplazar las clases de las filas y "
-#~ "columnas con clases personalizadas guardadas previamente por tí."
-
-#, fuzzy
-#~ msgid "Remove all saved"
-#~ msgstr "Eliminar todo"
-
-#~ msgid "Restore to defaults"
-#~ msgstr "Reestablecer opciones por defecto"
-
-#~ msgid "View all posts filed under %s"
-#~ msgstr "Ver todas las entradas archivadas bajo %s"
-
-#~ msgid "Feed for all posts filed under %s"
-#~ msgstr "Feed para todas las entradas archivadas bajo %s"
-
-#~ msgid "Wrong wpb_map object. Base attribute is required"
-#~ msgstr "Objeto wpb_map erróneo. Es obligatorio un atributo base"
-
-#, fuzzy
-#~ msgid "Post Count"
-#~ msgstr "Sin contador"
-
-#, fuzzy
-#~ msgid "Order By"
-#~ msgstr "Ordenar por"
-
-#, fuzzy
-#~ msgid "Choose Your Layout"
-#~ msgstr "Diseños populares"
-
-#, fuzzy
-#~ msgid "Edit elements"
-#~ msgstr "Añadir diapositiva"
-
-#, fuzzy
-#~ msgid "Select content element to edit properties."
-#~ msgstr ""
-#~ "Clic en el icono del lápiz de los elementos de contenido para cambiar sus "
-#~ "propiedades."
-
-#, fuzzy
-#~ msgid "Save template"
-#~ msgstr "Cargar Plantilla"
-
-#~ msgid "Click to toggle"
-#~ msgstr "Clic para alternar"
-
-#~ msgid "Follow us on twitter"
-#~ msgstr "Síguenos en Twitter"
-
-#~ msgid "Save"
-#~ msgstr "Guardar"
-
-#~ msgid ""
-#~ "There is a new version of WPBakery Page Builder available. <a href=\"http://bit."
-#~ "ly/vcomposer\" target=\"_blank\">Download version <b>%s</b></a>."
-#~ msgstr ""
-#~ "Hay una nueva versión de WPBakery Page Builder disponible. <a href=\"http://bit."
-#~ "ly/vcomposer\" target=\"_blank\">Descargar version <b>%s</b></a>."
-
-#~ msgid "Press OK to pop (move) section to the top level, Cancel to leave"
-#~ msgstr ""
-#~ "Presiona OK para subir (mover) la sección al nivel superior, Cancelar "
-#~ "para salir"
-
-#~ msgid "Wrong layout params"
-#~ msgstr "Parámetros de diseño erróneos"
-
-#, fuzzy
-#~ msgid "Select Content Element"
-#~ msgstr "Elementos de contenido"
-
-#, fuzzy
-#~ msgid "Search by element name"
-#~ msgstr "Indica el tipo de mensaje."
-
-#, fuzzy
-#~ msgid "WPBakery Page Builder for WordPress"
-#~ msgstr "Maquetador Visual"
-
-#~ msgid ""
-#~ "Your page layout was created with previous WPBakery Page Builder version. "
-#~ "Before converting your layout to the new version, make sure to <a target="
-#~ "\"_blank\" href=\"http://kb.wpbakery.com/index.php?"
-#~ "title=Update_Visual_Composer_from_3.4_to_3.5\">read this page</a>."
-#~ msgstr ""
-#~ "El diseño de tu página se creó con una versión anterior del Visual "
-#~ "Composer. Antes de actualizar el diseño a la nueva versión, asegúrate de "
-#~ "<a target=\"_blank\" href=\"http://kb.wpbakery.com/index.php?"
-#~ "title=Update_Visual_Composer_from_3.4_to_3.5\">leer esta página</a>."
-
-#~ msgid "Convert to new version"
-#~ msgstr "Actualizar a la nueva versión"
-
-#~ msgid "No content yet! You should add some..."
-#~ msgstr "¡Aún no existe contenido! Deberías añadir alguno..."
-
-#~ msgid ""
-#~ "This is a visual preview of your page. Currently, you don't have any "
-#~ "content elements. Click or drag the button <a href='#' class='add-element-"
-#~ "to-layout'><i class='icon'></i> Add element</a> on the top to add content "
-#~ "elements on your page. Alternatively add <a href='#' class='add-text-"
-#~ "block-to-content' parent-container='#visual_composer_content'><i "
-#~ "class='icon'></i> Text block</a> with single click."
-#~ msgstr ""
-#~ "Esta es una presentación visual de tu página. Actualmente, no tienes "
-#~ "ningún elemento de contenido. Clica o arrastra el botón <a href='#' "
-#~ "class='add-element-to-layout'><i class='icon'></i> Añadir elemento</a> de "
-#~ "arriba para añadir elementos de contenido a tu página. Alternativamente, "
-#~ "añade un <a href='#' class='add-text-block-to-content' parent-"
-#~ "container='#visual_composer_content'><i class='icon'></i> Bloque de "
-#~ "texto</a> con un clic."
-
-#~ msgid "This is image placeholder, edit your page to replace it."
-#~ msgstr ""
-#~ "Esto es un marcador de posición de imagen, edita tu página para "
-#~ "reemplazarlo."
-
-#~ msgid "Next slide"
-#~ msgstr "Diapositiva siguiente"
-
-#, fuzzy
-#~ msgid "Element Class Names"
-#~ msgstr ""
-#~ "Puedes introducir el nombre de una clase CSS extra para este elemento"
-
-#, fuzzy
-#~ msgid "Row CSS class name"
-#~ msgstr ""
-#~ "Puedes introducir el nombre de una clase CSS extra para este elemento"
-
-#~ msgid "Columns CSS class names"
-#~ msgstr "Nombres de las clases CSS de columnas"
-
-#~ msgid ""
-#~ "To change class name for the row element, enter it here. By default "
-#~ "vc_row is used."
-#~ msgstr ""
-#~ "Para cambiar el nombre de la clase del elemento de la fila, introdúcelo "
-#~ "aquí. Por defecto se usa vc_row."
-
-#~ msgid "Span %d:"
-#~ msgstr "Span %d:"
-
-#~ msgid ""
-#~ "To change class names for the columns elements, enter them here. By "
-#~ "default vc_spanX are used, where X number from 1 to 12."
-#~ msgstr ""
-#~ "Para cambiar los nombres de las clases de los elementos de las columnas, "
-#~ "introdúcelos aquí. Por defecto se usa vc_spanX, dónde X es un número del "
-#~ "1 al 12."
-
-#~ msgid "<p>I am text block. Click edit button to change this text.</p>"
-#~ msgstr ""
-#~ "<p>Soy un bloque de texto. Clic en el botón 'Editar' (icono: lápiz "
-#~ "amarillo) para cambiar este texto.</p>"
-
-#, fuzzy
-#~ msgid "Twitter Widget"
-#~ msgstr "Widget de Twitter"
-
-#, fuzzy
-#~ msgid "Twitter username"
-#~ msgstr "Nombre Twitter"
-
-#~ msgid "Type in twitter profile name from which load tweets."
-#~ msgstr ""
-#~ "Introduce el nombre del perfil de Twitter mediante el cual se cargan los "
-#~ "tweets."
-
-#~ msgid "Tweets count"
-#~ msgstr "Número de tweets"
-
-#~ msgid "How many recent tweets to load."
-#~ msgstr "Número de tweets recientes a cargar."
-
-#, fuzzy
-#~ msgid "Tour Section"
-#~ msgstr "Contenido por pasos"
-
-#~ msgid "Slide 2"
-#~ msgstr "Diapositiva 2"
-
-#, fuzzy
-#~ msgid "Add accordion section"
-#~ msgstr "Contenido desplegable en acordeón"
-
-#, fuzzy
-#~ msgid "Accordion Section"
-#~ msgstr "Contenido desplegable en acordeón"
-
-#~ msgid "Google map link"
-#~ msgstr "Link del mapa Google"
-
-#, fuzzy
-#~ msgid ""
-#~ "Link to your map. Visit %s find your address and then click \"Link\" "
-#~ "button to obtain your map link."
-#~ msgstr ""
-#~ "Link a tu mapa. Visita <a href=\"http://maps.google.com\" target=\"_blank"
-#~ "\">Mapas Google</a>, encuentra tu dirección y haz clic en el botón "
-#~ "'Link' (icono de la cadena) para obtener el link a tu mapa."
-
-#~ msgid "Map type"
-#~ msgstr "Tipo de mapa"
-
-#~ msgid "Satellite"
-#~ msgstr "Satélite"
-
-#~ msgid "Map + Terrain"
-#~ msgstr "Mapa + Terreno"
-
-#~ msgid "Map Zoom"
-#~ msgstr "Zoom del mapa"
-
-#~ msgid "14 - Default"
-#~ msgstr "14 - Por defecto"
-
-#~ msgid "Thank you"
-#~ msgstr "Gracias"
-
-#~ msgid ""
-#~ "WPBakery Page Builder will save you a lot of time while working with your sites "
-#~ "content."
-#~ msgstr ""
-#~ "El Maquetador Visual hará que ahorres mucho tiempo mientras trabajas en "
-#~ "los contenidos de tu web."
-
-#~ msgid ""
-#~ "If you have comments or simply want to say \"Hi\", please check <a href="
-#~ "\"http://wpbakery.com/vc/\" title=\"\" target=\"_blank\">plugins "
-#~ "homepage</a>."
-#~ msgstr ""
-#~ "Si quieres comentar o simplemente saludar, por favor, visita <a href="
-#~ "\"http://wpbakery.com/vc/\" title=\"\" target=\"_blank\">la página de "
-#~ "plugins</a>."
-
-#~ msgid "Message text."
-#~ msgstr "Mensaje de texto."
-
-#~ msgid "FAQ (Toggle)"
-#~ msgstr "FAQ (Alternador de pregunta-respuesta)"
-
-#~ msgid "Select gallery type. Note: Nivo slider is not fully responsive."
-#~ msgstr ""
-#~ "Indica el tipo de galería. Nota: El pase de diapositivas Nivo no es "
-#~ "completamente adaptable."
-
-#~ msgid ""
-#~ "Select \"Open custom link\" in \"On click\" parameter and then enter "
-#~ "links for each slide here. Divide links with linebreaks (Enter)."
-#~ msgstr ""
-#~ "Selecciona 'Abrir link personalizado' in el parámetro 'Al clicar' y, "
-#~ "luego, introduce aquí los links para cada diapositiva. Escribe cada link "
-#~ "en una línea distinta."
-
-#~ msgid "Edit current tab title"
-#~ msgstr "Editar el título de la pestaña actual"
-
-#~ msgid "Delete current tab"
-#~ msgstr "Eliminar la pestaña actual"
-
-#~ msgid "I am text block. Click edit button to change this text."
-#~ msgstr ""
-#~ "<p>Soy un bloque de texto. Clic en el botón 'Editar' (icono: lápiz "
-#~ "amarillo) para cambiar este texto.</p>"
-
-#~ msgid "Edit current slide title"
-#~ msgstr "Editar el título de la diapositiva actual"
-
-#~ msgid "Delete current slide"
-#~ msgstr "Eliminar la diapositiva actual"
-
-#~ msgid "Delete current section"
-#~ msgstr "Eliminar la sección desplegable actual"
-
-#~ msgid "Heading text. Leave it empty if not needed."
-#~ msgstr "Texto de cabecera. Si no es necesario, déjalo en blanco."
-
-#~ msgid ""
-#~ "Select how to sort retrieved posts. More at <a href=\"http://codex."
-#~ "wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters\" "
-#~ "target=\"_blank\">WordPress codex page</a>."
-#~ msgstr ""
-#~ "Indica cómo ordenar las entradas a mostrar. Más en la <a href=\"http://"
-#~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">página de codex de WordPress</a>."
-
-#~ msgid ""
-#~ "Designates the ascending or descending order. More at <a href=\"http://"
-#~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">WordPress codex page</a>."
-#~ msgstr ""
-#~ "Designa el orden ascendiente o descendiente. Más en la <a href=\"http://"
-#~ "codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters"
-#~ "\" target=\"_blank\">página de codex de WordPress</a>."
-
-#~ msgid "Select slider type. Note: Nivo slider is not fully responsive."
-#~ msgstr ""
-#~ "Indica el tipo de pase de diapositivas. Nota: El pase de diapositivas "
-#~ "Nivo no es completamente adaptable."
-
-#~ msgid ""
-#~ "Link to the video. More about supported formats at <a href=\"http://codex."
-#~ "wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target="
-#~ "\"_blank\">WordPress codex page</a>."
-#~ msgstr ""
-#~ "Link al vídeo. Más acerca de los formatos permitidos en la <a href="
-#~ "\"http://codex.wordpress.org/"
-#~ "Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F\" target=\"_blank"
-#~ "\">página de codex de WordPress</a>."
-
-#~ msgid "Video size"
-#~ msgstr "Tamaño del vídeo"
-
-#~ msgid "Enter video size in pixels. Example: 200x100 (Width x Height)."
-#~ msgstr ""
-#~ "Introduce el tamaño del vídeo en píxeles. Ejemplo: 200x100 (Anchura x "
-#~ "Altura)."
-
-#~ msgid "Increase width"
-#~ msgstr "Aumentar anchura"
-
-#~ msgid "Pop up"
-#~ msgstr "Ventana emergente"
+#~ "Para que tu pregunta relacionada con soporte sea respondida lo antes "
+#~ "posible, dirígete a nuestra <a href=\"%s\" target=\"_blank\">página de "
+#~ "soporte</a> y abre el ticket de soporte. Para abrir un ticket de soporte, "
+#~ "debes tener una suscripción de soporte válida. Si tu soporte ha caducado, "
+#~ "puedes <a href=\"%s\" target=\"_blank\">adquirir una extensión de "
+#~ "soporte</a> en CodeCanyon."

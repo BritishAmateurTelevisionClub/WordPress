@@ -548,6 +548,8 @@ function pmxe_wp_ajax_scheduling_dialog_content()
                                         $('.save-changes').removeClass('disabled');
                                         window.pmxeHasSchedulingSubscription = true;
 
+                                        $('.wpai-no-license').hide();
+                                        $('.wpai-license').show();
                                     } else {
 
                                         $('#subscribe-button .easing-spinner').hide();
@@ -636,17 +638,12 @@ function pmxe_wp_ajax_scheduling_dialog_content()
                 <label>
                     <input type="radio" name="scheduling_enable"
                            value="1" <?php if ($post['scheduling_enable'] == 1) { ?> checked="checked" <?php } ?>/>
-                    <h4 style="margin-top: 0; position: relative; display: inline-block;"><?php _e('Automatic Scheduling', PMXE_Plugin::LANGUAGE_DOMAIN); ?>
+                    <h4 style="margin: 0; position: relative; display: inline-block;"><?php _e('Automatic Scheduling', PMXE_Plugin::LANGUAGE_DOMAIN); ?>
                         <span class="connection-icon" style="position: absolute; top:-1px; left: 152px;">
-                                    <?php include __DIR__ . '/../src/Scheduling/views/ConnectionIcon.php'; ?>
-                                </span>
-                        <?php if (!$scheduling->checkConnection() && $hasActiveLicense) { ?>
-                            <span style="margin-left: 25px; display: inline-block; font-weight: normal;">
-                                                                    <span <?php if (!$scheduling->checkConnection() && $scheduling->checkLicense()) { ?> style="color: #f2b03d;" <?php } ?>>Unable to connect -</span>
-<a style="text-decoration: underline; color: #0073aa;"
-   href="http://wpallimport.com/support"
-   target="_blank">please contact support</a>.
-                            </span>
+															<?php include __DIR__ . '/../src/Scheduling/views/ConnectionIcon.php'; ?>
+														</span>
+                        <?php if (!$scheduling->checkConnection()) { ?>
+                            <span class="wpai-license" style="margin-left: 25px; display: inline-block; font-weight: normal; <?php if(!$hasActiveLicense) { ?> display: none; <?php }?> color: #f2b03d;  ">Unable to connect - <a target="_blank" style="text-decoration: underline;" href="http://wpallimport.com/support">please contact support</a>.</span>
                         <?php } ?>
                     </h4>
                 </label>

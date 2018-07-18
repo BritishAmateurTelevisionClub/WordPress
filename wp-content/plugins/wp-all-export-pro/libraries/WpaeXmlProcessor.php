@@ -629,9 +629,10 @@ class WpaeXmlProcessor
     {
         $xml = str_replace('<!--', '<commentTempNode>', $xml);
         $xml = str_replace('-->', '</commentTempNode>', $xml);
-
         $xml = str_replace("\"{}\"", '""', $xml);
-        $xml = str_replace("{}", '""', $xml);
+
+        preg_replace('%(\[.*)({})(.*\])%', "$1\"\"$2", $xml);
+
         $xml = str_replace(">\"\"<", '><', $xml);
         $xml = str_replace("[implode(',',{})]", "", $xml);
         return $xml;

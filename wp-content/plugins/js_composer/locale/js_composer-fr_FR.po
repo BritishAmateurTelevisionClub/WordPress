@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPBakery Visual Composer v4.3\n"
+"Project-Id-Version: WPBakery Page Builder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-22 17:42+0200\n"
-"PO-Revision-Date: 2017-11-29 14:45+0100\n"
+"POT-Creation-Date: 2018-05-14 16:39+0300\n"
+"PO-Revision-Date: 2018-05-14 16:39+0300\n"
 "Last-Translator: Michael M <hello@wpbakery.com>\n"
 "Language-Team: Thomas Grimaud <contact@thomasgrimaud.fr>\n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
@@ -19,745 +19,6 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: config\n"
 "X-Poedit-SearchPath-1: include\n"
-
-# @ js_composer
-#: config/lean-map.php:121
-msgid "Same window"
-msgstr "Même fenêtre"
-
-# @ js_composer
-#: config/lean-map.php:122
-msgid "New window"
-msgstr "Nouvelle fenêtre"
-
-# @ js_composer
-#: config/lean-map.php:130 config/content/shortcode-vc-posts-slider.php:90
-#: config/deprecated/shortcode-vc-posts-grid.php:9
-#: include/params/sorted_list/sorted_list.php:100
-msgid "Link to post"
-msgstr "Lien vers l'article"
-
-# @ js_composer
-#: config/lean-map.php:134 config/content/shortcode-vc-posts-slider.php:93
-#: config/deprecated/shortcode-vc-posts-grid.php:13
-#: include/params/sorted_list/sorted_list.php:99
-#: include/templates/teaser.html.php:22 include/templates/teaser.html.php:43
-msgid "No link"
-msgstr "Pas de lien"
-
-# @ js_composer
-#: config/lean-map.php:138 config/content/shortcode-vc-posts-slider.php:91
-#: config/deprecated/shortcode-vc-posts-grid.php:17
-msgid "Link to bigger image"
-msgstr "Lien vers une plus grande image"
-
-#: config/lean-map.php:145
-msgid "Alert"
-msgstr "Alerte"
-
-#: config/lean-map.php:146
-msgid "Info"
-msgstr "Informations"
-
-#: config/lean-map.php:147
-msgid "Tick"
-msgstr "Coche"
-
-#: config/lean-map.php:148
-msgid "Explanation"
-msgstr "Explication"
-
-#: config/lean-map.php:149
-msgid "Address book"
-msgstr "Carnet d'adresses"
-
-#: config/lean-map.php:150
-msgid "Alarm clock"
-msgstr "Réveil"
-
-#: config/lean-map.php:151
-msgid "Anchor"
-msgstr "Ancre"
-
-#: config/lean-map.php:152
-msgid "Application Image"
-msgstr "Icône d'application"
-
-#: config/lean-map.php:153
-msgid "Arrow"
-msgstr "Flèche"
-
-#: config/lean-map.php:154
-msgid "Asterisk"
-msgstr "Astérisque"
-
-#: config/lean-map.php:155
-msgid "Hammer"
-msgstr "Marteau"
-
-#: config/lean-map.php:156
-msgid "Balloon"
-msgstr "Ballon"
-
-#: config/lean-map.php:157
-msgid "Balloon Buzz"
-msgstr "Bulle buzz"
-
-#: config/lean-map.php:158
-msgid "Balloon Facebook"
-msgstr "Bulle Facebook"
-
-#: config/lean-map.php:159
-msgid "Balloon Twitter"
-msgstr "Bulle Twitter"
-
-#: config/lean-map.php:160
-msgid "Battery"
-msgstr "Pile"
-
-#: config/lean-map.php:161
-msgid "Binocular"
-msgstr "Jumelles"
-
-#: config/lean-map.php:162
-msgid "Document Excel"
-msgstr "Fichier Excel"
-
-#: config/lean-map.php:163
-msgid "Document Image"
-msgstr "Fichier image"
-
-#: config/lean-map.php:164
-msgid "Document Music"
-msgstr "Fichier audio"
-
-#: config/lean-map.php:165
-msgid "Document Office"
-msgstr "Document Office"
-
-#: config/lean-map.php:166
-msgid "Document PDF"
-msgstr "Fichier PDF"
-
-#: config/lean-map.php:167
-msgid "Document Powerpoint"
-msgstr "Fichier PowerPoint"
-
-#: config/lean-map.php:168
-msgid "Document Word"
-msgstr "Fichier Word"
-
-#: config/lean-map.php:169
-msgid "Bookmark"
-msgstr "Favori"
-
-#: config/lean-map.php:170
-msgid "Camcorder"
-msgstr "Caméscope"
-
-#: config/lean-map.php:171
-msgid "Camera"
-msgstr "Appareil photo"
-
-#: config/lean-map.php:172
-msgid "Chart"
-msgstr "Graphique"
-
-#: config/lean-map.php:173
-msgid "Chart pie"
-msgstr "Camembert"
-
-#: config/lean-map.php:174
-msgid "Clock"
-msgstr "Horloge"
-
-#: config/lean-map.php:175
-msgid "Fire"
-msgstr "Incendie"
-
-#: config/lean-map.php:176
-msgid "Heart"
-msgstr "Cœur"
-
-#: config/lean-map.php:177
-msgid "Mail"
-msgstr "Enveloppe"
-
-#: config/lean-map.php:178
-msgid "Play"
-msgstr "Jeu"
-
-#: config/lean-map.php:179
-msgid "Shield"
-msgstr "Bouclier"
-
-#: config/lean-map.php:180
-msgid "Video"
-msgstr "Vidéo"
-
-# @ js_composer
-#: config/lean-map.php:186 include/classes/core/class-vc-shared-library.php:335
-msgid "Grey"
-msgstr "Gris"
-
-# @ js_composer
-#: config/lean-map.php:187 include/classes/core/class-vc-shared-library.php:326
-msgid "Blue"
-msgstr "Bleu"
-
-# @ js_composer
-#: config/lean-map.php:188 include/classes/core/class-vc-shared-library.php:327
-msgid "Turquoise"
-msgstr "Turquoise"
-
-# @ js_composer
-#: config/lean-map.php:189 include/classes/core/class-vc-shared-library.php:338
-msgid "Green"
-msgstr "Vert"
-
-# @ js_composer
-#: config/lean-map.php:190 include/classes/core/class-vc-shared-library.php:336
-msgid "Orange"
-msgstr "Orange"
-
-# @ js_composer
-#: config/lean-map.php:191
-msgid "Red"
-msgstr "Rouge"
-
-# @ js_composer
-#: config/lean-map.php:192 include/classes/core/class-vc-shared-library.php:334
-msgid "Black"
-msgstr "Noir"
-
-#: config/lean-map.php:199
-msgid "Regular"
-msgstr "Normal"
-
-# @ js_composer
-#: config/lean-map.php:200 config/content/shortcode-vc-zigzag.php:70
-#: config/tta/shortcode-vc-tta-tour.php:130
-msgid "Large"
-msgstr "Large"
-
-# @ js_composer
-#: config/lean-map.php:201 config/content/shortcode-vc-zigzag.php:68
-#: config/social/shortcode-vc-googleplus.php:20
-#: config/tta/shortcode-vc-tta-tour.php:132
-msgid "Small"
-msgstr "Petit"
-
-# @ js_composer
-#: config/lean-map.php:202
-msgid "Mini"
-msgstr "Très petit"
-
-# @ js_composer
-#: config/lean-map.php:208 config/containers/shortcode-vc-column.php:40
-#: config/containers/shortcode-vc-column.php:55
-#: config/containers/shortcode-vc-row.php:114
-#: config/containers/shortcode-vc-row.php:129
-#: config/containers/shortcode-vc-section.php:75
-#: config/containers/shortcode-vc-section.php:90
-#: config/content/shortcode-vc-gallery.php:111
-#: config/content/shortcode-vc-images-carousel.php:39
-#: config/content/shortcode-vc-single-image.php:182
-#: config/content/vc-icon-element.php:184
-#: config/grids/class-vc-grids-common.php:490
-#: config/grids/class-vc-grids-common.php:547
-#: config/grids/class-vc-grids-common.php:861
-#: config/grids/class-vc-grids-common.php:918
-#: config/grids/class-vc-grids-common.php:1125
-#: config/grids/class-vc-grids-common.php:1174
-#: config/social/shortcode-vc-googleplus.php:34
-#: config/tta/shortcode-vc-tta-accordion.php:66
-#: config/tta/shortcode-vc-tta-accordion.php:86
-#: config/tta/shortcode-vc-tta-accordion.php:117
-#: config/tta/shortcode-vc-tta-accordion.php:145
-#: config/tta/shortcode-vc-tta-pageable.php:33
-#: config/tta/shortcode-vc-tta-pageable.php:61
-#: config/tta/shortcode-vc-tta-tabs.php:66
-#: config/tta/shortcode-vc-tta-tabs.php:87
-#: config/tta/shortcode-vc-tta-tabs.php:128
-#: config/tta/shortcode-vc-tta-tabs.php:156
-#: config/tta/shortcode-vc-tta-tour.php:66
-#: config/tta/shortcode-vc-tta-tour.php:87
-#: config/tta/shortcode-vc-tta-tour.php:142
-#: config/tta/shortcode-vc-tta-tour.php:170
-#: include/autoload/vc-image-filters.php:56
-#: include/params/animation_style/animation_style.php:41
-#: include/params/css_editor/css_editor.php:134
-#: include/params/vc_grid_item/shortcodes.php:14
-#: include/params/vc_grid_item/shortcodes.php:495
-#: include/templates/pages/vc-settings/default-template-post-type.tpl.php:27
-msgid "None"
-msgstr "Aucun"
-
-# @ js_composer
-#: config/lean-map.php:209
-msgid "Address book icon"
-msgstr "Icone de carnet d'adresse"
-
-# @ js_composer
-#: config/lean-map.php:210
-msgid "Alarm clock icon"
-msgstr "Icône d'alarme"
-
-# @ js_composer
-#: config/lean-map.php:211
-msgid "Anchor icon"
-msgstr "Icône d'ancre"
-
-# @ js_composer
-#: config/lean-map.php:212
-msgid "Application Image icon"
-msgstr "Icône d'application"
-
-# @ js_composer
-#: config/lean-map.php:213
-msgid "Arrow icon"
-msgstr "Icône de flèche"
-
-# @ js_composer
-#: config/lean-map.php:214
-msgid "Asterisk icon"
-msgstr "Icône d’astérisque"
-
-# @ js_composer
-#: config/lean-map.php:215
-msgid "Hammer icon"
-msgstr "Icône de marteau"
-
-# @ js_composer
-#: config/lean-map.php:216
-msgid "Balloon icon"
-msgstr "Icône de bulle"
-
-# @ js_composer
-#: config/lean-map.php:217
-msgid "Balloon Buzz icon"
-msgstr "Icône de bulle de buzz"
-
-# @ js_composer
-#: config/lean-map.php:218
-msgid "Balloon Facebook icon"
-msgstr "Bulle avec icône Facebook"
-
-# @ js_composer
-#: config/lean-map.php:219
-msgid "Balloon Twitter icon"
-msgstr "Bulle avec icône Twitter"
-
-# @ js_composer
-#: config/lean-map.php:220
-msgid "Battery icon"
-msgstr "Icône de batterie"
-
-# @ js_composer
-#: config/lean-map.php:221
-msgid "Binocular icon"
-msgstr "Icône de jumelles"
-
-# @ js_composer
-#: config/lean-map.php:222
-msgid "Document Excel icon"
-msgstr "Icône de document Excel"
-
-# @ js_composer
-#: config/lean-map.php:223
-msgid "Document Image icon"
-msgstr "Icône de fichier image"
-
-# @ js_composer
-#: config/lean-map.php:224
-msgid "Document Music icon"
-msgstr "Icône de fichier audio"
-
-# @ js_composer
-#: config/lean-map.php:225
-msgid "Document Office icon"
-msgstr "Icône de fichier Office"
-
-# @ js_composer
-#: config/lean-map.php:226
-msgid "Document PDF icon"
-msgstr "Icône de document PDF"
-
-# @ js_composer
-#: config/lean-map.php:227
-msgid "Document Powerpoint icon"
-msgstr "Icône de fichier Powerpoint"
-
-# @ js_composer
-#: config/lean-map.php:228
-msgid "Document Word icon"
-msgstr "Icône de document Word"
-
-# @ js_composer
-#: config/lean-map.php:229
-msgid "Bookmark icon"
-msgstr "Icône de marque page"
-
-# @ js_composer
-#: config/lean-map.php:230
-msgid "Camcorder icon"
-msgstr "Icône de caméra"
-
-# @ js_composer
-#: config/lean-map.php:231
-msgid "Camera icon"
-msgstr "Icône d’appareil photo"
-
-# @ js_composer
-#: config/lean-map.php:232
-msgid "Chart icon"
-msgstr "Icône de graphique"
-
-# @ js_composer
-#: config/lean-map.php:233
-msgid "Chart pie icon"
-msgstr "Icône camenbert"
-
-# @ js_composer
-#: config/lean-map.php:234
-msgid "Clock icon"
-msgstr "Icône de réveil"
-
-# @ js_composer
-#: config/lean-map.php:235
-msgid "Fire icon"
-msgstr "Icône de flamme"
-
-# @ js_composer
-#: config/lean-map.php:236
-msgid "Heart icon"
-msgstr "Icône de cœur"
-
-# @ js_composer
-#: config/lean-map.php:237
-msgid "Mail icon"
-msgstr "Icône mail"
-
-# @ js_composer
-#: config/lean-map.php:238
-msgid "Play icon"
-msgstr "Icône de lecture"
-
-# @ js_composer
-#: config/lean-map.php:239
-msgid "Shield icon"
-msgstr "Icône de bouclier"
-
-# @ js_composer
-#: config/lean-map.php:240
-msgid "Video icon"
-msgstr "Icône vidéo"
-
-# @ js_composer
-#: config/templates.php:13
-msgid "Landing Page"
-msgstr "Page d’accueil"
-
-# @ js_composer
-#: config/templates.php:23
-msgid "Call to Action Page"
-msgstr "Page d'appel à action"
-
-# @ js_composer
-#: config/templates.php:33
-msgid "Feature List"
-msgstr "Liste des fonctionnalités"
-
-# @ js_composer
-#: config/templates.php:43
-msgid "Description Page"
-msgstr "Page de description"
-
-# @ js_composer
-#: config/templates.php:53
-msgid "Service List"
-msgstr "Liste des services"
-
-# @ js_composer
-#: config/templates.php:63
-msgid "Product Page"
-msgstr "Page de produits"
-
-#: config/templates.php:72
-msgid "FAQ section"
-msgstr "Section FAQ"
-
-#: config/templates.php:82
-msgid "About section"
-msgstr "Section à propos"
-
-#: config/templates.php:92
-msgid "About with features"
-msgstr ""
-
-#: config/templates.php:102
-msgid "Three image description"
-msgstr ""
-
-#: config/templates.php:112
-msgid "News list"
-msgstr "Liste des informations"
-
-#: config/templates.php:122
-msgid "Product description"
-msgstr "Description du produit"
-
-#: config/templates.php:132
-msgid "Description with accordion"
-msgstr "Description avec accordéon"
-
-#: config/templates.php:144
-msgid "Two column list"
-msgstr "Liste à deux colonnes"
-
-#: config/templates.php:154
-msgid "About with tour section"
-msgstr ""
-
-#: config/templates.php:168
-msgid "Rounded image description"
-msgstr ""
-
-#: config/templates.php:178
-msgid "Description with success message"
-msgstr ""
-
-#: config/templates.php:188
-msgid "Images with tab description"
-msgstr ""
-
-#: config/templates.php:198
-msgid "Square on background"
-msgstr ""
-
-#: config/templates.php:208
-msgid "Product description with tabs"
-msgstr ""
-
-#: config/templates.php:218
-msgid "Description with headings"
-msgstr ""
-
-#: config/templates.php:228
-msgid "Video with description"
-msgstr "Vidéo avec description"
-
-#: config/templates.php:238
-msgid "Description with buttons"
-msgstr ""
-
-#: config/templates.php:248
-msgid "Map and Contacts"
-msgstr "Carte et contacts"
-
-#: config/templates.php:258
-msgid "Help section"
-msgstr "Section Aide"
-
-#: config/templates.php:268
-msgid "Screen description"
-msgstr "Description de l'écran"
-
-#: config/templates.php:278
-msgid "Description with round images"
-msgstr ""
-
-#: config/templates.php:288
-msgid "FAQ in three columns"
-msgstr "FAQ en trois colonnes"
-
-#: config/templates.php:298
-msgid "Centre description"
-msgstr ""
-
-#: config/templates.php:308
-msgid "Description with gallery"
-msgstr "Description avec galerie"
-
-#: config/templates.php:318
-msgid "Centre description with image"
-msgstr ""
-
-#: config/templates.php:328
-msgid "Description with thumbnails"
-msgstr ""
-
-#: config/templates.php:338
-msgid "About with left gallery"
-msgstr ""
-
-#: config/templates.php:348
-msgid "Five image layout"
-msgstr ""
-
-#: config/templates.php:358
-msgid "Accordion news list"
-msgstr ""
-
-#: config/templates.php:368
-msgid "Product with social icons"
-msgstr ""
-
-#: config/templates.php:378
-msgid "Complex news layout"
-msgstr ""
-
-#: config/templates.php:388
-msgid "Product list with CTA"
-msgstr ""
-
-#: config/templates.php:398
-msgid "Intro with features"
-msgstr ""
-
-#: config/templates.php:408
-msgid "Image gallery with description"
-msgstr ""
-
-#: config/templates.php:418
-msgid "Team members"
-msgstr "Membres de l’équipe"
-
-#: config/templates.php:428
-msgid "Large image with thumbnails"
-msgstr ""
-
-#: config/templates.php:438
-msgid "Complex news layout II"
-msgstr ""
-
-#: config/templates.php:448
-msgid "Service description layout"
-msgstr ""
-
-#: config/templates.php:458
-msgid "Articles with headings"
-msgstr "Articles avec en-têtes"
-
-#: config/templates.php:476
-msgid "Call to Action section"
-msgstr "Section d’appel à action"
-
-#: config/templates.php:488
-msgid "Charts section"
-msgstr ""
-
-#: config/templates.php:506
-msgid "Chess Grid"
-msgstr "Grille d’échecs"
-
-#: config/templates.php:528
-msgid "Features and articles"
-msgstr ""
-
-#: config/templates.php:570
-msgid "Features and charts"
-msgstr ""
-
-#: config/templates.php:604
-msgid "Features with video parallax"
-msgstr ""
-
-#: config/templates.php:626
-msgid "Features with full width promo"
-msgstr ""
-
-#: config/templates.php:664
-msgid "Full height hero section"
-msgstr ""
-
-#: config/templates.php:678
-msgid "Full height with transparent block"
-msgstr ""
-
-#: config/templates.php:692
-msgid "Full height parallax"
-msgstr ""
-
-#: config/templates.php:702
-msgid "Header section with features"
-msgstr ""
-
-#: config/templates.php:733
-msgid "Helps with icons"
-msgstr ""
-
-#: config/templates.php:743
-msgid "Plain articles"
-msgstr ""
-
-#: config/templates.php:757
-msgid "Post portfolio"
-msgstr "Projet de portfolio"
-
-#: config/templates.php:767
-msgid "Product introduction"
-msgstr "Introduction de produit"
-
-#: config/templates.php:793
-msgid "Services with block buttons"
-msgstr ""
-
-#: config/templates.php:815
-msgid "Tabs with features"
-msgstr "Onglets avec fonctionnalités"
-
-#: config/templates.php:837
-msgid "Video section"
-msgstr "Section vidéo"
-
-#: config/templates.php:851
-msgid "Video promo"
-msgstr "Vidéo promo"
-
-#: config/templates.php:861
-msgid "Equal Feature List"
-msgstr ""
-
-#: config/templates.php:871
-msgid "Parallax Introduction"
-msgstr ""
-
-#: config/templates.php:881
-msgid "Three Informative Blocks"
-msgstr ""
-
-#: config/templates.php:892
-msgid "Description Articles"
-msgstr ""
-
-#: config/templates.php:902
-msgid "Full Height Features"
-msgstr ""
-
-#: config/templates.php:912
-msgid "Business Description"
-msgstr ""
-
-#: config/templates.php:922
-msgid "Article Hero Image"
-msgstr ""
-
-#: config/templates.php:932
-msgid "My Team Members"
-msgstr "Membres de l’équipe"
-
-#: config/templates.php:942
-msgid "Hero Image With Description"
-msgstr ""
-
-#: config/templates.php:952
-msgid "Description with Image on Background"
-msgstr ""
-
-#: config/templates.php:962
-msgid "Three Image with Article"
-msgstr ""
 
 #: config/buttons/shortcode-vc-btn.php:27
 #: config/content/shortcode-vc-message.php:156
@@ -893,10 +154,10 @@ msgstr "3D"
 #: include/params/sorted_list/sorted_list.php:97
 #: include/params/vc_grid_item/shortcodes.php:19
 #: include/params/vc_grid_item/shortcodes.php:246
-#: include/templates/teaser.html.php:36 include/templates/teaser.html.php:60
 #: include/templates/pages/partials/vc-roles-parts/_post_types.tpl.php:15
 #: include/templates/pages/partials/vc-roles-parts/_settings.tpl.php:18
 #: include/templates/pages/partials/vc-roles-parts/_shortcodes.tpl.php:33
+#: include/templates/teaser.html.php:36 include/templates/teaser.html.php:60
 msgid "Custom"
 msgstr "Personnalisé"
 
@@ -1457,11 +718,11 @@ msgstr ""
 #: config/wp/shortcode-vc-wp-rss.php:77 config/wp/shortcode-vc-wp-search.php:29
 #: config/wp/shortcode-vc-wp-tagcloud.php:52
 #: config/wp/shortcode-vc-wp-text.php:35
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:71
+#: include/classes/vendors/plugins/acf/shortcode.php:67
 #: include/classes/vendors/plugins/class-vc-vendor-layerslider.php:156
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:79
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:147
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:71
-#: include/classes/vendors/plugins/acf/shortcode.php:67
 #: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:94
 #: include/params/vc_grid_item/shortcodes.php:61
 #: include/params/vc_grid_item/shortcodes.php:180
@@ -1536,11 +797,11 @@ msgstr "Nom de la classe additionnelle"
 #: config/wp/shortcode-vc-wp-rss.php:79 config/wp/shortcode-vc-wp-search.php:31
 #: config/wp/shortcode-vc-wp-tagcloud.php:54
 #: config/wp/shortcode-vc-wp-text.php:37
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:73
+#: include/classes/vendors/plugins/acf/shortcode.php:69
 #: include/classes/vendors/plugins/class-vc-vendor-layerslider.php:158
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:81
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:149
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:73
-#: include/classes/vendors/plugins/acf/shortcode.php:69
 #: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:96
 #: include/params/vc_grid_item/shortcodes.php:63
 #: include/params/vc_grid_item/shortcodes.php:182
@@ -1731,13 +992,13 @@ msgstr "Bouton"
 #: config/tta/shortcode-vc-tta-tour.php:15
 #: include/autoload/vendors/gravity_forms.php:35
 #: include/classes/settings/class-vc-automapper.php:338
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:35
+#: include/classes/vendors/plugins/acf/shortcode.php:34
 #: include/classes/vendors/plugins/class-vc-vendor-contact-form7.php:56
 #: include/classes/vendors/plugins/class-vc-vendor-layerslider.php:136
 #: include/classes/vendors/plugins/class-vc-vendor-ninja-forms.php:40
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:59
 #: include/classes/vendors/plugins/class-vc-vendor-revslider.php:127
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:35
-#: include/classes/vendors/plugins/acf/shortcode.php:34
 #: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:11
 #: include/params/vc_grid_item/shortcodes.php:170
 #: include/params/vc_grid_item/shortcodes.php:195
@@ -1874,7 +1135,7 @@ msgstr ""
 #: config/deprecated/shortcode-vc-cta-button2.php:39
 #: config/social/shortcode-vc-googleplus.php:41
 #: include/params/vc_grid_item/shortcodes.php:339
-#: include/templates/params/column_offset/template.tpl.php:30
+#: include/templates/params/column_offset/template.tpl.php:37
 msgid "Width"
 msgstr "Largeur"
 
@@ -2180,6 +1441,47 @@ msgstr "Ajouter un lien Youtube."
 msgid "Parallax"
 msgstr "Parallaxe"
 
+# @ js_composer
+#: config/containers/shortcode-vc-column.php:40
+#: config/containers/shortcode-vc-column.php:55
+#: config/containers/shortcode-vc-row.php:114
+#: config/containers/shortcode-vc-row.php:129
+#: config/containers/shortcode-vc-section.php:75
+#: config/containers/shortcode-vc-section.php:90
+#: config/content/shortcode-vc-gallery.php:111
+#: config/content/shortcode-vc-images-carousel.php:39
+#: config/content/shortcode-vc-single-image.php:182
+#: config/content/vc-icon-element.php:184
+#: config/grids/class-vc-grids-common.php:490
+#: config/grids/class-vc-grids-common.php:547
+#: config/grids/class-vc-grids-common.php:861
+#: config/grids/class-vc-grids-common.php:918
+#: config/grids/class-vc-grids-common.php:1125
+#: config/grids/class-vc-grids-common.php:1174 config/lean-map.php:208
+#: config/social/shortcode-vc-googleplus.php:34
+#: config/tta/shortcode-vc-tta-accordion.php:66
+#: config/tta/shortcode-vc-tta-accordion.php:86
+#: config/tta/shortcode-vc-tta-accordion.php:117
+#: config/tta/shortcode-vc-tta-accordion.php:145
+#: config/tta/shortcode-vc-tta-pageable.php:33
+#: config/tta/shortcode-vc-tta-pageable.php:61
+#: config/tta/shortcode-vc-tta-tabs.php:66
+#: config/tta/shortcode-vc-tta-tabs.php:87
+#: config/tta/shortcode-vc-tta-tabs.php:128
+#: config/tta/shortcode-vc-tta-tabs.php:156
+#: config/tta/shortcode-vc-tta-tour.php:66
+#: config/tta/shortcode-vc-tta-tour.php:87
+#: config/tta/shortcode-vc-tta-tour.php:142
+#: config/tta/shortcode-vc-tta-tour.php:170
+#: include/autoload/vc-image-filters.php:56
+#: include/params/animation_style/animation_style.php:41
+#: include/params/css_editor/css_editor.php:134
+#: include/params/vc_grid_item/shortcodes.php:14
+#: include/params/vc_grid_item/shortcodes.php:495
+#: include/templates/pages/vc-settings/default-template-post-type.tpl.php:27
+msgid "None"
+msgstr "Aucun"
+
 #: config/containers/shortcode-vc-column.php:41
 #: config/containers/shortcode-vc-column.php:56
 #: config/containers/shortcode-vc-row.php:115
@@ -2303,7 +1605,7 @@ msgstr "Position du contenu"
 #: config/content/shortcode-vc-toggle.php:57
 #: config/grids/class-vc-grids-common.php:1126
 #: config/grids/class-vc-grids-common.php:1175
-#: include/helpers/helpers_api.php:500
+#: include/helpers/helpers_api.php:498
 msgid "Default"
 msgstr "Par défaut"
 
@@ -3230,10 +2532,10 @@ msgstr "Deux"
 #: config/grids/class-vc-grids-common.php:277
 #: config/tta/shortcode-vc-tta-section.php:48
 #: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:109
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1272
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1335
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1449
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1280
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1343
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1457
 #: include/params/loop/loop.php:446
 #: include/params/sorted_list/sorted_list.php:91
 #: include/params/vc_link/vc_link.php:18
@@ -3542,6 +2844,27 @@ msgid "Link"
 msgstr "Lien"
 
 # @ js_composer
+#: config/content/shortcode-vc-posts-slider.php:90
+#: config/deprecated/shortcode-vc-posts-grid.php:9 config/lean-map.php:130
+#: include/params/sorted_list/sorted_list.php:100
+msgid "Link to post"
+msgstr "Lien vers l'article"
+
+# @ js_composer
+#: config/content/shortcode-vc-posts-slider.php:91
+#: config/deprecated/shortcode-vc-posts-grid.php:17 config/lean-map.php:138
+msgid "Link to bigger image"
+msgstr "Lien vers une plus grande image"
+
+# @ js_composer
+#: config/content/shortcode-vc-posts-slider.php:93
+#: config/deprecated/shortcode-vc-posts-grid.php:13 config/lean-map.php:134
+#: include/params/sorted_list/sorted_list.php:99
+#: include/templates/teaser.html.php:22 include/templates/teaser.html.php:43
+msgid "No link"
+msgstr "Pas de lien"
+
+# @ js_composer
 #: config/content/shortcode-vc-posts-slider.php:95
 msgid "Link type."
 msgstr "Type de lien."
@@ -3630,8 +2953,8 @@ msgstr "Date"
 # @ js_composer
 #: config/content/shortcode-vc-posts-slider.php:134
 #: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:107
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1464
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1489
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
 msgid "ID"
 msgstr "ID"
 
@@ -4234,11 +3557,24 @@ msgid "Extra small"
 msgstr "Très petit"
 
 # @ js_composer
+#: config/content/shortcode-vc-zigzag.php:68 config/lean-map.php:201
+#: config/social/shortcode-vc-googleplus.php:20
+#: config/tta/shortcode-vc-tta-tour.php:132
+msgid "Small"
+msgstr "Petit"
+
+# @ js_composer
 #: config/content/shortcode-vc-zigzag.php:69
 #: config/social/shortcode-vc-googleplus.php:21
 #: config/tta/shortcode-vc-tta-tour.php:131
 msgid "Medium"
 msgstr "Moyen"
+
+# @ js_composer
+#: config/content/shortcode-vc-zigzag.php:70 config/lean-map.php:200
+#: config/tta/shortcode-vc-tta-tour.php:130
+msgid "Large"
+msgstr "Large"
 
 #: config/content/shortcode-vc-zigzag.php:71
 #: config/tta/shortcode-vc-tta-tour.php:129
@@ -4766,8 +4102,8 @@ msgid "Load More Button"
 msgstr ""
 
 #: config/grids/class-vc-grids-common.php:33
-#: include/classes/shortcodes/vc-basic-grid.php:92
 #: include/classes/shortcodes/paginator/class-vc-pageable.php:55
+#: include/classes/shortcodes/vc-basic-grid.php:92
 msgid "Load more"
 msgstr ""
 
@@ -4962,7 +4298,7 @@ msgstr ""
 
 # @ js_composer
 #: config/grids/class-vc-grids-common.php:333
-#: include/templates/params/column_offset/template.tpl.php:27
+#: include/templates/params/column_offset/template.tpl.php:34
 msgid "Offset"
 msgstr "Décalage"
 
@@ -5454,6 +4790,364 @@ msgid "Media grid from Media Library"
 msgstr ""
 
 # @ js_composer
+#: config/lean-map.php:121
+msgid "Same window"
+msgstr "Même fenêtre"
+
+# @ js_composer
+#: config/lean-map.php:122
+msgid "New window"
+msgstr "Nouvelle fenêtre"
+
+#: config/lean-map.php:145
+msgid "Alert"
+msgstr "Alerte"
+
+#: config/lean-map.php:146
+msgid "Info"
+msgstr "Informations"
+
+#: config/lean-map.php:147
+msgid "Tick"
+msgstr "Coche"
+
+#: config/lean-map.php:148
+msgid "Explanation"
+msgstr "Explication"
+
+#: config/lean-map.php:149
+msgid "Address book"
+msgstr "Carnet d'adresses"
+
+#: config/lean-map.php:150
+msgid "Alarm clock"
+msgstr "Réveil"
+
+#: config/lean-map.php:151
+msgid "Anchor"
+msgstr "Ancre"
+
+#: config/lean-map.php:152
+msgid "Application Image"
+msgstr "Icône d'application"
+
+#: config/lean-map.php:153
+msgid "Arrow"
+msgstr "Flèche"
+
+#: config/lean-map.php:154
+msgid "Asterisk"
+msgstr "Astérisque"
+
+#: config/lean-map.php:155
+msgid "Hammer"
+msgstr "Marteau"
+
+#: config/lean-map.php:156
+msgid "Balloon"
+msgstr "Ballon"
+
+#: config/lean-map.php:157
+msgid "Balloon Buzz"
+msgstr "Bulle buzz"
+
+#: config/lean-map.php:158
+msgid "Balloon Facebook"
+msgstr "Bulle Facebook"
+
+#: config/lean-map.php:159
+msgid "Balloon Twitter"
+msgstr "Bulle Twitter"
+
+#: config/lean-map.php:160
+msgid "Battery"
+msgstr "Pile"
+
+#: config/lean-map.php:161
+msgid "Binocular"
+msgstr "Jumelles"
+
+#: config/lean-map.php:162
+msgid "Document Excel"
+msgstr "Fichier Excel"
+
+#: config/lean-map.php:163
+msgid "Document Image"
+msgstr "Fichier image"
+
+#: config/lean-map.php:164
+msgid "Document Music"
+msgstr "Fichier audio"
+
+#: config/lean-map.php:165
+msgid "Document Office"
+msgstr "Document Office"
+
+#: config/lean-map.php:166
+msgid "Document PDF"
+msgstr "Fichier PDF"
+
+#: config/lean-map.php:167
+msgid "Document Powerpoint"
+msgstr "Fichier PowerPoint"
+
+#: config/lean-map.php:168
+msgid "Document Word"
+msgstr "Fichier Word"
+
+#: config/lean-map.php:169
+msgid "Bookmark"
+msgstr "Favori"
+
+#: config/lean-map.php:170
+msgid "Camcorder"
+msgstr "Caméscope"
+
+#: config/lean-map.php:171
+msgid "Camera"
+msgstr "Appareil photo"
+
+#: config/lean-map.php:172
+msgid "Chart"
+msgstr "Graphique"
+
+#: config/lean-map.php:173
+msgid "Chart pie"
+msgstr "Camembert"
+
+#: config/lean-map.php:174
+msgid "Clock"
+msgstr "Horloge"
+
+#: config/lean-map.php:175
+msgid "Fire"
+msgstr "Incendie"
+
+#: config/lean-map.php:176
+msgid "Heart"
+msgstr "Cœur"
+
+#: config/lean-map.php:177
+msgid "Mail"
+msgstr "Enveloppe"
+
+#: config/lean-map.php:178
+msgid "Play"
+msgstr "Jeu"
+
+#: config/lean-map.php:179
+msgid "Shield"
+msgstr "Bouclier"
+
+#: config/lean-map.php:180
+msgid "Video"
+msgstr "Vidéo"
+
+# @ js_composer
+#: config/lean-map.php:186 include/classes/core/class-vc-shared-library.php:335
+msgid "Grey"
+msgstr "Gris"
+
+# @ js_composer
+#: config/lean-map.php:187 include/classes/core/class-vc-shared-library.php:326
+msgid "Blue"
+msgstr "Bleu"
+
+# @ js_composer
+#: config/lean-map.php:188 include/classes/core/class-vc-shared-library.php:327
+msgid "Turquoise"
+msgstr "Turquoise"
+
+# @ js_composer
+#: config/lean-map.php:189 include/classes/core/class-vc-shared-library.php:338
+msgid "Green"
+msgstr "Vert"
+
+# @ js_composer
+#: config/lean-map.php:190 include/classes/core/class-vc-shared-library.php:336
+msgid "Orange"
+msgstr "Orange"
+
+# @ js_composer
+#: config/lean-map.php:191
+msgid "Red"
+msgstr "Rouge"
+
+# @ js_composer
+#: config/lean-map.php:192 include/classes/core/class-vc-shared-library.php:334
+msgid "Black"
+msgstr "Noir"
+
+#: config/lean-map.php:199
+msgid "Regular"
+msgstr "Normal"
+
+# @ js_composer
+#: config/lean-map.php:202
+msgid "Mini"
+msgstr "Très petit"
+
+# @ js_composer
+#: config/lean-map.php:209
+msgid "Address book icon"
+msgstr "Icone de carnet d'adresse"
+
+# @ js_composer
+#: config/lean-map.php:210
+msgid "Alarm clock icon"
+msgstr "Icône d'alarme"
+
+# @ js_composer
+#: config/lean-map.php:211
+msgid "Anchor icon"
+msgstr "Icône d'ancre"
+
+# @ js_composer
+#: config/lean-map.php:212
+msgid "Application Image icon"
+msgstr "Icône d'application"
+
+# @ js_composer
+#: config/lean-map.php:213
+msgid "Arrow icon"
+msgstr "Icône de flèche"
+
+# @ js_composer
+#: config/lean-map.php:214
+msgid "Asterisk icon"
+msgstr "Icône d’astérisque"
+
+# @ js_composer
+#: config/lean-map.php:215
+msgid "Hammer icon"
+msgstr "Icône de marteau"
+
+# @ js_composer
+#: config/lean-map.php:216
+msgid "Balloon icon"
+msgstr "Icône de bulle"
+
+# @ js_composer
+#: config/lean-map.php:217
+msgid "Balloon Buzz icon"
+msgstr "Icône de bulle de buzz"
+
+# @ js_composer
+#: config/lean-map.php:218
+msgid "Balloon Facebook icon"
+msgstr "Bulle avec icône Facebook"
+
+# @ js_composer
+#: config/lean-map.php:219
+msgid "Balloon Twitter icon"
+msgstr "Bulle avec icône Twitter"
+
+# @ js_composer
+#: config/lean-map.php:220
+msgid "Battery icon"
+msgstr "Icône de batterie"
+
+# @ js_composer
+#: config/lean-map.php:221
+msgid "Binocular icon"
+msgstr "Icône de jumelles"
+
+# @ js_composer
+#: config/lean-map.php:222
+msgid "Document Excel icon"
+msgstr "Icône de document Excel"
+
+# @ js_composer
+#: config/lean-map.php:223
+msgid "Document Image icon"
+msgstr "Icône de fichier image"
+
+# @ js_composer
+#: config/lean-map.php:224
+msgid "Document Music icon"
+msgstr "Icône de fichier audio"
+
+# @ js_composer
+#: config/lean-map.php:225
+msgid "Document Office icon"
+msgstr "Icône de fichier Office"
+
+# @ js_composer
+#: config/lean-map.php:226
+msgid "Document PDF icon"
+msgstr "Icône de document PDF"
+
+# @ js_composer
+#: config/lean-map.php:227
+msgid "Document Powerpoint icon"
+msgstr "Icône de fichier Powerpoint"
+
+# @ js_composer
+#: config/lean-map.php:228
+msgid "Document Word icon"
+msgstr "Icône de document Word"
+
+# @ js_composer
+#: config/lean-map.php:229
+msgid "Bookmark icon"
+msgstr "Icône de marque page"
+
+# @ js_composer
+#: config/lean-map.php:230
+msgid "Camcorder icon"
+msgstr "Icône de caméra"
+
+# @ js_composer
+#: config/lean-map.php:231
+msgid "Camera icon"
+msgstr "Icône d’appareil photo"
+
+# @ js_composer
+#: config/lean-map.php:232
+msgid "Chart icon"
+msgstr "Icône de graphique"
+
+# @ js_composer
+#: config/lean-map.php:233
+msgid "Chart pie icon"
+msgstr "Icône camenbert"
+
+# @ js_composer
+#: config/lean-map.php:234
+msgid "Clock icon"
+msgstr "Icône de réveil"
+
+# @ js_composer
+#: config/lean-map.php:235
+msgid "Fire icon"
+msgstr "Icône de flamme"
+
+# @ js_composer
+#: config/lean-map.php:236
+msgid "Heart icon"
+msgstr "Icône de cœur"
+
+# @ js_composer
+#: config/lean-map.php:237
+msgid "Mail icon"
+msgstr "Icône mail"
+
+# @ js_composer
+#: config/lean-map.php:238
+msgid "Play icon"
+msgstr "Icône de lecture"
+
+# @ js_composer
+#: config/lean-map.php:239
+msgid "Shield icon"
+msgstr "Icône de bouclier"
+
+# @ js_composer
+#: config/lean-map.php:240
+msgid "Video icon"
+msgstr "Icône vidéo"
+
+# @ js_composer
 #: config/social/shortcode-vc-facebook.php:7
 msgid "Facebook Like"
 msgstr "J’aime Facebook"
@@ -5823,6 +5517,312 @@ msgstr "Barre latérale"
 #: config/structure/shortcode-vc-widget-sidebar.php:25
 msgid "Select widget area to display."
 msgstr "Sélectionnez la zone widget à afficher."
+
+# @ js_composer
+#: config/templates.php:13
+msgid "Landing Page"
+msgstr "Page d’accueil"
+
+# @ js_composer
+#: config/templates.php:23
+msgid "Call to Action Page"
+msgstr "Page d'appel à action"
+
+# @ js_composer
+#: config/templates.php:33
+msgid "Feature List"
+msgstr "Liste des fonctionnalités"
+
+# @ js_composer
+#: config/templates.php:43
+msgid "Description Page"
+msgstr "Page de description"
+
+# @ js_composer
+#: config/templates.php:53
+msgid "Service List"
+msgstr "Liste des services"
+
+# @ js_composer
+#: config/templates.php:63
+msgid "Product Page"
+msgstr "Page de produits"
+
+#: config/templates.php:72
+msgid "FAQ section"
+msgstr "Section FAQ"
+
+#: config/templates.php:82
+msgid "About section"
+msgstr "Section à propos"
+
+#: config/templates.php:92
+msgid "About with features"
+msgstr ""
+
+#: config/templates.php:102
+msgid "Three image description"
+msgstr ""
+
+#: config/templates.php:112
+msgid "News list"
+msgstr "Liste des informations"
+
+#: config/templates.php:122
+msgid "Product description"
+msgstr "Description du produit"
+
+#: config/templates.php:132
+msgid "Description with accordion"
+msgstr "Description avec accordéon"
+
+#: config/templates.php:144
+msgid "Two column list"
+msgstr "Liste à deux colonnes"
+
+#: config/templates.php:154
+msgid "About with tour section"
+msgstr ""
+
+#: config/templates.php:168
+msgid "Rounded image description"
+msgstr ""
+
+#: config/templates.php:178
+msgid "Description with success message"
+msgstr ""
+
+#: config/templates.php:188
+msgid "Images with tab description"
+msgstr ""
+
+#: config/templates.php:198
+msgid "Square on background"
+msgstr ""
+
+#: config/templates.php:208
+msgid "Product description with tabs"
+msgstr ""
+
+#: config/templates.php:218
+msgid "Description with headings"
+msgstr ""
+
+#: config/templates.php:228
+msgid "Video with description"
+msgstr "Vidéo avec description"
+
+#: config/templates.php:238
+msgid "Description with buttons"
+msgstr ""
+
+#: config/templates.php:248
+msgid "Map and Contacts"
+msgstr "Carte et contacts"
+
+#: config/templates.php:258
+msgid "Help section"
+msgstr "Section Aide"
+
+#: config/templates.php:268
+msgid "Screen description"
+msgstr "Description de l'écran"
+
+#: config/templates.php:278
+msgid "Description with round images"
+msgstr ""
+
+#: config/templates.php:288
+msgid "FAQ in three columns"
+msgstr "FAQ en trois colonnes"
+
+#: config/templates.php:298
+msgid "Centre description"
+msgstr ""
+
+#: config/templates.php:308
+msgid "Description with gallery"
+msgstr "Description avec galerie"
+
+#: config/templates.php:318
+msgid "Centre description with image"
+msgstr ""
+
+#: config/templates.php:328
+msgid "Description with thumbnails"
+msgstr ""
+
+#: config/templates.php:338
+msgid "About with left gallery"
+msgstr ""
+
+#: config/templates.php:348
+msgid "Five image layout"
+msgstr ""
+
+#: config/templates.php:358
+msgid "Accordion news list"
+msgstr ""
+
+#: config/templates.php:368
+msgid "Product with social icons"
+msgstr ""
+
+#: config/templates.php:378
+msgid "Complex news layout"
+msgstr ""
+
+#: config/templates.php:388
+msgid "Product list with CTA"
+msgstr ""
+
+#: config/templates.php:398
+msgid "Intro with features"
+msgstr ""
+
+#: config/templates.php:408
+msgid "Image gallery with description"
+msgstr ""
+
+#: config/templates.php:418
+msgid "Team members"
+msgstr "Membres de l’équipe"
+
+#: config/templates.php:428
+msgid "Large image with thumbnails"
+msgstr ""
+
+#: config/templates.php:438
+msgid "Complex news layout II"
+msgstr ""
+
+#: config/templates.php:448
+msgid "Service description layout"
+msgstr ""
+
+#: config/templates.php:458
+msgid "Articles with headings"
+msgstr "Articles avec en-têtes"
+
+#: config/templates.php:476
+msgid "Call to Action section"
+msgstr "Section d’appel à action"
+
+#: config/templates.php:488
+msgid "Charts section"
+msgstr ""
+
+#: config/templates.php:506
+msgid "Chess Grid"
+msgstr "Grille d’échecs"
+
+#: config/templates.php:528
+msgid "Features and articles"
+msgstr ""
+
+#: config/templates.php:570
+msgid "Features and charts"
+msgstr ""
+
+#: config/templates.php:604
+msgid "Features with video parallax"
+msgstr ""
+
+#: config/templates.php:626
+msgid "Features with full width promo"
+msgstr ""
+
+#: config/templates.php:664
+msgid "Full height hero section"
+msgstr ""
+
+#: config/templates.php:678
+msgid "Full height with transparent block"
+msgstr ""
+
+#: config/templates.php:692
+msgid "Full height parallax"
+msgstr ""
+
+#: config/templates.php:702
+msgid "Header section with features"
+msgstr ""
+
+#: config/templates.php:733
+msgid "Helps with icons"
+msgstr ""
+
+#: config/templates.php:743
+msgid "Plain articles"
+msgstr ""
+
+#: config/templates.php:757
+msgid "Post portfolio"
+msgstr "Projet de portfolio"
+
+#: config/templates.php:767
+msgid "Product introduction"
+msgstr "Introduction de produit"
+
+#: config/templates.php:793
+msgid "Services with block buttons"
+msgstr ""
+
+#: config/templates.php:815
+msgid "Tabs with features"
+msgstr "Onglets avec fonctionnalités"
+
+#: config/templates.php:837
+msgid "Video section"
+msgstr "Section vidéo"
+
+#: config/templates.php:851
+msgid "Video promo"
+msgstr "Vidéo promo"
+
+#: config/templates.php:861
+msgid "Equal Feature List"
+msgstr ""
+
+#: config/templates.php:871
+msgid "Parallax Introduction"
+msgstr ""
+
+#: config/templates.php:881
+msgid "Three Informative Blocks"
+msgstr ""
+
+#: config/templates.php:892
+msgid "Description Articles"
+msgstr ""
+
+#: config/templates.php:902
+msgid "Full Height Features"
+msgstr ""
+
+#: config/templates.php:912
+msgid "Business Description"
+msgstr ""
+
+#: config/templates.php:922
+msgid "Article Hero Image"
+msgstr ""
+
+#: config/templates.php:932
+msgid "My Team Members"
+msgstr "Membres de l’équipe"
+
+#: config/templates.php:942
+msgid "Hero Image With Description"
+msgstr ""
+
+#: config/templates.php:952
+msgid "Description with Image on Background"
+msgstr ""
+
+#: config/templates.php:962
+msgid "Three Image with Article"
+msgstr ""
 
 # @ js_composer
 #: config/tta/shortcode-vc-tta-accordion.php:7
@@ -6595,6 +6595,53 @@ msgstr "Filtre d’image"
 msgid "Filter:"
 msgstr "Filtre :"
 
+#: include/autoload/vc-pages/page-design-options.php:40
+msgid "Important notice"
+msgstr "Remarque importante"
+
+#: include/autoload/vc-pages/page-design-options.php:42
+#: include/autoload/vc-pages/page-design-options.php:45
+msgid ""
+"You have an outdated version of WPBakery Page Builder Design Options. It is "
+"required to review and save it."
+msgstr ""
+"Vous disposez d'une version obsolète des réglages de WPBakery Éditeur de "
+"page. Il faut l'examiner et l'enregistrer."
+
+#: include/autoload/vc-pages/page-design-options.php:56
+msgid "Open Design Options"
+msgstr "Ouvrir les Options de style"
+
+#: include/autoload/vc-pages/page-role-manager.php:12
+msgid "Role Manager"
+msgstr "Gestion des rôles"
+
+#: include/autoload/vc-pages/page-role-manager.php:17
+msgid "Roles Manager"
+msgstr "Gestion des rôles"
+
+#: include/autoload/vc-pages/pages.php:60
+#: include/autoload/vc-pages/pages.php:78
+#: include/classes/core/class-vc-base.php:761
+#: include/classes/editors/class-vc-backend-editor.php:81
+#: include/classes/editors/navbar/class-vc-navbar.php:93
+#: include/classes/editors/navbar/class-vc-navbar.php:95
+msgid "WPBakery Page Builder"
+msgstr "Éditeur de page"
+
+#: include/autoload/vc-pages/welcome-screen.php:38
+msgid "About"
+msgstr "À propos"
+
+#: include/autoload/vc-pages/welcome-screen.php:92
+msgid "What's New"
+msgstr "Nouveautés"
+
+#: include/autoload/vc-pages/welcome-screen.php:94
+#: include/templates/pages/vc-welcome/vc-resources.php:9
+msgid "Resources"
+msgstr "Ressources"
+
 #: include/autoload/vc-pointers-backend-editor.php:29
 msgid "Welcome to WPBakery Page Builder"
 msgstr ""
@@ -6647,53 +6694,6 @@ msgid ""
 msgstr ""
 "N.B. Rendez-vous sur notre <a href=\"%s\" target=\"_blank\">Base de "
 "connaissance</a>."
-
-#: include/autoload/vc-pages/page-design-options.php:40
-msgid "Important notice"
-msgstr "Remarque importante"
-
-#: include/autoload/vc-pages/page-design-options.php:42
-#: include/autoload/vc-pages/page-design-options.php:45
-msgid ""
-"You have an outdated version of WPBakery Page Builder Design Options. It is "
-"required to review and save it."
-msgstr ""
-"Vous disposez d'une version obsolète des réglages de WPBakery Éditeur de "
-"page. Il faut l'examiner et l'enregistrer."
-
-#: include/autoload/vc-pages/page-design-options.php:56
-msgid "Open Design Options"
-msgstr "Ouvrir les Options de style"
-
-#: include/autoload/vc-pages/page-role-manager.php:12
-msgid "Role Manager"
-msgstr "Gestion des rôles"
-
-#: include/autoload/vc-pages/page-role-manager.php:17
-msgid "Roles Manager"
-msgstr "Gestion des rôles"
-
-#: include/autoload/vc-pages/pages.php:60
-#: include/autoload/vc-pages/pages.php:78
-#: include/classes/core/class-vc-base.php:761
-#: include/classes/editors/class-vc-backend-editor.php:81
-#: include/classes/editors/navbar/class-vc-navbar.php:93
-#: include/classes/editors/navbar/class-vc-navbar.php:95
-msgid "WPBakery Page Builder"
-msgstr "Éditeur de page"
-
-#: include/autoload/vc-pages/welcome-screen.php:38
-msgid "About"
-msgstr "À propos"
-
-#: include/autoload/vc-pages/welcome-screen.php:92
-msgid "What's New"
-msgstr "Nouveautés"
-
-#: include/autoload/vc-pages/welcome-screen.php:94
-#: include/templates/pages/vc-welcome/vc-resources.php:9
-msgid "Resources"
-msgstr "Ressources"
 
 # @ js_composer
 #: include/autoload/vendors/gravity_forms.php:21
@@ -7377,7 +7377,6 @@ msgstr "Modèles"
 
 # @ js_composer
 #: include/classes/editors/navbar/class-vc-navbar.php:175
-#: include/templates/editors/partials/backend_editor_footer.tpl.php:44
 msgid "Frontend"
 msgstr "Éditeur visuel"
 
@@ -8079,36 +8078,36 @@ msgid "Delete %s"
 msgstr "Supprimer %s"
 
 # @ js_composer
-#: include/classes/shortcodes/shortcodes.php:1133
+#: include/classes/shortcodes/shortcodes.php:1136
 #, php-format
 msgid "Append to this %s"
 msgstr "Ajouter à ces %s"
 
 # @ js_composer
-#: include/classes/shortcodes/shortcodes.php:1135
+#: include/classes/shortcodes/shortcodes.php:1138
 #, php-format
 msgid "Prepend to this %s"
 msgstr "Faire précéder à ces %s"
 
-#: include/classes/shortcodes/shortcodes.php:1138
+#: include/classes/shortcodes/shortcodes.php:1141
 #, php-format
 msgid "Move this %s"
 msgstr "Déplacer %s"
 
 # @ js_composer
-#: include/classes/shortcodes/shortcodes.php:1144
+#: include/classes/shortcodes/shortcodes.php:1147
 #, php-format
 msgid "Edit this %s"
 msgstr "Modifier ce %s"
 
 # @ js_composer
-#: include/classes/shortcodes/shortcodes.php:1145
+#: include/classes/shortcodes/shortcodes.php:1148
 #, php-format
 msgid "Clone this %s"
 msgstr "Dupliquer ce %s"
 
 # @ js_composer
-#: include/classes/shortcodes/shortcodes.php:1146
+#: include/classes/shortcodes/shortcodes.php:1149
 #, php-format
 msgid "Delete this %s"
 msgstr "Supprimer ce %s"
@@ -8258,8 +8257,8 @@ msgstr "Rétracter la ligne"
 
 # @ js_composer
 #: include/classes/shortcodes/vc-single-image.php:61
-#: include/params/default_params.php:309
 #: include/params/css_editor/css_editor.php:126
+#: include/params/default_params.php:309
 msgid "Add image"
 msgstr "Ajouter une image"
 
@@ -8304,6 +8303,91 @@ msgid ""
 msgstr ""
 "Pour recevoir des mises à jour, une activation est requise. Veuillez visiter "
 "%s pour activer WPBakery Éditeur de page."
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:18
+#: include/classes/vendors/plugins/acf/shortcode.php:18
+msgid "Field name"
+msgstr "Nom du champ"
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:22
+#: include/classes/vendors/plugins/acf/shortcode.php:22
+msgid "Select field from group."
+msgstr ""
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:32
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:36
+#: include/classes/vendors/plugins/acf/shortcode.php:31
+#: include/classes/vendors/plugins/acf/shortcode.php:35
+msgid "Advanced Custom Field"
+msgstr ""
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:42
+#: include/classes/vendors/plugins/acf/shortcode.php:39
+msgid "Field group"
+msgstr "Groupe de champs"
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:46
+#: include/classes/vendors/plugins/acf/shortcode.php:43
+msgid "Select field group."
+msgstr ""
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:52
+#: include/classes/vendors/plugins/acf/shortcode.php:48
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:73
+msgid "Show label"
+msgstr "Afficher l’étiquette"
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:55
+#: include/classes/vendors/plugins/acf/shortcode.php:51
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:77
+#: include/params/vc_grid_item/shortcodes.php:652
+msgid "Enter label to display before key value."
+msgstr ""
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:59
+#: include/classes/vendors/plugins/acf/shortcode.php:55
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:81
+msgid "Align"
+msgstr "Aligner"
+
+# @ js_composer
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:62
+#: include/classes/vendors/plugins/acf/shortcode.php:58
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:84
+#: include/params/font_container/font_container.php:91
+msgid "left"
+msgstr "gauche"
+
+# @ js_composer
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:63
+#: include/classes/vendors/plugins/acf/shortcode.php:59
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:85
+#: include/params/font_container/font_container.php:92
+msgid "right"
+msgstr "droite"
+
+# @ js_composer
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:64
+#: include/classes/vendors/plugins/acf/shortcode.php:60
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:86
+#: include/params/font_container/font_container.php:93
+msgid "center"
+msgstr "au centre"
+
+# @ js_composer
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:65
+#: include/classes/vendors/plugins/acf/shortcode.php:61
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:87
+#: include/params/font_container/font_container.php:94
+msgid "justify"
+msgstr "justifier"
+
+#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:67
+#: include/classes/vendors/plugins/acf/shortcode.php:63
+#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:90
+#: include/params/vc_grid_item/shortcodes.php:664
+msgid "Select alignment."
+msgstr "Sélectionnez l'alignement."
 
 # @ js_composer
 #: include/classes/vendors/plugins/class-vc-vendor-contact-form7.php:49
@@ -8735,206 +8819,121 @@ msgid ""
 "products are shown on a page. This will not add pagination to the shortcode. "
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1283
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1346
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1460
 msgid "Id"
 msgstr "ID"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1267
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1330
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1444
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
 msgid "Sku"
 msgstr "SKU"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Name"
 msgstr "Nom"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Slug"
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1463
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
 msgid "SKU"
 msgstr "Référence"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1465
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
 msgid "Price"
 msgstr "Prix"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1466
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
 msgid "Regular Price"
 msgstr "Prix de base"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1467
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
 msgid "Sale Price"
 msgstr "Prix soldé"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1468
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1476
 msgid "Price html"
 msgstr "Prix ​​HTML"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1469
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1477
 msgid "Reviews count"
 msgstr "Nombre d’avis"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1470
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1478
 msgid "Short description"
 msgstr "Description courte"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1479
 msgid "Dimensions"
 msgstr "Dimensions"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1480
 msgid "Rating count"
 msgstr "Nombre de notes"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1481
 msgid "Weight"
 msgstr "Poids"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1482
 msgid "Is on sale"
 msgstr "En solde"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1483
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1509
 msgid "Custom field"
 msgstr "Champ personnalisé"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1490
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
 msgid "Order number"
 msgstr "Commande"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1491
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
 msgid "Currency"
 msgstr "Monnaie"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1492
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
 msgid "Total"
 msgstr "Total"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1493
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
 msgid "Status"
 msgstr "Statut"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1494
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1502
 msgid "Payment method"
 msgstr "Méthode de paiement"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1495
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1503
 msgid "Billing address city"
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1496
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1504
 msgid "Billing address country"
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1505
 msgid "Shipping address city"
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1506
 msgid "Shipping address country"
 msgstr ""
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1507
 msgid "Customer Note"
 msgstr "Note du client"
 
-#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
+#: include/classes/vendors/plugins/class-vc-vendor-woocommerce.php:1508
 msgid "Customer API"
 msgstr "API client"
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:18
-#: include/classes/vendors/plugins/acf/shortcode.php:18
-msgid "Field name"
-msgstr "Nom du champ"
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:22
-#: include/classes/vendors/plugins/acf/shortcode.php:22
-msgid "Select field from group."
-msgstr ""
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:32
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:36
-#: include/classes/vendors/plugins/acf/shortcode.php:31
-#: include/classes/vendors/plugins/acf/shortcode.php:35
-msgid "Advanced Custom Field"
-msgstr ""
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:42
-#: include/classes/vendors/plugins/acf/shortcode.php:39
-msgid "Field group"
-msgstr "Groupe de champs"
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:46
-#: include/classes/vendors/plugins/acf/shortcode.php:43
-msgid "Select field group."
-msgstr ""
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:52
-#: include/classes/vendors/plugins/acf/shortcode.php:48
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:73
-msgid "Show label"
-msgstr "Afficher l’étiquette"
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:55
-#: include/classes/vendors/plugins/acf/shortcode.php:51
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:77
-#: include/params/vc_grid_item/shortcodes.php:652
-msgid "Enter label to display before key value."
-msgstr ""
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:59
-#: include/classes/vendors/plugins/acf/shortcode.php:55
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:81
-msgid "Align"
-msgstr "Aligner"
-
-# @ js_composer
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:62
-#: include/classes/vendors/plugins/acf/shortcode.php:58
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:84
-#: include/params/font_container/font_container.php:91
-msgid "left"
-msgstr "gauche"
-
-# @ js_composer
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:63
-#: include/classes/vendors/plugins/acf/shortcode.php:59
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:85
-#: include/params/font_container/font_container.php:92
-msgid "right"
-msgstr "droite"
-
-# @ js_composer
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:64
-#: include/classes/vendors/plugins/acf/shortcode.php:60
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:86
-#: include/params/font_container/font_container.php:93
-msgid "center"
-msgstr "au centre"
-
-# @ js_composer
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:65
-#: include/classes/vendors/plugins/acf/shortcode.php:61
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:87
-#: include/params/font_container/font_container.php:94
-msgid "justify"
-msgstr "justifier"
-
-#: include/classes/vendors/plugins/acf/grid-item-shortcodes.php:67
-#: include/classes/vendors/plugins/acf/shortcode.php:63
-#: include/classes/vendors/plugins/woocommerce/grid-item-shortcodes.php:90
-#: include/params/vc_grid_item/shortcodes.php:664
-msgid "Select alignment."
-msgstr "Sélectionnez l'alignement."
 
 #: include/classes/vendors/plugins/woocommerce/grid-item-filters.php:16
 msgid "WooCommerce add to card link"
@@ -9005,36 +9004,36 @@ msgid "Wrong vc_map object. Base attribute is required"
 msgstr ""
 
 # @ js_composer
-#: include/helpers/helpers_api.php:492
+#: include/helpers/helpers_api.php:490
 msgid "CSS Animation"
 msgstr "Animation CSS"
 
 # @ js_composer
-#: include/helpers/helpers_api.php:502
+#: include/helpers/helpers_api.php:500
 msgid "Top to bottom"
 msgstr "Du haut vers le bas"
 
 # @ js_composer
-#: include/helpers/helpers_api.php:503
+#: include/helpers/helpers_api.php:501
 msgid "Bottom to top"
 msgstr "Du bas vers le haut"
 
 # @ js_composer
-#: include/helpers/helpers_api.php:504
+#: include/helpers/helpers_api.php:502
 msgid "Left to right"
 msgstr "De gauche à droite"
 
 # @ js_composer
-#: include/helpers/helpers_api.php:505
+#: include/helpers/helpers_api.php:503
 msgid "Right to left"
 msgstr "De droite à gauche"
 
 # @ js_composer
-#: include/helpers/helpers_api.php:506
+#: include/helpers/helpers_api.php:504
 msgid "Appear from center"
 msgstr "Apparition à partir du centre"
 
-#: include/helpers/helpers_api.php:511
+#: include/helpers/helpers_api.php:509
 msgid ""
 "Select type of animation for element to be animated when it \"enters\" the "
 "browsers viewport (Note: works only in modern browsers)."
@@ -9603,6 +9602,79 @@ msgstr "Ajouter une rangée"
 msgid "Drag to reorder"
 msgstr "Glissez pour réorganiser"
 
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:97
+msgid "Add Grid template"
+msgstr "Ajouter un modèle de grille"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:98
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:137
+#: include/templates/pages/partials/vc-roles-parts/_grid_builder.tpl.php:14
+#: include/templates/pages/partials/vc-roles-parts/_grid_builder.tpl.php:15
+msgid "Grid Builder"
+msgstr "Éditeur de grille"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:99
+msgid "Grid template"
+msgstr "Modèle de grille"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:100
+msgid "Edit Grid template"
+msgstr "Modifier le modèle"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:101
+msgid "View Grid template"
+msgstr "Voir le modèle"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:102
+msgid "Search Grid templates"
+msgstr "Chercher un modèle"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:103
+msgid "No Grid templates found"
+msgstr ""
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:104
+msgid "No Grid templates found in Trash"
+msgstr ""
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:221
+msgid "Builder"
+msgstr "Éditeur"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:222
+msgid ""
+"If you add this template, all your current changes will be removed. Are you "
+"sure you want to add template?"
+msgstr ""
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:112
+msgid "Post title"
+msgstr "Titre de l’article"
+
+#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:113
+#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:114
+msgid ""
+"The WordPress Excerpt is an optional summary or description of a post; in "
+"short, a post summary."
+msgstr ""
+
+#: include/params/vc_grid_item/editor/navbar/class-vc-navbar-grid-item.php:38
+msgid "Grid element settings"
+msgstr ""
+
+#: include/params/vc_grid_item/editor/navbar/class-vc-navbar-grid-item.php:58
+#, php-format
+msgid "%s/12 width"
+msgstr "Largeur %s/12"
+
+#: include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:147
+msgid "Grid Templates"
+msgstr "Modèles de grille"
+
+#: include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:166
+msgid "Custom Grid Templates"
+msgstr "Modèles de grille personnalisés"
+
 #: include/params/vc_grid_item/shortcodes.php:11
 #: include/params/vc_grid_item/shortcodes.php:455
 #: include/params/vc_grid_item/shortcodes.php:485
@@ -9851,8 +9923,8 @@ msgstr "Grille de base : par défaut"
 #: include/params/vc_grid_item/templates.php:57
 #: include/params/vc_grid_item/templates.php:77
 #: include/params/vc_grid_item/templates.php:85
-#: include/templates/teaser.html.php:69
 #: include/templates/shortcodes/post_block/_item.php:22
+#: include/templates/teaser.html.php:69
 msgid "Read more"
 msgstr "Lire plus"
 
@@ -10012,79 +10084,6 @@ msgstr ""
 msgid "Masonry media: Simple blur with scale"
 msgstr ""
 
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:97
-msgid "Add Grid template"
-msgstr "Ajouter un modèle de grille"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:98
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:137
-#: include/templates/pages/partials/vc-roles-parts/_grid_builder.tpl.php:14
-#: include/templates/pages/partials/vc-roles-parts/_grid_builder.tpl.php:15
-msgid "Grid Builder"
-msgstr "Éditeur de grille"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:99
-msgid "Grid template"
-msgstr "Modèle de grille"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:100
-msgid "Edit Grid template"
-msgstr "Modifier le modèle"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:101
-msgid "View Grid template"
-msgstr "Voir le modèle"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:102
-msgid "Search Grid templates"
-msgstr "Chercher un modèle"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:103
-msgid "No Grid templates found"
-msgstr ""
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:104
-msgid "No Grid templates found in Trash"
-msgstr ""
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:221
-msgid "Builder"
-msgstr "Éditeur"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-editor.php:222
-msgid ""
-"If you add this template, all your current changes will be removed. Are you "
-"sure you want to add template?"
-msgstr ""
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:112
-msgid "Post title"
-msgstr "Titre de l’article"
-
-#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:113
-#: include/params/vc_grid_item/editor/class-vc-grid-item-preview.php:114
-msgid ""
-"The WordPress Excerpt is an optional summary or description of a post; in "
-"short, a post summary."
-msgstr ""
-
-#: include/params/vc_grid_item/editor/navbar/class-vc-navbar-grid-item.php:38
-msgid "Grid element settings"
-msgstr ""
-
-#: include/params/vc_grid_item/editor/navbar/class-vc-navbar-grid-item.php:58
-#, php-format
-msgid "%s/12 width"
-msgstr "Largeur %s/12"
-
-#: include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:147
-msgid "Grid Templates"
-msgstr "Modèles de grille"
-
-#: include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php:166
-msgid "Custom Grid Templates"
-msgstr "Modèles de grille personnalisés"
-
 # @ js_composer
 #: include/params/vc_link/vc_link.php:18
 msgid "Select URL"
@@ -10094,26 +10093,6 @@ msgstr "Sélectionnez une URL"
 #: include/params/vc_link/vc_link.php:18
 msgid "URL"
 msgstr "URL"
-
-# @ js_composer
-#: include/templates/teaser.html.php:20 include/templates/teaser.html.php:41
-msgid "Link to"
-msgstr "Lier à"
-
-# @ js_composer
-#: include/templates/teaser.html.php:24 include/templates/teaser.html.php:45
-msgid "On post"
-msgstr "Sur l'article"
-
-# @ js_composer
-#: include/templates/teaser.html.php:26 include/templates/teaser.html.php:47
-msgid "Big image"
-msgstr "Image en taille réelle"
-
-# @ js_composer
-#: include/templates/teaser.html.php:35
-msgid "Featured"
-msgstr "Mis en avant"
 
 #: include/templates/editors/partials/add_element_search.tpl.php:11
 msgid "Search element by name"
@@ -10130,7 +10109,6 @@ msgstr "Obsolètes"
 
 #: include/templates/editors/partials/add_element_tabs.tpl.php:30
 #: include/templates/editors/popups/vc_ui-panel-preset.tpl.php:10
-#: include/templates/pages/vc-welcome/vc-welcome.php:29
 msgid "My Elements"
 msgstr "Mes éléments"
 
@@ -10298,6 +10276,62 @@ msgstr "Cacher l’onglet"
 msgid "Edit Elements"
 msgstr "Modifier les éléments"
 
+#: include/templates/editors/popups/shared-templates/category.tpl.php:32
+#: include/templates/pages/vc-settings/tab.php:112
+msgid "Activate WPBakery Page Builder"
+msgstr "Activer WPBakery Éditeur de page"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:33
+msgid ""
+"WPBakery Page Builder Template Library downloads are available for activated"
+"\tversions only. Activate WPBakery Page Builder direct license to access "
+"Template Library and receive other benefits."
+msgstr ""
+
+# @ js_composer
+#: include/templates/editors/popups/shared-templates/category.tpl.php:35
+msgid "Activate License"
+msgstr "Activer la licence"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:69
+msgid "Download Template"
+msgstr "Télécharger le modèle"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:81
+msgid "Downloading template ... please wait!"
+msgstr "Téléchargement du modèle... Veuillez patienter !"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:82
+msgid ""
+"Don't close this window until download is complete - you will\n"
+"\t\t\t\tbe redirected back to Template Library automatically."
+msgstr ""
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:108
+msgid "Download Templates"
+msgstr "Télécharger les modèles"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:109
+msgid ""
+"Access WPBakery Page Builder Template Library for unique layout\n"
+"\t\ttemplates. Download chosen templates and discover new layouts with "
+"regular template\n"
+"\t\tupdates from WPBakery Page Builder team."
+msgstr ""
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:113
+msgid "Access Library"
+msgstr "Accéder à la bibliothèque"
+
+# @ js_composer
+#: include/templates/editors/popups/shared-templates/category.tpl.php:149
+msgid "Delete template"
+msgstr "Supprimer le modèle"
+
+#: include/templates/editors/popups/shared-templates/category.tpl.php:155
+msgid "Preview template"
+msgstr "Aperçu du modèle"
+
 #: include/templates/editors/popups/vc_ui-panel-add-element.tpl.php:25
 msgid ""
 "Elements within this list are deprecated and are no longer supported in "
@@ -10388,62 +10422,6 @@ msgid ""
 msgstr ""
 "Changer une disposition particulière de ligne en spécifiant le nombre de "
 "colonnes et la valeur de leurs dimensions"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:32
-#: include/templates/pages/vc-settings/tab.php:112
-msgid "Activate WPBakery Page Builder"
-msgstr "Activer WPBakery Éditeur de page"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:33
-msgid ""
-"WPBakery Page Builder Template Library downloads are available for activated"
-"\tversions only. Activate WPBakery Page Builder direct license to access "
-"Template Library and receive other benefits."
-msgstr ""
-
-# @ js_composer
-#: include/templates/editors/popups/shared-templates/category.tpl.php:35
-msgid "Activate License"
-msgstr "Activer la licence"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:69
-msgid "Download Template"
-msgstr "Télécharger le modèle"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:81
-msgid "Downloading template ... please wait!"
-msgstr "Téléchargement du modèle... Veuillez patienter !"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:82
-msgid ""
-"Don't close this window until download is complete - you will\n"
-"\t\t\t\tbe redirected back to Template Library automatically."
-msgstr ""
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:108
-msgid "Download Templates"
-msgstr "Télécharger les modèles"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:109
-msgid ""
-"Access WPBakery Page Builder Template Library for unique layout\n"
-"\t\ttemplates. Download chosen templates and discover new layouts with "
-"regular template\n"
-"\t\tupdates from WPBakery Page Builder team."
-msgstr ""
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:113
-msgid "Access Library"
-msgstr "Accéder à la bibliothèque"
-
-# @ js_composer
-#: include/templates/editors/popups/shared-templates/category.tpl.php:149
-msgid "Delete template"
-msgstr "Supprimer le modèle"
-
-#: include/templates/editors/popups/shared-templates/category.tpl.php:155
-msgid "Preview template"
-msgstr "Aperçu du modèle"
 
 #: include/templates/pages/partials/vc-roles-parts/_backend_editor.tpl.php:12
 msgid "Disable Classic editor"
@@ -10687,21 +10665,21 @@ msgstr ""
 "Un certain nombre de ressources est disponible pour les utilisateurs de "
 "l’Éditeur de page pour vous aider à utiliser l’extension :"
 
-#: include/templates/pages/vc-welcome/vc-resources.php:26
+#: include/templates/pages/vc-welcome/vc-resources.php:23
 msgid "Official Support"
 msgstr "Support officiel"
 
-#: include/templates/pages/vc-welcome/vc-resources.php:28
+#: include/templates/pages/vc-welcome/vc-resources.php:25
 #, php-format
 msgid ""
 "To get your support related question answered in the fastest timing, please "
 "head over to our <a href=\"%s\" target=\"_blank\">support page</a> and open "
 "Support ticket. To open a support ticket you should have a valid support "
 "subscription in case if your support has expired you can <a href=\"%s\" "
-"target=\"_blank\">purchase support extension</a> on CodeCanyon."
+"target=\"_blank\">purchase support extension</a> on support.wpbakery.com."
 msgstr ""
 
-#: include/templates/pages/vc-welcome/vc-resources.php:30
+#: include/templates/pages/vc-welcome/vc-resources.php:27
 #, php-format
 msgid ""
 "Before applying for support please make sure you understand the rules of "
@@ -10711,49 +10689,46 @@ msgid ""
 msgstr ""
 
 #: include/templates/pages/vc-welcome/vc-welcome.php:11
-msgid "User-Friendly and RTL Compatible"
+msgid "New Interface, Native Colors"
 msgstr ""
 
 #: include/templates/pages/vc-welcome/vc-welcome.php:13
 msgid ""
-"Enjoy full RTL compatibility of WPBakery Page Builder Page Builder with "
-"fully automatic text and grid adjustments."
+"A new slim interface of WPBakery Page Builder with native WordPress colors "
+"will become your best companion. Enjoy editing your website hassle free via "
+"desktop or mobile."
 msgstr ""
 
-#: include/templates/pages/vc-welcome/vc-welcome.php:14
-msgid ""
-"Receive even more control over access rights and create your own elements "
-"with a single click. Access completely new elements with completely new "
-"WPBakery Page Builder Page Builder."
+#: include/templates/pages/vc-welcome/vc-welcome.php:21
+msgid "Native Colors"
 msgstr ""
 
-#: include/templates/pages/vc-welcome/vc-welcome.php:22
-msgid "RTL Compatible"
-msgstr "Compatible RTL"
-
-#: include/templates/pages/vc-welcome/vc-welcome.php:24
+#: include/templates/pages/vc-welcome/vc-welcome.php:23
 msgid ""
-"Develop RTL friendly layout with WPBakery Page Builder Page Builder "
-"automatically."
+"Default WordPress colors will blend your WordPress and page builder "
+"experience in no time."
 msgstr ""
 
-#: include/templates/pages/vc-welcome/vc-welcome.php:31
-msgid ""
-"Create elements like a presets and add them to the Add Element window for "
-"quick access."
+#: include/templates/pages/vc-welcome/vc-welcome.php:28
+msgid "New Icons"
 msgstr ""
 
-#: include/templates/pages/vc-welcome/vc-welcome.php:36
-msgid "Column Parallax"
-msgstr "Parallaxe de colonne"
-
-#: include/templates/pages/vc-welcome/vc-welcome.php:38
+#: include/templates/pages/vc-welcome/vc-welcome.php:30
 msgid ""
-"Apply parallax effect to a single column and create even better layouts."
+"Simple and beautiful SVG icons for all our content elements and controls "
+"tailored for mobile devices."
+msgstr ""
+
+#: include/templates/pages/vc-welcome/vc-welcome.php:35
+msgid "Icon Library Updates"
+msgstr ""
+
+#: include/templates/pages/vc-welcome/vc-welcome.php:37
+msgid "Add even more icons to your website with our updated icon libraries."
 msgstr ""
 
 # @ js_composer
-#: include/templates/params/column_offset/template.tpl.php:14
+#: include/templates/params/column_offset/template.tpl.php:21
 #, php-format
 msgid ""
 "Responsive design settings are currently disabled. You can enable them in "
@@ -10765,22 +10740,22 @@ msgstr ""
 "case \"Désactiver les éléments responsive\"."
 
 # @ js_composer
-#: include/templates/params/column_offset/template.tpl.php:24
+#: include/templates/params/column_offset/template.tpl.php:31
 msgid "Device"
 msgstr "Terminal"
 
 # @ js_composer
-#: include/templates/params/column_offset/template.tpl.php:33
+#: include/templates/params/column_offset/template.tpl.php:40
 msgid "Hide on device?"
 msgstr "Cacher pour le terminal?"
 
 # @ js_composer
-#: include/templates/params/column_offset/template.tpl.php:60
+#: include/templates/params/column_offset/template.tpl.php:69
 msgid "Inherit: "
 msgstr "Inhérence "
 
 # @ js_composer
-#: include/templates/params/column_offset/template.tpl.php:61
+#: include/templates/params/column_offset/template.tpl.php:70
 msgid "Inherit from default"
 msgstr "Inhérence par défaut"
 
@@ -10808,6 +10783,12 @@ msgstr "Chargement, merci de patienter..."
 #: include/templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
 msgid "Crunching..."
 msgstr "Écrasement…"
+
+# @ js_composer
+#: include/templates/shortcodes/post_block/_item.php:22
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalien vers %s"
 
 # @ js_composer
 #: include/templates/shortcodes/vc_accordion_tab.php:26
@@ -10851,630 +10832,21 @@ msgid "Tweet"
 msgstr "Tweet"
 
 # @ js_composer
-#: include/templates/shortcodes/post_block/_item.php:22
-#, php-format
-msgid "Permalink to %s"
-msgstr "Permalien vers %s"
+#: include/templates/teaser.html.php:20 include/templates/teaser.html.php:41
+msgid "Link to"
+msgstr "Lier à"
 
-#~ msgid "Welcome to Visual Composer"
-#~ msgstr "Bienvenue sur Visual Composer"
-
-# @ js_composer
-#~ msgid "Visual Composer"
-#~ msgstr "Visual Composer"
-
-# @ js_composer
-#~ msgid "Visual Composer Settings"
-#~ msgstr "Paramètres de Visual Composer"
-
-#~ msgid "About Visual Composer"
-#~ msgstr "À propos de Visual Composer"
-
-# @ js_composer
-#~ msgid "BACKEND EDITOR"
-#~ msgstr "ÉDITEUR ADMIN"
-
-# @ js_composer
-#~ msgid "FRONTEND EDITOR"
-#~ msgstr "ÉDITEUR BOUTIQUE"
-
-# @ js_composer
-#~ msgid "CLASSIC MODE"
-#~ msgstr "MODE CLASSIQUE"
-
-# @ js_composer
-#~ msgid "Edit %s with Visual Composer"
-#~ msgstr "Modifier %s avec Visual Composer"
-
-# @ js_composer
-#~ msgid "Edit with Visual Composer"
-#~ msgstr "Modifier avec Visual Composer"
-
-# @ js_composer
-#~ msgid "Save current page as a Template"
-#~ msgstr "Enregistrer comme modèle"
-
-# @ js_composer
-#~ msgid "Load Template"
-#~ msgstr "Charger un modèle"
-
-# @ js_composer
-#~ msgid "No custom templates yet."
-#~ msgstr "Aucun modèle personnalisé disponible"
-
-# @ js_composer
-#~ msgid "Show Visual Composer & default editor"
-#~ msgstr "Afficher le visual composer et l'éditeur par défaut"
-
-# @ js_composer
-#~ msgid "Show only Visual Composer"
-#~ msgstr "Afficher seulement le visual composer"
-
-# @ js_composer
-#~ msgid "Don't allow to use Visual Composer"
-#~ msgstr "Ne pas autoriser l'autorisation du visual composer"
-
-# @ js_composer
-#~ msgid "Visual Composer access"
-#~ msgstr "Accès au visual composer"
-
-# @ js_composer
-#~ msgid "Enabled shortcodes"
-#~ msgstr "Shortcodes actifs"
-
-#~ msgid "(deprecated since v%s)"
-#~ msgstr "(obsolète depuis v%s)"
-
-# @ js_composer
-#~ msgid "Select All"
-#~ msgstr "Tout sélectionner"
-
-# @ js_composer
-#~ msgid "Select none"
-#~ msgstr "Tout désélectionner"
-
-# @ js_composer
-#~ msgid "Empty value"
-#~ msgstr "Valeur nulle"
-
-# @ js_composer
-#~ msgid "This is required to enable file writing for js_composer"
-#~ msgstr "Ceci est requis pour activer l'écriture de fichier pour js_composer"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Downloading package from envato market..."
-#~ msgstr "Téléchargement de l'archive à partir d' ENVATO"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Error! Envato API error"
-#~ msgstr "Erreur d'API Envato"
-
-# @ js_composer
-#~ msgid "Error on unzipping package"
-#~ msgstr "Erreur lors de la décompression de l'archive"
-
-#~ msgid "Set as default"
-#~ msgstr "Paramétrer par défaut"
-
-#~ msgid "Restore default"
-#~ msgstr "Restaurer par défaut"
-
-# @ js_composer
-#~ msgid "My templates"
-#~ msgstr "Mes modèles"
-
-# @ js_composer
-#~ msgid "Default templates"
-#~ msgstr "Modèles par défaut"
-
-# @ js_composer
-#~ msgid "Template name"
-#~ msgstr "Nom du modèle"
-
-# @ js_composer
-#~ msgid "Append previosly saved template to the current layout"
-#~ msgstr "Ajouter un modèle précédemment sauvegardé à la disposition actuelle"
-
-# @ js_composer
-#~ msgid "Append default template to the current layout"
-#~ msgstr "Appliquer le modèle par défaut à la mise en page actuelle"
-
-#~ msgid "Activate Visual Composer"
-#~ msgstr "Activer Visual Composer"
-
-#~ msgid "Deactivate Visual Composer"
-#~ msgstr "Désactiver Visual Composer"
-
-#~ msgid "Welcome to Visual Composer %s"
-#~ msgstr "Bienvenue sur Visual Composer %s"
-
-# @ vc_extend
-#~ msgid "Post Carousel"
-#~ msgstr "Carousel d'articles"
-
-# @ js_composer
-#~ msgid "Call to Action Button"
-#~ msgstr "Bouton d'appel à action"
-
-# @ js_composer
-#~ msgid "Posts Grid"
-#~ msgstr "Grille d'articles"
-
-#~ msgid "\"Tweet\" button"
-#~ msgstr "Bouton « Tweeter »"
-
-# @ js_composer
-#~ msgid "What text use as form title. Leave blank if no title is needed."
-#~ msgstr ""
-#~ "Quel texte utiliser pour le titre du formulaire? Laissez blanc si aucun "
-#~ "titre n'est souhaité"
-
-#~ msgid "Untitled"
-#~ msgstr "Sans titre"
-
-#~ msgid "(default)"
-#~ msgstr "(par défaut)"
-
-#~ msgid "Awesome Styles, Icons and More"
-#~ msgstr "Styles géniaux, Icônes et plus encore"
-
-#~ msgid "Gradient Buttons"
-#~ msgstr "Boutons dégradés"
-
-#~ msgid "Social Icons"
-#~ msgstr "Icônes de réseaux"
-
-#~ msgid ""
-#~ "Hola! Please <a href=\" % s\">activate your copy</a> of Visual Composer "
-#~ "to receive automatic updates."
-#~ msgstr ""
-#~ "Hey ! Veuillez <a href=\" % s\">activer votre copie</a> de Visual "
-#~ "Composer pour recevoir les mises à jour automatiques."
-
-# @ js_composer
-#~ msgid "Please activate your license in Product License tab!"
-#~ msgstr "Merci d'activer votre licence dans l'onglet d’activation produit"
-
-# @ js_composer
-#~ msgid "Download new version from CodeCanyon."
-#~ msgstr "Télécharger la nouvelle version depuis Codecanyon"
-
-# @ js_composer
-#~ msgid "Update Visual Composer now."
-#~ msgstr "Mettez Visual Composer à jour maintenant"
-
-# @ js_composer
-#~ msgid "Please enter template name"
-#~ msgstr "Merci de saisir le nom de votre modèle"
-
-# @ js_composer
-#~ msgid "Enter custom layout for your row:"
-#~ msgstr "Entrez une mise en forme personnalisée pour votre ligne"
-
-# @ js_composer
-#~ msgid "New template successfully saved!"
-#~ msgstr "Votre nouveau modèle a bien été enregistré!"
-
-# @ js_composer
-#~ msgid "Nothing to save. Template is empty."
-#~ msgstr "Rien à sauvegarder, le modèle est vide."
-
-# @ js_composer
-#~ msgid "Save draft"
-#~ msgstr "Enregistrer le brouillon"
-
-# @ js_composer
-#~ msgid ""
-#~ "Use Visual Composer Shortcode Mapper in order to add your custom or 3rd "
-#~ "party vendors shortcodes to the list of Visual Composer elements menu. In "
-#~ "order to map shortcode you need it to be already installed on your "
-#~ "WordPress site."
-#~ msgstr ""
-#~ "Utilisez le Mappeur de Shortcode VIsual Composer avant d'utiliser vos "
-#~ "propres shortcodes ou ceux d'un éditeur de plugins tiers à la liste des "
-#~ "éléments de menu de Visual Comoser. Avant de mapper un shortcode, il doit "
-#~ "préalablement être installé et en fonction sur votre site."
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Map shortcode"
-#~ msgstr "Mapper un shortcode"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Please enter shortcode string"
-#~ msgstr "Merci de saisir une chaine de shortcode"
-
-# @ js_composer
-#, fuzzy
-#~ msgid "Parse shortcode"
-#~ msgstr "Analyser le shortcode"
-
-# @ js_composer
-#~ msgid ""
-#~ "Please enter valid shortcode like [my_shortcode first_param="
-#~ "\"first_param_value\"]My shortcode content[/my_shortcode]"
-#~ msgstr ""
-#~ "Merci de saisir un shortcode valide, ex :  [my_shortcode first_param="
-#~ "\"first_param_value\"]My shortcode content[/my_shortcode]"
-
-# @ default
-#~ msgid "General information"
-#~ msgstr "Informations générales"
-
-# @ default
-#~ msgid "Shortcode parameters"
-#~ msgstr "Paramètres des shortcodes"
-
-# @ js_composer
-#~ msgid ""
-#~ "Default value or list of values for dropdown type(separate by comma)."
-#~ msgstr ""
-#~ "Valeurs par défaut ou listes de valeurs pour le type de liste déroulante "
-#~ "(séparer par des virgules)."
-
-# @ js_composer
-#~ msgid "Explain param."
-#~ msgstr "Expliquer le paramètre"
-
-# @ js_composer
-#~ msgid ""
-#~ "Hola! Please <a href=\"%s\">activate your copy</a> of Visual Composer to "
-#~ "receive automatic updates."
-#~ msgstr ""
-#~ "Hola! Please <a href=\"%s\">activate your copy</a> of Visual Composer to "
-#~ "receive automatic updates."
-
-# @ js_composer
-#~ msgid "Content types"
-#~ msgstr "Types de contenus"
-
-# @ js_composer
-#~ msgid "User groups access rules"
-#~ msgstr "Règles d'accès des groupes d'utilisateurs"
-
-# @ js_composer
-#~ msgid "Envato Username"
-#~ msgstr "Nom d'utilisateur ENVATO"
-
-# @ js_composer
-#~ msgid "Secret API Key"
-#~ msgstr "Clé d' API secrète"
-
-# @ js_composer
-#~ msgid "Visual Composer License Key"
-#~ msgstr "Clé visual composer"
-
-# @ js_composer
-#~ msgid "Something went wrong! Please try again later."
-#~ msgstr "Une erreur est survenue, merci de réessayer "
-
-# @ js_composer
-#~ msgid "License successfully activated. Thank you!"
-#~ msgstr "Licence parfaitement activée. Merci."
-
-# @ js_composer
-#~ msgid "Your license key is deactivated."
-#~ msgstr "Votre licence est désactivée"
-
-# @ js_composer
-#~ msgid "Envato username and license key are required."
-#~ msgstr "Le nom d'utilisateur Envato et un numéro de licence sont requis"
-
-# @ js_composer
-#~ msgid "Invalid liense key. Please check information in your envato profile."
-#~ msgstr "Clé de licence invalide. Vérifiez vos informations."
-
-# @ js_composer
-#~ msgid "Wrong data. Please check your information or ask support for help."
-#~ msgstr ""
-#~ "Mauvaise informations. Contrôlez vos informations ou contactez le support "
-#~ "pour recevoir de l'aide."
-
-# @ js_composer
-#~ msgid "License successfully activated. Thank you! (401)"
-#~ msgstr "Votre licence a été parfaitement activée. Merci ! (401)"
-
-# @ js_composer
-#~ msgid ""
-#~ "Your license key is already activated on another website ({site}), you "
-#~ "should deactivate it first or <a href=\"%s\" target=\"_blank\">obtain new "
-#~ "license key</a>."
-#~ msgstr ""
-#~ "Votre licence est déjà activée sur un autre site ({site}), Vous devez "
-#~ "d'abord la désactiver et <a href=\"%s\" target=\"_blank\">obtenir une "
-#~ "nouvelle licence</a>."
-
-# @ js_composer
-#~ msgid "Deactivate license"
-#~ msgstr "Désactiver la licence"
-
-# @ js_composer
-#~ msgid ""
-#~ "Select for which content types Visual Composer should be available during "
-#~ "post creation/editing."
-#~ msgstr ""
-#~ "Sélectionner les types de contenus pou lesquels le visual composer doit "
-#~ "être accessible"
-
-# @ js_composer
-#~ msgid ""
-#~ "If you want to add some custom CSS code to the plugin and don't want to "
-#~ "modify any files, then it's a good place to enter your code at this field."
-#~ msgstr ""
-#~ "Si vous voulez intégrer du CSS personnalisé et ne souhaitez modifier "
-#~ "aucun fichier, entrez donc vos valeurs CSS dans ce champ"
-
-# @ js_composer
-#~ msgid ""
-#~ "Check this checkbox to prevent content elements from \"stacking\" one on "
-#~ "top other (on small media screens, eg. mobile)."
-#~ msgstr ""
-#~ "Cliquez sur cette case si vous souhaitez que certains éléments ne se "
-#~ "superposent pas sur les écrans de petite taille"
-
-# @ js_composer
-#~ msgid "Select subsets for google fonts."
-#~ msgstr "Sélectionnez les sous-ensembles pour les Google Fonts"
-
-# @ js_composer
-#~ msgid ""
-#~ "Enable the use of custom design options for your site. When checked, "
-#~ "custom css file will be used."
-#~ msgstr ""
-#~ "Active l'utilisation de design personnalisé pour votre site. Lorsque "
-#~ "cette option est activée, le CSS personnalisé sera utilisé"
-
-# @ js_composer
-#~ msgid ""
-#~ "To change default vertical spacing between content elements, enter new "
-#~ "value here. Example: 20px"
-#~ msgstr ""
-#~ "Pour chager l'espacement vertical par défaut entre les éléments de "
-#~ "contenu, entrez une nouvelle valeur ici. exemple : 20px"
-
-# @ js_composer
-#~ msgid ""
-#~ "To change default horizontal spacing between columns, enter new value in "
-#~ "pixels here."
-#~ msgstr ""
-#~ "Pour modifier l'espacement entre les colonnes, saisissez une valuer en "
-#~ "pixels ici"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "By default content elements \"stack\" one on top other when screen size "
-#~ "is smaller then 768px. Here you can change that value if needed."
-#~ msgstr ""
-#~ "Par défaut, les éléments se superposent les uns sur les autres lorsque la "
-#~ "taille d'écran est inférieure à 480 pixels. Vous pouvez changer la valeur "
-#~ "ici si vous le souhaitez."
-
-# @ js_composer
-#~ msgid "Your Envato username."
-#~ msgstr "Votre nom d'utilisateur ENVATO"
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "Please enter your CodeCanyon Visual Composer license key, you can find "
-#~ "your key by following the instructions on <a href=\"%s\" target=\"_blank"
-#~ "\">this page</a>. License key looks similar to this: bjg759fk-"
-#~ "kvta-6584-94h6-75jg8vblatftq."
-#~ msgstr ""
-#~ "Merci de renseigner votre clé de licence produit, vous pouvez trouver "
-#~ "votre clé en vous référant à  <a href=\"%s\" target=\"_blank\">cette "
-#~ "page</a>."
-
-# @ js_composer
-#, fuzzy
-#~ msgid ""
-#~ "You can find API key by visiting your Envato Account page, then clicking "
-#~ "the My Settings tab. At the bottom of the page you'll find your account's "
-#~ "API key. <a href='%s' target='_blank'>Need help?</a>"
-#~ msgstr ""
-#~ "Vous pouvez trouver votre clé d'API en allant sur votre compte ENVATO "
-#~ "dans la section \\\"settings\\\", vous trouverez votre API tout en bas de "
-#~ "page"
-
-# @ js_composer
-#~ msgid ""
-#~ "A valid license key qualifies you for support and enables automatic "
-#~ "updates. <strong>A license key may only be used for one Visual Composer "
-#~ "installation on one WordPress site at a time.</strong> If you previosly "
-#~ "activated your license key on another site, then you should deactivate it "
-#~ "first or <a href=\"%s\" target=\"_blank\">obtain new license key</a>."
-#~ msgstr ""
-#~ "A valid license key qualifies you for support and enables automatic "
-#~ "updates. <strong>A license key may only be used for one Visual Composer "
-#~ "installation on one WordPress site at a time.</strong> If you previosly "
-#~ "activated your license key on another site, then you should deactivate it "
-#~ "first or <a href=\"%s\" target=\"_blank\">obtain new license key</a>."
-
-# @ js_composer
-#~ msgid ""
-#~ "Visual Composer: Your css class names settings are deprecated. <a href="
-#~ "\"%s\">Click here to resolve</a>."
-#~ msgstr ""
-#~ "Visual composer : Vos réglages de classe CSS sont obsolètes. <a href=\"%s"
-#~ "\">Cliquez ici pour résoudre le problème</a>."
-
-# @ js_composer
-#~ msgid ""
-#~ "<strong>Deprecated:</strong> To override class names that are applied to "
-#~ "Visual Composer content elements you should use WordPress "
-#~ "add_filter('vc_shortcodes_css_class') function. <a "
-#~ "class='vc_show_example'>See Example</a>."
-#~ msgstr ""
-#~ "<strong>Obsolète :</strong> Pour remplacer les noms de classes qui sont "
-#~ "appliquées à des éléments de contenu Visual Composer, vous devez utiliser "
-#~ "la fonction WordPress add_filter('vc_shortcodes_css_class'). <a "
-#~ "class='vc_show_example'>Voir un exemple</a>."
-
-# @ default
-#~ msgid ""
-#~ "You have used element class names settings to replace row and column css "
-#~ "classes."
-#~ msgstr ""
-#~ "Vous avez utilisé des noms de classe pour remplacer celles des lignes et "
-#~ "colonnes..."
-
-# @ default
-#~ msgid ""
-#~ "Below is code snippet which you should add to your functions.php file in "
-#~ "your theme, to replace row and column classes with custom classes saved "
-#~ "by you earlier."
-#~ msgstr ""
-#~ "Vous trouverez ci-dessous le code que vous devrez ajouter à votre fichier "
-#~ "functions.php de thème graphique pour remplacer les classes de lignes et "
-#~ "de colonnes que vous avez enregistrées auparavant"
-
-# @ js_composer
-#~ msgid "Remove all saved"
-#~ msgstr "Supprimer tous les enregistrés"
-
-# @ js_composer
-#~ msgid "Restore to defaults"
-#~ msgstr "Restaurer les valeurs par défaut"
-
-# @ js_composer
-#~ msgid "Save"
-#~ msgstr "Sauver"
-
-#~ msgid ""
-#~ "Field type is changed from `textarea_html` to `textarea`, because it is "
-#~ "already used by `"
-#~ msgstr ""
-#~ "Le type de champ a changé de `textarea_html` vers ` to `textarea` car il "
-#~ "est déjà utilisé par `"
-
-# @ js_composer
-#~ msgid "View all posts filed under %s"
-#~ msgstr "Voir tous les posts relatifs à %s"
-
-# @ js_composer
-#~ msgid "Feed for all posts filed under %s"
-#~ msgstr "Flux pour tous les posts relatifs à %s"
-
-# @ js_composer
-#~ msgid ""
-#~ "Enter text which will be used as widget title. Leave blank if no title is "
-#~ "needed."
-#~ msgstr ""
-#~ "Saisissez le texte qui sera utilisé comme titre de widget. Laissez blanc "
-#~ "si aucun titre n'est nécessaire."
-
-# @ js_composer
-#~ msgid "Wrong wpb_map object. Base attribute is required"
-#~ msgstr "Mauvais wpb_map object. L'attribut de base est requis."
-
-# @ js_composer
-#~ msgid "Post Count"
-#~ msgstr "Compteur de posts"
-
-# @ js_composer
-#~ msgid "Order By"
-#~ msgstr "Ordre par"
-
-# @ js_composer
-#~ msgid "Individual Posts/Pages"
-#~ msgstr "Articles / Pages individuels"
-
-# @ js_composer
-#~ msgid ""
-#~ "Here you can customize teaser block design. It will be used instead of "
-#~ "default settings in \"Posts Grid\" or \"Carousel\" content elements."
-#~ msgstr ""
-#~ "Ici vous pouvez personnaliser le design de votre bloc de teaser. Ces "
-#~ "paramètres seront utilisés à la place des réglages par défaut dans  les "
-#~ "éléments de contenu \"Posts Grid\" or \"Carousel\""
-
-# @ js_composer
-#~ msgid "Welcome to Blank Page, You Have No Content Yet!"
-#~ msgstr ""
-#~ "Bienvenue sur votre page blanche ! Vous n'avez encore aucun contenu en "
-#~ "place !"
-
-# @ js_composer
-#~ msgid " Add Some Content or Use Predefined Layouts..."
-#~ msgstr "Ajoutez votre contenu ou utilisez nos mises en page prédéfinies"
-
-# @ default
-#~ msgid "Choose Your Layout"
-#~ msgstr "Choisissez votre mise en page"
-
-# @ js_composer
-#~ msgid "Choose row layout from predefined options."
-#~ msgstr ""
-#~ "Choisissez la disposition de la ligne depuis les options prédéfinies."
-
-# @ js_composer
-#~ msgid "Edit elements"
-#~ msgstr "Éditer les éléments"
-
-# @ js_composer
-#~ msgid ""
-#~ "Enter custom CSS code here. Your custom CSS will be outputted only on "
-#~ "this particular page."
-#~ msgstr ""
-#~ "Saisissez votre CSS personnalisé ici. Votre CSS personnalisé sera assigné "
-#~ "seulement à cette page"
-
-# @ js_composer
-#~ msgid "Select content element to edit properties."
-#~ msgstr "Sélectionnez les éléments de contenu pour éditer leurs propriétés"
-
-# @ js_composer
-#~ msgid "Save template"
-#~ msgstr "Enregistrer le modèle"
-
-# @ js_composer
-#~ msgid "Save your layout and reuse it on different sections of your website"
-#~ msgstr ""
-#~ "Sauvegardez votre modèle puis réutilisez-le sur votre site web dans les "
-#~ "sections de votre choix"
-
-# @ js_composer
-#~ msgid "Hide"
-#~ msgstr "Cacher"
-
-# @ js_composer
-#~ msgid "Click to toggle"
-#~ msgstr "Cliquez pour déployer"
-
-# @ js_composer
-#~ msgid "Follow us on twitter"
-#~ msgstr "Suivez-nous sur Twitter"
-
-# @ js_composer
-#~ msgid "Regular size"
-#~ msgstr "Taille régulière"
-
-# @ js_composer
-#~ msgid ""
-#~ "Select type of animation if you want this element to be animated when it "
-#~ "enters into the browsers viewport. Note: Works only in modern browsers."
-#~ msgstr ""
-#~ "Sélectionnez le type d'animation avec lequel vous souhaitez que votre "
-#~ "élément soit animé lorsque votre page s'affiche. Note : fonctionne "
-#~ "uniquement avec des navigateurs modernes."
-
-# @ js_composer
-#~ msgid "Font Color"
-#~ msgstr "Couleur de la police"
-
 # @ js_composer
-#~ msgid "Select font color"
-#~ msgstr "Choisir la couleur de police"
+#: include/templates/teaser.html.php:24 include/templates/teaser.html.php:45
+msgid "On post"
+msgstr "Sur l'article"
 
 # @ js_composer
-#~ msgid "Css"
-#~ msgstr "CSS"
+#: include/templates/teaser.html.php:26 include/templates/teaser.html.php:47
+msgid "Big image"
+msgstr "Image en taille réelle"
 
 # @ js_composer
-#, fuzzy
-#~ msgid "Design options"
-#~ msgstr "Options de design"
+#: include/templates/teaser.html.php:35
+msgid "Featured"
+msgstr "Mis en avant"

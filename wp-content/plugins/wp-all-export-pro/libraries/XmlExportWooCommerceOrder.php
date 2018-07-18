@@ -639,25 +639,29 @@ if ( ! class_exists('XmlExportWooCommerceOrder') )
 												break;
 
 											default:
-												
-												$meta_key_founded = false;
-												foreach ($meta_data as $meta) {
-													if ($meta['meta_key'] == $options['cc_value'][$subID]){
-														if ( ! isset($item_data[$element_name])){
-															$item_data[$element_name] = array();
-														}
-														$item_data[$element_name][] = $meta['meta_value'];
-														$meta_key_founded = true;
-													}
-												}
-												if ( ! $meta_key_founded ){
-													$item_data[$element_name] = pmxe_filter( '', $ItemsfieldSnipped);
-												}
-												else{
-													$item_data[$element_name] = pmxe_filter(implode($implode_delimiter, $item_data[$element_name]), $ItemsfieldSnipped);
-												}
 
-												break;
+                                                $meta_key_founded = false;
+                                                foreach ($meta_data as $meta) {
+                                                    if ($meta['meta_key'] == $options['cc_value'][$subID]){
+                                                        if ( ! isset($item_data[$element_name])){
+                                                            $item_data[$element_name] = array();
+                                                        }
+                                                        if(!is_array($item_data[$element_name]) ) {
+                                                            $item_data[$element_name] = array($item_data[$element_name]);
+                                                        }
+                                                        $item_data[$element_name][] = $meta['meta_value'];
+                                                        $meta_key_founded = true;
+
+                                                    }
+                                                }
+                                                if ( ! $meta_key_founded ){
+                                                    $item_data[$element_name] = pmxe_filter( '', $ItemsfieldSnipped);
+                                                }
+                                                else{
+                                                    $item_data[$element_name] = pmxe_filter(implode($implode_delimiter, $item_data[$element_name]), $ItemsfieldSnipped);
+                                                }
+
+                                                break;
 										}										
 									}	
 
@@ -1522,7 +1526,10 @@ if ( ! class_exists('XmlExportWooCommerceOrder') )
 									<input type="hidden" name="cc_value[]" value="<?php echo (is_array($field)) ? $field['label'] : $cur_meta_key; ?>"/>
 									<input type="hidden" name="cc_name[]" value="<?php echo (is_array($field)) ? $field['name'] : $field;?>"/>
 									<input type="hidden" name="cc_settings[]" value=""/>
-								</div>
+                                    <input type="hidden" name="cc_combine_multiple_fields[]"  value="<?php echo (is_array($field)) ? $field['cc_combine_multiple_fields'] : '';?>"/>
+                                    <input type="hidden" name="cc_combine_multiple_fields_value[]"  value="<?php echo (is_array($field)) ? $field['cc_combine_multiple_fields_value'] : '';?>"/>
+
+                                </div>
 							</li>
 							<?php
 							$i++;												
@@ -1560,7 +1567,10 @@ if ( ! class_exists('XmlExportWooCommerceOrder') )
 													<input type="hidden" name="cc_value[]" value="item_data__<?php echo (is_array($field)) ? $field['label'] : $field; ?>"/>
 													<input type="hidden" name="cc_name[]" value="<?php echo (is_array($field)) ? $field['name'] : $field;?>"/>
 													<input type="hidden" name="cc_settings[]" value=""/>
-												</div>
+                                                    <input type="hidden" name="cc_combine_multiple_fields[]"  value="<?php echo (is_array($field)) ? $field['cc_combine_multiple_fields'] : '';?>"/>
+                                                    <input type="hidden" name="cc_combine_multiple_fields_value[]"  value="<?php echo (is_array($field)) ? $field['cc_combine_multiple_fields_value'] : '';?>"/>
+
+                                                </div>
 											</li>
 											<?php
 											$i++;												

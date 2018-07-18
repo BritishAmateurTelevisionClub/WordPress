@@ -1,3 +1,42 @@
+27.06.2018 - ver 5.5.1
+   - Fix: "WPBMap Uncaught Exception" for modifyParam API method
+
+22.06.2018 - ver 5.5.1
+   - Fix: "WPBMap Uncaught Exception" for dropParam and addParam API methods
+
+15.06.2018 - ver 5.5
+   - Added: Undo/Redo operations available for the editor actions
+   - Added: Gutenberg compatibility elements to insert Gutenberg blocks in the WPBakery layout
+   - Added: 5 columns grid layout for rows
+   - Added: RTL support for the full width rows
+   - Added: Settings to enable/disable Gutenberg plugin
+   - API Added: vc_shortcode_prepare_atts to update prepared shortcode attributes
+   - API Added: vc_map_get_attributes to add new, modify all compiled attributes
+   - API Added: vc_basic_grid_filter_query_filters to modify custom query in posts grid.
+   - API Added: vc_is_valid_post_type_be to disable/enable Backend Editor for several post type
+   - API Added: vc_show_button_fe to show Edit With WPB in Frontend Editor
+   - API Update: vc_shortcode_output added shortcode tag in attributes
+   - Update: Order by "include" added to WooCommerce
+   - Update: WooCommerce elements default order/orderby synchronized
+   - Update: Isotope/Masonry library version update
+   - Update: Performance improvements for the Frontend Editor loading
+   - Update: Performance improvements for the Editor Save
+   - Update: Performance improvements for the Posts Grid loading
+   - Update: WPML compatibility for posts/front pages
+   - Update: RevSlider compatibility improvements
+   - Update: Ninja Forms compatibility improvements
+   - Update: ChartJS library update
+   - Update: vc_wpautop, vc_wpnop versions updated
+   - Fix: PHP 7.2 compatibility improvements
+   - Fix: Post Slider custom links work properly
+   - Fix: Extra p tags in grid removed
+   - Fix: Blog page design options work properly
+   - Fix: WPML single image translation available
+   - Fix: HoverBox element on iOS and Firefox improvements
+   - Fix: Builder.parse in frontend
+   - Fix: Custom OnClick action in buttons for Posts Grids
+   - Fix: Shortcode attributes update by reference inside filter vc_shortcode_output
+
 08.03.2018 - ver 5.4.7
    - Fix: Custom shortcode mapping
 

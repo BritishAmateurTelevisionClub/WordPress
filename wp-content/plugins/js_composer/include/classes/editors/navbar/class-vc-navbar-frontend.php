@@ -112,7 +112,7 @@ class Vc_Navbar_Frontend extends Vc_Navbar {
 		ob_start();
 		?>
 		<li class="vc_show-mobile vc_pull-right">
-			<button data-url="<?php esc_attr_e( get_edit_post_link( $post->ID ) . '&wpb_vc_js_status=true' ) ?>"
+			<button data-url="<?php esc_attr_e( get_edit_post_link( $post->ID ) . '&wpb_vc_js_status=true&classic-editor' ) ?>"
 			        class="vc_btn vc_btn-default vc_btn-sm vc_navbar-btn vc_btn-backend-editor" id="vc_button-cancel"
 			        title="<?php _e( 'Cancel all changes and return to WP dashboard', 'js_composer' ) ?>"><?php echo vc_user_access()
 					->part( 'backend_editor' )

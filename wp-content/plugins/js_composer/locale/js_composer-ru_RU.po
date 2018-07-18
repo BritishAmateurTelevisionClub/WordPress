@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPBakery Page Builder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-10 14:29+0300\n"
-"PO-Revision-Date: 2017-10-10 14:33+0300\n"
+"POT-Creation-Date: 2018-05-14 16:21+0300\n"
+"PO-Revision-Date: 2018-05-14 16:22+0300\n"
 "Last-Translator: Michael M <hello@wpbakery.com>\n"
 "Language-Team: WPBakery\n"
 "Language: ru_RU\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr__\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: ./config/.\n"
 "X-Poedit-SearchPath-1: ./include/.\n"
 
@@ -1573,7 +1573,7 @@ msgstr "Положение контента"
 #: config/./content/shortcode-vc-toggle.php:57
 #: config/./grids/class-vc-grids-common.php:1126
 #: config/./grids/class-vc-grids-common.php:1175
-#: include/./helpers/helpers_api.php:500
+#: include/./helpers/helpers_api.php:498
 msgid "Default"
 msgstr "По умолчанию"
 
@@ -2468,10 +2468,10 @@ msgstr "Два"
 #: config/./grids/class-vc-grids-common.php:277
 #: config/./tta/shortcode-vc-tta-section.php:48
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:109
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1272
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1335
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1449
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1280
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1343
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1457
 #: include/./params/loop/loop.php:446
 #: include/./params/sorted_list/sorted_list.php:91
 #: include/./params/vc_link/vc_link.php:18
@@ -2847,8 +2847,8 @@ msgstr "По дате"
 
 #: config/./content/shortcode-vc-posts-slider.php:134
 #: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:107
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1464
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1489
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
 msgid "ID"
 msgstr "По ID"
 
@@ -6301,7 +6301,6 @@ msgid "WPBakery Page Builder"
 msgstr ""
 
 #: include/./autoload/vc-pages/welcome-screen.php:38
-#: include/./classes/core/class-vc-base.php:630
 msgid "About"
 msgstr "Информация"
 
@@ -6425,12 +6424,6 @@ msgstr ""
 msgid "WPBakery Page Builder Settings"
 msgstr "Настройки страницы"
 
-#: include/./classes/core/class-vc-base.php:627
-#: include/./classes/core/class-vc-base.php:760
-#: include/./templates/pages/vc-welcome/index.php:24
-msgid "Settings"
-msgstr "Настройки"
-
 #: include/./classes/core/class-vc-base.php:629
 msgid "About WPBakery Page Builder"
 msgstr ""
@@ -6450,6 +6443,11 @@ msgstr "Добавить изображение"
 #: include/./classes/core/class-vc-base.php:759
 msgid "Add Images"
 msgstr "Добавить изображения"
+
+#: include/./classes/core/class-vc-base.php:760
+#: include/./templates/pages/vc-welcome/index.php:24
+msgid "Settings"
+msgstr "Настройки"
 
 #: include/./classes/core/class-vc-base.php:762
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:120
@@ -6912,10 +6910,6 @@ msgstr "Смартфон с портретной ориентацией"
 msgid "Responsive preview"
 msgstr "Просмотр адаптивного дизайна"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:115
-msgid "&wpb_vc_js_status=true"
-msgstr ""
-
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:117
 msgid "Cancel all changes and return to WP dashboard"
 msgstr ""
@@ -6928,12 +6922,10 @@ msgstr "Сохранить черновик"
 msgid "Save as Pending"
 msgstr ""
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:138
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:139
 msgid "Publish"
 msgstr "Опубликовать"
 
-#: include/./classes/editors/navbar/class-vc-navbar-frontend.php:142
 #: include/./classes/editors/navbar/class-vc-navbar-frontend.php:143
 msgid "Submit for Review"
 msgstr ""
@@ -7458,10 +7450,10 @@ msgid ""
 "theme. Changing \"Main accent color\" will affect all content elements if no "
 "specific \"content block\" related color is set."
 msgstr ""
-"Здесь вы можете изменить визуальные значения для WPBakery Page Builder блоков. По "
-"умолчанию WPBakery Page Builder использует нейтральный серый цвет. Изменение "
-"\"Основного цвета\" затронет все блоки, если не будет указан отдельный цвет "
-"для конкретного блока."
+"Здесь вы можете изменить визуальные значения для WPBakery Page Builder "
+"блоков. По умолчанию WPBakery Page Builder использует нейтральный серый "
+"цвет. Изменение \"Основного цвета\" затронет все блоки, если не будет указан "
+"отдельный цвет для конкретного блока."
 
 #: include/./classes/settings/class-vc-settings.php:748
 msgid "Invalid Margin value."
@@ -7603,32 +7595,32 @@ msgstr "Клонировать %s"
 msgid "Delete %s"
 msgstr "Удалить %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1133
+#: include/./classes/shortcodes/shortcodes.php:1136
 #, php-format
 msgid "Append to this %s"
 msgstr " Добавить в конец %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1135
+#: include/./classes/shortcodes/shortcodes.php:1138
 #, php-format
 msgid "Prepend to this %s"
 msgstr "Добавить в начало %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1138
+#: include/./classes/shortcodes/shortcodes.php:1141
 #, php-format
 msgid "Move this %s"
 msgstr ""
 
-#: include/./classes/shortcodes/shortcodes.php:1144
+#: include/./classes/shortcodes/shortcodes.php:1147
 #, php-format
 msgid "Edit this %s"
 msgstr "Редактировать %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1145
+#: include/./classes/shortcodes/shortcodes.php:1148
 #, php-format
 msgid "Clone this %s"
 msgstr "Клонировать %s"
 
-#: include/./classes/shortcodes/shortcodes.php:1146
+#: include/./classes/shortcodes/shortcodes.php:1149
 #, php-format
 msgid "Delete this %s"
 msgstr "Удалить %s"
@@ -8308,119 +8300,119 @@ msgid ""
 "products are shown on a page. This will not add pagination to the shortcode. "
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1283
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1346
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1460
 msgid "Id"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1239
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1267
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1330
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1444
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1247
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1275
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1338
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1452
 msgid "Sku"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Name"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1375
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1383
 msgid "Slug"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1463
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
 msgid "SKU"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1465
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
 msgid "Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1466
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
 msgid "Regular Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1467
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
 msgid "Sale Price"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1468
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1476
 msgid "Price html"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1469
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1477
 msgid "Reviews count"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1470
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1478
 msgid "Short description"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1471
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1479
 msgid "Dimensions"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1472
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1480
 msgid "Rating count"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1473
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1481
 msgid "Weight"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1474
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1482
 msgid "Is on sale"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1475
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1483
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1509
 msgid "Custom field"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1490
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
 msgid "Order number"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1491
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
 msgid "Currency"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1492
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
 msgid "Total"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1493
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1501
 msgid "Status"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1494
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1502
 msgid "Payment method"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1495
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1503
 msgid "Billing address city"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1496
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1504
 msgid "Billing address country"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1497
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1505
 msgid "Shipping address city"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1498
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1506
 msgid "Shipping address country"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1499
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1507
 msgid "Customer Note"
 msgstr ""
 
-#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1500
+#: include/./classes/vendors/plugins/class-vc-vendor-woocommerce.php:1508
 msgid "Customer API"
 msgstr ""
 
@@ -8489,31 +8481,31 @@ msgstr "Таксономии"
 msgid "Wrong vc_map object. Base attribute is required"
 msgstr ""
 
-#: include/./helpers/helpers_api.php:492
+#: include/./helpers/helpers_api.php:490
 msgid "CSS Animation"
 msgstr "CSS Анимация"
 
-#: include/./helpers/helpers_api.php:502
+#: include/./helpers/helpers_api.php:500
 msgid "Top to bottom"
 msgstr "Сверху вниз"
 
-#: include/./helpers/helpers_api.php:503
+#: include/./helpers/helpers_api.php:501
 msgid "Bottom to top"
 msgstr "Снизу вверх"
 
-#: include/./helpers/helpers_api.php:504
+#: include/./helpers/helpers_api.php:502
 msgid "Left to right"
 msgstr "Слева направо"
 
-#: include/./helpers/helpers_api.php:505
+#: include/./helpers/helpers_api.php:503
 msgid "Right to left"
 msgstr "Справа налево"
 
-#: include/./helpers/helpers_api.php:506
+#: include/./helpers/helpers_api.php:504
 msgid "Appear from center"
 msgstr "По центру"
 
-#: include/./helpers/helpers_api.php:511
+#: include/./helpers/helpers_api.php:509
 msgid ""
 "Select type of animation for element to be animated when it \"enters\" the "
 "browsers viewport (Note: works only in modern browsers)."
@@ -9540,20 +9532,6 @@ msgstr "Выбрать ссылку"
 msgid "URL"
 msgstr ""
 
-#: include/./templates/editors/backend_editor.tpl.php:52
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:70
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:80
-msgid "Loading, please wait..."
-msgstr "Загрузка, пожалуйста подождите..."
-
-#: include/./templates/editors/backend_editor.tpl.php:54
-#: include/./templates/editors/vc_ui-template-preview.tpl.php:72
-#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
-#: include/./templates/params/vc_grid_item/editor/vc_ui-template-preview.tpl.php:82
-msgid "Crunching..."
-msgstr "Думаю..."
-
 #: include/./templates/editors/partials/add_element_search.tpl.php:11
 msgid "Search element by name"
 msgstr "Поиск элемента по названию"
@@ -9927,8 +9905,8 @@ msgid ""
 "Enable WPBakery Page Builder for pages, posts and custom post types. Note: "
 "By default WPBakery Page Builder is available for pages only."
 msgstr ""
-"Включите WPBakery Page Builder для страниц, записей и произвольных типов записей. "
-"По умолчанию WPBakery Page Builder включен только для страниц."
+"Включите WPBakery Page Builder для страниц, записей и произвольных типов "
+"записей. По умолчанию WPBakery Page Builder включен только для страниц."
 
 #: include/./templates/pages/partials/vc-roles-parts/_presets.tpl.php:12
 msgid "Apply presets only"
@@ -9960,8 +9938,8 @@ msgid ""
 "Control access rights to WPBakery Page Builder admin settings tabs (e.g. "
 "General Settings, Shortcode Mapper, ...)"
 msgstr ""
-"Управляйте правами доступа к вкладкам админских настроек WPBakery Page Builder "
-"(Основне настройки, Компоновщик шорткодов, ...)"
+"Управляйте правами доступа к вкладкам админских настроек WPBakery Page "
+"Builder (Основне настройки, Компоновщик шорткодов, ...)"
 
 #: include/./templates/pages/partials/vc-roles-parts/_shortcodes.tpl.php:29
 msgid "Element"
@@ -10107,21 +10085,21 @@ msgid ""
 "you to get around plugin:"
 msgstr ""
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:26
+#: include/./templates/pages/vc-welcome/vc-resources.php:23
 msgid "Official Support"
 msgstr "Официальная поддержка"
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:28
+#: include/./templates/pages/vc-welcome/vc-resources.php:25
 #, php-format
 msgid ""
 "To get your support related question answered in the fastest timing, please "
 "head over to our <a href=\"%s\" target=\"_blank\">support page</a> and open "
 "Support ticket. To open a support ticket you should have a valid support "
 "subscription in case if your support has expired you can <a href=\"%s\" "
-"target=\"_blank\">purchase support extension</a> on CodeCanyon."
+"target=\"_blank\">purchase support extension</a> on support.wpbakery.com."
 msgstr ""
 
-#: include/./templates/pages/vc-welcome/vc-resources.php:30
+#: include/./templates/pages/vc-welcome/vc-resources.php:27
 #, php-format
 msgid ""
 "Before applying for support please make sure you understand the rules of "
@@ -10143,7 +10121,6 @@ msgstr ""
 
 #: include/./templates/pages/vc-welcome/vc-welcome.php:21
 #, fuzzy
-#| msgid "Outline color"
 msgid "Native Colors"
 msgstr "Цвет контура"
 
@@ -10155,7 +10132,6 @@ msgstr ""
 
 #: include/./templates/pages/vc-welcome/vc-welcome.php:28
 #, fuzzy
-#| msgid "Icon"
 msgid "New Icons"
 msgstr "Иконка"
 
@@ -10210,6 +10186,14 @@ msgstr "Grumpy wizards make toxic brew for the evil Queen and Jack."
 msgid "View all posts in %s"
 msgstr "Посмотреть все записи в %s"
 
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:18
+msgid "Loading, please wait..."
+msgstr "Загрузка, пожалуйста подождите..."
+
+#: include/./templates/params/vc_grid_item/editor/vc_grid_item_editor.tpl.php:20
+msgid "Crunching..."
+msgstr "Думаю..."
+
 #: include/./templates/shortcodes/vc_accordion_tab.php:26
 msgid "Empty section. Edit page to add content here."
 msgstr "Нет содержимого. Отредактируйте страницу чтобы добавить содержимое."
@@ -10262,91 +10246,3 @@ msgstr "Большое изображение"
 #: include/./templates/teaser.html.php:35
 msgid "Featured"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Column Parallax"
-#~ msgstr "Параллакс"
-
-#~ msgid "WPBakery Page Builder"
-#~ msgstr "WPBakery Page Builder"
-
-#~ msgid "Welcome to WPBakery Page Builder"
-#~ msgstr "Добро пожаловать в WPBakery Page Builder"
-
-#~ msgid "WPBakery Page Builder Settings"
-#~ msgstr "Настройки WPBakery Page Builder"
-
-#~ msgid "About WPBakery Page Builder"
-#~ msgstr "Подробнее о  WPBakery Page Builder"
-
-#~ msgid "BACKEND EDITOR"
-#~ msgstr "BACKEND РЕДАКТОР"
-
-#~ msgid "FRONTEND EDITOR"
-#~ msgstr "FRONTEND РЕДАКТОР"
-
-#~ msgid "CLASSIC MODE"
-#~ msgstr "КЛАССИЧЕСКИЙ РЕЖИМ"
-
-#~ msgid "Edit %s with WPBakery Page Builder"
-#~ msgstr "Редактировать %s в WPBakery Page Builder"
-
-#~ msgid "Edit with WPBakery Page Builder"
-#~ msgstr "Редактировать в WPBakery Page Builder"
-
-#~ msgid "Exit WPBakery Page Builder edit mode"
-#~ msgstr "Выйти из режима редактирования в WPBakery Page Builder"
-
-#~ msgid "Save current page as a Template"
-#~ msgstr "Сохранить страницу как шаблон"
-
-#~ msgid "No custom templates yet."
-#~ msgstr "Нет ни одного шаблона."
-
-#~ msgid "Show WPBakery Page Builder & default editor"
-#~ msgstr "Показывать WPBakery Page Builder и стандартный редактор"
-
-#~ msgid "Show only WPBakery Page Builder"
-#~ msgstr "Показывать только WPBakery Page Builder"
-
-#~ msgid "Don't allow to use WPBakery Page Builder"
-#~ msgstr "Запретить использование WPBakery Page Builder"
-
-#~ msgid "WPBakery Page Builder access"
-#~ msgstr "Редактор WPBakery Page Builder"
-
-#~ msgid "Enabled shortcodes"
-#~ msgstr "Включенные элементы"
-
-#~ msgid "Select All"
-#~ msgstr "Выделить все элементы"
-
-#~ msgid "Select none"
-#~ msgstr "Снять выделение"
-
-#~ msgid "Define access rules for different user groups."
-#~ msgstr "Определить правила доступа для разных групп пользователей."
-
-#~ msgid "Empty value"
-#~ msgstr "Пустое значение"
-
-#~ msgid "(default)"
-#~ msgstr "(по умолчанию)"
-
-#~ msgid "Set as default"
-#~ msgstr "Установить по умолчанию"
-
-#~ msgid "Restore default"
-#~ msgstr "Восстановить по умолчанию"
-
-#~ msgid "My templates"
-#~ msgstr "Мои шаблоны"
-
-#~ msgid "Default templates"
-#~ msgstr "Шаблоны по умолчанию"
-
-#~ msgid "Welcome to WPBakery Page Builder %s"
-#~ msgstr "Добро пожаловать в WPBakery Page Builder %s"
-
-#~ msgid "Disable Row"
-#~ msgstr "Отключить ряд"

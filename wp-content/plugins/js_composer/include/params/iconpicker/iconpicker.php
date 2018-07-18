@@ -159,7 +159,7 @@ class Vc_IconPicker {
  */
 function vc_iconpicker_form_field( $settings, $value, $tag ) {
 
-	$icon_picker = new Vc_IconPicker( $settings, $value, $tag );
+	$icon_picker = new Vc_IconPicker( $settings, $value );
 
 	return apply_filters( 'vc_iconpicker_render_filter', $icon_picker->render() );
 }

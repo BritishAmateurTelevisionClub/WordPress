@@ -2759,7 +2759,7 @@ a.wpallexport-import-to-format span.wpallexport-import-to-title {
 }
 .wpallexport-plugin form.options{
 	position: relative;
-	margin-top: 10px !important;
+	margin-top: 0 !important;
 	overflow: hidden;
 }
 .wpallexport-plugin form.edit{
@@ -4141,3 +4141,7 @@ input label {
 	top: 9px;
 }
 /** END COMBINE MULTIPLE ELEMENTS INTO ONE **/
+
+.wpallexport-plugin .chosen-container.chosen-with-drop .chosen-drop {
+	margin-top: -5px;
+}

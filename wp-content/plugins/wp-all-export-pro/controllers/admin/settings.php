@@ -79,6 +79,19 @@ class PMXE_Admin_Settings extends PMXE_Controller_Admin
                     }
 
                     PMXE_Plugin::getInstance()->updateOption($post);
+
+                    if(class_exists('PMXI_Plugin')) {
+                        if(method_exists('PMXI_Plugin', 'getSchedulingName')) {
+
+                            if(!empty($post['scheduling_license'])) {
+                                $schedulingLicenseData = array();
+                                $schedulingLicenseData['scheduling_license_status'] = $post['scheduling_license_status'];
+                                $schedulingLicenseData['scheduling_license'] = $post['scheduling_license'];
+
+                                PMXI_Plugin::getInstance()->updateOption($schedulingLicenseData);
+                            }
+                        }
+                    }
                     $this->activate_scheduling_licenses();
 
                 }

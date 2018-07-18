@@ -259,9 +259,7 @@ if ( ! function_exists( 'vc_add_default_templates' ) ) {
 	 * @return bool
 	 */
 	function vc_add_default_templates( $data ) {
-		return visual_composer()
-			->templatesPanelEditor()
-			->addDefaultTemplates( $data );
+		return visual_composer()->templatesPanelEditor()->addDefaultTemplates( $data );
 	}
 }
 
@@ -622,7 +620,9 @@ function vc_map_get_params_defaults( $params ) {
  *     'b'=>3, 'c'=>4 )
  */
 function vc_map_get_attributes( $tag, $atts = array() ) {
-	return shortcode_atts( vc_map_get_defaults( $tag ), $atts, $tag );
+	$atts = shortcode_atts( vc_map_get_defaults( $tag ), $atts, $tag );
+
+	return apply_filters( 'vc_map_get_attributes', $atts, $tag );
 }
 
 function vc_convert_vc_color( $name ) {

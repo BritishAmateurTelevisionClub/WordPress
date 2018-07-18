@@ -96,10 +96,10 @@ class VcSharedLibrary {
 		'Bounce' => 'easeOutBounce',
 		'Elastic' => 'easeOutElastic',
 		'Back' => 'easeOutBack',
-		'Cubic' => 'easeinOutCubic',
-		'Quint' => 'easeinOutQuint',
+		'Cubic' => 'easeInOutCubic',
+		'Quint' => 'easeInOutQuint',
 		'Quart' => 'easeOutQuart',
-		'Quad' => 'easeinQuad',
+		'Quad' => 'easeInQuad',
 		'Sine' => 'easeOutSine',
 	);
 

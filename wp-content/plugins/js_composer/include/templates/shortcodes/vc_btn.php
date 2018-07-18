@@ -51,6 +51,7 @@ $attributes = array();
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 //parse link
+$link = trim( $link );
 $link = ( '||' === $link ) ? '' : $link;
 $link = vc_build_link( $link );
 $use_link = false;

@@ -51,6 +51,14 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 		), 5 );
 		add_action( 'admin_print_scripts-post.php', array(
 			$this,
+			'registerScripts',
+		) );
+		add_action( 'admin_print_scripts-post-new.php', array(
+			$this,
+			'registerScripts',
+		) );
+		add_action( 'admin_print_scripts-post.php', array(
+			$this,
 			'printScriptsMessages',
 		) );
 		add_action( 'admin_print_scripts-post-new.php', array(
@@ -60,6 +68,13 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 
 	}
 
+	public function registerScripts() {
+		$this->registerBackendJavascript();
+		$this->registerBackendCss();
+		// B.C:
+		visual_composer()->registerAdminCss();
+		visual_composer()->registerAdminJavascript();
+	}
 	/**
 	 *    Calls add_meta_box to create Editor block. Block is rendered by WPBakeryVisualComposerLayout.
 	 *
@@ -71,12 +86,6 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 	 */
 	public function render( $post_type ) {
 		if ( $this->isValidPostType( $post_type ) ) {
-			$this->registerBackendJavascript();
-			$this->registerBackendCss();
-			// B.C:
-			visual_composer()->registerAdminCss();
-			visual_composer()->registerAdminJavascript();
-
 			// meta box to render
 			add_meta_box( 'wpb_visual_composer', __( 'WPBakery Page Builder', 'js_composer' ), array(
 				$this,
@@ -136,11 +145,12 @@ class Vc_Backend_Editor implements Vc_Editor_Interface {
 	 * @return bool
 	 */
 	public function isValidPostType( $type = '' ) {
+		$type = ! empty( $type ) ? $type : get_post_type();
 		if ( 'vc_grid_item' === $type ) {
 			return false;
 		}
 
-		return vc_check_post_type( ! empty( $type ) ? $type : get_post_type() );
+		return apply_filters( 'vc_is_valid_post_type_be', vc_check_post_type( $type ), $type );
 	}
 
 	/**
